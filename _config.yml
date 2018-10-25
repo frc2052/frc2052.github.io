@@ -1,7 +1,7 @@
 # Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
-cover: assets/images/radhakrishna.jpg
+title: KnightKrawler Robotics
+description: FRC 2052 Irondale Robotics Team : KinghtKrawler
+cover: assets/images/2018-TeamPhoto.png
 logo: assets/images/logo.png
 favicon: assets/images/favicon.png
 baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
