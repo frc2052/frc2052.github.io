@@ -9,9 +9,9 @@ url: "https://frc2052.github.io" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
 # Social
-facebook: facebook
-twitter: twitter
-github:  github
+facebook: team2052
+twitter: team2052
+github:  frc2052
 
 #Additional Pages
 about: about
