@@ -19,35 +19,75 @@ layout: default
 </header>
 
 <div class="container">
+  {% for post in paginator.posts %}
+    <div class="row justify-content-center">
+      <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">{{ post.title }}</a></h2>
+    </div>
+    <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+  {% endfor %}
+
+  <div class="row justify-content-center">
+    <h2>Sponsors</h2>
+  </div>
+  <div class="row justify-content-center">
+      <div class="col">
+        <img src="https://via.placeholder.com/150x150?text=Sponsor+1" />
+      </div>
+      <div class="col">
+        <img src="https://via.placeholder.com/150x150?text=Sponsor+2" />
+      </div>
+      <div class="col">
+        <img src="https://via.placeholder.com/150x150?text=Sponsor+3" />
+      </div>
+      <div class="col">
+        <img src="https://via.placeholder.com/150x150?text=Sponsor+4" />
+      </div>
+      <div class="col">
+        <img src="https://via.placeholder.com/150x150?text=Sponsor+5" />
+      </div>
+      <div class="col">
+        <img src="https://via.placeholder.com/150x150?text=Sponsor+6" />
+      </div>
+  </div>
+  <div class="row justify-content-center">
+    <a href="sponsors.html" > See all our sponsors <i class="fas fa-arrow-circle-right"></i></a>
+  </div>
+
   <div class="row">
-    <div class="col-sm"
-    {% for post in paginator.posts %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-        <div class="article-item">
-          <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">{{ post.title }}</a></h2>
-          </header>
-          <section class="post-excerpt" itemprop="description">
-            <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-          </section>
+      <div class="col-md-3 pt-5">
+        <img src="assets/images/ScoutingApp1-sm.png" class="mx-auto d-block"/>
+      </div>
+      <div class="col-md-9">
+        <p>
+          <h2 class="text-center">FRC Krawler</h2>
+        </p>
+        <p>
+          <h5 class="text-center">The fully customizable scouting solution</h5>
+        </p>
+        <ul>
+          <li>A simple way to keep data event-to-event, and year-to-year.</li>
+          <li>Simultaneous scouting for more than six team members.</li>
+          <li>A user interface intuitive enough for an expert, and simple enough for a beginner.</li>
+          <li>The ability to sync via bluetooth for use during competitions.</li>
+          <li>The ability to define the type of scouting you're doing, from match scouting to pit scouting.</li>
+          <li>Ability to search and sort based on the data collected.</li>
+          <li>The ability to search, and sort data based on what was collected.</li>
+          <li>Provides the ability to back up data onto your PC.</li>
+          <li>Compatability to export the data into the .csv file format.</li>
+          <li>Available at no cost, for anyone and everyone!</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="https://play.google.com/store/apps/details?id=com.team2052.frckrawler" target="_blank">
+              <img src="assets/images/Google_Play_Badge.jpg" />
+            </a>
+          </div>
+          <div class="col-md-6">
+            <div class="float-right">
+              <a href="sponsors.html" > Details <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
         </div>
-      </article>
-    {% endfor %}
-    <div>
+      </div>
   </div>
-
-  <div class="clearfix" />
-  <div class="row">
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-  </div>
-
-
 </div>
