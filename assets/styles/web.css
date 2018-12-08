@@ -1,4 +1,10 @@
 
+/* these are custom variables for comon reuse */
+:root {
+  --maroon-color: #732626;
+  --gold-color: #FCC20B;
+}
+
 @font-face {
     font-family: "Knightkrawler";
     src: url("/assets/fonts/Knightkrawler.ttf");
@@ -9,17 +15,17 @@
 }
 
 .maroon {
-    color: #732626;
+    color: var(--maroon-color, black);
 }
 
 .gold {
-    color: #FCC20B;
+    color: var(--gold-color, white);
 }
 
 .maroon-bg {
-    background-color: #732626;
+    background-color: var(--maroon-color, black);
 }
 
 .gold-bg {
-    background-color: #FCC20B;
+    background-color: var(--gold-color, white);
 }

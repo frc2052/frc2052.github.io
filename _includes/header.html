@@ -1,44 +1,28 @@
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-  <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              Menu <i class="fa fa-bars"></i>
-          </button>
-          <a class="gold navbar-brand kk" href="index.html">KnightKrawler</a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            {% for entry in site.data.navigation %}
-              {% if entry.url == current_page %}
-                  {% assign current = 'current' %}
-              {% else %}
-                  {% assign current = null %}
-              {% endif %}
-              <li class="ampstart-nav-item ampstart-nav-dropdown relative {{ current }}">
-                  <li class="ampstart-faq-item"><a href="{{ site.url }}{{ site.baseurl }}{{ entry.url }}" class="text-decoration-none">{{ entry.title }}</a></li>
-              </li>
-            {% endfor %}
-          </ul>
+<nav class="navbar navbar-expand-lg navbar-dark maroon-bg">
+  <a class="navbar-brand" href="#"><img src="assets/images/logo-xs.png" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<!--
-              <li>
-                  <a href="index.html">Home</a>
-              </li>
-              <li>
-                  <a href="bio.html">Bio</a>
-              </li>
-              <li>
-                  <a href="postindex.html">Index</a>
-              </li>
-              <li>
-                  <a href="contact.html">Contact</a>
-              </li>
--->
-      </div>
-      <!-- /.navbar-collapse -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Info</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Team
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Members</a>
+          <a class="dropdown-item" href="#">Parent Info</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Contact Us</a>
+        </div>
+      </li>
+    </ul>
   </div>
-  <!-- /.container -->
 </nav>
