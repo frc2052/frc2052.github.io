@@ -7,10 +7,10 @@ layout: default
 <!-- Set your background image for this header on the line below. -->
 <header class="intro-header" style="background-image: url('assets/images/2018-TeamPhotoDark.png')">
   <div class="container">
-      <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="row justify-content-center">
+          <div>
               <div class="site-heading">
-                  <h1 class="kk gold">Knightkrawler Robotics</h1>
+                  <h1 class="kk gold heading-push-down">Knightkrawler Robotics</h1>
                   <h4 class="kk gold">FRC Team 2052</h4>
               </div>
           </div>
@@ -18,8 +18,9 @@ layout: default
   </div>
 </header>
 
-<main id="content" role="main" class="content">
-  <div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm"
     {% for post in paginator.posts %}
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <div class="article-item">
@@ -32,22 +33,21 @@ layout: default
         </div>
       </article>
     {% endfor %}
+    <div>
   </div>
 
-  <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
-        </div>
-      </div>
+  <div class="clearfix" />
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
     </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
 
 
-</main>
-</html>
+</div>
