@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: "Knightkrawler";
+    src: url("/assets/fonts/Knightkrawler.ttf");
+}
+
+.kk {
+    font-family: Knightkrawler;
+}
+
+.maroon {
+    color: #732626;
+}
+
+.gold {
+    color: #FCC20B;
+}
+
+.maroon-bg {
+    background-color: #732626;
+}
+
+.gold-bg {
+    background-color: #FCC20B;
+}
