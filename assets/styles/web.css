@@ -17,7 +17,7 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 p a {
   text-decoration: underline;
@@ -61,6 +61,32 @@ blockquote {
 
 .gold-bg {
     background-color: var(--gold-color, white);
+}
+
+.news {
+  border-color: var(--maroon-color, black);
+}
+.news .card-heading {
+  padding-left: 15px;
+  font-size: 24px;
+  color: var(--gold-color, white);
+  background-color:  var(--maroon-color, white);
+}
+
+.news .card-body {
+  background-color: #eeeeee
+}
+
+.post-title {
+  text-align: center;
+}
+
+.post-description {
+
+}
+
+i.fa-arrow-circle-right {
+  color: var(--maroon-color, white);
 }
 
 hr.small {

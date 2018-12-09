@@ -13,14 +13,45 @@ layout: default
 </header>
 
 <div class="container">
-  {% for post in paginator.posts %}
-    <div class="row justify-content-center">
-      <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">{{ post.title }}</a></h2>
+  {% assign psize = site.posts | size %}
+  {% if psize > 0 %}
+    <div class="card news">
+      <div class="card-heading">
+          <i class="fas fa-newspaper"></i> NEWS
+      </div>
+      {% for post in site.posts reversed %}
+        <div class="card-body">
+          <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">
+            {{ post.title }} <i class="fas fa-arrow-circle-right"></i>
+          </a></h2>
+          <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+        </div>
+      {% endfor %}
     </div>
-    <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-  {% endfor %}
+  {% endif %}
 
+  <div class="row justify-content-center pt-5">
+    <img class="center" src="/assets/images/logo-sm.png" />
+  </div>
   <div class="row justify-content-center">
+    <h1 class="kk center maroon">
+      Welcome to KnightKrawler!
+    </h1>
+  </div>
+  <div class="row">
+    <p>
+      We are Irondale High School's Robotics Team, FRC Team 2052.  Knightkrawler
+      is a place where everyone is welcome. We turn students into professionals.
+      We work hard to compete at the highest levels of competition, while doing our
+      best to also assist all teams we can to improve the success of their team.
+    </p>
+    <p>
+      Coopetition is one of our core values. We work to ensure everyone has success
+      in robotics.  How can we help?  Contact us and let's work together to build
+      awesome robots and the next generation of engineers and business professionals.
+    </p>
+  </div>
+  <div class="row justify-content-center pt-5">
     <h2>Sponsors</h2>
   </div>
   <div class="row justify-content-center">
@@ -47,7 +78,7 @@ layout: default
     <a href="sponsors.html" > See all our sponsors <i class="fas fa-arrow-circle-right"></i></a>
   </div>
 
-  <div class="row">
+  <div class="row pt-5">
       <div class="col-md-3 pt-5">
         <img src="assets/images/ScoutingApp1-sm.png" class="mx-auto d-block"/>
       </div>
