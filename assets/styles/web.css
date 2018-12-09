@@ -29,3 +29,29 @@
 .gold-bg {
     background-color: var(--gold-color, white);
 }
+
+/* change the link color */
+.nav-link-custom {
+    color: rgba(255,255,255, 1) !important;
+}
+/* change the color of active or hovered links */
+.nav-link-custom:active,
+.nav-link-custom:focus,
+.nav-link-custom:hover {
+    color: var(--gold-color, white) !important;
+}
+/* change the dropdown menu */
+.nav-dropdown-custom {
+    background-color: #602020;
+}
+/* change the link color */
+.nav-dropdown-custom .dropdown-item {
+    color: rgba(255,255,255, 1);
+}
+/* change the link color */
+.nav-dropdown-custom .dropdown-item:active,
+.nav-dropdown-custom .dropdown-item:focus,
+.nav-dropdown-custom .dropdown-item:hover {
+    color: var(--gold-color, white);
+    background-color: #602020;
+}
