@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <p class="copyright maroon">Copyright &copy; KNIGHTKRAWLER ROBOTICS 2019</p>
+        <p class="copyright">Copyright &copy; KNIGHTKRAWLER ROBOTICS 2019</p>
     </div>
 </footer>
 
@@ -70,7 +70,7 @@
 $(document).ready(function() {
 
     var docHeight = $(window).height();
-    var footerHeight = $('#footer').height();
+    var footerHeight = $('#footer').height() + 30; //30px extra padding on bottom to avoid scrollbar from showing
     var footerTop = $('#footer').position().top + footerHeight;
 
     if (footerTop < docHeight)

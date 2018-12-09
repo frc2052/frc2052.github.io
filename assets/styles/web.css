@@ -1,6 +1,5 @@
-
-/* these are custom variables for comon reuse */
 :root {
+  /* these are custom variables for comon reuse */
   --maroon-color: #732626;
   --gold-color: #FCC20B;
 }
@@ -8,6 +7,40 @@
 @font-face {
     font-family: "Knightkrawler";
     src: url("/assets/fonts/Knightkrawler.ttf");
+}
+
+body {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-size: 20px;
+  color: #333333;
+  -webkit-tap-highlight-color: #0085A1;
+}
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+p a {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+a {
+  color: #333333;
+}
+a:hover,
+a:focus {
+  color: var(--maroon-color, black);
+}
+blockquote {
+  color: #777777;
+  font-style: italic;
 }
 
 .kk {
@@ -30,25 +63,44 @@
     background-color: var(--gold-color, white);
 }
 
-/* change the link color */
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: white;
+}
+
+.caption {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  font-style: italic;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/*------------ BEGIN: HERO, NAVIGATION AND FOOTER STYLES --------------*/
+/* Navigation Menu: change the link color */
 .nav-link-custom {
     color: rgba(255,255,255, 1) !important;
 }
-/* change the color of active or hovered links */
+/* Navigation Menu: change the color of active or hovered links */
 .nav-link-custom:active,
 .nav-link-custom:focus,
 .nav-link-custom:hover {
     color: var(--gold-color, white) !important;
 }
-/* change the dropdown menu */
+/* Navigation Menu: change the dropdown menu */
 .nav-dropdown-custom {
     background-color: #602020;
 }
-/* change the link color */
+/* Navigation Menu: change the link color */
 .nav-dropdown-custom .dropdown-item {
     color: rgba(255,255,255, 1);
 }
-/* change the link color */
+/* Navigation Menu: change the link color */
 .nav-dropdown-custom .dropdown-item:active,
 .nav-dropdown-custom .dropdown-item:focus,
 .nav-dropdown-custom .dropdown-item:hover {
@@ -56,6 +108,7 @@
     background-color: #602020;
 }
 
+/* Hero banner on home page */
 .intro-header {
   background-color: #777777;
   background: no-repeat center center;
@@ -66,42 +119,91 @@
   -o-background-size: cover;
   margin-bottom: 50px;
 }
-
 .intro-header .site-heading {
   padding: 100px 0 0;
-  color: white;
+  text-align: center;
+  color: var(--gold-color, white);
 }
-
-.heading-push-down {
-  padding: 150px 0 0;
-}
+/* if the page is more than 1000px wide, change top padding */
 @media only screen and (min-width: 1000px) {
   .intro-header .site-heading {
     padding: 150px 0;
   }
 }
-.intro-header .site-heading {
-  text-align: center;
-}
 .intro-header .site-heading h1 {
-  margin-top: 0;
   font-size: 50px;
+  padding: 150px 0 0;
+  font-family: Knightkrawler;
 }
-.intro-header .site-heading .subheading {
-  font-size: 36px;
-  line-height: 1.1;
-  display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  margin: 10px 0 0;
+.intro-header .site-heading h2 {
+  font-size: 25px;
+  font-family: Knightkrawler;
 }
+/* if the page is more than 1000px wide, change font sizes */
 @media only screen and (min-width: 1000px) {
   .intro-header .site-heading h1 {
     font-size: 80px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .intro-header .site-heading .subheading {
-    font-size: 24px;
+  .intro-header .site-heading h2 {
+    font-size: 40px;
   }
 }
+footer {
+  padding: 10px 0 15px;
+}
+footer .list-inline {
+  margin: 0;
+  padding: 0;
+}
+footer .copyright {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10;
+  color: var(--maroon-color, black);
+}
+/*------------ END: HERO, NAVIGATION AND FOOTER STYLES --------------*/
+
+/* BEGIN Buttons */
+.btn {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 0;
+  padding: 15px 25px;
+}
+.btn-lg {
+  font-size: 16px;
+  padding: 25px 35px;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #0085A1;
+  border: 1px solid #0085A1;
+  color: white;
+}
+/* END Buttons */
+
+/* BEGIN Special browser stuff */
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #0085A1;
+}
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #0085A1;
+}
+img::selection {
+  color: white;
+  background: transparent;
+}
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+/* END Special browser stuff */
