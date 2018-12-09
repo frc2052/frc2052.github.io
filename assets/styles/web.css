@@ -17,7 +17,7 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 10px 0;
+  margin: 0 0 15px 0;
 }
 p a {
   text-decoration: underline;
@@ -86,6 +86,39 @@ blockquote {
 }
 
 i.fa-arrow-circle-right {
+  color: var(--maroon-color, black);
+}
+
+.glossary {
+  background: #eeeeee;
+  width: 100%;
+}
+.glossary-term {
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 10px;
+  vertical-align: top;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.glossary-definition {
+  padding-right: 10px;
+  vertical-align: top;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.faq-q {
+  font-weight: bold;
+  font-style: italic;
+}
+.faq-a {
+  padding-left: 2em;
+  padding-bottom: 10px;
+}
+
+.faq-a a {
+  text-decoration-style: underline;
   color: var(--maroon-color, black);
 }
 
