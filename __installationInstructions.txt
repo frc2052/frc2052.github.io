@@ -1,0 +1,7 @@
+in bash, after cloning the github repository:
+
+cd frc2052.githubio
+sudo apt-get install zlib1g-dev
+bundle update
+bundle exec jekyll serve
+ 
