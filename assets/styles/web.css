@@ -55,3 +55,53 @@
     color: var(--gold-color, white);
     background-color: #602020;
 }
+
+.intro-header {
+  background-color: #777777;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}
+
+.intro-header .site-heading {
+  padding: 100px 0 0;
+  color: white;
+}
+
+.heading-push-down {
+  padding: 150px 0 0;
+}
+@media only screen and (min-width: 1000px) {
+  .intro-header .site-heading {
+    padding: 150px 0;
+  }
+}
+.intro-header .site-heading {
+  text-align: center;
+}
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+.intro-header .site-heading .subheading {
+  font-size: 36px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 10px 0 0;
+}
+@media only screen and (min-width: 1000px) {
+  .intro-header .site-heading h1 {
+    font-size: 80px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .intro-header .site-heading .subheading {
+    font-size: 24px;
+  }
+}
