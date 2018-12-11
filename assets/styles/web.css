@@ -140,6 +140,10 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 
+.memberPhotos {
+  width: 200px;
+}
+
 /*------------ BEGIN: HERO, NAVIGATION AND FOOTER STYLES --------------*/
 /* Navigation Menu: change the link color */
 .nav-link-custom {
