@@ -122,6 +122,14 @@ i.fa-arrow-circle-right {
   color: var(--maroon-color, black);
 }
 
+.carousel-control-next-icon {
+  color: var(--maroon-color, black);
+}
+
+.carousel-control-prev-icon {
+  color: var(--maroon-color, black);
+}
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
@@ -138,6 +146,32 @@ hr.small {
   display: block;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.captionMembers {
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.mName {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.mRole {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.memberPhotos {
+  padding-top: 10px;
+  width: 250px;
+  height: 200px;
 }
 
 /*------------ BEGIN: HERO, NAVIGATION AND FOOTER STYLES --------------*/
