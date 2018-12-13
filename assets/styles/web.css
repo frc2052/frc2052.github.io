@@ -140,8 +140,30 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 
+.captionMembers {
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.mName {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.mRole {
+    font-style: italic;
+    font-size: 16px;
+}
+
 .memberPhotos {
-  width: 200px;
+  padding-top: 10px;
+  width: 250px;
+  height: 200px;
 }
 
 /*------------ BEGIN: HERO, NAVIGATION AND FOOTER STYLES --------------*/
