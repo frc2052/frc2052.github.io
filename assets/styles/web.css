@@ -122,6 +122,14 @@ i.fa-arrow-circle-right {
   color: var(--maroon-color, black);
 }
 
+.carousel-control-next-icon {
+  color: var(--maroon-color, black);
+}
+
+.carousel-control-prev-icon {
+  color: var(--maroon-color, black);
+}
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
