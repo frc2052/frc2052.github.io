@@ -136,6 +136,11 @@ img.max-300 {
   max-height: 300px;
 }
 
+img.max-200 {
+  max-width: 200px;
+  max-height: 200px;
+}
+
  .sponsors {
   margin: 0 30px;
 }
