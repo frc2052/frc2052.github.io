@@ -207,6 +207,33 @@ hr.small {
   font-color: #eeeeee;
 }
 
+
+.gold-progress {
+  height: 30px;
+}
+.gold-progress .progress-bar {
+  background-color: var(--gold-color, white);
+  color: var(--maroon-color, black);
+  font-weight: 700;
+  padding-right:5px;
+  text-align: right;
+  height: 30px;
+  font-size: 18px;
+}
+
+.team-wide-photo {
+  width: 80%;
+}
+
+@media only screen and (max-width: 1200px){
+.team-wide-photo {
+  width: 100%;
+}
+}
+
+.progress-caption {
+  font-size: 15px;
+}
 /*------------ BEGIN: HERO, NAVIGATION AND FOOTER STYLES --------------*/
 /* Navigation Menu: change the link color */
 .nav-link-custom {
