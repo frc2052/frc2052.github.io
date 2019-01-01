@@ -3,4 +3,4 @@ _site/
 .jekyll-metadata
 Gemfile.lock
 .bundle/config
-vendor/cache/
+vendor/*

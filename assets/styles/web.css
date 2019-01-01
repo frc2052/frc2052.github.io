@@ -136,11 +136,11 @@ img.max-200 {
   max-height: 200px;
 }
 
- .sponsors {
+ .card-kk {
   margin: 0 30px;
 }
 
-.sponsors .card-heading {
+.card-kk .card-heading {
   width: 100%;
   font-size: 24px;
   text-align: center;
@@ -231,9 +231,30 @@ hr.small {
 }
 }
 
+.core-value {
+ margin: 0 2px;
+}
+
+.core-value .card-heading {
+ width: 100%;
+ font-size: 22px;
+ line-height: 24px;
+ height: 80px;
+ vertical-align: middle;
+ text-align: center;
+ color: var(--gold-color, white);
+ background-color:  var(--maroon-color, black);
+}
+
+.core-value .card-body{
+  font-size:14px;
+}
+
 .progress-caption {
   font-size: 15px;
 }
+
+
 /*------------ BEGIN: HERO, NAVIGATION AND FOOTER STYLES --------------*/
 /* Navigation Menu: change the link color */
 .nav-link-custom {
