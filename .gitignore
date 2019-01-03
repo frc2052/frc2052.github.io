@@ -4,3 +4,5 @@ _site/
 Gemfile.lock
 .bundle/config
 vendor/cache/
+.DS_Store
+assets/.DS_Store
