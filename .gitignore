@@ -6,3 +6,4 @@ Gemfile.lock
 vendor/cache/
 .DS_Store
 assets/.DS_Store
+vendor/*

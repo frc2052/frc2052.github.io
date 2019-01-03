@@ -2,6 +2,7 @@
   /* these are custom variables for comon reuse */
   --maroon-color: #732626;
   --gold-color: #FCC20B;
+  --shaded-color: #eeeeee;
 }
 
 @font-face {
@@ -74,7 +75,7 @@ blockquote {
 }
 
 .news .card-body {
-  background-color: #eeeeee
+  background-color: var(--shaded-color, lightgray);
 }
 
 .post-title {
@@ -130,6 +131,27 @@ i.fa-arrow-circle-right {
   color: var(--maroon-color, black);
 }
 
+img.max-200 {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+ .card-kk {
+  margin: 0 30px;
+}
+
+.card-kk .card-heading {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  color: var(--gold-color, white);
+  background-color:  var(--maroon-color, black);
+}
+
+.sponsor-row {
+  margin: 0 20px 40px 20px
+}
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
@@ -173,6 +195,65 @@ hr.small {
   width: 250px;
   height: 200px;
 }
+
+.footnote {
+  font-size: 12px;
+  font-color: #eeeeee;
+}
+
+.footnote-ref {
+  font-size:70%;
+  vertical-align: super;
+  font-color: #eeeeee;
+}
+
+
+.gold-progress {
+  height: 30px;
+}
+.gold-progress .progress-bar {
+  background-color: var(--gold-color, white);
+  color: var(--maroon-color, black);
+  font-weight: 700;
+  padding-right:5px;
+  text-align: right;
+  height: 30px;
+  font-size: 18px;
+}
+
+.team-wide-photo {
+  width: 80%;
+}
+
+@media only screen and (max-width: 1200px){
+.team-wide-photo {
+  width: 100%;
+}
+}
+
+.core-value {
+ margin: 0 2px;
+}
+
+.core-value .card-heading {
+ width: 100%;
+ font-size: 22px;
+ line-height: 24px;
+ height: 80px;
+ vertical-align: middle;
+ text-align: center;
+ color: var(--gold-color, white);
+ background-color:  var(--maroon-color, black);
+}
+
+.core-value .card-body{
+  font-size:14px;
+}
+
+.progress-caption {
+  font-size: 15px;
+}
+
 
 /*------------ BEGIN: HERO, NAVIGATION AND FOOTER STYLES --------------*/
 /* Navigation Menu: change the link color */
