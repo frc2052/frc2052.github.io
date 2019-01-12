@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://team2052.com/sitemap.xml
