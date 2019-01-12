@@ -196,6 +196,14 @@ hr.small {
   height: 200px;
 }
 
+.video {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width:auto;
+  height:auto;
+}
+
 .footnote {
   font-size: 12px;
   font-color: #eeeeee;
