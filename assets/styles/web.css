@@ -204,6 +204,14 @@ hr.small {
   height:auto;
 }
 
+.photo {
+  height: auto;
+  width:100%;
+  max-width: 450px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .footnote {
   font-size: 12px;
   font-color: #eeeeee;
