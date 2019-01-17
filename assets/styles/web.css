@@ -212,6 +212,39 @@ hr.small {
   padding-right: 20px;
 }
 
+.sidenav {
+  position:fixed;
+  z-index: 1;
+  left:0px;
+  overflow-x:hidden;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--gold-color, white);
+  background-color: var(--maroon-color, black);
+  display:block;
+  margin-bottom:5px;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  color: var(--gold-color, white);
+}
+
+.main {
+  margin-left: 140px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 .footnote {
   font-size: 12px;
   font-color: #eeeeee;
@@ -222,7 +255,6 @@ hr.small {
   vertical-align: super;
   font-color: #eeeeee;
 }
-
 
 .gold-progress {
   height: 30px;
