@@ -4,7 +4,7 @@ description: FRC 2052 - Irondale Robotics Team - KnightKrawler
 logo: /assets/images/logo.png
 favicon: /assets/images/favicon.png
 baseurl: "/" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://frc2052.github.io" # the base hostname & protocol for your site
+url: "https://www.team2052.com" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
 # Social
@@ -21,9 +21,6 @@ privacy-policy: privacy-policy
 permalink: /:title
 
 
-# Google Analytics
-analytics_id: ""
-
 # Build settings
 markdown: kramdown
 
@@ -32,6 +29,7 @@ kramdown:
 
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 
 # Settings for rake task
