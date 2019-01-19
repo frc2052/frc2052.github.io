@@ -11,108 +11,127 @@ layout: default
     </div>
 </header>
 
-<div class="container">
-  {% assign psize = site.posts | size %}
-  {% if psize > 0 %}
-    <div class="card news">
-      <div class="card-heading">
+<div class="row">
+  <div class="col">
+    <div class="row">
+    <div class="container">
+      {% assign psize = site.posts | size %}
+      {% if psize > 0 %}
+      <div class="card news">
+        <div class="card-heading">
           <i class="fas fa-newspaper"></i> NEWS
-      </div>
-      {% for post in site.posts reversed %}
+        </div>
+            {% for post in site.posts reversed %}
         <div class="card-body">
           <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">
-            {{ post.title }} <i class="fas fa-arrow-circle-right"></i>
+                {{ post.title }} <i class="fas fa-arrow-circle-right"></i>
           </a></h2>
           <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
         </div>
-      {% endfor %}
-    </div>
-  {% endif %}
-
-  <div class="row justify-content-center pt-5">
-    <img class="center" src="/assets/images/logo-sm.png" />
-  </div>
-  <div class="row justify-content-center">
-    <h1 class="kk center maroon text-center">
-      Welcome to Knightkrawler!
-    </h1>
-  </div>
-  <div class="row">
-    <p>
-      We are Irondale High School's Robotics Team, FRC Team 2052. KnightKrawler is a place where
-      everyone is welcome. We turn students into professionals. We work hard to compete at the
-      highest levels of competition while doing our best to assist all teams and help everyone succeed.
-    </p>
-    <p>
-      Gracious Professionalism is one of our core values. We work to ensure everyone has success
-      in robotics.  How can we help?  <a href="/contact">Contact us<a> and let's work together to build
-      awesome robots and the next generation of engineers and business professionals.
-    </p>
-  </div>
-  <div class="row justify-content-center mt-5 mb-2">
-    <h2 class="maroon">Our King Sponsors</h2>
-  </div>
-  <div class="row ">
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/Groves.jpg" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/Medtronic.png" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/QONQR.png" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row" >
-        <img src="/assets/images/sponsors/3M.png" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/BestBuy.jpg" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/Irondale.jpg" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/SDS.jpg" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-  </div>
-  <div class="row justify-content-center">
-    <a href="/sponsors" > See all our sponsors <i class="fas fa-arrow-circle-right"></i></a>
-  </div>
-
-  <div class="row pt-5">
-      <div class="col-md-3 pt-5">
-        <img src="assets/images/ScoutingApp1-sm.png" class="mx-auto d-block img-fluid"/>
+        {% endfor %}
       </div>
-      <div class="col-md-9">
-        <p>
-          <h2 class="text-center maroon">FRC Krawler</h2>
-        </p>
-        <p>
-          <h5 class="text-center">The fully customizable scouting solution</h5>
-        </p>
-        <ul>
-          <li>A simple way to keep data event-to-event, and year-to-year.</li>
-          <li>Simultaneous scouting for more than six team members.</li>
-          <li>A user interface intuitive enough for an expert, and simple enough for a beginner.</li>
-          <li>The ability to sync via Bluetooth for use during competitions.</li>
-          <li>The ability to define the type of scouting you're doing, from match scouting to pit scouting.</li>
-          <li>The ability to search and sort data based on what was collected.</li>
-          <li>Provides the ability to back up data onto your PC.</li>
-          <li>Ability to export data into the .csv file format.</li>
-          <li>Available at no cost, for anyone and everyone!</li>
-        </ul>
-        <div class="row">
-          <div class="col-md-6">
-            <a href="https://play.google.com/store/apps/details?id=com.team2052.frckrawler" target="_blank">
-              <img src="assets/images/Google_Play_Badge.jpg" class="pl-3" />
-            </a>
+      {% endif %}
+
+    </div>
+
+  <div class="row">
+    <div class="row justify-content-center pt-5">
+      <img class="center" src="/assets/images/logo-sm.png" />
+    </div>
+    <div class="row justify-content-center">
+      <h1 class="kk center maroon text-center">
+        Welcome to Knightkrawler!
+      </h1>
+    </div>
+    <div class="row">
+      <p>
+        We are Irondale High School's Robotics Team, FRC Team 2052. KnightKrawler is a place where
+        everyone is welcome. We turn students into professionals. We work hard to compete at the
+        highest levels of competition while doing our best to assist all teams and help everyone succeed.
+      </p>
+      <p>
+        Gracious Professionalism is one of our core values. We work to ensure everyone has success
+        in robotics.  How can we help?  <a href="/contact">Contact us<a> and let's work together to build
+        awesome robots and the next generation of engineers and business professionals.
+      </p>
+    </div>
+  </div>
+
+<div class="row">
+        <div class="row justify-content-center mt-5 mb-2">
+          <h2 class="maroon">Our King Sponsors</h2>
+        </div>
+        <div class="row ">
+          <div class="col justify-content-center sponsor-row">
+            <img src="/assets/images/sponsors/Groves.jpg" class="mx-auto d-block img-fluid max-200"/>
           </div>
-          <div class="col-md-6">
-            <div class="float-right">
-              <a href="/frckrawler/" > Details <i class="fas fa-arrow-circle-right"></i></a>
+          <div class="col justify-content-center sponsor-row">
+            <img src="/assets/images/sponsors/Medtronic.png" class="mx-auto d-block img-fluid max-200"/>
+          </div>
+          <div class="col justify-content-center sponsor-row">
+            <img src="/assets/images/sponsors/QONQR.png" class="mx-auto d-block img-fluid max-200"/>
+          </div>
+          <div class="col justify-content-center sponsor-row" >
+            <img src="/assets/images/sponsors/3M.png" class="mx-auto d-block img-fluid max-200"/>
+          </div>
+          <div class="col justify-content-center sponsor-row">
+            <img src="/assets/images/sponsors/BestBuy.jpg" class="mx-auto d-block img-fluid max-200"/>
+          </div>
+          <div class="col justify-content-center sponsor-row">
+            <img src="/assets/images/sponsors/Irondale.jpg" class="mx-auto d-block img-fluid max-200"/>
+          </div>
+          <div class="col justify-content-center sponsor-row">
+            <img src="/assets/images/sponsors/SDS.jpg" class="mx-auto d-block img-fluid max-200"/>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <a href="/sponsors" > See all our sponsors <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+  </div>
+
+
+<div class="row">
+  <div class="col">
+          <div class="row pt-5">
+          <div class="col-md-3 pt-5">
+            <img src="assets/images/ScoutingApp1-sm.png" class="mx-auto d-block img-fluid"/>
+          </div>
+          <div class="col-md-9">
+            <p>
+              <h2 class="text-center maroon">FRC Krawler</h2>
+            </p>
+            <p>
+              <h5 class="text-center">The fully customizable scouting solution</h5>
+            </p>
+            <ul>
+              <li>A simple way to keep data event-to-event, and year-to-year.</li>
+              <li>Simultaneous scouting for more than six team members.</li>
+              <li>A user interface intuitive enough for an expert, and simple enough for a beginner.</li>
+              <li>The ability to sync via Bluetooth for use during competitions.</li>
+              <li>The ability to define the type of scouting you're doing, from match scouting to pit scouting.</li>
+              <li>The ability to search and sort data based on what was collected.</li>
+              <li>Provides the ability to back up data onto your PC.</li>
+              <li>Ability to export data into the .csv file format.</li>
+              <li>Available at no cost, for anyone and everyone!</li>
+              <   /ul>
+              <div class="row">
+                <div class="col-md-6">
+                <a href="https://play.google.com/store/apps/details?id=com.team2052.frckrawler" target="_blank">
+                  <img src="assets/images/Google_Play_Badge.jpg" class="pl-3" />
+                </a>
+                </div>
+                <div class="col-md-6">
+                  <div class="float-right">
+                    <a href="/frckrawler/" > Details <i class="fas fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  <div class="col-es">
+    <a class="twitter-timeline" href="https://twitter.com/Team2052?ref_src=twsrc%5Etfw">Tweets by Team2052</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 </div>
