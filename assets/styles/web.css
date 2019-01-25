@@ -380,4 +380,7 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
+.big_indent {
+    margin-left: 4.5rem!important;
+}
 /* END Special browser stuff */
