@@ -101,12 +101,26 @@ i.fa-arrow-circle-right {
   vertical-align: top;
   padding-top: .5em;
   padding-bottom: .5em;
+  text-align: center;
+  color: var(--maroon-color, black);
 }
 .glossary-definition {
-  padding-right: 10px;
   vertical-align: top;
   padding-top: .5em;
   padding-bottom: .5em;
+}
+
+.hangingindent {
+  padding-left: 40px;
+  text-indent: -30px;
+}
+
+.topline {
+  border-top: 1px solid var(--maroon-color, black);
+}
+
+.bottomline {
+  border-bottom: 1px solid var(--maroon-color, black);
 }
 
 .faq-q {

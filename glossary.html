@@ -8,9 +8,11 @@ permalink: /glossary/
   <table class="glossary">
   {% for def in site.data.terms %}
     <tr>
-      <td class="glossary-term"><a name="{{ def.link }}" />{{ def.term }}</td>
+      <td class="glossary-term topline"><a name="{{ def.link }}" />{{ def.term }}</td>
+    </tr>
+    <tr>
+      <td class="glossary-definition hangingindent bottomline">{{ def.definition }}</td>
       <td> &nbsp; </td>
-      <td class="glossary-definition">{{ def.definition }}</td>
     </tr>
   {% endfor %}
   <table>
