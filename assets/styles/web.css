@@ -380,7 +380,16 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
+/* END Special browser stuff */
 .big_indent {
     margin-left: 4.5rem!important;
 }
-/* END Special browser stuff */
+.bigger_indent {
+    margin-left: 12rem!important;
+}
+.bigger_indent_right {
+    margin-right: 12rem!important;
+}
+.red {
+  color:red;
+}
