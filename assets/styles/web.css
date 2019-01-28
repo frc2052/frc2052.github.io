@@ -111,8 +111,8 @@ i.fa-arrow-circle-right {
 }
 
 .hangingindent {
-  padding-left: 20px;
-  text-indent: -25px;
+  padding-left: 30px;
+  text-indent: -35px;
 }
 
 .topline {
@@ -560,6 +560,7 @@ footer .copyright {
   text-align: center;
   margin-bottom: 10;
   color: var(--maroon-color, black);
+  padding-top: 10px;
 }
 /*------------ END: HERO, NAVIGATION AND FOOTER STYLES --------------*/
 
