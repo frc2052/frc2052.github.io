@@ -205,9 +205,81 @@ hr.small {
 }
 
 .memberPhotos {
-  padding-top: 10px;
-  width: 250px;
-  height: 200px;
+  padding-top:10px;
+  width:250px;
+  height:200px;
+}
+
+.video {
+  padding-top:10px;
+  padding-left:5px;
+  padding-right:5px;
+  width:auto;
+  height:auto;
+}
+
+.photo {
+  height: auto;
+  width:100%;
+  max-width:450px;
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gameVideo {
+  height: auto;
+  width:auto;
+  padding-left:5px;
+}
+
+.robotPhoto {
+  height: 300px;
+  width:auto;
+  padding-bottom: 30px;
+}
+
+.sidenav {
+  z-index: 1;
+  left:0px;
+  overflow-x:hidden;
+  position:absolute;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--gold-color, white);
+  background-color: var(--maroon-color, black);
+  display:block;
+  margin-bottom:5px;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  color: var(--gold-color, white);
+}
+
+.main {
+  margin-top: 100px;
+  margin-left: 30px;
+  padding: 0px 10px;
+}
+
+@media (max-width: 767px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+.gameDescription {
+  font-size:15px;
 }
 
 .footnote {
@@ -220,7 +292,6 @@ hr.small {
   vertical-align: super;
   font-color: #eeeeee;
 }
-
 
 .gold-progress {
   height: 30px;
@@ -266,6 +337,145 @@ hr.small {
 
 .progress-caption {
   font-size: 15px;
+}
+
+.dropbtn {
+  background-color: var(--maroon-color, black);
+  color: white;
+  padding: 16px;
+  margin-top: 30px;
+  font-size: 20px;
+  border: none;
+  width: 200px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown-content {
+  display: inline-block;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu-center {
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
+}
+
+.dropdown-content a {
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: var(--maroon-color, black); color:var(--gold-color, white);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: var(--gold-color, white);}
+
+.banner {
+  font-family: "Roboto",sans-serif;
+  font-size: 14px;
+  background:#0f4bcb;
+  color:white;
+  height:170px;
+  width:140px;
+  line-height:1.2;
+  margin:0 0 40px;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 30px;
+  position:relative;
+  text-align:center;
+  vertical-align:top;
+  white-space:normal;
+}
+
+.banner img{
+  margin-bottom:10px;
+  margin-top:10px;
+  width:75px;
+  max-height:45px
+  }
+
+.banner:after{
+  content:'';
+  position:absolute;
+  display:block;
+  border:70px solid #0f4bcb;
+  border-top-width:5px;
+  border-bottom:20px
+  transparent solid;
+  top:100%;
+  left:0
+}
+
+.banner .award-name,.banner .award-name-long{
+  display:table;
+  width:100%;
+  height:35px;
+  font-weight:bold;
+  margin:0;
+  margin-top:3px;
+  margin-bottom:3px
+}
+
+.banner .award-name span,.banner .award-name-long span{
+  display:table-cell;
+  vertical-align:middle;
+  font-style:italic;
+  text-transform:uppercase
+}
+
+.banner .award-name-long span{
+  font-size:85%
+}
+
+.banner .award-event,.banner .award-event-long{
+  display:table;
+  text-transform:uppercase;
+  height:50px;
+  width:100%
+}
+
+.banner .award-event span,.banner .award-event-long span{
+  display:table-cell;
+  vertical-align:middle;
+  max-width:124px;
+  text-overflow:ellipsis;
+  overflow:hidden
+}
+
+.banner .award-event{
+  font-size:85%;
+  line-height:130%
+}
+
+.banner .award-event-long{
+  font-size:75%;
+  line-height:110%
+}
+
+.banner, .banner:after{
+  -webkit-filter:drop-shadow(0 5px 5px rgba(0,0,0,0.1));
+  filter:drop-shadow(0 5px 5px rgba(0,0,0,0.1))
 }
 
 
@@ -394,7 +604,16 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
+/* END Special browser stuff */
 .big_indent {
     margin-left: 4.5rem!important;
 }
-/* END Special browser stuff */
+.bigger_indent {
+    margin-left: 12rem!important;
+}
+.bigger_indent_right {
+    margin-right: 12rem!important;
+}
+.red {
+  color:red;
+}
