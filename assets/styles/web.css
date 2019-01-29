@@ -600,6 +600,35 @@ img::-moz-selection {
 .bigger_indent_right {
     margin-right: 12rem!important;
 }
-.red {
-  color:red;
+@media only screen and (max-width: 767px) {
+  .big_indent {
+      margin-left: 1rem!important;
+  }
+  .bigger_indent {
+      margin-left: 1rem!important;
+  }
+  .bigger_indent_right {
+      margin-right: 1rem!important;
+  }
+}
+.big_drop {
+  margin-top:8rem!important;
+}
+.auto-resize-landscape {
+height: 150px;
+}
+@media only screen and (max-width: 767px) {
+  .auto-resize-landscape {
+  height: 80px;
+  }
+}
+.youtube {
+width: 560px;
+height: 315px;
+}
+@media only screen and (max-width: 767px) {
+  .youtube {
+  width: 280px;
+  height: 157.5px;
+  }
 }
