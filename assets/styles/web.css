@@ -412,8 +412,15 @@ hr.small {
   margin-bottom:10px;
   margin-top:10px;
   width:75px;
-  max-height:45px
+  max-height:45px;
   }
+
+.bannerstate {
+  margin-bottom:0px!important;
+  margin-top:10px;
+  width:80px!important;
+  max-height:70px!important;
+}
 
 .banner:after{
   content:'';
@@ -476,6 +483,11 @@ hr.small {
 .banner, .banner:after{
   -webkit-filter:drop-shadow(0 5px 5px rgba(0,0,0,0.1));
   filter:drop-shadow(0 5px 5px rgba(0,0,0,0.1))
+}
+
+.statepadding {
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
 }
 
 
