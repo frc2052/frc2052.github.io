@@ -101,12 +101,26 @@ i.fa-arrow-circle-right {
   vertical-align: top;
   padding-top: .5em;
   padding-bottom: .5em;
+  text-align: center;
+  color: var(--maroon-color, black);
 }
 .glossary-definition {
-  padding-right: 10px;
   vertical-align: top;
   padding-top: .5em;
   padding-bottom: .5em;
+}
+
+.hangingindent {
+  padding-left: 30px;
+  text-indent: -35px;
+}
+
+.topline {
+  border-top: 1px solid var(--maroon-color, black);
+}
+
+.bottomline {
+  border-bottom: 1px solid var(--maroon-color, black);
 }
 
 .faq-q {
@@ -398,8 +412,15 @@ hr.small {
   margin-bottom:10px;
   margin-top:10px;
   width:75px;
-  max-height:45px
+  max-height:45px;
   }
+
+.bannerstate {
+  margin-bottom:0px!important;
+  margin-top:10px;
+  width:80px!important;
+  max-height:70px!important;
+}
 
 .banner:after{
   content:'';
@@ -462,6 +483,11 @@ hr.small {
 .banner, .banner:after{
   -webkit-filter:drop-shadow(0 5px 5px rgba(0,0,0,0.1));
   filter:drop-shadow(0 5px 5px rgba(0,0,0,0.1))
+}
+
+.statepadding {
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
 }
 
 
@@ -546,6 +572,7 @@ footer .copyright {
   text-align: center;
   margin-bottom: 10;
   color: var(--maroon-color, black);
+  padding-top: 10px;
 }
 /*------------ END: HERO, NAVIGATION AND FOOTER STYLES --------------*/
 
