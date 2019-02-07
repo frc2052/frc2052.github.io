@@ -4,13 +4,13 @@ permalink: /glossary/
 ---
 
 <div class="container mt-5">
-  <h1 class="kk">Glossary</h1>
+  <h1 class="kk text-center">Glossary</h1>
   <table class="glossary">
   {% for def in site.data.terms %}
     <tr>
-      <td class="glossary-term"><a name="{{ def.link }}" />{{ def.term }}</td>
-      <td> &nbsp; </td>
-      <td class="glossary-definition">{{ def.definition }}</td>
+      <td class="glossary-definition hangingindent">
+        <a name="{{ def.link }}" />
+        <span class="glossary-term">{{ def.term }}</span> : {{ def.definition }}</td>
     </tr>
   {% endfor %}
   <table>
