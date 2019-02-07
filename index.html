@@ -10,6 +10,24 @@ layout: default
     </div>
 </header>
 
+<div>
+  <button type="button" data-toggle="modal" data-target="twitter">open</button>
+</div
+
+<div class="modal" id="twitter" tabindex="-1" role="dialog" aria-labelledby="twitterBlock" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout modal-sm" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5> Twitter </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">x</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   {% assign psize = site.posts | size %}
   {% if psize > 0 %}
