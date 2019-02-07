@@ -663,3 +663,13 @@ height: 315px;
   height: 157.5px;
   }
 }
+
+/* sideSlider */
+@media (max-width: 576px) { .model-dialog .modal-dialog-slideout {
+  width: 80%;
+  }}
+.modal-dialog-slideout {
+  min-height: 100%;
+  margin: 0 auto 0 0;
+  background: #fff;
+}
