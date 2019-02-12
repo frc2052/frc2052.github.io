@@ -689,3 +689,38 @@ height: 315px;
 .modal-dialog-slideout .modal-content {
   border: 0;
 }
+
+.modal {
+  height: 600px;
+}
+
+.fixedheader {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.closingx {
+  padding: 15px!important;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.margin {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.twitterbutton {
+  background-color: var(--maroon-color, black);
+  padding-top: 10px;
+}
+
+.twittertext {
+  color: white;
+}
+
+.twittertext:hover {
+  color: var(--gold-color, white);
+}
