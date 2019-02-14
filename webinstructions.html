@@ -1,0 +1,232 @@
+---
+layout: default
+permalink: /webinstructions/
+---
+
+<div class="container mt-5">
+  <h1 class="kk">Website Instructions</h1>
+  <br/>
+  <div>
+    <h2 class="maroon">Setup</h2>
+    <p>Our website uses Jekyll, a simple, static, and blog aware site generator. First, you must install Jekyll and Ruby (the language Jekyll is written in).</p>
+    <!--Beginning of dropdowns-->
+    <div class="container">
+      <div class="panel-group" id="accordion">
+        <!--Panel 1 Start-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Installing on Windows<i class="fas fa-arrow-down gold"></i></a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>
+                Although Windows is not an officially supported platform of Jekyll, it is still possible to install it and use it to run a website. Go to <a href="https://jekyllrb.com/docs/installation/windows/" target="_blank">this</a> site and scroll down to ‘Installation via Bash on Windows 10.’ It will first lead you to <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target=_blank>this</a> site, follow the instructions by opening Powershell as an administrator, enter the line of code, and then restart your computer when prompted. After that, install one of the Linux distributions listed on the site. We’ve been successful with using Ubuntu, but you’re welcome to try a different one. You must initialize your distro at least once, do so in Ubuntu by opening it up and creating an account.
+              </p>
+              <p>
+                Next, open a command prompt and type ‘bash,’ which will switch you to a bash instance. Then, you must update your repo list and packages; type in the code in the second terminal to do so. After that, install Ruby by entering the code in the third terminal. (Note: enter the lines of code separately) From there, update your Ruby gems with the line in the fourth terminal, and then install Jekyll with the line in the fifth terminal.
+              </p>
+              <p>
+                While the Jekyll site says we don’t have much left to do, we actually have to do a few more steps for it to work. First, go to the <a href="https://github.com/frc2052/frc2052.github.io" target="_blank">Github repository</a> for our current website. Click ‘Clone or Download’ and copy the URL. Next, create a new Github repository for your own website. One the ‘Code’ tab of your repository, scroll down and click ‘Import Code.’ Paste the copied URL and wait for it to import. Once that is complete, click ‘Clone or Download’ once again on your repository and copy the URL. From there, open your documents folder (or whatever place you want the site to be located) and open a command prompt. Enter ‘git clone’ and then paste the URL. Once that is done, switch to a bash instance and enter:
+              </p>
+              <br/>
+              <p>
+                sudo apt-get install zlib1g-dev
+                <br/>
+                bundle update
+                <br/>
+                bundle exec Jekyll serve
+              </p>
+              <br/>
+              <p>
+                Your site should now be running. Copy the site address and paste it into a browser to see it and any changes you’ve made.
+              </p>
+              <br/>
+              <p>
+                <b>Other Helpful Programs:</b>
+              </p>
+              <ol>
+                <li><b>TortoiseGit:</b> TortoiseGit is a Windows Shell Interface to Git and is based on TortoiseSVN. It is an easy to use program that can do things such as commit changes, show logs, create branches and more. (Note: TortoiseGit is only available for Windows users)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!--Panel 1 End-->
+        <!--Panel 2 Start-->
+        <div class="panel panel-default pt-4">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Installing on macOS<i class="fas fa-arrow-down gold"></i></a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>
+                Though Jekyll does work on Windows, the preferred operating system is macOS. Follow <a href="https://jekyllrb.com/docs/installation/macos/#set-up-ruby-included-with-the-os" target="_blank">this</a> link for a step-by-step instruction guide on macOS setup.
+              </p>
+              <p>
+                While the Jekyll site says we don’t have much left to do, we actually have to do a few more steps for it to work. First, go to the <a href="https://github.com/frc2052/frc2052.github.io" target="_blank">Github repository</a> for our current website. Click ‘Clone or Download’ and copy the URL. Next, create a new Github repository for your own website. One the ‘Code’ tab of your repository, scroll down and click ‘Import Code.’ Paste the copied URL and wait for it to import. Once that is complete, click ‘Clone or Download’ once again on your repository and copy the URL. From there, open your documents folder (or whatever place you want the site to be located) and open a command prompt. Enter ‘git clone’ and then paste the URL. (Note: the fewer folders you need to go through to reach your code, the better. This will make it simpler to run your code for local testing).
+              </p>
+              <p>
+                Before you start, we suggest installing the program “Sourcetree.” This is the program we use on Mac to connect our code to GitHub. Click <a href="https://www.sourcetreeapp.com/" target="_blank">here</a> to install Sourcetree. Once it is installed, open the folder your website is held in on your computer. Now you can use Sourcetree to commit, push, and pull your code to and from GitHub. This will automatically update your code in Atom every time you pull. To create pull requests, which add your code to your website, use the GitHub website.
+            </div>
+          </div>
+        </div>
+        <!--Panel 2 End-->
+        <!--Panel 3 Start-->
+        <div class="panel panel-default pt-4">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Begin Coding<i class="fas fa-arrow-down gold"></i></a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>
+                Now you have the website running, but no way to actually change it. First, you need to get a code editor. We use <a href="https://atom.io/" target="_blank">Atom</a>. (Note: The following instructions will be geared towards using Atom, and it may be different for the code editor you’re using.) Once it is installed, open it and then choose ‘Open Folder’ and select your site. Now you’re ready to start coding! (Note: You may want to create another branch to work on. If you work on master, any changes you make will immediately show up on your website if it is public.)
+              </p>
+              <br/>
+              <p>
+                <b>How to view local changes on Windows:</b>
+              </p>
+              <ol>
+                <li>Open a command line prompt and type “bundle exec Jekyll serve” then hit enter.</li>
+                <li>Your site should now be running. Copy the site address and paste it into a browser to see any changes you’ve made.</li>
+              </ol>
+              <br/>
+              <p>
+                <b>How to view local changes on macOS:</b>
+              </p>
+              <ol>
+                <li>Open terminal and change directories to your code’s folder.<br/>
+                Example: cd documents → cd frc2052.github.io</li>
+                <li>Now type “jekyll serve” in terminal to run your code</li>
+                <li>Open your web browser and type the address of Jekyll’s built-in server “127.0.0.1:4000” into the URL bar. <br/> As long as your terminal is running, when you refresh this web page it will update to your local code in Atom</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!--Panel 3 End-->
+      </div>
+    </div>
+    <!--End of dropdowns-->
+  </div>
+  <br/>
+  <div>
+    <h2 class="maroon mt-4">Changing the Site</h2>
+
+    <!--Beginning of dropdowns-->
+  <div class="container">
+    <div class="panel-group" id="accordion"><!--Panel 4 Start-->
+    <div class="panel panel-default">
+      <div class="panel-heading mt-3">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Changing Colors<i class="fas fa-arrow-down gold"></i></a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>
+            <b>To change the color of a specific word or string of text, use the “span” tag:</b>
+          </p>
+          <img class="pb-4" width="400" src="/assets/images/span.png">
+          <p>
+            <b>You can also change the color with a CSS style following these steps:</b>
+          </p>
+          <ol>
+            <li class="pb-4">
+              To change the color using a CSS style, add it to a class in your style sheet like this:<br/>
+              <img class="pb-3 pt-3" width="300" src="/assets/images/root_class.jpg"><br/>
+              <ul>
+                <li><b>Circled in white:</b> “--maroon-color” gives a name to the color value “#732626”</li>
+                <li><b>Circled in pink:</b> “#eeeeee” is the color’s value. There are many ways to find a color’s value, but one of the easiest ways is to find a hex color tool online. <a href="https://htmlcolorcodes.com/" target="_blank" class="maroon"><u>Here</u><a> is a simple HTML color picker.</li>
+              </ul>
+            </li>
+            <li class="pb-4">
+              Then, you can reference these color values & add them to your other classes:<br/>
+              <img class="pb-3 pt-3" width="400" src="/assets/images/maroon_class.jpg">
+              <ul>
+                <li><b>Circled in teal:</b> “.maroon” creates a new style class</li>
+                <li><b>Circled in lime:</b> “color” states that the following attribute will change the color</li>
+                <li><b>Circled in white:</b> “--maroon-color” references the name of the value from the “:root” style class (first picture)</li>
+                <li><b>Circled in yellow:</b> “black” states that the maroon color will be in place of black, the default dark color</li>
+              </ul>
+            </li>
+            <li>
+              Incorporate these colors into your HTML code for text by adding it to a class attribute:<br/>
+              <img class="pt-3" width="550" src="/assets/images/maroon_use.jpg"><br/>
+              <ul>
+                <li><b>Circled in teal:</b> “maroon” sets the class to the “.maroon” CSS class from the second picture</li>
+                <li><b>Circled in lavender:</b> “class” states that the following attributes are classes</li>
+                <li>The same can be done for a header or background. Just create a CSS class and add the attribute as a class in the start tag of what you want to change </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <!--Panel 4 End-->
+    <!--Panel 5 End-->
+    <div class="panel panel-default pt-4">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Using Images<i class="fas fa-arrow-down gold"></i></a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>
+            To add or change an image, download your chosen image and move it to the ‘Assets’ folder of the website and then to the ‘Images’ folder within it. Now, add your image with an image tag.
+            This example is for an image named “dog.jpg” that is found in the “images” folder inside the “assets” folder within the folder that holds your website:
+            <img class="pt-3" width="400" src=/assets/images/doglocation.png>
+            <!--
+            <a href="https://www.team2052.com/" target=”_blank”>
+              <img src="/assets/images/dog.jpg" class=”memberPhotos” height=”150”/>
+            </a>-->
+          </p>
+          <p>
+            You can also change the image’s height and width, add an href, or set it to a specific CSS class:
+          </p>
+          <img class="pb-3" width="700" src=/assets/images/doglocationlink.png>
+          <p>
+            This code would display the image “dog.jpg” (found in the images folder within the assets folder) with attributes of the CSS class “memberPhotos” and a height of 150 pixels. When clicked, it will open the website "https://www.team2052.com" in a new tab (target=”_blank”).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Panel 5 End-->
+    <!--End of dropdowns-->
+    </div>
+  </div>
+  <div>
+    <h2 class="maroon mt-4">Resources</h2>
+    <ul>
+      <li><a href="https://jekyllrb.com/docs/installation/windows/" target="_blank">Jekyll <b>Windows installation</b> guide</a></li>
+      <li><a href="https://jekyllrb.com/docs/installation/macos/#set-up-ruby-included-with-the-os" target="_blank">Jekyll <b>macOS installation</b> guide</a></li>
+      <li><a href="https://jekyllrb.com/" target="_blank">The <b>Jekyll</b> website</a></li>
+      <li><a href="https://www.sourcetreeapp.com/" target="_blank"><b>Sourcetree</b> (for mac)</a></li>
+      <li><a href="https://github.com/frc2052/frc2052.github.io" target="_blank">Our <b>GitHub</b> repository</a></li>
+      <li><a href="https://atom.io/" target="_blank"><b>Atom</b> for text editing</a></li>
+      <li><a href="https://tortoisegit.org/" target="_blank"><b>TortiseGit</b> (for Windows)</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+<!--
+<div class="panel panel-default pt-4">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Installing on Windows<i class="fas fa-arrow-down gold"></i></a>
+    </h4>
+  </div>
+  <div id="collapse3" class="panel-collapse collapse">
+    <div class="panel-body">
+
+    </div>
+  </div>
+</div>
+  -->
