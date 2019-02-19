@@ -10,26 +10,6 @@ layout: default
     </div>
 </header>
 
-<!--
-<div>
-  <button type="button" data-toggle="modal" data-target="twitter">open</button>
-</div
-
-<div class="modal" id="twitter" tabindex="-1" role="dialog" aria-labelledby="twitterBlock" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-slideout modal-sm" role="document">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5> Twitter </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">x</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
--->
-
 <div class="container">
   {% assign psize = site.posts | size %}
   {% if psize > 0 %}
@@ -72,6 +52,13 @@ layout: default
     <div class="col col-sm-12 col-md-6">
       <h2 class="maroon">KnightKrawler's Top 10 Tips</h2>
       <p>Click <a href="/top10">here</a> for information on what to do and look for at a 2019 <a href="/glossary/#frc" target="_blank">FRC</a> competition!</p>
+<!--
+        <div class="row">
+          <button class="center margin twitterbutton" type="button" data-toggle="modal" data-target="#twitter">
+            <h5 class="twittertext text-center"> Check Out Our Twitter! </h5>
+          </button>
+        </div>
+-->
     </div>
     <div class="col-sm-12 col-md-5 center">
       <iframe class="youtube center" src="https://www.youtube.com/embed/Mew6G_og-PI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
