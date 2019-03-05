@@ -662,3 +662,64 @@ height: 315px;
   height: 157.5px;
   }
 }
+
+/* sideSlider */
+@media (max-width: 576px) { .model-dialog .modal-dialog-slideout {
+  width: 80%;
+  }}
+
+.modal-dialog-slideout {
+  min-height: 100%;
+  margin: 0 auto 0 0;
+  background: #fff;
+}
+
+.modal .fade .modal-dialog .modal-dialog-slideout {
+  -webkit-transform: translate(-100%,0);
+  transform: translate(-100%,0);
+}
+
+.modal .fade .show .modal-dialog .modal-dialog-slideout {
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+  flex-flow: column;
+}
+
+.modal-dialog-slideout .modal-content {
+  border: 0;
+}
+
+.modal {
+  height: 600px;
+}
+
+.fixedheader {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.closingx {
+  padding: 15px!important;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.margin {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.twitterbutton {
+  background-color: var(--maroon-color, black);
+  padding-top: 10px;
+}
+
+.twittertext {
+  color: white;
+}
+
+.twittertext:hover {
+  color: var(--gold-color, white);
+}
