@@ -22,7 +22,7 @@ layout: default
           <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">
             {{ post.title }} <i class="fas fa-arrow-circle-right"></i>
           </a></h2>
-          <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 16 }}</p>
         </div>
       {% endfor %}
     </div>
