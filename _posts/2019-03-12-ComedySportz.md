@@ -6,7 +6,6 @@ permalink: /2019-Comedy-Sportz/
 ---
 Join the KnightKrawler's Bake Sale and see a great show with ComedySportz on Friday, April 12!
 <br>
-
 <img src="/assets/images/comedysportspage1.png"/>
 <img src="/assets/images/comedysportspage2.png"/>
 <img src="/assets/images/csbakesale.png"/>
