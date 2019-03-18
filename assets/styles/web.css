@@ -86,6 +86,11 @@ blockquote {
 
 }
 
+.results-padding{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 i.fa-arrow-circle-right {
   color: var(--maroon-color, black);
 }
