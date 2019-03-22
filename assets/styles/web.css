@@ -728,3 +728,7 @@ height: 315px;
 .twittertext:hover {
   color: var(--gold-color, white);
 }
+
+a:link {
+  text-decoration: none;
+}
