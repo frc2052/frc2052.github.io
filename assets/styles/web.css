@@ -86,6 +86,10 @@ blockquote {
 
 }
 
+.highlight {
+  background-color: rgba(0,0,0,.5);
+}
+
 .results-padding{
   padding-bottom: 10px;
   padding-top: 10px;
