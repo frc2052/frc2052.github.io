@@ -1,7 +1,7 @@
 :root {
   /* these are custom variables for comon reuse */
-  --maroon-color: #468ACE;
-  --gold-color: orange;
+  --maroon-color: #732626;
+  --gold-color: #FCC20B;
   --shaded-color: #eeeeee;
 }
 
@@ -512,7 +512,7 @@ hr.small {
 }
 /* Navigation Menu: change the dropdown menu */
 .nav-dropdown-custom {
-    background-color: rgb(6, 47, 88);
+    background-color: #602020;
 }
 /* Navigation Menu: change the link color */
 .nav-dropdown-custom .dropdown-item {
@@ -523,7 +523,7 @@ hr.small {
 .nav-dropdown-custom .dropdown-item:focus,
 .nav-dropdown-custom .dropdown-item:hover {
     color: var(--gold-color, white);
-    background-color: rgb(6, 47, 88);
+    background-color: #602020;
 }
 
 /* Hero banner on home page */
@@ -540,7 +540,7 @@ hr.small {
 .intro-header .site-heading {
   padding: 100px 0 0;
   text-align: center;
-  color: white;
+  color: var(--gold-color, white);
 }
 /* if the page is more than 1000px wide, change top padding */
 @media only screen and (min-width: 1000px) {
