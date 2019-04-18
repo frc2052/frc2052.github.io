@@ -733,10 +733,6 @@ height: 315px;
   color: var(--gold-color, white);
 }
 
-a:link {
-  text-decoration: none;
-}
-
 .linkbutton {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
