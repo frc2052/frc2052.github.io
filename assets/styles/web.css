@@ -776,6 +776,17 @@ height: 315px;
   display: block;
   width: 80%;
   max-width: 1500px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.modal-content-members {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -784,16 +795,10 @@ height: 315px;
   display: block;
   width: 80%;
   max-width: 700px;
+  height: 150px;
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
