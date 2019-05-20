@@ -77,8 +77,14 @@ permalink: /team/
     <div class="row">
       <div class="col justify-content-center">
         <p class="text-center">
-          <img src="/assets/images/TeamPhoto.jpg" class="team-wide-photo mt-4" >
+          <img src="/assets/images/TeamPhoto.jpg" class="team-wide-photo mt-4 image-highlight" alt="KnightKrawler Team - 2019" onclick="showModal('myModal', '/assets/images/TeamPhoto.jpg', 'KnightKrawler Team - 2019')" >
         </p>
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal('myModal')">&times;</span>
+          <img class="modal-content" id="myModalImage">
+          <div class="modal-caption" id="myModalCaption"></div>
+        </div>
+        <script type="text/javascript" src="/assets/scripts/photomodal.js?refresh=2"></script>
       </div>
     </div>
 
