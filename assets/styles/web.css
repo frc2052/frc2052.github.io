@@ -64,6 +64,11 @@ img.max-200 {
   max-height: 200px;
 }
 
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
 p {
   line-height: 1.5;
   margin: 0 0 15px 0;
@@ -104,6 +109,7 @@ img::-moz-selection {
 .auto-resize-landscape {
 height: 150px;
 }
+
 @media only screen and (max-width: 767px) {
   .auto-resize-landscape {
   height: 80px;
@@ -217,19 +223,24 @@ height: 150px;
 .big_indent {
     margin-left: 4.5rem!important;
 }
+
 .bigger_indent {
     margin-left: 12rem!important;
 }
+
 .bigger_indent_right {
     margin-right: 12rem!important;
 }
+
 @media only screen and (max-width: 767px) {
   .big_indent {
       margin-left: 1rem!important;
   }
+
   .bigger_indent {
       margin-left: 1rem!important;
   }
+
   .bigger_indent_right {
       margin-right: 1rem!important;
   }
@@ -251,12 +262,13 @@ height: 150px;
   border-radius: 0;
   padding: 15px 25px;
 }
+
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
 }
-.btn-default:hover,
-.btn-default:focus {
+
+.btn-default:hover, .btn-default:focus {
   background-color: #0085A1;
   border: 1px solid #0085A1;
   color: white;
@@ -397,17 +409,25 @@ height: 150px;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: var(--maroon-color, black); color:var(--gold-color, white);}
+.dropdown-content a:hover {
+  background-color: var(--maroon-color, black);
+  color:var(--gold-color, white);
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {color: var(--gold-color, white);}
+.dropdown:hover .dropbtn {
+  color: var(--gold-color, white);
+}
 /*END dropdown menu*/
 
 .faq-q {
   font-weight: bold;
   font-style: italic;
 }
+
 .faq-a {
   padding-left: 2em;
   padding-bottom: 10px;
@@ -452,6 +472,7 @@ height: 150px;
   background: #eeeeee;
   width: 100%;
 }
+
 .glossary-term {
   font-weight: bold;
   font-style: italic;
@@ -462,6 +483,7 @@ height: 150px;
   text-align: center;
   color: var(--maroon-color, black);
 }
+
 .glossary-definition {
   vertical-align: top;
   padding-top: .5em;
@@ -479,6 +501,7 @@ height: 150px;
 .gold-progress {
   height: 30px;
 }
+
 .gold-progress .progress-bar {
   background-color: var(--gold-color, white);
   color: var(--maroon-color, black);
@@ -515,32 +538,38 @@ height: 150px;
   -o-background-size: cover;
   margin-bottom: 50px;
 }
+
 .intro-header .site-heading {
   padding: 100px 0 0;
   text-align: center;
   color: var(--gold-color, white);
 }
+
 /* if the page is more than 1000px wide, change top padding */
 @media only screen and (min-width: 1000px) {
   .intro-header .site-heading {
     padding: 150px 0;
   }
 }
+
 .intro-header .site-heading h1 {
   font-size: 50px;
   padding: 150px 0 0;
   font-family: Knightkrawler;
 }
+
 .intro-header .site-heading h2 {
   font-size: 25px;
   font-family: Knightkrawler;
 }
+
 /* if the page is more than 1000px wide, change font sizes */
 @media only screen and (min-width: 1000px) {
   .intro-header .site-heading h1 {
     font-size: 80px;
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .intro-header .site-heading h2 {
     font-size: 40px;
@@ -850,12 +879,4 @@ height: 315px;
   width: 280px;
   height: 157.5px;
   }
-}
-
-
-
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
 }
