@@ -76,9 +76,13 @@ permalink: /team/
 
 
     <script type="text/javascript">
-      $('.progress-bar').css("width",function() {
-        return $(this).attr("aria-valuenow") + "%";
-      })
+      $('.progress-bar').css("width", "0%");
+
+      setTimeout (function() {
+        $('.progress-bar').css("width",function() {
+          return $(this).attr("aria-valuenow") + "%";
+        });
+      }, 1);
     </script>
 
     <div class="row">
