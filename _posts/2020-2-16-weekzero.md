@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2020 Centurion-KnightKrawler Week Zero
-date: 2020-12-16
+date: 2020-1-1
 permalink: /2020-week-zero/
 ---
 
@@ -32,7 +32,7 @@ All teams are also eligible for a $10 discount on their registration fee if they
 
 **Field element auction:** Some field elements may be available for auction. Highest bidders will go home with extra loading/scoring elements. Silent Auction bidding sheet will be available at the raffle table. Proceeds help to fund field construction.
 
-#### Registration will open soon. Please check back again after Kickoff!
+#### [*Register here!*{: style="color: maroon"}]( https://forms.gle/6n7oD1nKqQryT3rw5)
 
 After completing the registration form, you will receive a confirmation email from Team 2052.
 
