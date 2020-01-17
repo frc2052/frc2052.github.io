@@ -1,7 +1,7 @@
 link,term,definition
 "80-20","80-20","A type of structural metal that has grooves on all four sides. Used mostly for mounting support."
 "archimedes","Archimedes","One of the Divisions at the Detroit FRC Championship."
-"autonomous","Autonomous","Also known as ""Auto."" It is the first 15 seconds of the match when the robots are completely driverless, running on pre-programmed instructions. This was used prior to 2019."
+"autonomous","Autonomous","Also known as ""Auto."" It is the first 15 seconds of the match when the robots are completely driverless, running on pre-programmed instructions. This was not used in 2019. "
 "bagday","Bag Day","The end of build season where teams bag their robot. Also called Stop Build (See ""Stop Build"") Only used prior to 2020."
 "bluealliance","Blue Alliance","The website that collects FRC stats, including live tournament data (www.thebluealliance.com)."
 "buildseason","Build Season","The six week period of time that begins at ""kickoff"" and ends on ""stop build"" day. Starting in 2020, build season goes until the first competition."
@@ -37,7 +37,7 @@ link,term,definition
 "omnimecanum","Omni-Mecanum","A type of wheel that allows the robot to move sideways."
 "pok","POK","Parents of KnightKrawler. This is the wonderful group that helps the team and builds the field for Week Zero. POK is a play on the acronym KOP (See ""KOP"")."
 "raspberrypi","Raspberry Pi","A mini computer."
-"sandstorm","Sandstorm","The first 15 seconds of the match. Robots can be autonomous (see ""Autonomous"") or camera operated. Used in 2019."
+"sandstorm","Sandstorm","The first 15 seconds of the match. Robots can be autonomous (see ""Autonomous"") or camera operated. Only used in 2019."
 "scouting","Scouting","Watching and analyzing other teams during competitions to collect data for team selection. We use our app FRC Krawler."
 "stopbuild","Stop Build","The last day teams are allowed to work on their robot during the 6 week build period, after which, they must put their robot in a bag until their first competition. Used prior to 2020."
 "strategy","Strategy","Planning for optimal performance in competition and alliance selection."
