@@ -18,7 +18,7 @@ We will offer unofficial robot inspections by trained inspectors (including a tr
 **Who:** Any FRC Team (registration is capped at 30 teams)
 
 **Where:** Irondale High School – 2425 Long Lake Road, New Brighton, MN 55112.
-  <a class="a:link" href="/assets/images/WeekZeroMapToIrondale.pdf" target="_blank"><button type="button" class="linkbutton center"><font class="kk" size="4">Parking Map for Irondale</font></button></a>
+  <a class="a:link" href="/assets/images/WeekZeroMapToIrondale.pdf" target="_blank"><button type="button" class="linkbutton center"><font class="kk" size="4">Directions to Irondale</font></button></a>
 
 **Contact:** Email us at weekzero@team2052.com
 
@@ -43,7 +43,7 @@ Lunch information will be coming soon.
 Concessions will be available throughout the day.
 
 ## Game elements
-Once the 2020 game is announced we will post information on how we will be acquiring and using game elements at the event.
+We request that each team brings their Power Cells (balls) labeled with their team number so we have enough game elements to compete with.
 
 ## Schedule (tentative)
 This schedule is subject to change. We will announce a final schedule in the weeks leading up to the event.
