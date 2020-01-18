@@ -18,7 +18,7 @@ We will offer unofficial robot inspections by trained inspectors (including a tr
 **Who:** Any FRC Team (registration is capped at 30 teams)
 
 **Where:** Irondale High School – 2425 Long Lake Road, New Brighton, MN 55112.
-  <a class="a:link" href="/assets/images/WeekZero Map To Irondale.pdf" target="_blank"><button type="button" class="linkbutton center"><font class="kk" size="4">Parking Map for Irondale</font></button></a>
+  <a class="a:link" href="/assets/images/WeekZeroMapToIrondale.pdf" target="_blank"><button type="button" class="linkbutton center"><font class="kk" size="4">Parking Map for Irondale</font></button></a>
 
 **Contact:** Email us at weekzero@team2052.com
 
