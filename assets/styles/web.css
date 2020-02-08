@@ -18,6 +18,13 @@ body {
   -webkit-tap-highlight-color: #0085A1;
 }
 
+#countdown {
+  font-family: "KnightKrawler";
+  color: #FCC20B; /* gold */
+  text-align: center;
+  font-size: 50px;
+}
+
 @font-face {
     font-family: "Knightkrawler";
     src: url("/assets/fonts/Knightkrawler.ttf");
