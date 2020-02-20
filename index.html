@@ -29,7 +29,7 @@ layout: default
           <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">
             {{ post.title }} <i class="fas fa-arrow-circle-right"></i>
           </a></h2>
-          <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
+          <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 12 }}</p>
         </div>
       {% endfor %}
     </div>
@@ -62,19 +62,6 @@ layout: default
       <h2 class="maroon text-center">KnightKrawler's Top 10 Tips</h2>
       <p class="text-center">Check out our <a href="/2020top10">top 10 tips</a> on what to do and look for at a 2020 <a href="/glossary/#frc" target="_blank">FRC</a> competition!</p>
         <br> <br>
-
-
-
-
-
-
-
-        <h2 class="maroon text-center">Countdown to Week Zero!</h2>
-        <p id="countdown" >  </p>
-
-<script type="text/javascript" src="/assets/scripts/countdown.js?refresh=2"></script>
-
-
     </div>
 
     <div class="col-sm-12 col-md-5 center">
