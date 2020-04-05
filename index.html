@@ -1,126 +1,28 @@
 ---
-layout: default
+layout: noheader
 ---
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('assets/images/TeamPhotoDark.jpg')" onclick="showModal('myModal', '/assets/images/TeamPhoto.jpg', 'KnightKrawler Team - 2019')">
-    <div class="site-heading">
-        <h1>Knightkrawler Robotics</h1>
-        <h2>FRC Team 2052</h2>
-    </div>
+
+<header class="intro-header" >
+  <div class="site-heading" style="background-image: url('/assets/images/PitBanner.png'); padding:10px">
+    <h1 style="padding:20px 0 0 0" >Covid-19 Response</h1>
+    <h2>Knightkrawler Robotics</h2>
+    <h2>FRC Team 2052</h2>
+  </div>
 </header>
-
-<div id="myModal" class="modal">
-  <span class="close" onclick="closeModal('myModal')">&times;</span>
-  <img class="modal-content" id="myModalImage">
-  <div class="modal-caption" id="myModalCaption"></div>
-</div>
-<script type="text/javascript" src="/assets/scripts/photomodal.js?refresh=2"></script>
-
-<div class="container">
-  {% assign psize = site.posts | size %}
-  {% if psize > 0 %}
-    <div class="card news">
-      <div class="card-heading">
-          <i class="fas fa-newspaper"></i> NEWS
-      </div>
-      {% for post in site.posts reversed %}
-        <div class="card-body">
-          <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">
-            {{ post.title }} <i class="fas fa-arrow-circle-right"></i>
-          </a></h2>
-          <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 19 }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  {% endif %}
-
-  <div class="row justify-content-center pt-5">
-    <img class="center" id="hovergif" src="/assets/images/logo-large.png" height="200">
-    <script type="text/javascript" src="/assets/scripts/hovergif.js?refresh=2"></script>
-  </div>
-  <div class="row justify-content-center">
-    <h1 class="kk center maroon text-center">
-      Welcome to Knightkrawler!
-    </h1>
-  </div>
-  <div class="row">
-    <p>
-      We are Irondale High School's Robotics Team, <a href="/glossary/#frc">FRC</a> Team 2052. KnightKrawler is a place where
-      everyone is welcome and students become professionals. We work hard to compete at the
-      highest levels of competition while doing our best to assist all teams and help everyone succeed.
-    </p>
-    <p>
-      <a href="/glossary/#graciousprofessionalism">Gracious Professionalism</a> is one of our core values. We work to ensure everyone has success
-      in robotics.  How can we help?  <a href="/contact">Contact us<a> and let's work together to build
-      awesome robots and the next generation of engineers and business professionals.
-    </p>
-  </div>
-
-  <div class="row justify-content-center mt-5 mb-2">
-
-    <div class="col col-sm-12 col-md-6">
-      <h2 class="maroon text-center">KnightKrawler's Top 10 Tips</h2>
-      <p class="text-center">Check out our <a href="/2020top10">top 10 tips</a> on what to do and look for at a 2020 <a href="/glossary/#frc" target="_blank">FRC</a> competition!</p>
-        <br>
-
-      <div class="row">
-        <h2 class="maroon text-center">Northern Lights Regional Recap</h2>
-        <div class="col-sm-12 col-md-6 center text-center">
-        <p> The 2020 Northern Lights Regional took place from March 5-7 at the the Duluth Entertainment Convention Center (DECC) in Duluth, Minnesota.
-            After a couple of long days, KnightKrawler, along with their alliance partners Team 2491 NoMythic and Team 4182 Viking Robotics,
-            won the competition. KnightKrawler also won the Autonomous Award.
-        </div>
-        <div class= "col-sm-12 col-md-6">
-            <div class="banner center">
-              <img src="/assets/images/bannerIcon.svg"> </img>
-              <div class="award-name">
-                <span> Winner </span>
-              </div>
-              <div class="award-event">
-                <span> 2020 Northern Lights Regional </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="col-sm-12 col-md-5 center">
-      <iframe class="youtube center results-padding" width="853" height="480" src="https://www.youtube.com/embed/gmiYWTmFRVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      <iframe class="youtube center results-padding" width="854" height="480" src="https://www.youtube.com/embed/8a6Zm2X0jME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </div>
-  </div>
-  <div class="row justify-content-center mt-5 mb-2">
-    <h2 class="maroon">Our King Sponsors</h2>
-  </div>
-  <div class="row ">
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/Groves.jpg" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/Medtronic.png" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/QONQR.png" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/Irondale.jpg" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/EdlundManagement.png" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-    <div class="col justify-content-center sponsor-row">
-        <img src="/assets/images/sponsors/3M.png" class="mx-auto d-block img-fluid max-200"/>
-    </div>
-  </div>
-  <div class="row justify-content-center">
-    <a href="/sponsors"> See all our sponsors <i class="fas fa-arrow-circle-right"></i></a>
-  </div>
-
+<div class="container mt-5">
+  <a class="a:link" href="/home"><button type="button" class="center btn maroon btn-warning btn-lg"><font size="3">Continue to Site <i class="fas fa-arrow-circle-right"></i></font></button></a>
   <div class="row pt-5">
-    <div class="col-md-3 pt-5">
+    <div class="col-md-7">
+      <h1 class="text-center maroon">How We're Helping</h1>
+      <h5 class="text-center">To support the current need of health care workers, KnightKrawler is running a 3D printing operation to produce face shields.</h5>
+      <ul>
+        <li>Using 24 printers from 4 schools in our district</li>
+        <li>Operating 10 hours/day, 6 days/week</li>
+        <li>Rate of 1000 shields/week</li>
+        <li>Already delivered to local hospitals including Abott, St. Joseph's, and Allina</li>
+      </ul>
+    </div>
+    <div class="col-md-5 pt-5">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -129,31 +31,19 @@ layout: default
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/assets/images/ScoutingApp1-sm.png" class="mx-auto d-block img-fluid"/>
+            <img src="/assets/images/Covid1.jpg" class="mx-auto d-block img-fluid"/>
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/ScoutingApp2-sm.png" class="mx-auto d-block img-fluid"/>
+            <img src="/assets/images/Covid2.jpg" class="mx-auto d-block img-fluid"/>
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/ScoutingApp3-sm.png" class="mx-auto d-block img-fluid"/>
+            <img src="/assets/images/Covid3.jpg" class="mx-auto d-block img-fluid"/>
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/ScoutingApp4-sm.png" class="mx-auto d-block img-fluid"/>
+            <img src="/assets/images/Covid4.jpg" class="mx-auto d-block img-fluid"/>
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/ScoutingApp5-sm.png" class="mx-auto d-block img-fluid"/>
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/images/ScoutingApp6-sm.png" class="mx-auto d-block img-fluid"/>
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/images/ScoutingApp8-sm.png" class="mx-auto d-block img-fluid"/>
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/images/ScoutingApp9-sm.png" class="mx-auto d-block img-fluid"/>
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/images/ScoutingApp10-sm.png" class="mx-auto d-block img-fluid"/>
+            <img src="/assets/images/Covid5.jpg" class="mx-auto d-block img-fluid"/>
           </div>
         </div>
         <a class="carousel-control-prev maroon" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -166,35 +56,128 @@ layout: default
         </a>
       </div>
     </div>
-      <div class="col-md-9">
-        <p>
-          <h2 class="text-center maroon">FRC Krawler</h2>
-        </p>
-        <p>
-          <h5 class="text-center">The fully customizable <a href="/glossary/#scouting">scouting</a> solution</h5>
-        </p>
-        <ul>
-          <li>A simple way to keep data event-to-event, and year-to-year.</li>
-          <li>Simultaneous scouting for more than six team members.</li>
-          <li>A user interface intuitive enough for an expert, and simple enough for a beginner.</li>
-          <li>The ability to sync via Bluetooth for use during competitions.</li>
-          <li>The ability to define the type of scouting you're doing, from match scouting to pit scouting.</li>
-          <li>The ability to search and sort data based on what was collected.</li>
-          <li>Provides the ability to back up data onto your PC.</li>
-          <li>Ability to export data into the .csv file format.</li>
-          <li>Available at no cost, for anyone and everyone!</li>
-        </ul>
-        <div class="row">
-          <div class="col-md-6">
-            <a href="https://play.google.com/store/apps/details?id=com.team2052.frckrawler" target="_blank">
-              <img src="assets/images/Google_Play_Badge.jpg" class="pl-3" />
+  </div>
+  <div>
+    <h1 class="text-center maroon pt-5">Stay Up-to-Date</h1>
+    <h5 class="text-center">Follow us on Facebook and Twitter</h5>
+    <div class="row justify-content-center">
+      <div class="col-sm-3 justify-content-center">
+        <div class="row pt-3 pr-5 justify-content-center">
+          <img src="/assets/images/facebook.png" height="75">
+        </div>
+        <div class="row pt-4 text-center">
+          <p class="text-center">
+            <a href="http://facebook.com/team2052" target="_blank">
+              facebook.com/team2052
             </a>
-          </div>
-          <div class="col-md-6">
-            <div class="float-right">
-              <a href="/frckrawler/" > Details <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
+          </p>
         </div>
       </div>
+      <!--<div class="col-sm-1">
+      </div>-->
+      <div class="col-sm-3 pl-5 justify-content-center">
+        <div class="row pt-3  pr-4 justify-content-center">
+          <img src="/assets/images/twitter.jpg" height="75">
+        </div>
+        <div class="row pt-4 text-center">
+          <p class="text-center">
+            <a href="http://twitter.com/team2052" target="_blank">
+              twitter.com/team2052
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+  <div>
+    <h1 class="text-center maroon pt-5">Request Shields</h1>
+    <p class="text-center">Do you work for a hospital or health care facility in need of face shields?</p>
+    <p class="text-center">We would love to donate some to you!</p>
+    <a class="a:link" href="https://forms.gle/SzJrMVX8YJQ47QYs5" target="_blank"><button type="button" class="center btn maroon btn-warning btn-lg"><font size="3">Place an Order <i class="fas fa-arrow-circle-right"></i></font></button></a>
+  </div>
+  <div>
+    <h1 class="text-center maroon pt-5">Funding</h1>
+    <p>KnightKrawler has received a <b>$5,000 commitment from the <a href="https://www.moundsviewschools.org/Domain/23" target="_blank">Mounds View Schools Education Foundation</a></b> to purchase materials for this project. The team also qualified to compete at the FIRST World Championship competition this year. We had more than $5,000 budgeted for this trip, which is now available due to the cancellation of our season.</p>
+    <p>Though <b>we are not currently seeking further funding for this project</b>, if you would like to support KnightKrawler in our robotics endeavors you can donate through our PayPal below. Please understand, we are not using this pandemic as a fundraiser. There are many other organizations that need your donations at this time. If you love what we do, please consider supporting us in the fall once robotics resumes.</p>
+    <p class="text-center">
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=XMNGJPP5MRKHJ" target="_blank">
+        <img src="/assets/images/donatenow.jpg" width="150" />
+      </a>
+    </p>
+    <p> KnightKrawler Robotics is a 501(c)(3) non-profit organization.  All contributions to the team are tax deductible. Please contact us first if you would like to make a large donation or need a W9 tax form.</p>
+  </div>
+  <div>
+    <h1 class="text-center maroon pt-5">Donations</h1>
+    <p>
+      While we are not seeking cash contributions at this time (see above), we do think there are many companies out there with supplies we can use.
+      There is a very limited supply of sheet plastic for face shields. However, overhead projector sheets, clear report covers and laminating sheets are suitable substitutes for the visors. With nearly everything being digital these days,
+      it is possible companies have boxes of these types of office supplies in storage. If you have a large supply of these clear plastic materials we may be able to use them as face shields. If you are a manufacturing company
+      with access to thin PET or PETG sheets, we have a laser cutter and are able to cut that material into face shields.
+      Please contact us at <strong>covid19@team2052.com</strong>
+    </p>
+  </div>
+  <div>
+    <h1 class="text-center maroon pt-5">Project Sponsors</h1>
+    <div class="row justify-content-center">
+      <div class="col-sm-3 justify-content-center">
+        <div class="row pt-3  justify-content-center">
+          <img src="/assets/images/MVSEF.png" height="100">
+        </div>
+        <div class="row pt-4 text-center">
+          <p>
+            The <a href="https://www.moundsviewschools.org/Domain/23" target="_blank">Mounds View Schools Education Foundation</a> has donated $5,000 to be used for supplies.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-3 justify-content-center">
+        <div class="row pt-3 justify-content-center">
+          <img src="/assets/images/MVPS.jpg" height="75">
+        </div>
+        <div class="row pt-4 text-center">
+          <p>
+            <a href="https://www.moundsviewschools.org/" target="_blank">Mounds View Public Schools</a> has loaned us the 3D printers we are using along with space to run our production shop.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-5">
+    <h1 class="text-center maroon">How to Run a Shop</h1>
+    <p>If you would like to run a face shield production shop but are in need of 3D printers, we recommend contacting your local school district.
+      They likely have 3D printers that are going unused. If 3D printers are not an option for your group, there are some face shield designs available online
+      that do not require 3D printing. You can also find a number of face mask designs for those that have a sewing machine.</p>
+    <p>Keeping your volunteers <b>safe</b>:</p>
+    <ul>
+      <li>Ask volunteers to take their temperature before arriving to a shift so they don't come with a fever</li>
+      <li>Discourage anyone who has been on a trip in the last two weeks from participating</li>
+      <li>Discourage anyone who has a high risk family member at home from participating</li>
+      <li>If you don't feel well, don't participate even if you think it is only allergies</li>
+      <li>Everyone should wear a facemask</li>
+      <li>Observe the social distancing guidelines of keeping 6 feet apart as much as possible</li>
+      <li>Wash hands frequently. Gloves could also be an option for those who want them, but avoiding face contact is more important</li>
+      <li>Disinfect keyboards and mice between shifts</li>
+      <li>Only have 3-4 volunteers working at a time (depends on the number of printers you're running)</li>
+      <li>To comply with most schools' YPP (youth protection policies), remember to schedule enough people to avoid a situation where there is one student with one adult, unless they are family members</li>
+    </ul>
+    <h1 class="text-center maroon">3D Printing Information</h1>
+    <p>
+      KnightKrawler is printing the Stratasys visor. This visor has been approved by the FDA and VA. KnightKrawler chose this design because it works with any clear
+      plastic with a 3-hole punch. This makes it possible to replace damaged shields with basic office supplies without any special tools. Another popular design is the Prusa design,
+      modified for the American 3-hole punch. This design is more durable, but takes 2-3 times longer to print. There are many options available and they are easy to find on the internet.
+      If you are using a design that has not yet been approved by the FDA, please contact the facility to which you plan to donate, to ensure they will accept the design before you print them.
+    </p>
+    <p>
+      We have found that we can tweak the configuration of our printers and slicers to dramatically improve print speed. Many printers/slicers are configured for quality  and detail.
+      By adjusting your layers, and speed, you will see noticeable improvements. We have cut the time of our Stratasys prints down from 87 minutes to 56 minutes, per visor. PLA can typically print faster
+      than other 3D printer filament. You can take advantage of this fact by trying speeds above the default. PLA does not hold up as well to strong solvents, compared to PETG, but is more
+      cost effective, prints faster, and has been approved by the FDA.
+    </p>
+    <ul>
+      <li><a href="https://3dprint.nih.gov/discover/3dpx-013421?fbclid=IwAR0YzgpxLraB3EPKZcEf-kPA0wKZ5eSUD_7FXA-F0EZ5p_YscMZl0hOLXkU#view-comments" target="_blank"><b>Download</b> the Stratasys shield design</a></li>
+      <li><a href="https://www.stratasys.com/covid-19" target="_blank"><b>Learn</b> about 3D printing face shields</a></li>
+    </ul>
+    <p class="text-center">We are here to help. If you need advice on setting up a shop, 3D printing or anything related, please email covid19@team2052.com</p>
+  </div>
+</div>
