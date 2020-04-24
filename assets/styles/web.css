@@ -305,6 +305,17 @@ height: 150px;
   border-bottom-left-radius: 5px;
 }
 
+.captionMatch {
+  font-family: "lucida Console";
+  font-size: 16px;
+}
+
+.captionMatchComp {
+  font-family: "lucida Console";
+  font-style: italic;
+  font-size: 18px;
+}
+
 .captionMembers {
   text-align: center;
   padding: 0px;
@@ -867,6 +878,14 @@ height: 150px;
 
 .twittertext:hover {
   color: var(--gold-color, white);
+}
+
+@media (min-width: 950px){
+  .verticalLine {
+    border-right: 1px solid maroon;
+    border-left: 0;
+    height: 100%;
+  }
 }
 
 .video {
