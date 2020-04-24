@@ -785,6 +785,11 @@ height: 150px;
 }
 /*------------ END: HERO, NAVIGATION STYLES --------------*/
 
+.padding {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
 .photo {
   height: auto;
   width:100%;
