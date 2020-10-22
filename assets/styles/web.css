@@ -856,6 +856,10 @@ height: 150px;
   padding-bottom: 0px!important;
 }
 
+.stemdesc {
+  border: 5px solid var(--maroon-color, black);
+}
+
 .team-wide-photo {
   width: 80%;
 }
