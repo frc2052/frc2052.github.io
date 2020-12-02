@@ -89,6 +89,7 @@ p a {
   --maroon-color: #732626;
   --gold-color: #FCC20B;
   --shaded-color: #eeeeee;
+  --green-color: #0ca655; /*for girl scout page*/
 }
 
 /* BEGIN Special browser stuff */
@@ -293,6 +294,32 @@ height: 150px;
   color: var(--gold-color, white);
   background-color:  var(--maroon-color, black);
 }
+
+/*card-greens are for Girl Scouts page*/
+.card-kk-green {
+  margin: 0 30px;
+}
+
+.card-kk-green .card-heading-green {
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: white;
+  background-color:  var(--green-color, black);
+}
+
+.card-heading-green {
+ width: 100%;
+ font-size: 22px;
+ line-height: 24px;
+ height: 80px;
+ vertical-align: middle;
+ text-align: center;
+ color: white;
+ background-color:  var(--green-color, black);
+}
+/*End of Girl Scout cards*/
 
 .caption {
   text-align: center;
@@ -526,6 +553,10 @@ height: 150px;
   text-align: right;
   height: 30px;
   font-size: 18px;
+}
+
+.green {
+    color: var(--green-color, black);
 }
 
 .hangingindent {
