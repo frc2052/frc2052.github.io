@@ -663,6 +663,30 @@ height: 150px;
     background-color: var(--maroon-color, black);
 }
 
+.mnteams {
+  width: 100%;
+  border: 1px solid #cfc0c0; /* light maroon color*/
+  background-color: var(--maroon-color, black);
+}
+
+.mnteamsList {
+  border: 1px solid #cfc0c0;
+  border-collapse: collapse;
+  padding: 5px;
+  background: #eeeeee;
+}
+
+.mnteamsHeader {
+  height: 10px;
+  color: white;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.mnteamsMedia {
+  color: var(--gold-color, black);
+}
+
 .mName {
   font-weight: bold;
   font-style: italic;

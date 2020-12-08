@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /mnteams/
+---
+
+<div class="container mt-5">
+  <h1 class="kk text-center">Minnesota Teams</h1>
+  <table class="mnteams">
+    <tr class="mnteamsHeader">
+      <th>#</th>
+      <th>Name</th>
+      <th>Website</th>
+      <th>Twitter</th>
+      <th>Facebook</th>
+      <th>Instagram</th>
+      <th>YouTube</th>
+      <th>TBA</th>
+    </tr>
+  {% for def in site.data.teams %}
+    <tr >
+      <td class="mnteamsList glossary-term">{{ def.TeamNumber }}</td>
+      <td class="mnteamsList glossary-term">{{ def.TeamName }}</td>
+      <td class="mnteamsList text-center"><a href="{{def.Website}}"><i class="fas fa-align-center"></i></a></td>
+      <td class="mnteamsList text-center"><a href="{{def.Twitter}}"><i class="fab fa-twitter-square"></i></a></td>
+      <td class="mnteamsList text-center"><a href="{{def.Facebook}}"><i class="fab fa-facebook-square"></i></a></td>
+      <td class="mnteamsList text-center"><a href="{{def.Instagram}}"><i class="fab fa-instagram"></i></a></td>
+      <td class="mnteamsList text-center"><a href="{{def.Youtube}}"><i class="fab fa-youtube-square"></i></a></td>
+      <td class="mnteamsList text-center"><a href="{{def.TBA}}"><i class="fas fa-chess-rook"></i></a></td>
+
+    </tr>
+  {% endfor %}
+  <table>
+</div>
