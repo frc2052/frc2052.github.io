@@ -683,8 +683,13 @@ height: 150px;
   border-collapse: collapse;
 }
 
-.mnteamsMedia {
-  color: var(--gold-color, black);
+.mnteamsTop {
+  color: white;
+  font-size: 17px;
+}
+
+.mnteamsTop:hover {
+  color: var(--gold-color, white);
 }
 
 .mName {
