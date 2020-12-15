@@ -673,7 +673,7 @@ height: 150px;
   border: 1px solid #cfc0c0;
   border-collapse: collapse;
   padding: 5px;
-  background: #eeeeee;
+  background: #f2f2f2;
 }
 
 .mnteamsHeader {
@@ -690,6 +690,10 @@ height: 150px;
 
 .mnteamsTop:hover {
   color: var(--gold-color, white);
+}
+
+.mnSelection {
+  border: 1px solid var(--maroon-color, black);
 }
 
 .mName {

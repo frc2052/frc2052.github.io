@@ -5,33 +5,22 @@ permalink: /mnteams/
 
 <div class="container mt-5">
   <h1 class="kk text-center">Minnesota Teams</h1>
-  <br>
-  <div class="row text-center">
-    <div class="col">
+
+  <div class="dropdown d-block">
+    <button class="dropbtn kk center">Select Thousand<i class="far fa-hand-point-down"></i></button>
+    <div class="dropdown-content dropdown-menu-center">
       <a href="/mnteams/#1816">1000s</a>
-    </div>
-    <div class="col">
       <a href="/mnteams/#2052">2000s</a>
-    </div>
-    <div class="col">
       <a href="/mnteams/#3007">3000s</a>
-    </div>
-    <div class="col">
       <a href="/mnteams/#4009">4000s</a>
-    </div>
-    <div class="col">
       <a href="/mnteams/#5143">5000s</a>
-    </div>
-    <div class="col">
       <a href="/mnteams/#6022">6000s</a>
-    </div>
-    <div class="col">
       <a href="/mnteams/#7019">7000s</a>
-    </div>
-    <div class="col">
       <a href="/mnteams/#8234">8000s</a>
     </div>
   </div>
+<br>
+
   <table class="mnteams">
     <tr class="mnteamsHeader">
       <th>#</th>
@@ -43,42 +32,70 @@ permalink: /mnteams/
       <th>YouTube</th>
       <th>TBA</th>
     </tr>
-  {% for def in site.data.teams %}
-    <tr >
-      <td class="mnteamsList glossary-term"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
-      <td class="mnteamsList glossary-term">{{ def.TeamName }}</td>
+    {% for def in site.data.teams %}
+    <tr>
+
+      {% assign num = def.TeamNumber | plus: 0 %}
+      {% if num < 2000 %}
+        <td class="mnteamsList glossary-term"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 3000 %}
+        {% assign col = "e5e5e5" %}
+        <td class="mnteamsList glossary-term" style="background: #e5e5e5;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 4000 %}
+        {% assign col = "d8d8d8" %}
+        <td class="mnteamsList glossary-term" style="background: #d8d8d8;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 5000 %}
+        {% assign col = "cccccc" %}
+        <td class="mnteamsList glossary-term" style="background: #cccccc;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 6000 %}
+        {% assign col = "bfbfbf" %}
+        <td class="mnteamsList glossary-term" style="background: #bfbfbf;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 7000 %}
+        {% assign col = "b2b2b2" %}
+        <td class="mnteamsList glossary-term" style="background: #b2b2b2;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 8000 %}
+        {% assign col = "a5a5a5" %}
+        <td class="mnteamsList glossary-term" style="background: #a5a5a5;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 9000 %}
+        {% assign col = "999999" %}
+        <td class="mnteamsList glossary-term" style="background: #999999;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% endif %}
+
+
+      <td class="mnteamsList glossary-term" style="background: #{{ col }};">{{ def.TeamName }}</td>
 
       {% if def.Website == "NA" %}
-        <td class="mnteamsList text-center" style="font-size: 18px;">NA</td>
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
       {% else %}
-        <td class="mnteamsList text-center"><a href="{{def.Website}}"><i class="fas fa-align-center"></i></a></td>
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Website}}"><i class="fas fa-align-center"></i></a></td>
       {% endif %}
 
       {% if def.Twitter == "NA" %}
-        <td class="mnteamsList text-center" style="font-size: 18px;">NA</td>
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
       {% else %}
-        <td class="mnteamsList text-center"><a href="{{def.Twitter}}"><i class="fab fa-twitter-square"></i></a></td>
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Twitter}}"><i class="fab fa-twitter-square"></i></a></td>
       {% endif %}
 
       {% if def.Facebook == "NA" %}
-        <td class="mnteamsList text-center" style="font-size: 18px;">NA</td>
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
       {% else %}
-        <td class="mnteamsList text-center"><a href="{{def.Facebook}}"><i class="fab fa-facebook-square"></i></a></td>
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Facebook}}"><i class="fab fa-facebook-square"></i></a></td>
       {% endif %}
 
       {% if def.Instagram == "NA" %}
-        <td class="mnteamsList text-center" style="font-size: 18px;">NA</td>
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
       {% else %}
-        <td class="mnteamsList text-center"><a href="{{def.Instagram}}"><i class="fab fa-instagram"></i></a></td>
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Instagram}}"><i class="fab fa-instagram"></i></a></td>
       {% endif %}
 
       {% if def.Youtube == "NA" %}
-        <td class="mnteamsList text-center" style="font-size: 18px;">NA</td>
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
       {% else %}
-        <td class="mnteamsList text-center"><a href="{{def.Youtube}}"><i class="fab fa-youtube-square"></i></a></td>
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Youtube}}"><i class="fab fa-youtube-square"></i></a></td>
       {% endif %}
 
-      <td class="mnteamsList text-center"><a href="{{def.TBA}}"><i class="fas fa-chess-rook"></i></a></td>
+      <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.TBA}}"><i class="fas fa-chess-rook"></i></a></td>
+
     </tr>
   {% endfor %}
 
