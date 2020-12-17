@@ -1,0 +1,123 @@
+---
+layout: default
+permalink: /mnteams/
+---
+
+<div class="container mt-5">
+  <h1 class="kk text-center">Minnesota Teams</h1>
+
+  <div class="dropdown d-block">
+    <button class="dropbtn kk center">Select Thousand<i class="far fa-hand-point-down"></i></button>
+    <div class="dropdown-content dropdown-menu-center">
+      <a href="/mnteams/#1816">1000s</a>
+      <a href="/mnteams/#2052">2000s</a>
+      <a href="/mnteams/#3007">3000s</a>
+      <a href="/mnteams/#4009">4000s</a>
+      <a href="/mnteams/#5143">5000s</a>
+      <a href="/mnteams/#6022">6000s</a>
+      <a href="/mnteams/#7019">7000s</a>
+      <a href="/mnteams/#8234">8000s</a>
+    </div>
+  </div>
+<br>
+
+  <table class="mnteams">
+    <tr class="mnteamsHeader">
+      <th>#</th>
+      <th>Name</th>
+      <th>Website</th>
+      <th>Twitter</th>
+      <th>Facebook</th>
+      <th>Instagram</th>
+      <th>YouTube</th>
+      <th>TBA</th>
+    </tr>
+    {% for def in site.data.teams %}
+    <tr>
+
+      {% assign num = def.TeamNumber | plus: 0 %}
+      {% if num < 2000 %}
+        <td class="mnteamsList glossary-term"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 3000 %}
+        {% assign col = "f9f9f9" %}
+        <td class="mnteamsList glossary-term" style="background: #f9f9f9;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 4000 %}
+        {% assign col = "f2f2f2" %}
+        <td class="mnteamsList glossary-term" style="background: #f2f2f2;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 5000 %}
+        {% assign col = "EAEAEA" %}
+        <td class="mnteamsList glossary-term" style="background: #EAEAEA;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 6000 %}
+        {% assign col = "DBDBDB" %}
+        <td class="mnteamsList glossary-term" style="background: #DBDBDB;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 7000 %}
+        {% assign col = "D3D3D3" %}
+        <td class="mnteamsList glossary-term" style="background: #D3D3D3;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 8000 %}
+        {% assign col = "CCCCCC" %}
+        <td class="mnteamsList glossary-term" style="background: #CCCCCC;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% elsif num < 9000 %}
+        {% assign col = "C4C4C4" %}
+        <td class="mnteamsList glossary-term" style="background: #C4C4C4;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+      {% endif %}
+
+
+      <td class="mnteamsList glossary-term" style="background: #{{ col }};">{{ def.TeamName }}</td>
+
+      {% if def.Website == "NA" %}
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+      {% else %}
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Website}}"><i class="fas fa-align-center"></i></a></td>
+      {% endif %}
+
+      {% if def.Twitter == "NA" %}
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+      {% else %}
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Twitter}}"><i class="fab fa-twitter-square"></i></a></td>
+      {% endif %}
+
+      {% if def.Facebook == "NA" %}
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+      {% else %}
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Facebook}}"><i class="fab fa-facebook-square"></i></a></td>
+      {% endif %}
+
+      {% if def.Instagram == "NA" %}
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+      {% else %}
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Instagram}}"><i class="fab fa-instagram"></i></a></td>
+      {% endif %}
+
+      {% if def.Youtube == "NA" %}
+        <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+      {% else %}
+        <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Youtube}}"><i class="fab fa-youtube-square"></i></a></td>
+      {% endif %}
+
+      <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.TBA}}"><i class="fas fa-chess-rook"></i></a></td>
+
+    </tr>
+  {% endfor %}
+
+  <tr class="mnteamsHeader">
+    <th colspan="8" class="text-center"><a class="mnteamsTop" href="/mnteams/#1816">Top <i class="fas fa-arrow-circle-up"></i></a></th>
+  </tr>
+
+  <table>
+</div>
+
+<!--
+Colors for grey gradient background
+Each a percent of 255 to create the color hexadecimals
+
+1000s - .98 - #f9f9f9
+2000s - .95 - #f2f2f2
+3000s - .92 - #EAEAEA
+4000s - .89 - #E2E2E2
+5000s - .86 - #DBDBDB
+6000s - .83 - #D3D3D3
+7000s - .80 - #CCCCCC
+8000s - .77 - #C4C4C4
+
+
+-->
