@@ -466,6 +466,14 @@ height: 150px;
 }
 /*END dropdown menu*/
 
+.dropdown-small {
+  color: var(--maroon-color, black);
+  margin-top: 2px;
+  font-size: 20px;
+  border: none;
+  width: 5px;
+}
+
 .faq-q {
   font-weight: bold;
   font-style: italic;
