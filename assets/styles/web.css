@@ -700,6 +700,10 @@ height: 150px;
   color: var(--gold-color, white);
 }
 
+.mnbutton {
+  display: none;
+}
+
 .mnSelection {
   border: 1px solid var(--maroon-color, black);
 }
