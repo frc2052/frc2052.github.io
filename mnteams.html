@@ -120,9 +120,6 @@ For when the screen is smaller than md (phone)
 
   </table>
 
-
-
-
 </div>
 
 <!--
@@ -146,6 +143,7 @@ For screen sizes larger than sm
 
         <!--sets table cells to different shades depending on team number-->
         {% if num < 2000 %}
+          {% assign col = "" %}
           <td class="mnteamsList glossary-term"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% elsif num < 3000 %}
           {% assign col = "f9f9f9" %}
