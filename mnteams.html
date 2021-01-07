@@ -22,10 +22,11 @@ permalink: /mnteams/
   <br>
 
 <!--
-For when the screen is sm or smaller (phone)
+For when the screen is smaller than md (phone)
 -->
 <div class="d-block d-md-none">
 
+  <p class="text-center">Click team name for media links.</p>
   <table class="mnteams">
     <tr class="mnteamsHeader">
       <th>#</th>
@@ -33,23 +34,93 @@ For when the screen is sm or smaller (phone)
     </tr>
     {% for def in site.data.teams %}
       <tr>
-        <td class="mnteamsList glossary-term"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
-        <td colspan="4" class="mnteamsList glossary-term"">{{ def.TeamName }}<i class="fas fa-sort-down"></i></td>
+
+        {% assign num = def.TeamNumber | plus: 0 %} <!--creates variable for the team number -->
+
+        <!--assigns col to different shade depending on team number. used later to set cell colors-->
+        {% if num < 2000 %}
+          {% assign col = "" %}
+        {% elsif num < 3000 %}
+          {% assign col = "f9f9f9" %}
+        {% elsif num < 4000 %}
+          {% assign col = "f2f2f2" %}
+        {% elsif num < 5000 %}
+          {% assign col = "EAEAEA" %}
+        {% elsif num < 6000 %}
+          {% assign col = "DBDBDB" %}
+        {% elsif num < 7000 %}
+          {% assign col = "D3D3D3" %}
+        {% elsif num < 8000 %}
+          {% assign col = "CCCCCC" %}
+        {% elsif num < 9000 %}
+          {% assign col = "C4C4C4" %}
+        {% endif %}
+
+        <td width="20%" class="mnteamsList glossary-term" style="background: #{{ col }};"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
+        <td id="{{ def.TeamNumber }}" colspan="4" class="mnteamsList glossary-term toggler" style="background: #{{ col }};" data-teamnumber="{{ def.TeamNumber }}">{{ def.TeamName }}<i class="fas fa-sort-down"></i></td>
       </tr>
-      <tr>
-        <td class="mnteamsList text-center"></td>
-        <td class="mnteamsList text-center"><a href="{{def.Website}}"><i class="fas fa-align-center"></i></a></td>
-        <td class="mnteamsList text-center"><a href="{{def.Twitter}}"><i class="fab fa-twitter-square"></i></a></td>
-        <td class="mnteamsList text-center"><a href="{{def.Facebook}}"><i class="fab fa-facebook-square"></i></a></td>
-        <td class="mnteamsList text-center"><a href="{{def.Instagram}}"><i class="fab fa-instagram"></i></a></td>
+
+      <tr id="alinks{{ def.TeamNumber }}" style="display: none;"> <!--sets initial display to hidden and assigns a unique id for every team -->
+        <td width="20%" class="mnteamsList text-center" style="background: #{{ col }};"></td>
+
+        <!--puts NA if no link-->
+        {% if def.Website == "NA" %}
+          <td width="26.66%" class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+        {% else %}
+          <td width="26.66%" class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Website}}"><i class="fas fa-align-center"></i></a></td>
+        {% endif %}
+
+        {% if def.Twitter == "NA" %}
+          <td width="26.66%" class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+        {% else %}
+          <td width="26.66%" class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Twitter}}"><i class="fab fa-twitter-square"></i></a></td>
+        {% endif %}
+
+        {% if def.Facebook == "NA" %}
+          <td width="26.66%" class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+        {% else %}
+          <td width="26.66%" class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Facebook}}"><i class="fab fa-facebook-square"></i></a></td>
+        {% endif %}
+
+      </tr>
+      <tr id="blinks{{ def.TeamNumber }}" style="display: none;">
+        <td width="20%" class="mnteamsList text-center" style="background: #{{ col }};"></td>
+
+        {% if def.Instagram == "NA" %}
+          <td width="26.66%" class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+        {% else %}
+          <td width="26.66%" class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Instagram}}"><i class="fab fa-instagram"></i></a></td>
+        {% endif %}
+
+        {% if def.Youtube == "NA" %}
+          <td width="26.66%" class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
+        {% else %}
+          <td width="26.66%" class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Youtube}}"><i class="fab fa-youtube-square"></i></a></td>
+        {% endif %}
+
+        <td width="26.66%" class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.TBA}}"><i class="fas fa-chess-rook"></i></a></td>
       </tr>
 
+      <script>
+        $(document).ready(function(){
+          $(".toggler").click(function(e){
+              var num = e.target.id; //gets the id of clicked element
+              e.preventDefault();
+              $("#alinks"+num).toggle(); //creates the string of the tr's id and toggles between shown and hidden
+              $("#blinks"+num).toggle();
+          });
+        });
+      </script>
 
+      {% endfor %}
 
+      <tr class="mnteamsHeader">
+        <th colspan="8" class="text-center"><a class="mnteamsTop" href="/mnteams/#1816">Top <i class="fas fa-arrow-circle-up"></i></a></th>
+      </tr>
 
-
-    {% endfor %}
   </table>
+
+
 
 
 </div>
@@ -71,7 +142,9 @@ For screen sizes larger than sm
       </tr>
     {% for def in site.data.teams %}
       <tr>
-        {% assign num = def.TeamNumber | plus: 0 %}
+        {% assign num = def.TeamNumber | plus: 0 %} <!--creates variable for the team number -->
+
+        <!--sets table cells to different shades depending on team number-->
         {% if num < 2000 %}
           <td class="mnteamsList glossary-term"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% elsif num < 3000 %}
@@ -99,6 +172,7 @@ For screen sizes larger than sm
 
         <td class="mnteamsList glossary-term" style="background: #{{ col }};">{{ def.TeamName }}</td>
 
+        <!--puts NA if no link-->
         {% if def.Website == "NA" %}
           <td class="mnteamsList text-center" style="font-size: 18px; background: #{{ col }};">NA</td>
         {% else %}
@@ -128,6 +202,7 @@ For screen sizes larger than sm
         {% else %}
           <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.Youtube}}"><i class="fab fa-youtube-square"></i></a></td>
         {% endif %}
+
           <td class="mnteamsList text-center" style="background: #{{ col }};"><a href="{{def.TBA}}"><i class="fas fa-chess-rook"></i></a></td>
       </tr>
     {% endfor %}
