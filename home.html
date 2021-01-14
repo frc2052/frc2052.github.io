@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
+<!-- sets the layout. this layout is located in /_includes/_layouts/default.html -->
+
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('assets/images/TeamDark2020.jpg')" onclick="showModal('myModal', '/assets/images/Team2020.jpg', 'KnightKrawler Team - 2020')">
+<header class="intro-header" style="background-image: url('assets/images/TeamDark2020.jpg')" onclick="showModal('myModal', '/assets/images/Team2020.jpg', 'KnightKrawler Team - 2020')"> <!-- sets the backgroud image and pop-up -->
     <div class="site-heading">
         <h1>Knightkrawler Robotics</h1>
         <h2>FRC Team 2052</h2>
     </div>
 </header>
 
+<!-- code for the pop-up image in header. opens a modal on click using the code in phomodal.js -->
 <div id="myModal" class="modal">
   <span class="close" onclick="closeModal('myModal')">&times;</span>
   <img class="modal-content" id="myModalImage">
@@ -17,28 +20,31 @@ layout: default
 </div>
 <script type="text/javascript" src="/assets/scripts/photomodal.js?refresh=2"></script>
 
+<!-- sets up the news box using if and for loop from liquid control flow -->
 <div class="container">
-  {% assign psize = site.posts | size %}
-  {% if psize > 0 %}
+   {% assign psize = site.posts | size %} <!-- creates a variable -->
+  {% if psize > 0 %} <!-- if there are more than 0 files in posts folder, shows the card -->
     <div class="card news">
       <div class="card-heading">
           <i class="fas fa-newspaper"></i> NEWS
       </div>
-      {% for post in site.posts reversed %}
+      {% for post in site.posts reversed %} <!-- creates a separate paragraph for each file in posts -->
         <div class="card-body">
           <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">
             {{ post.title }} <i class="fas fa-arrow-circle-right"></i>
           </a></h2>
-          <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 19 }}</p>
+          <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 19 }}</p> <!-- truncatewords is the amount of words from the news file that is shown in the preview paragraph -->
         </div>
       {% endfor %}
     </div>
   {% endif %}
 
   <div class="row justify-content-center pt-5">
-    <img class="center" id="hovergif" src="/assets/images/logo-large.png" height="200">
+    <img class="center" id="hovergif" src="/assets/images/logo-large.png" height="200"> <!-- this is the kk logo. links to the javascript that adds the gif on hover -->
     <script type="text/javascript" src="/assets/scripts/hovergif.js?refresh=2"></script>
   </div>
+
+  <!-- starting paragraphs -->
   <div class="row justify-content-center">
     <h1 class="kk center maroon text-center">
       Welcome to Knightkrawler!
@@ -59,16 +65,16 @@ layout: default
 
   <br>
 
+<!-- update paragraphs and videos that are side by side -->
   <div class="row justify-content-center mt-5 mb-2">
 
+    <div class="col col-sm-12 col-md-6"> <!-- div that includes the paragraphs -->
 
-    <div class="col col-sm-12 col-md-6">
 <!--
       <h2 class="maroon text-center">KnightKrawler's Top 10 Tips</h2>
       <p class="text-center">Check out our <a href="/2020top10">top 10 tips</a> on what to do and look for at a 2020 <a href="/glossary/#frc" target="_blank">FRC</a> competition!</p>
         <br>
 -->
-
       <div class="row">
         <div class="col-sm-12 col-md-12 center text-center">
         <h2 class="maroon text-center">Steminar Series</h2>
@@ -82,8 +88,10 @@ layout: default
         <p>Check out our new <a href="/mnteams/">Minnesota Teams List</a> page! There you will find all the Minnesota FRC teams with their social media!</p>
         </div>
       </div>
+
     </div>
 
+    <!-- div with videos. Usually game animation and robot reveal -->
     <div class="col-sm-12 col-md-5 center">
       <iframe class="youtube center results-padding" width="853" height="480" src="https://www.youtube.com/embed/gmiYWTmFRVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -91,6 +99,8 @@ layout: default
 
     </div>
   </div>
+
+  <!-- sponsors -->
   <div class="row justify-content-center mt-5 mb-2">
     <h2 class="maroon">Our King Sponsors</h2>
   </div>
@@ -118,15 +128,16 @@ layout: default
     <a href="/sponsors"> See all our sponsors <i class="fas fa-arrow-circle-right"></i></a>
   </div>
 
+<!-- FRC krawler stuff -->
   <div class="row pt-5">
     <div class="col-md-3 pt-5">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> <!-- carousels scroll through a list of photos. -->
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> <!-- small indicators at the bottom where users can switch to photos in the list manually -->
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner"> <!-- list of images -->
           <div class="carousel-item active">
             <img src="/assets/images/ScoutingApp1-sm.png" class="mx-auto d-block img-fluid"/>
           </div>
@@ -155,7 +166,7 @@ layout: default
             <img src="/assets/images/ScoutingApp10-sm.png" class="mx-auto d-block img-fluid"/>
           </div>
         </div>
-        <a class="carousel-control-prev maroon" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev maroon" href="#carouselExampleIndicators" role="button" data-slide="prev"> <!-- arrows that scroll through -->
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
@@ -165,14 +176,14 @@ layout: default
         </a>
       </div>
     </div>
-      <div class="col-md-9">
+      <div class="col-md-9"> <!-- text paragraph for frc krawler -->
         <p>
           <h2 class="text-center maroon">FRC Krawler</h2>
         </p>
         <p>
           <h5 class="text-center">The fully customizable <a href="/glossary/#scouting">scouting</a> solution</h5>
         </p>
-        <ul>
+        <ul> <!-- unordered list / bullet points for each li element -->
           <li>A simple way to keep data event-to-event, and year-to-year.</li>
           <li>Simultaneous scouting for more than six team members.</li>
           <li>A user interface intuitive enough for an expert, and simple enough for a beginner.</li>
@@ -185,15 +196,16 @@ layout: default
         </ul>
         <div class="row">
           <div class="col-md-6">
-            <a href="https://play.google.com/store/apps/details?id=com.team2052.frckrawler" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=com.team2052.frckrawler" target="_blank"> <!-- shows the google play image and links it -->
               <img src="assets/images/Google_Play_Badge.jpg" class="pl-3" />
             </a>
           </div>
           <div class="col-md-6">
             <div class="float-right">
-              <a href="/frckrawler/" > Details <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="/frckrawler/" > Details <i class="fas fa-arrow-circle-right"></i></a> <!-- details arrow in the bottom right -->
             </div>
           </div>
         </div>
       </div>
   </div>
+<!-- social media and copyright are coded into the default layout -->
