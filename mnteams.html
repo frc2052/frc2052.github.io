@@ -60,7 +60,7 @@ For when the screen is smaller than md (phone)
         <td id="{{ def.TeamNumber }}" colspan="4" class="mnteamsList glossary-term toggler" style="background: #{{ col }};" data-teamnumber="{{ def.TeamNumber }}">{{ def.TeamName }}<i class="fas fa-sort-down"></i></td>
       </tr>
 
-      <tr id="alinks{{ def.TeamNumber }}" style="display: none;"> <!--sets initial display to hidden and assigns a unique id for every team -->
+      <tr id="alinks{{ def.TeamNumber }}" style="display: none;"> <!--sets initial display of this tr to hidden and assigns a unique id for every team -->
         <td width="20%" class="mnteamsList text-center" style="background: #{{ col }};"></td>
 
         <!--puts NA if no link-->
@@ -141,32 +141,26 @@ For screen sizes larger than sm
       <tr>
         {% assign num = def.TeamNumber | plus: 0 %} <!--creates variable for the team number -->
 
-        <!--sets table cells to different shades depending on team number-->
+        <!--assigns col to different shade depending on team number. used later to set cell colors-->
         {% if num < 2000 %}
           {% assign col = "" %}
-          <td class="mnteamsList glossary-term"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% elsif num < 3000 %}
           {% assign col = "f9f9f9" %}
-          <td class="mnteamsList glossary-term" style="background: #f9f9f9;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% elsif num < 4000 %}
           {% assign col = "f2f2f2" %}
-          <td class="mnteamsList glossary-term" style="background: #f2f2f2;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% elsif num < 5000 %}
           {% assign col = "EAEAEA" %}
-          <td class="mnteamsList glossary-term" style="background: #EAEAEA;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% elsif num < 6000 %}
           {% assign col = "DBDBDB" %}
-          <td class="mnteamsList glossary-term" style="background: #DBDBDB;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% elsif num < 7000 %}
           {% assign col = "D3D3D3" %}
-          <td class="mnteamsList glossary-term" style="background: #D3D3D3;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% elsif num < 8000 %}
           {% assign col = "CCCCCC" %}
-          <td class="mnteamsList glossary-term" style="background: #CCCCCC;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% elsif num < 9000 %}
           {% assign col = "C4C4C4" %}
-          <td class="mnteamsList glossary-term" style="background: #C4C4C4;"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         {% endif %}
+
+        <td class="mnteamsList glossary-term" style="background: #{{ col }};"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
 
         <td class="mnteamsList glossary-term" style="background: #{{ col }};">{{ def.TeamName }}</td>
 
@@ -211,21 +205,9 @@ For screen sizes larger than sm
 
     <table>
   </div>
-
 </div>
-
-<!--
-Colors for grey gradient background
-Each a percent of 255 to create the color hexadecimals
-
-1000s - .98 - #f9f9f9
-2000s - .95 - #f2f2f2
-3000s - .92 - #EAEAEA
-4000s - .89 - #E2E2E2
-5000s - .86 - #DBDBDB
-6000s - .83 - #D3D3D3
-7000s - .80 - #CCCCCC
-8000s - .77 - #C4C4C4
-
-
--->
+<!-- Colors for grey gradient background. Each a percent of 255 to create the color hexadecimals
+1000s - .98 - #f9f9f9     2000s - .95 - #f2f2f2
+3000s - .92 - #EAEAEA     4000s - .89 - #E2E2E2
+5000s - .86 - #DBDBDB     6000s - .83 - #D3D3D3
+7000s - .80 - #CCCCCC     8000s - .77 - #C4C4C4 -->
