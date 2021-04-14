@@ -971,8 +971,15 @@ height: 150px;
   }
 }
 
-.verticalCenter {
-  vertical-align: middle;
+.verticalCenterParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verticalCenterChild {
+  margin: 0 auto;
+  align-self: center;
 }
 
 .video {
