@@ -936,6 +936,17 @@ height: 150px;
   border: 5px solid var(--maroon-color, black);
 }
 
+.tableParent {
+  display: table;
+  height: 100%;
+}
+
+.tableChild {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .team-wide-photo {
   width: 80%;
 }
