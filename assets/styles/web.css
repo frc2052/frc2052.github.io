@@ -939,6 +939,8 @@ height: 150px;
 .tableParent {
   display: table;
   height: 100%;
+  border: 4px solid var(--maroon-color, black);
+  border-radius: 25px;
 }
 
 .tableChild {

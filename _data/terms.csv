@@ -35,6 +35,7 @@ link,term,definition
 "mri","MRI","Minnesota Robotics Invitational. An offseason competition hosted by FRC Team 2846 FireBears."
 "omnimecanum","Omni-Mecanum","A type of wheel that allows the robot to move sideways."
 "pok","POK","Parents of KnightKrawler. This is the wonderful group that helps the team and builds the field for Week Zero. POK is a play on the acronym KOP (See ""KOP"")."
+"rankingpoints","Ranking Points","Points earned in an FRC game. There are a max of four ranking points that can be earned in every game. Two are for completing various field challenges and zero, one, or two points can be earned for a loss, tie, or win. The average ranking points earned dictates standing in the preliminary competition matches."
 "raspberrypi","Raspberry Pi","A mini computer."
 "sandstorm","Sandstorm","The first 15 seconds of the match. Robots can be autonomous (see ""Autonomous"") or camera operated. Only used in 2019."
 "scouting","Scouting","Watching and analyzing other teams during competitions to collect data for team selection. We use our app FRC Krawler."
