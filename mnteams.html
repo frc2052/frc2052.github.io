@@ -41,28 +41,28 @@ For when the screen is smaller than md (phone)
 
         <!--assigns col to different shade depending on team number. used later to set cell colors-->
         {% if num < 2000 %}
-          {% assign col = "e5e5e5" %}
+          {% assign col = "ffffff" %}
         {% elsif num < 3000 %}
           {% assign col = "f9f9f9" %}
         {% elsif num < 4000 %}
-          {% assign col = "e5e5e5" %}
+          {% assign col = "f2f2f2" %}
         {% elsif num < 5000 %}
-          {% assign col = "f9f9f9" %}
+          {% assign col = "EAEAEA" %}
         {% elsif num < 6000 %}
-          {% assign col = "e5e5e5" %}
+          {% assign col = "DBDBDB" %}
         {% elsif num < 7000 %}
-          {% assign col = "f9f9f9" %}
+          {% assign col = "D3D3D3" %}
         {% elsif num < 8000 %}
-          {% assign col = "e5e5e5" %}
+          {% assign col = "CCCCCC" %}
         {% elsif num < 9000 %}
-          {% assign col = "f9f9f9" %}
+          {% assign col = "C4C4C4" %}
         {% endif %}
 
         <td width="20%" class="mnteamsList glossary-term" style="background: #{{ col }};"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
         <td id="{{ def.TeamNumber }}s" colspan="4" class="mnteamsList glossary-term toggler" style="background: #{{ col }};" data-teamnumber="{{ def.TeamNumber }}">{{ def.TeamName }}<i class="fas fa-sort-down"></i></td>
       </tr>
 
-      <tr id="alinks{{ def.TeamNumber }}s" style="display: none;"> <!--sets initial display of this tr to hidden and assigns a unique id for every team -->
+      <tr id="alinks{{ def.TeamNumber }}" style="display: none;"> <!--sets initial display of this tr to hidden and assigns a unique id for every team -->
         <td width="20%" class="mnteamsList text-center" style="background: #{{ col }};"></td>
 
         <!--puts NA if no link-->
@@ -85,7 +85,7 @@ For when the screen is smaller than md (phone)
         {% endif %}
 
       </tr>
-      <tr id="blinks{{ def.TeamNumber }}s" style="display: none;">
+      <tr id="blinks{{ def.TeamNumber }}" style="display: none;">
         <td width="20%" class="mnteamsList text-center" style="background: #{{ col }};"></td>
 
         {% if def.Instagram == "NA" %}
@@ -161,21 +161,21 @@ For screen sizes larger than sm
 
         <!--assigns col to different shade depending on team number. used later to set cell colors-->
         {% if num < 2000 %}
-          {% assign col = "e5e5e5" %}
+          {% assign col = "ffffff" %}
         {% elsif num < 3000 %}
           {% assign col = "f9f9f9" %}
         {% elsif num < 4000 %}
-          {% assign col = "e5e5e5" %}
+          {% assign col = "f2f2f2" %}
         {% elsif num < 5000 %}
-          {% assign col = "f9f9f9" %}
+          {% assign col = "EAEAEA" %}
         {% elsif num < 6000 %}
-          {% assign col = "e5e5e5" %}
+          {% assign col = "DBDBDB" %}
         {% elsif num < 7000 %}
-          {% assign col = "f9f9f9" %}
+          {% assign col = "D3D3D3" %}
         {% elsif num < 8000 %}
-          {% assign col = "e5e5e5" %}
+          {% assign col = "CCCCCC" %}
         {% elsif num < 9000 %}
-          {% assign col = "f9f9f9" %}
+          {% assign col = "C4C4C4" %}
         {% endif %}
 
         <td class="mnteamsList glossary-term" style="background: #{{ col }};"><a name="{{ def.TeamNumber }}"/>{{ def.TeamNumber }}</td>
