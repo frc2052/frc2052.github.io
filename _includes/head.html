@@ -53,7 +53,7 @@
   <meta property="og:image:height" content="666" />
   {% endif %}
 
-  <link rel="canonical" href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove: '/' }}" />
+  <link rel="canonical" href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
   <script type="application/ld+json">
