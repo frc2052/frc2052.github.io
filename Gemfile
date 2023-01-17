@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "~> 3.6.2"
-gem 'jekyll-compose', group: [:jekyll_plugins]
-gem "github-pages", "~> 168"
-gem "rake", "~> 12.3.0"
+gem "jekyll", "~> 3.9.0"
+gem "github-pages", "~> 223"
 gem 'jekyll-paginate'
+
+group :jekyll_plugins do
+    gem "jekyll-paginate"
+    gem "jekyll-compose"
+end
