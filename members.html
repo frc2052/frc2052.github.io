@@ -5,10 +5,10 @@ permalink: /members/
 
 <div class="container mt-5">
     <h1 class="kk">Team Members</h1>
-    {% for index in (1..5) %}
+    {% for index in (1..6) %}
         {% capture grade %}{{ 13 | minus: index }}{% endcapture %}
-        {% if grade == 8 %}
-            {% assign grade = 0 %}
+        {% if grade == "8" %}
+            {% assign grade = "0" %}
         {% endif %}
 
         {% case grade %}
@@ -20,7 +20,9 @@ permalink: /members/
                 <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Sophomores</h2>
             {% when "9" %}
                 <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Freshmen</h2>
-            {% when "0" %}
+                {% when "8" %}
+                <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Mentors &amp; Volunteers</h2>
+                {% when "0" %}
                 <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Mentors &amp; Volunteers</h2>
         {% endcase %}
         <div class="row justify-content-center">
