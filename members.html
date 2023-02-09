@@ -53,8 +53,8 @@ permalink: /members/
                     {% if mem.Tagline4 != null %}
                         <div class="row justify-content-center captionMembers mRole"> {{mem.Tagline4}} </div>
                     {% endif %}
-                    {% if mem.Badge1 != null %}
-                        {% assign badges = mem.Badge1 | split: "," %}
+                    {% if mem.Badges != null %}
+                        {% assign badges = mem.Badges | split: "," %}
                         <div class="row justify-content-center">
                             {% for badge in badges %}
                                 {% capture badgeUrl %}/assets/images/badges/{{ badge | downcase }}.png{% endcapture %}
