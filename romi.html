@@ -1,0 +1,456 @@
+---
+layout: default
+permalink: /romi/
+---
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="kk text-center">Pololu Romi Training Robot</h1>
+            </div>
+            <div>
+                <p>
+                    The <a href="https://www.pololu.com/product/4022" target="_blank">Romi Robot Kit by Pololu</a> is a
+                    small form factor robotics kit that allows a small, inexpensive robot to be
+                    programmed using the same Java based WPI Lib codebase FRC students use for programming the large
+                    competition robots. The Romi Kit is a ready-to-go driving
+                    platform that gives students the ability to quickly start a brand new project and get up and running
+                    with robot code. However the platform is very limitted in its
+                    out-of-the-box features.
+                </p>
+                <p>
+                    KnightKrawler has started an initative to build representative robots based on the Pololu Romi
+                    platform. This includes robots that have intakes and shooters.
+                    The KnightKrawler platform only requires the Romi control board and motors, which can save some
+                    money, rather than buying the whole kit. Our first robot model is called Ragnar.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="kk text-center mt-3">Ragnar</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XGhq5cajGhw?si=QUAYEg9dnwtEgIb7"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="small text-center">
+                Disclaimer: Links to Amazon generate revenue for Team 2052 on
+                qualifying purchases.
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="kk text-center mt-5">Setup</h1>
+            </div>
+            <div>
+                <p>
+                    These parts are 3D printed with PLA filament using an <a
+                        href="https://www.prusa3d.com/product/original-prusa-mk4-2/" target="_blank">Prusa MK4</a> with
+                    a <a href="https://www.prusa3d.com/product/prusa-nozzle-brass-0-8-mm/" target="_blank">0.8mm
+                        nozzle</a> on a setting of "Quality" (0.4 mm layer height) or "Draft" (0.55 mm layer height) in
+                    PrusaSlicer.
+                </p>
+                <!--Panel 1 Start-->
+                <div class="panel-group ml-5" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">TL;DR;<i
+                                        class="fas fa-arrow-down gold"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body tldr-box">
+                                <p>
+                                    Any FDM 3D printer should be capabile of making this robot. While the Prusa is a
+                                    high quaility printer it certainly is not required.
+                                    The models were designed to have minimal or no supports and work with a large
+                                    nozzle. These models were printed with a
+                                    <a target="_blank"
+                                        href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=7845260b5be0f362762b9be031d4858a&camp=1789&creative=9325&index=aps&keywords=0.8mm extruder brass nozzle">0.8mm
+                                        nozzle.</a>
+                                    Larger nozzles and layer heights dramatically reduce print times, but do reduce
+                                    the detail in prints. As such, some bolt holes may need to be
+                                    drilled out depending on your printer settings that may extrude extra filament
+                                    causing overflow, making the holes smaller than designed. When
+                                    purchasing larger nozzles, ensure you are buying the correct type for your
+                                    printer and verify your slicer software has a profile for the nozzle size you
+                                    are purchasing.
+                                    The models were designed for fast, large layer heights.
+                                </p>
+                                <br />
+                                <p>
+                                    PLA Filament was used for these prints, but PETG would also be a fine choice.
+                                    PLA is an easy to print, low cost filament. However PLA lacks the strength
+                                    and heat tolerance of other filaments. If you plan to travel with your robots in
+                                    a hot car, you may want to choose PETG to avoid warping due to heat. Other filaments
+                                    such as ABS or Nylon
+                                    will offer supperior heat and strength tolerance at greater cost. Some more
+                                    advance filaments may require printing in an enclosure and suffer from slight
+                                    shirkage, which could affect the fit of the parts.
+                                </p>
+                                <br />
+                                <p>
+                                    KnightKrawler typically uses the most affordable
+                                    <a target="_blank"
+                                        href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=d0cbed1b60bd1574fd5914f6d047f535&camp=1789&creative=9325&index=aps&keywords=pla filament">PLA
+                                        filaments</a>
+                                    for projects like this expecting that parts will eventually need to be replaced.
+                                    We have used a variety of brands and have not seen an issue with any particular
+                                    brand as long as the filament is new and/or had been kept sealed in a moisture proof
+                                    bag.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Panel 1 End-->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="kk text-center mt-5">Chassis Parts</h1>
+            </div>
+            <div class="center">
+                <img src="/assets/images/romi/ChassisParts.jpg" class="text-center" alt="Chassis Parts" />
+                <div class="row ml-5">
+                    <div class="col-12-sm col-6-md">
+                        <img src="/assets/images/romi/ChassisPartNumbers.jpg" width="400" class="text-center" alt="Chassis Part Numbers" />
+                    </div>
+                    <div class="col-12-sm col-6-md">
+                        <ol>
+                            <li>Romi Motors</li>
+                            <li>Outside Side Mounting Plate</li>
+                            <li>Inside Side Mounting Plate</li>
+                            <li>Square Drive Peg</li>
+                            <li>Side Wheel Frame</li>
+                            <li>Drive Wheel</li>
+                            <li>Transfer Wheel</li>
+                            <li>Coast Wheel</li>
+                            <li>Romi Mount</li>
+                            <li>Robot Base</li>
+                            <li>Romi and Pi</li>
+                            <li>Electronics Cover</li>
+                        </ol>
+                    </div>
+                </div>
+                <p>
+                    To assemble the chassis, you must download and print these parts. Once the parts have been printed,
+                    you can start assembly. In addition to the printed parts you will need:
+                <ul>
+                    <li><a target="_blank"
+                            href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=da0a2ff0a622c81874088e192dbee505&camp=1789&creative=9325&index=aps&keywords=10cm jumper wires">10cm
+                            jumper wires</a></li>
+                    <li><a target="_blank"
+                            href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=9fe94142281a228c71f8ff1c0085267b&camp=1789&creative=9325&index=aps&keywords=3mm nuts and bolts assortment">3mm
+                            nuts and bolts</a></li>
+                    <li><a target="_blank"
+                            href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=b676d8a61f2097afdedfdc99cf558404&camp=1789&creative=9325&index=aps&keywords=blue threadlocker">Blue
+                            thread locker</a></li>
+                    <li><a target="_blank"
+                            href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=c0c3aa702e2898001b174f57926dc4bd&camp=1789&creative=9325&index=aps&keywords=2mm toy car shaft axels">2mm
+                            axel shafts</a></li>
+                    <li><a target="_blank"
+                            href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=40c0f1157edca22c8ba63ad4ffbc1a22&camp=1789&creative=9325&index=aps&keywords=m2 self tapping screw assortment">M2
+                            self-tapping screws</a></li>
+                    <li><a target="_blank" href="https://www.pololu.com/product/3544">Romi Control Board</a></li>
+                    <li><a target="_blank" href="https://www.pololu.com/product/3675">Two Romi Motors with Encoder</a>
+                    </li>
+                    <li><a target="_blank"
+                            href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=7c11b79f02ffa5def54bdf92385ad76b&camp=1789&creative=9325&index=aps&keywords=raspberry pi 3b plus">Raspberry
+                            Pi</a></li>
+                    <li><a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=29a54b563c9c98ca3a3b14dc2bf22701&camp=1789&creative=9325&index=aps&keywords=PCB Male Header Pins">PCB Male Header Pins</a></li>
+                    <li><a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=1fd6c6e8a53ce053005941792076484a&camp=1789&creative=9325&index=aps&keywords=pcb jumper cap">PCB Jumper Cap</a></li>
+                    <li><a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=705ec410b6cf97064a09b8344e6cef7b&camp=1789&creative=9325&index=aps&keywords=2-Pins Female Male Plug Connector Wire Arduino">Power Connectors</a></li>
+                    <li><a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=fe3aff6d75f3234fdcbe6731cda4af15&camp=1789&creative=9325&index=aps&keywords=18650 battery holder">18650 Battery Holder</a></li>
+                    <li><a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=ac557d7b02a7ddab4db5d5d8e27f8a77&camp=1789&creative=9325&index=aps&keywords=18650 batteries">18650 Batteries</a></li>
+                    <li><a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=20e6a9599aba7d6ccac1960d26d67bd1&camp=1789&creative=9325&index=aps&keywords=18650 battery charger">Battery Charger</a></li>
+                    <li>Small rubber band</li>
+                </ul>
+                <p>
+                    <h6>Links directly to individual products can be found in the TL;DR;</h6> 
+                </p>
+                </p>
+                <!--Panel 2 Start-->
+                <div class="panel-group ml-5" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">TL;DR;<i
+                                        class="fas fa-arrow-down gold"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body tldr-box">
+                                <p>
+                                    <strong>Want to save time? These specific parts were ordered for our robot, they may
+                                        or may not be currently sold by Amazon.</strong>
+                                    <li><a target="_blank"
+                                            href="https://www.amazon.com/gp/product/B0BTT31CBC?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=4c3ee1502c67af846c58bc29b736f164&camp=1789&creative=9325">10cm
+                                            Jumper Wires</a></li>
+                                    <li><a target="_blank"
+                                            href="https://www.amazon.com/dp/B01EV70C78?th=1&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=ccd062062f56d03749ebe8b7d05dcb10&camp=1789&creative=9325">20cm
+                                            Jumper Wires</a></li>
+                                    <li><a target="_blank"
+                                            href="https://www.amazon.com/gp/product/B08125LTBT?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=5b991ab96e6426e127ca2c4549f5c486&camp=1789&creative=9325">M3
+                                            Bolts</a></li>
+                                    <li><a target="_blank"
+                                            href="https://www.amazon.com/gp/product/B0775ZKB2H?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=f7ab3cfa77f810a0839fb9d81ebef194&camp=1789&creative=9325">M2
+                                            Screws</a></li>
+                                    <li><a target="_blank"
+                                            href="https://www.amazon.com/gp/product/B07D2WSF29?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=cf9e9bf3ee0a10e1aebb9b1ad44d4d57&camp=1789&creative=9325">2mm
+                                            axels</a></li>
+                                    <li><a target="_blank" href="https://www.amazon.com/gp/product/B06ZZN8L9S?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=e1ec85d3d35a21dd9f9d77699e98343e&camp=1789&creative=9325">PCB Male Header Pins</a></li>
+                                    <li><a target="_blank" href="https://www.amazon.com/gp/product/B09L7JXHTF?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=f82d379e7c94aa1547b5b7ec532d444c&camp=1789&creative=9325">PCB Jumper Caps</a></li>
+                                    <li><a target="_blank" href="https://www.amazon.com/gp/product/B01EJI8TQK?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=9f3f837115865bfadfc133fb723982f8&camp=1789&creative=9325">Power Connectors</a></li>
+                                    <li><a target="_blank" href="https://www.amazon.com/gp/product/B098DRV5K1?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=316685c6e5d6ed3115005bb2d4243b0d&camp=1789&creative=9325">18650 Battery Holders</a></li>
+                                    <li><a target="_blank" href="https://www.amazon.com/gp/product/B01N4NS31O?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=0c5930547e532dac775cc81e9a724d0b&camp=1789&creative=9325">Battery Charger</a></li>
+                                </p>
+                                <br />
+                                <p>
+                                    While buying jumper wires, we recommend both 10cm and 20cm jumper wires. The 10cm
+                                    wires work well for connecting the drive motors to the Romi board,
+                                    however the longer jumper wires will work fine if you already have them and don't
+                                    mind tying up the extra length.
+                                    As you connect mechnisms to the top of the robot, having a collection of the longer
+                                    20cm jumper wires will be helpful.
+                                </p>
+                                <br />
+                                <p>
+                                    While many robotics team may have a large collection of small ANSI sized nuts and
+                                    bolts, it is easier to find assortment packs of metric sized nuts and bolts.
+                                    3mm (also referred to as M3) is a very common size for small fasteners used in 3D
+                                    printing projects, so KnightKrawler has opted to use this size for our primary
+                                    faster.
+                                    Feel free to substitute fasters of a comperable size that works for you. All of the
+                                    parts are made to work with any pan head or cap head bolt.
+                                    None of the parts in the current designs are designed to work with countersunk or
+                                    V-set bolts.
+                                </p>
+                                <br />
+                                <p>
+                                    Blue thread locker is a cheap and easy way to secure nuts onto bolts. However if you
+                                    don't like thread locker because it is too messy or
+                                    find it doesn't work well, you can purchase <a target="_blank"
+                                        href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=24a951c4a4c4b6e6f333147e2d3c2741&camp=1789&creative=9325&index=aps&keywords=M3 nylon nut">M3
+                                        nylon lock nuts.</a>
+                                </p>
+                                <br />
+                                <p>
+                                    The Romi board includes screws holes that are too small for M3 bolts. For this
+                                    assembly, we use M2 screws. By using screws, It makes it possible to remove the
+                                    electronics without disassembling significant parts of the robot. Be sure to
+                                    purchase screws that are actual screws with a point, not machine
+                                    screws that have bold threads
+                                </p>
+                                <br />
+                                <p>
+                                    Check the Pololu Romi documentation. At the time of assembling these instructions,
+                                    the supported models of Raspberry Pi were 3B+ and 4B. Our robots
+                                    work with 3B+, which is also a lower cost model.
+                                </p>
+                                <br />
+                                <p>
+                                    There are many options for powering your Romi. The Romi requires only 5-6V to power the boards and drive the robot. However, in testing we have found closer to 12v works better if you
+                                    plan to control other mechanisms such as a shooter or pickup mechanism. Most servos require 5V and many small toy car motors require 6V-24V. KnightKrawler has opted to use three 18650 Lithium Ion 
+                                    batteries. This provides about 12V of power when fully charged. In testing, we found that running a shooter motor and two servos at the same time was possible with 12V. However at 7-8V, the Raspberry Pi
+                                    would "brown out" resulting in a reboot. The 18650 batteries provide flexbility for charging batteries in multi-bank chargers. You may also want to consider using battery packs 
+                                    made for RC cars. These battery packs come in a variety of shapes and voltage outputs and generally simplify charging.
+                                </p>
+                                <br />
+                                <p>
+                                    There are many options for wire connectors to use for your wire to power your Romi and Raspberry Pi. If you plan to use RC Car Battery packs, select the connector type that will work with your
+                                    battery packs. Otherwise, select a connector type balances size and ease of use when connecting and disconnecting your batteries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Panel 2 End-->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="kk text-center mt-5">Step 1: Side Mounting Frames</h1>
+            </div>
+            <div>
+                <img src="/assets/images/romi/ChassisRubberBand.jpg" height="400" class="text-center" alt="Chassis Side 1" />
+                <img src="/assets/images/romi/ChassisSideBolted.jpg" height="400" class="text-center" alt="Chassis Side 2" />
+                <ul>
+                    <li>Snap the motor into position on the inside mounting plate for the side</li>
+                    <li>Press the square drive peg, onto the motor shaft. See TL;DR; for tips on this step</li>
+                    <li>Place the outside mounting plate next to the inside mounting plate through the large round opening for
+                        the square drive peg</li>
+                    <li>Fasten the inside and outside mounting plates using only the two holes shown with M3 bolts that are atleast 8mm long and
+                        either thread locker or nylock nuts</li>
+                    <li>Repeat this step so both left and right sides are assembled</li>
+                </ul>
+
+                <!--Panel 3 Start-->
+                <div class="panel-group ml-5" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">TL;DR;<i
+                                        class="fas fa-arrow-down gold"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body tldr-box">
+                                <p>
+                                    If the square drive peg does not have a snug fit, use a small piece of a rubber band
+                                    to create a tight fit.
+                                    Place the rubber band over the hole, then press shaft into the hole. Make sure to
+                                    propertly align the flat side of the shaft.
+                                    Push the square drive peg
+                                    on to the shaft so approximately 1-2mm of space remains between the motor and square
+                                    drive peg.
+                                    Trim the rubber band as short as possible after shaft is inserted.
+                                </p>
+                                <br />
+                                <p>
+                                    When fastening the bolts on the chassis sides, always place the nuts so they will be
+                                    under the robot body (towards the motor).
+                                </p>
+                                <br />
+                                <p>
+                                    Depending on the settings of the 3D printer or filament being used, the motor may not be as secure
+                                    as you desire. You can reduce motor movement with hot gule if desired.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Panel 3 End-->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="kk text-center mt-5">Step 2: Wheels</h1>
+            </div>
+            <div>
+                <img src="/assets/images/romi/ChassisDriveShaft.jpg" width="500" class="text-center" alt="Drive Frame 1" />
+                <br/>
+                <img src="/assets/images/romi/ChassisDriveWheels.jpg" width="500" class="text-center" alt="Drive Frame 2" />
+                <br/>
+                <img src="/assets/images/romi/ChassisDriveFrame.jpg" width="500" class="text-center" alt="Drive Frame 3" />
+                <ul>
+                    <li>Cut one 2mm axel shaft 12-14mm long</li>                    
+                    <li>Insert this shaft into the square drive peg and slide the drive wheel onto the shaft</li>
+                    <li>Cut two 2mm axel shafts 20-22mm long</li>
+                    <li>Inser these shafts through the transfer wheel and coast wheel</li>
+                    <li>Position the safts of these two wheels into the mounting frame</li>
+                    <li>Place the side wheel frame over the 3 axel shafts</li>
+                    <li>Secure the top of the drive frame with M3 bolts at least 30mm long and the lower with M3 bolts at least 32mm long</li>
+                    <li>Use blue threadlock or nylock nuts on each bolt</li>
+                    <li>Repeat this step so both left and right sides are assembled</li>
+                </ul>
+
+                <!--Panel 4 Start-->
+                <div class="panel-group ml-5" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">TL;DR;<i
+                                        class="fas fa-arrow-down gold"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body tldr-box">
+                                <p>
+                                    Axels can but cut a variety of different ways. A hack saw with a vice is a solution many robotics teams may have. A more portable solution is to use a 
+                                    <a target="_blank" href="https://www.amazon.com/VISE-GRIP-American-Linemans-Pliers-2078209/dp/B000A0S4XK?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=3d6e17ece66b225b356822e28eb9d7fa&camp=1789&creative=9325">Linemans Pliers.</a>
+                                    Additionally, cutting axels can leave a sharp end. To round the end to avoid cuts to your skin or snags inside the 3D printed parts, 
+                                    the ends can be sanded with metal sandpaper, or a 
+                                    <a target="_blank" href="https://www.amazon.com/Sharpening-Whetstones-Waterstones-Wetstones-Sharpener/dp/B07T1941PF?&_encoding=UTF8&tag=team2052-20&linkCode=ur2&linkId=bef68abc7b2e74a78e567dcacb1ac524&camp=1789&creative=9325">Sharpening Stone.</a>
+                                </p>
+                                <br />
+                                <p>
+                                    Different print quality can impact the size of axel holes. Axels should slide easily into parts, and wheels should spin freely on the axel. 
+                                    It may be necessary to to use a drill and small drill bit to enlare holes if they are too snug.
+                                </p>
+                                <br />
+                                <p>
+                                    If bolts are too long, and extend too far into the body of the robot, it may impact mechanisms mounting on the base. You may decide to 
+                                    reverse the bolts so the extra length of the bolt is towards the outside of the wheel frame, rather than extending into the robot body. Alternatively,
+                                    the linemans pliers can be used to trim the bolt lenth after the nuts are installed. 
+                                </p>
+                                <br />
+                                <p>
+                                    The geared wheels provide great traction on carpet, but can slip on hard surfaces. The wheels are designed to allow for a custom track tread to be designed 
+                                    and 3D printed with extra soft <a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=team2052-20&linkCode=ur2&linkId=f2aa32e59446e6591383e8c5e83c09ec&camp=1789&creative=9325&index=aps&keywords=tpe filament">TPE flexible Filament</a>. 
+                                    Unfortunately, flex filament can be difficult or impossible to print on some 3D printers. A wide rubber band can be used as a substitute for a track.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Panel 4 End-->                
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="kk text-center mt-5">Step 3: Base</h1>
+            </div>
+            <div>
+                <img src="/assets/images/romi/ChassisBase.jpg" width="500" class="text-center" alt="Chassis Base" />
+                <img src="/assets/images/romi/ChassisRomiMount.jpg" width="500" class="text-center" alt="Romi Mount" />
+                <ul>
+                    <li>Attach the wheel frame sides to the base using M3 12mm bolts or longer in the four corners</li>                  
+                    <li>Using eight M3 10mm or longer, attach the inner frame braces near the center along the sides</li>                  
+                    <li>Use blue threadlock or nylock nuts on each bolt</li>
+                    <li>On the underside of the frame, fasten the Romi mount so the mounting hole in the "V" is in the center out most row of mounting holes away from the motors</li>
+                    <li>Mounting posts for the Romi are taller than the rest of the frame to hold the board away from the base, thes posts must be up (towards the Romi board) as shown in the photo</li>
+                    <li>Use three M3 12mm bolts to fasten the mounting frame to the base as show in the image</li>
+                </ul>
+
+                <!--Panel 5 Start-->
+                <div class="panel-group ml-5" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">TL;DR;<i
+                                        class="fas fa-arrow-down gold"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body tldr-box">
+                                <p>
+                                    There are extra mounting holes available for the Romi mounting bracket in the event you create mechanisms that would require bolt heads to be in a different location.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Panel 5 End-->
+            </div>
+        </div>
+    </div>
+
+
+</div>

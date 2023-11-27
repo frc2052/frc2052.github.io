@@ -1029,3 +1029,10 @@ height: 315px;
   height: 157.5px;
   }
 }
+
+.tldr-box{
+  border-color: var(--maroon-color, black);
+  border-width: 1px;
+  background-color: var(--shaded-color, lightgray);
+  padding: 30px;
+}
