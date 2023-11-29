@@ -87,7 +87,7 @@ permalink: /romi/
                                     purchasing larger nozzles, ensure you are buying the correct type for your
                                     printer and verify your slicer software has a profile for the nozzle size you
                                     are purchasing.
-                                    The models were designed for fast, large layer heights.
+                                    The models were designed for fast, large layer heights, however you can print them with your standard nozzle size (usually 0.4mm) and slicer settings.
                                 </p>
                                 <br />
                                 <p>
@@ -452,5 +452,113 @@ permalink: /romi/
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="kk text-center mt-5">Step 4: Soldering</h1>
+            </div>
+            <div>
+                <img src="/assets/images/romi/RomiPinout.jpg" width="500" class="text-center" alt="Romi Pinout" />
+                <img src="/assets/images/romi/SolderingComplete.jpg" width="500" class="text-center" alt="Romi Pins" />                
+                <h6>Original image source courtesy of <a href="https://www.pololu.com/product/3544/pictures#lightbox-picture0J7536" target="_blank">Romi webpage</a></h6>
+                <ul>
+                    <li>The Romi board comes with 1x6 female pin headers for the motors. Solder those in place per the Romi instructions (shown in blue)</li>                  
+                    <li>Solder wires for the power leads to your battery connection - Power In (shown in orange) </li>                  
+                    <li>Solder three 2x3 male pin headers for positive and negative connections (shown in red) </li>
+                    <li>Solder 3 rows of male PWM pin headers (positive, negative, signal) (shown in red)</li>
+                    <li>See instructions for attaching option header jumper cap to PWM pins, as well as tips for soldering in the TD;DR;</li>
+                </ul>
 
+                <!--Panel 6 Start-->
+                <div class="panel-group ml-5" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">TL;DR;<i
+                                        class="fas fa-arrow-down gold"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse">
+                            <div class="panel-body tldr-box">
+                                <p>
+                                    <img src="/assets/images/romi/SolderingPinJumpers.jpg" width="500" class="text-center" alt="Soldering Tip 1" />
+                                </p>
+                                <p>
+                                    Pin headers come in long strips and can be snapped between the pins to obtain the desired pin header length. 
+                                    Pin header jumper caps are an easy way to hold multiple rows of pin headers together when soldering. In this photo, the pin headers for the PWM pins have been connected using 4 jumper caps.                                    
+                                </p>
+                                <p>
+                                    <img src="/assets/images/romi/SolderingClay.jpg" width="500" class="text-center" alt="Soldering Tip 2" />
+                                </p>
+                                <p>
+                                    Modeling clay can be used to hold the pin headers in place while placed upside down on the Romi board. When soldering, do not place the solder on the tip of the soldering iron, but rather use 
+                                    the soldering iron to heat the pin and connector on the board. Touch the solder to the pin and board to complete the weld. Electronics solder include a material called flux, which cleans the 
+                                    connection. If solder is placed on the solding iron, the flux does not do its job of cleaning the parts to be connected. Note: Some moldeling clay may melt if too much heat is transfered through the pin
+                                    into the clay. It may be necessary to use a tooth brush, or other bristle brush, to clean off the header pins if the clay melts to the pins.
+                                </p>
+                                <p>
+                                    <img src="/assets/images/romi/RomiJumper.jpg" width="500" class="text-center" alt="PWM Jumper" />
+                                </p>
+                                <p>
+                                    The Romi board includes a convience strip of standard PWM connections for running additional motors or servos for future mechanisms. However the 5v power bus is not connected by default.
+                                    Use a header jumper cap to connect the 5V pin adjacent to the signal pins, to the middle pins of the PWM connections.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Panel 6 End-->
+            </div>            
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="kk text-center mt-5">Step 5: Wiring</h1>
+            </div>
+            <div>
+                <img src="/assets/images/romi/RomiBoardMounted.jpg" width="500" class="text-center" alt="Mounted" />
+                <img src="/assets/images/romi/JumperWires.jpg" width="500" class="text-center" alt="Wiring" />
+                <img src="/assets/images/romi/JumperClips.jpg" width="500" class="text-center" alt="Clips" />                
+                <ul>
+                    <li>Using 2mm screws, attach the Romi board to the Romi mount</li>                  
+                    <li>Using 10cm (or 20cm) male-to-female jumper wires, attach the motors to the Romi board</li>                  
+                    <li>Using 2mm screws, attach the retaining clips for the jumper wires to the Romi mount </li>
+                    <li>With a small zip tie, secure the clips around the wire ends</li>
+                </ul>
+
+                <!--Panel 6 Start-->
+                <div class="panel-group ml-5" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">TL;DR;<i
+                                        class="fas fa-arrow-down gold"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body tldr-box">
+                                <p>
+                                    The Romi board should be secured to the Romi mount using screws not bolts. This allows for the board to be removed in the future, without requiring access to the top of the robot base part.
+                                    The Romi mount includes 4 or 6 spots where a screw lines up with mounting holes on the Romi board.                                   
+                                </p>
+                                <br/>
+                                <p>
+                                    Attaching the jumper wires requires patience and fine motor skills. 10cm jumper cables are just long enough to complete the connection. Start with the connection on the motor side. It may be easiest to connect the wires one at a time using a 
+                                    needle-nose plyers. Be sure to connect the wires in the same sequence (left to right) between the motor and Romi board.
+                                </p>
+                                <br/>
+                                <p>
+                                    Carefully slide the wire retention clips in place after the motor wires have been connected. Secure the clips to the Romi mount using 2mm screws. With a small zip tie, clamp the clips to the wire ends.                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Panel 6 End-->
+            </div>            
+        </div>
+    </div>
 </div>
