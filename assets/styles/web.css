@@ -277,10 +277,17 @@ height: 150px;
 }
 
 .btn-default:hover, .btn-default:focus {
-  background-color: #0085A1;
-  border: 1px solid #0085A1;
-  color: white;
+  background-color: var(--maroon-color, black);
+  border: 1px solid var(--maroon-color, black);
+  color: var(--gold-color, white);
 }
+
+.btn-kk {
+  background-color: var(--maroon-color, black);
+  border: 1px solid var(--maroon-color, black);
+  color: var(--gold-color, white);
+}
+
 /* END Buttons */
 
 .card-kk {
@@ -1028,4 +1035,11 @@ height: 315px;
   width: 280px;
   height: 157.5px;
   }
+}
+
+.tldr-box{
+  border-color: var(--maroon-color, black);
+  border-width: 1px;
+  background-color: var(--shaded-color, lightgray);
+  padding: 30px;
 }
