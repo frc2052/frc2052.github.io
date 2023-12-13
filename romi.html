@@ -532,7 +532,7 @@ permalink: /romi/
                     <li>With a small zip tie, secure the clips around the wire ends</li>
                 </ul>
 
-                <!--Panel 6 Start-->
+                <!--Panel 7 Start-->
                 <div class="panel-group ml-5" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -560,7 +560,175 @@ permalink: /romi/
                         </div>
                     </div>
                 </div>
-                <!--Panel 6 End-->
+                <!--Panel 7 End-->
+            </div>            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="kk text-center mt-5">Skipping Ahead: Code</h1>
+            </div>
+            <div>
+                <p>
+                    Romi Subsystems are similar, but control mechanisms unlike those usually found on a real FRC robot. Currently, the Romi attempts to control PWM motor controllers that use a single locked-antiphase PWM signal. 
+                    These motor controllers are often large and/or expensive. 
+                    Low cost PWM motor controllers (also called an "H-Bridge") typically used on RC cars cannot use this signal. Instead they need an anolog (voltage) signal for forward, and a second signal for reverse. Unfortunately, the Romi does not allow for 
+                    analog out. So the only option is a Digital Out signal. This is effectively either 0% or 100% voltage. 
+                </p>
+                <p>
+                    The TL;DR; includes 3 complete subsystem classes for the intake, shooter, and indexer. Copy these classes to avoid needing to figure out how control servos and H-Bridge motor controllers from scratch. You may need to modify the package name to match 
+                    your project.
+                </p>
+
+                <!--Panel 8 Start-->
+                <div class="panel-group ml-5" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">TL;DR;<i
+                                        class="fas fa-arrow-down gold"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse">
+                            <div class="panel-body tldr-box">
+<pre>
+    package frc.robot.subsystems;
+
+    import edu.wpi.first.wpilibj2.command.SubsystemBase;
+    import edu.wpi.first.wpilibj.Servo;
+
+    public class IndexerSubSystem extends SubsystemBase {
+        private static IndexerSubSystem instance = null;
+        private Servo hopperGateServo;
+        private Servo shooterGateServo;
+
+        public void openHopperGate() {
+            hopperGateServo.setAngle(0);
+        }
+
+        public void closeHopperGate() {
+            hopperGateServo.setAngle(90);
+        }
+
+        public void openShooterGate() {
+            shooterGateServo.setAngle(0);
+        }
+
+        public void closeShooterGate() {
+            shooterGateServo.setAngle(90);
+        }
+
+        public static IndexerSubSystem getInstance() {
+            if (instance == null)
+            {
+            instance = new IndexerSubSystem();
+            }
+            return instance;
+        }
+        /** Creates a new IntakeMotor. */
+        private IndexerSubSystem() {
+            hopperGateServo = new Servo(3);
+            shooterGateServo = new Servo(2);
+            closeHopperGate();
+            closeShooterGate();
+        }
+    }
+</pre>
+<p >
+    <br/><hr/><br/>
+</p>    
+<pre>
+    package frc.robot.subsystems;
+    
+    import edu.wpi.first.wpilibj.DigitalOutput;
+    import edu.wpi.first.wpilibj2.command.SubsystemBase;
+    
+    public class HBridgeIntakeSubsystem extends SubsystemBase {
+    
+        private static HBridgeIntakeSubsystem instance = null;
+    
+        public static HBridgeIntakeSubsystem getInstance() {
+        if (instance == null)
+        {
+            instance = new HBridgeIntakeSubsystem();
+        }
+        return instance;
+        }
+    
+        private HBridgeIntakeSubsystem() {}
+    
+        private DigitalOutput pinFoward = new DigitalOutput(8);
+    
+        private boolean pinFOut = false;
+        
+        public void IntakeIn()
+        {
+        pinFOut = true;
+        }
+    
+        public void Stop()
+        {
+        pinFOut = false;
+        }
+    
+        @Override
+        public void periodic() {
+        // This method will be called once per scheduler run
+        pinFoward.set(pinFOut);
+        }                                    
+    }                                    
+</pre>
+<p>
+<br/><hr/><br/>
+</p>
+<pre>
+    package frc.robot.subsystems;
+    
+    import edu.wpi.first.wpilibj.DigitalOutput;
+    import edu.wpi.first.wpilibj2.command.SubsystemBase;
+    
+    public class HBridgeShooterSubsystem extends SubsystemBase {
+    
+        private static HBridgeShooterSubsystem instance = null;
+    
+        public static HBridgeShooterSubsystem getInstance() {
+        if (instance == null)
+        {
+            instance = new HBridgeShooterSubsystem();
+        }
+        return instance;
+        }
+    
+        private HBridgeShooterSubsystem() {}
+    
+        private DigitalOutput pinFoward = new DigitalOutput(9);
+    
+        private boolean pinFOut = false;
+        
+        public void ShooterForward()
+        {
+        pinFOut = true;
+        }
+    
+        public void Stop()
+        {
+        pinFOut = false;
+        }
+    
+        @Override
+        public void periodic() {
+        // This method will be called once per scheduler run
+        pinFoward.set(pinFOut);
+        }
+    }                                    
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Panel 8 End-->
             </div>            
         </div>
     </div>
