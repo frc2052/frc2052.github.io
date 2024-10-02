@@ -600,12 +600,18 @@ height: 150px;
 .intro-header {
   background-color: #777777;
   background: no-repeat center center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+
+  background-position: center 55px;
+  background-size: contain;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
 }
 
 .intro-header .site-heading {
