@@ -71,6 +71,13 @@ img.max-200 {
   max-height: 200px;
 }
 
+nav.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  bottom: 100;
+}
+
 @keyframes zoom {
   from {transform:scale(0)}
   to {transform:scale(1)}

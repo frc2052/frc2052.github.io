@@ -5,7 +5,13 @@ layout: default
 
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('assets/images/Team/TeamDarkCropped2024.jpg')" onclick="showModal('myModal', ''/assets/images/Team/TeamFull2024.jpg', 'KnightKrawler Team - 2024')"> <!-- sets the backgroud image and pop-up -->
+<header class="intro-header"
+  style= "background-image: url('assets/images/Team/TeamDarkCropped2024.jpg'); 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-position: center 60px;" 
+  onclick="showModal('myModal', '/assets/images/Team/TeamFull2024.jpg', 'KnightKrawler Team - 2024')"
+  > <!-- sets the backgroud image and pop-up -->
     <div class="site-heading">
         <h1>KnightKrawler Robotics</h1>
         <h2>FRC Team 2052</h2>
@@ -68,10 +74,10 @@ layout: default
 <!-- update paragraphs and videos that are side by side -->
   <div class="row justify-content-center mt-5 mb-2">
 
-    <div class="col col-sm-12 col-md-6"> <!-- div that includes the paragraphs -->
+    <div class="d-flex col col-sm-12 col-md-6 align-items-center"> <!-- div that includes the paragraphs -->
+      <div class="d-flex flex-column"> <!-- div that centers the paragraphs vertically -->
 
-
-    <!--  <h2 class="maroon text-center">KnightKrawler's Top 10 Tips</h2>
+     <!-- <h2 class="maroon text-center">KnightKrawler's Top 10 Tips</h2>
       <p class="text-center">Check out our <a href="/2020top10">top 10 tips</a> on what to do and look for at a 2024 <a href="/glossary/#frc" target="_blank">FRC</a> competition!</p>
         <br> -->
     <!--  <div class="row">
@@ -99,6 +105,7 @@ layout: default
         </div>
       </div>
 
+      </div>
     </div>
 
     <!-- div with videos. Usually game animation and robot reveal -->
@@ -135,7 +142,7 @@ layout: default
     <div class="col justify-content-center sponsor-row">
       <img src="/assets/images/sponsors/Irondale.jpg" class="mx-auto d-block img-fluid max-200"/>
   </div>
-  <div class="justify-content-center sponsor-row">
+  <div class="col justify-content-center sponsor-row">
     <a href="https://ghaasfoundation.org/content/ghf/en/home.html" target="_blank">
       <img src="/assets/images/sponsors/haas.png" class="mx-auto d-block img-fluid"/>
     </a>
