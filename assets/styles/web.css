@@ -514,13 +514,13 @@ height: 150px;
 
 .footnote {
   font-size: 12px;
-  font-color: #eeeeee;
+  color: #eeeeee;
 }
 
 .footnote-ref {
   font-size:70%;
   vertical-align: super;
-  font-color: #eeeeee;
+  color: #eeeeee;
 }
 
 .gameDescription {
@@ -600,18 +600,19 @@ height: 150px;
 .intro-header {
   background-color: #777777;
   background: no-repeat center center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+}
 
-  background-position: center 55px;
-  background-size: contain;
-  align-items: center; 
-  justify-content: center; 
-  text-align: center;
+@media only screen and (min-width: 767px) {
+  .intro-header {
+    background-attachment: fixed;
+    background-position: center 55px;
+  }
 }
 
 .intro-header .site-heading {
@@ -664,6 +665,12 @@ height: 150px;
 
 .kk {
     font-family: Knightkrawler;
+}
+
+@media only screen and (max-width: 767px) {
+  .intro-paragraph {
+    margin: 10px 20px;
+  }
 }
 
 .linkbutton {
