@@ -74,7 +74,7 @@ img.max-200 {
 nav.sticky-navbar {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   bottom: 100;
 }
 
@@ -438,6 +438,10 @@ height: 150px;
   margin-right: auto;
 }
 
+.dropdown:hover {
+  color: blue;
+}
+
 .dropdown-content {
   display: inline-block;
   display: none;
@@ -611,6 +615,7 @@ height: 150px;
 @media only screen and (min-width: 767px) {
   .intro-header {
     background-attachment: fixed;
+    background-size: contain;
     background-position: center 55px;
   }
 }
@@ -621,12 +626,6 @@ height: 150px;
   color: var(--gold-color, white);
 }
 
-/* if the page is more than 1000px wide, change top padding */
-@media only screen and (min-width: 1000px) {
-  .intro-header .site-heading {
-    padding: 150px 0;
-  }
-}
 
 .intro-header .site-heading h1 {
   font-size: 50px;
@@ -639,18 +638,21 @@ height: 150px;
   font-family: Knightkrawler;
 }
 
-/* if the page is more than 1000px wide, change font sizes */
-@media only screen and (min-width: 1000px) {
+/* if the page is more than 1100px wide, change font sizes & top padding */
+@media only screen and (min-width: 1100px) {
+  .intro-header .site-heading {
+    padding: 150px 0;
+  }
+
   .intro-header .site-heading h1 {
     font-size: 80px;
   }
-}
 
-@media only screen and (min-width: 1000px) {
   .intro-header .site-heading h2 {
     font-size: 40px;
   }
 }
+
 /*END hero banner*/
 
 /* team photo popup stuff */
@@ -668,7 +670,7 @@ height: 150px;
 }
 
 @media only screen and (max-width: 767px) {
-  .intro-paragraph {
+  p {
     margin: 10px 20px;
   }
 }
@@ -866,11 +868,16 @@ height: 150px;
     color: rgba(255,255,255, 1) !important;
 }
 /* Navigation Menu: change the color of active or hovered links */
-.nav-link-custom:active,
 .nav-link-custom:focus,
 .nav-link-custom:hover {
     color: var(--gold-color, white) !important;
 }
+
+/* Navigation Menu: change the Y position of clicked navbar text */
+.nav-link-custom:active {
+  transform: translateY(1px);
+}
+
 /* Navigation Menu: change the dropdown menu */
 .nav-dropdown-custom {
     background-color: #602020;
