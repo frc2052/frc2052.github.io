@@ -299,6 +299,17 @@ height: 150px;
 
 .card-kk {
   margin: 0 30px;
+  border-radius: 6px;
+}
+
+.card-heading {
+  padding: 5px;
+}
+
+.gold-bottom-border {
+  border-bottom-left-radius: 0px!important;
+  border-bottom-right-radius: 0px!important;
+  border-bottom: var(--gold-color, black) solid 3px;
 }
 
 .card-kk .card-heading {
@@ -307,6 +318,7 @@ height: 150px;
   text-align: center;
   color: var(--gold-color, white);
   background-color:  var(--maroon-color, black);
+  border-radius: 5px;
 }
 
 /*card-greens are for Girl Scouts page*/
@@ -332,6 +344,7 @@ height: 150px;
  text-align: center;
  color: white;
  background-color:  var(--green-color, black);
+ border-radius: 5px;
 }
 /*End of Girl Scout cards*/
 
@@ -403,21 +416,33 @@ height: 150px;
 
 .core-value {
  margin: 0 2px;
+ transition: transform 0.3s ease;
+ border-radius: 6px;
 }
 
 .core-value .card-heading {
- width: 100%;
- font-size: 22px;
- line-height: 24px;
- height: 80px;
- vertical-align: middle;
- text-align: center;
- color: var(--gold-color, white);
- background-color:  var(--maroon-color, black);
+  width: 100%;
+  font-size: 22px;
+  line-height: 24px;
+  height: 80px;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--gold-color, white);
+  background-color:  var(--maroon-color, black);
+  border-radius: 5px;
 }
 
 .core-value .card-body{
   font-size:14px;
+  padding: 10px 20px 0px 10px;
+}
+
+.card-body ul {
+  padding-left: 30px;
+}
+
+.card-body ul li {
+  font-size: 18px;
 }
 
 /*dropdown menu*/
@@ -425,10 +450,21 @@ height: 150px;
   background-color: var(--maroon-color, black);
   color: white;
   padding: 16px;
-  margin-top: 30px;
   font-size: 20px;
   border: none;
   width: 200px;
+}
+
+.teamsearch {
+  width: 300px; 
+  padding: 10px 15px; 
+  font-size: 20px; 
+  border: 2px solid var(--maroon-color, black); 
+  border-radius: 5px;
+  margin-bottom: 0;
+  background-color: var(--maroon-color, black);
+  color: white;
+  height: 100%;
 }
 
 .dropdown {

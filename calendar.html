@@ -5,5 +5,13 @@ permalink: /calendar/
 
 <div class="container">
   <h1 class="kk mt-5">Team Kalendar</h1>
+  <p id="loading-text">Loading calendar...</p>
   <p><iframe src="https://calendar.google.com/calendar/embed?src=team2052.com_g4t0qv0cpdplbvanff02pq8518%40group.calendar.google.com&#038;ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
 </div>
+
+<script>
+  $('iframe').on('load', function() { 
+    $('#loading-text').hide(); 
+    });
+</script>
+
