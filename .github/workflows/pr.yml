@@ -16,4 +16,9 @@ jobs:
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
-        jekyll build
+
+    -name: Build site
+      run: jekyll build
+
+    -name: Check links & images
+      run: bundle exec htmlproofer ./_site --disable-external
