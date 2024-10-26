@@ -4,7 +4,9 @@
   <body>
     {% include header.html %}
 
-    <div class="dropdown d-block d-md-none">
+    <h1 class="kk">Team History</h1>
+
+    <!-- <div class="dropdown d-block d-md-none">
   <button class="dropbtn kk center">Select Year <i class="far fa-hand-point-down"></i></button>
   <div class="dropdown-content dropdown-menu-center">
     <a class="text-center" href="/history/2024cresendo/">2024 Cresendo</a>
@@ -27,8 +29,11 @@
     <a class="center" href="/history/2007racknroll/">2007 Rack'N'Roll</a>
     <a class="center" href="/history/covid/">COVID19 Response</a>
   </div>
-</div>
-    <div class= "col-md-2 sidenav main hidden-sm">
+</div> -->
+
+<!-- Desktop View -->
+<div class="d-flex maincontainer flex-row align-content-center justify-content-center" style="display: flex; position: relative; left: 0;">
+  <div class= "d-flex flex-column flex-1 col-md-2 sidenav hidden-sm">
       <a class="text-center kk year" href="/history/2024cresendo/">2024 Cresendo</a>
       <a class="text-center kk year" href="/history/2023chargedup/">2023 Charged Up</a>
       <a class="text-center kk year" href="/history/2022rapidreact/">2022 Rapid React</a>
@@ -50,7 +55,11 @@
       <a class="text-center kk year" href="/history/covid/">COVID19 Response</a>
     </div>
 
+  <div class="d-flex historycontent flex-1">
+    <!-- <img  class="max-200 d-flex flex-1" src="/assets/images/Robot/scarab.JPG" </img> -->
     {{ content }}
+  </div>
+</div>
 
     {% include footer.html %}
   </body>

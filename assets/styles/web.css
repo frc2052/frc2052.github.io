@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Knightkrawler";
+  src: url("/assets/fonts/Knightkrawler.ttf");
+}
+
 a {
   color: #333333;
 }
+
 a:hover,
 a:focus {
   color: var(--maroon-color, black);
@@ -16,6 +22,7 @@ body {
   font-size: 20px;
   color: #333333;
   -webkit-tap-highlight-color: #0085A1;
+
 }
 
 #countdown {
@@ -23,11 +30,6 @@ body {
   color: #FCC20B; /* gold */
   text-align: center;
   font-size: 50px;
-}
-
-@font-face {
-    font-family: "Knightkrawler";
-    src: url("/assets/fonts/Knightkrawler.ttf");
 }
 
 footer {
@@ -952,6 +954,10 @@ height: 150px;
 
 }
 
+.inside-bullets {
+  list-style-position: inside;
+}
+
 .progress-caption {
   font-size: 15px;
 }
@@ -963,23 +969,35 @@ height: 150px;
 
 .robotInfo {
   font-size: 17px;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: center;
 }
 
 .robotPhoto {
   height: 300px;
   width:auto;
-  padding-bottom: 30px;
+}
+
+ul {
+  padding-left: 0px;
 }
 
 .sponsor-row {
   margin: 0 20px 40px 20px
 }
 
+.sponsor-links li {
+  list-style-type: none;
+  text-decoration: underline;
+  color: blue;
+}
+
 .sidenav {
   z-index: 1;
   left:0px;
   overflow-x:hidden;
-  position:absolute;
+  display: flex;
 }
 
 .sidenav a {
