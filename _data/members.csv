@@ -1,39 +1,47 @@
 FirstName,LastName,ImageName,Role,Tagline1,Tagline2,Tagline3,Tagline4,Grade,Badges
-Lynnea,Alberts,LynneaA10.jpg,Media Subteam,,,,,10,"photography",
-Colin,Andert,colin10.jpg,Build Subteam,,,,,10,"basic_tool_training",
-Geo,Beach,geo12.jpg,Programming Subteam and Strategy Lead,,,,,12,
-Lucas,Bird,lucas9.jpg,Build Subteam,,,,,9,"basic_tool_training",
-Lexi,Birkin,lexi12.jpg,Team Captain,,,,,12,
-Mason,Boykin,MasonB9.jpg,Build Subteam,,,,,9,"basic_tool_training",
-Ken,Carranza,ken10.jpg,Programming and Media Subteam,,,,,10,"photography",
-Xander,Daire,XanderD12.jpg,Build Subteam,,,,,12,"basic_tool_training",
-Andrew,Davenport,andrewd9.jpg,Programming Subteam,,,,,9,"java",
-Nicolas,Espinoza,NickE10.jpg,Build Subteam,,,,,10,"basic_tool_training",
-Caleb,Fynewever,calebf10.jpg,Programming Captain,,,,,10,"java",
-Jeevan,Ghale,jeevan10.jpg,Build Subteam,,,,,10,"basic_tool_training",
-Chase,Gibeau,chase9.jpg,Build Subteam,,,,,9,"basic_tool_training",
-Paul,Guachichulla,PaulG10.jpg,Build Subteam,,,,,10,"basic_tool_training",
-Cameron,Hetherigton,cam11.jpg,Media Captain,,,,,11,"photography",
-Caleb,Hill,calebh12.jpg,Build Subteam and Strategy Lead,,,,,12,"basic_tool_training",
-Isaac,Johnson,isaac11.jpg,Build Subteam and CAD Lead,,,,,11,"basic_tool_training",
-Luna,Johnson,luna11.jpg,Programming Subteam,,,,,11,"java",
-Eddie,Lewis,eddie11.jpg,Build Subteam,,,,,11,"basic_tool_training",
-Mason,Lilley,MasonL9.jpg,Programming Subteam,,,,,9,"java",
-Anika,Livstrom,Anika.jpg,Media Subteam and Fundraising Lead,,,,,10,"photography",
-Xander,McMillan,XanderM10.jpg,Build Subteam,,,,,10,"basic_tool_training",
-Afomia,Mefsin,afomia10.jpg,Programming Subteam,,,,,10,"java",
-Kevin,Nguyen,kevin10.jpg,Build Captain,,,,,10,"basic_tool_training",
-Daniel,Owen,daniel9.jpg,Programming Subteam,,,,,9,"java",
-Andrew,Paetznick,andrewp12.jpg,Build Subteam,,,,,12,"basic_tool_training",
-Jillian,Proell,jillian10.jpg,Media Subteam,,,,,10,"photography",
-Finn,Rosivach,finneus10.jpg,Build Subteam,,,,,10,"basic_tool_training",
-Augustus,Schendel,augustus10.jpg,Programming Subteam,,,,,10,"java",
-Keoni,Shelburne,keoni10.jpg,Build Subteam,,,,,10,"basic_tool_training",
-Aiden,Spiess,aiden9.jpg,Media Subteam,,,,,9,"photography",
-Max,Swanson,MaxS9.jpg,Programming Subteam,,,,,9,"java",
-Francis,Trombley,francis9.jpg,Build Subteam,,,,,9,"basic_tool_training"
-Nicole,Vanyo,NicoleV10.jpg,Website Lead,,,,,10,"website",
-Mourya,Yandra,MouryaY12.jpg,Programming Subteam,,,,,12,"java",
+
+<!--Seniors-->
+
+Cameron,Hetherigton,cam11.jpg,Media Captain,,,,,12,"photography",
+Isaac,Johnson,isaac11.jpg,Build Subteam and CAD Lead,,,,,12,"basic_tool_training",
+Luna,Johnson,luna11.jpg,Programming Subteam,,,,,12,"java",
+Eddie,Lewis,eddie11.jpg,Build Subteam,,,,,12,"basic_tool_training",
+
+<!--Juniors-->
+
+Lynnea,Alberts,LynneaA10.jpg,Media Subteam,,,,,11,"photography",
+Colin,Andert,colin10.jpg,Build Subteam,,,,,11,"basic_tool_training",
+Ken,Carranza,ken10.jpg,Programming and Media Subteam,,,,,11,"photography",
+Nicolas,Espinoza,NickE10.jpg,Build Subteam,,,,,11,"basic_tool_training",
+Caleb,Fynewever,calebf10.jpg,Programming Captain,,,,,11,"java",
+Jeevan,Ghale,jeevan10.jpg,Build Subteam,,,,,11,"basic_tool_training",
+Paul,Guachichulla,PaulG10.jpg,Build Subteam,,,,,11,"basic_tool_training",
+Anika,Livstrom,Anika.jpg,Media Subteam and Fundraising Lead,,,,,11,"photography",
+Afomia,Mefsin,afomia10.jpg,Programming Subteam,,,,,11,"java",
+Kevin,Nguyen,kevin10.jpg,Build Captain,,,,,11,"basic_tool_training",
+Jillian,Proell,jillian10.jpg,Media Subteam,,,,,11,"photography",
+Finn,Rosivach,finneus10.jpg,Build Subteam,,,,,11,"basic_tool_training",
+Augustus,Schendel,augustus10.jpg,Programming Subteam,,,,,11,"java",
+Keoni,Shelburne,keoni10.jpg,Build Subteam,,,,,11,"basic_tool_training",
+Nicole,Vanyo,NicoleV10.jpg,Website Lead,,,,,11,"website",
+
+<!--Sophomores-->
+
+Mason,Boykin,MasonB9.jpg,Build Subteam,,,,,10,"basic_tool_training",
+Andrew,Davenport,andrewd9.jpg,Programming Subteam,,,,,10,"java",
+Chase,Gibeau,chase9.jpg,Build Subteam,,,,,10,"basic_tool_training",
+Mason,Lilley,MasonL9.jpg,Programming Subteam,,,,,10,"java",
+Daniel,Owen,daniel9.jpg,Programming Subteam,,,,,10,"java",
+Lucas,Bird,lucas9.jpg,Build Subteam,,,,,10,"basic_tool_training",
+Aiden,Spiess,aiden9.jpg,Media Subteam,,,,,10,"photography",
+Max,Swanson,MaxS9.jpg,Programming Subteam,,,,,10,"java",
+Francis,Trombley,francis9.jpg,Build Subteam,,,,,10,"basic_tool_training"
+
+<!--Freshmen-->
+
+<!--To be Made-->
+
+<!--Mentors-->
 
 Ashley,,Ashley.jpg,Programming Subteam,Working at Medtronic 2015,Helping KnightKrawler since 2024,,,0,
 Beatrice,,beatrice.jpg,Build Subteam,Working at PAR Systems since 2023,Helping KnightKrawler since 2023,,,0,
@@ -51,3 +59,5 @@ Nate,,Nate.jpg,Build Subteam,Working at Edgewood Middle School since 2016,Helpin
 Pete,,Pete.jpg,Build Subteam,Working at Graco since 2010,Helping KnightKrawler since 2005,A KnightKrawler alumn,,0,
 Scott,,Scott2022.jpg,Controls Subteam,Working at QONQR since 2010,Helping KnightKrawler since 2014,,,0,
 Steve,,Steve2022.jpg,Task Force and Media,Working at Soft Lake Solutions since 2018,Helping KnightKrawler since 2017,,,0,
+
+<!--UPDATE ALL PNG's AND ADD NEW STUDENTS!-->

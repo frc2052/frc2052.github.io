@@ -727,10 +727,21 @@ height: 150px;
 }
 
 .memberPhotos {
-  padding-top:10px;
   width:200px;
   height:200px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: maroon;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  /* transform: scale(1.2);  */
 }
+
+.memberPhotos:hover {
+  transform: scale(1.06);
+}
+
 
 /* sideSlider */
 @media (max-width: 576px) {
