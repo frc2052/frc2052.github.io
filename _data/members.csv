@@ -10,10 +10,9 @@ Eddie,Lewis,Eddie12.jpg,Build Subteam,,,,,12,"basic_tool_training",
 
 Eli,Frey,Eli11.jpg,Build Subteam,,,,,11,"basic_tool_training",
 Jonathan,PerezParra,Jonathan11.jpg,Build Subteam,,,,,11,"basic_tool_training",
-Max,Forman,MaxF11.jpg,UNKNOWN Subteam,,,,,11,"basic_tool_training",           <!--Unknown Subteam-->
 William,Lee,William11.jpg,Build Subteam,,,,,11,"basic_tool_training",
-Max,Thurman,MaxT11.jpg,Programming Subteam,,,,,11,"java",
 Lynnea,Alberts,Lynnea11.jpg,Media Subteam,,,,,11,"photography",
+Aisha,Islami,2020Backdrop.jpg,Build Subteam,,,,,11,"basic_tool_training",
 Ken,Carranza,Ken11.jpg,Programming and Media Subteam,,,,,11,"photography",
 Caleb,Fynewever,Caleb11.jpg,Programming Captain,,,,,11,"java",
 Paul,Guachichulla,Paul11.jpg,Build Subteam,,,,,11,"basic_tool_training",
@@ -25,6 +24,10 @@ Finn,Rosivach,Finneus11.jpg,Build Subteam,,,,,11,"basic_tool_training",
 Augustus,Schendel,Augustus11.jpg,Programming Subteam,,,,,11,"java",
 Keoni,Shelburne,Keoni11.jpg,Build Subteam,,,,,11,"basic_tool_training",
 Nicole,Vanyo,Nicole11.jpg,Website Lead,,,,,11,"website",
+Audrey,D,AudreyD11.jpg,Build Subteam,,,,,11,"basic_tool_training",
+Edie,M,EdieM11.jpg,Programming Subteam,,,,,11,"java",
+Max,Thurman,MaxT11.jpg,Programming Subteam,,,,,11,"java",
+Emily,Lor,2020Backdrop.jpg,Build Subteam,,,,,11,"basic_tool_training",
 
 <!--Sophomores-->
 
@@ -38,24 +41,26 @@ Daniel,Owen,Daniel10.jpg,Programming Subteam,,,,,10,"java",
 Lucas,Bird,Lucas10.jpg,Build Subteam,,,,,10,"basic_tool_training",
 Aiden,Spiess,Aiden10.jpg,Media Subteam,,,,,10,"photography",
 Max,Swanson,MaxS10.jpg,Programming Subteam,,,,,10,"java",
-Francis,Trombley,Francis10.jpg,Build Subteam,,,,,10,"basic_tool_training"
+Francis,Trombley,Francis10.jpg,Build Subteam,,,,,10,"basic_tool_training",
+Everett,Bessler,Everett10.jpg,Build Subteam,,,,,10,"basic_tool_training",
+Ann,Wong,Ann10.jpg,Build Subteam,,,,,9,"basic_tool_training",
 
 <!--Freshmen-->
 
 Alonzo,Au,Alonzo9.jpg,Media Subteam,,,,,9,"photography",
 Amogh,Srinivas,Amogh9.jpg,Programming Subteam,,,,,9,"java",
-Ann,W,Ann10.jpg,Media Subteam,,,,,9,"photography",                  <!--Unknown Last Name-->
-Blake,Escultura,Blake9.jpg,UNKNOWN Subteam,,,,,9,"basic_tool_training",     <!--Unknown Subteam-->
 Cam,King,CamK9.jpg,Media Subteam,,,,,9,"photography",
 Hayet,Asbu,Hayet9.jpg,Media Subteam,,,,,9,"photography",
-Jameson,Sypniewski,Jameson9.jpg,UNKNOWN Subteam,,,,,9,"basic_tool_training", <!--Unknown Subteam-->
-Joseph,Yoo,Joseph9.jpg,UNKNOWN Subteam,,,,,9,"basic_tool_training",          <!--Unknown Subteam-->
+Jameson,Sypniewski,Jameson9.jpg,Build Subteam,,,,,9,"basic_tool_training",
+Joseph,Yoo,Joseph9.jpg,Build Subteam,,,,,9,"basic_tool_training",
 Owen,Brandenburg,Owen9.jpg,Build Subteam,,,,,9,"basic_tool_training",
-Phin,Kreitzer,Phin9.jpg,UNKNOWN Subteam,,,,,9,"basic_tool_training",         <!--Unknown Subteam-->
-Ryan,Hassler,Ryan9.jpg,UNKNOWN Subteam,,,,,9,"basic_tool_training",          <!--Unknown Subteam-->
+Phin,Kreitzer,Phin9.jpg,Media Subteam,,,,,9,"photography",
 Sebastian,Schendel,Sebastian9.jpg,Programming Subteam,,,,,9,"java",
 Tyler,Granlund,Tyler9.jpg,Media Subteam,,,,,9,"photography",
 Vivienne,Martin,Vivienne9.jpg,Programming Subteam,,,,,9,"java",
+AJ,B,AjB9.jpg,Media Subteam,,,,,9,"basic_tool_training",
+Max,French,MaxF9.jpg,Media Subteam,,,,,9,"photography",
+Vincent,Bertucci,2020Backdrop.jpg,Media Subteam,,,,,9,"photography",
 
 <!--Mentors-->
 
@@ -68,6 +73,7 @@ Dahsol,,Dahsol.jpg,Team Advisor,Working in Moundsview School District since 2018
 Dan,,Dan.jpg,Controls Subteam,Working at MN Management and Budget since 1999,Helping KnightKrawler since 2013,,,0,
 Dave,,Dave.jpg,Controls Subteam,Working at Children's Hospital and Clinics since 2015,Helping KnightKrawler since 2017,,,0,
 Donovan,,Donovan.jpg,Build Subteam,,Helping KnightKrawler since 2023,,,0,
+Jen,,Jen.jpg,Media Subteam,,Helping KnightKralwer since 2024,,,0,
 Mark,,Mark.jpg,Build Subteam,Working at Salesforce since 2016,Helping KnightKrawler since 2011,,,0,
 Matthew,,2020Backdrop.jpg,Build Subteam,,Helping KnightKrawler since 2011,,,0,
 Michelle,Johnson,MichelleJ.jpg,Task Force and Media,Working at M Health Fairview since 2014,Helping KnightKrawler since 2019,,,0,
