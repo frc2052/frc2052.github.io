@@ -365,6 +365,16 @@ height: 150px;
   color: var(--maroon-color, black);
 }
 
+.outreach-carousel .carousel-inner {
+  height: 100%;
+}
+
+.outreach-carousel-img {
+  height: 300px; /* Adjust this value as needed */
+  width: 500px;
+  object-fit: cover;
+}
+
 .center {
   display: block;
   margin-left: auto;
