@@ -22,44 +22,44 @@ layout: default
 
 <!-- sets up the news box using if and for loop from liquid control flow -->
 <div class="container">
-   {% assign psize = site.posts | size %} <!-- creates a variable -->
-  {% if psize > 0 %} <!-- if there are more than 0 files in posts folder, shows the card -->
-    <div class="card news">
-      <div class="card-heading">
-          <i class="fas fa-newspaper"></i> NEWS
-      </div>
-      {% for post in site.posts reversed %} <!-- creates a separate paragraph for each file in posts -->
-        <div class="card-body">
-          <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">
-            {{ post.title }} <i class="fas fa-arrow-circle-right"></i>
-          </a></h2>
-          <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 19 }}</p> <!-- truncatewords is the amount of words from the news file that is shown in the preview paragraph -->
-        </div>
-      {% endfor %}
-    </div>
-  {% endif %}
+  {% assign psize = site.posts | size %} <!-- creates a variable -->
+ {% if psize > 0 %} <!-- if there are more than 0 files in posts folder, shows the card -->
+   <div class="card news">
+     <div class="card-heading">
+         <i class="fas fa-newspaper"></i> NEWS
+     </div>
+     {% for post in site.posts reversed %} <!-- creates a separate paragraph for each file in posts -->
+       <div class="card-body">
+         <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">
+           {{ post.title }} <i class="fas fa-arrow-circle-right"></i>
+         </a></h2>
+         <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 19 }}</p> <!-- truncatewords is the amount of words from the news file that is shown in the preview paragraph -->
+       </div>
+     {% endfor %}
+   </div>
+ {% endif %}
 
-  <div class="row justify-content-center pt-5">
-    <img class="center" id="hovergif" src="/assets/images/logo/logo-large.png" height="200"> <!-- this is the kk logo. links to the javascript that adds the gif on hover -->
-    <script type="text/javascript" src="/assets/scripts/hovergif.js?refresh=2"></script>
-  </div>
-
+ <div class="row justify-content-center pt-5">
+   <img class="center" id="hovergif" src="/assets/images/logo/logo-large.png" height="200"> <!-- this is the kk logo. links to the javascript that adds the gif on hover -->
+   <script type="text/javascript" src="/assets/scripts/hovergif.js?refresh=2"></script>
+ </div>
+ 
   <!-- starting paragraphs -->
   <div class="row justify-content-center">
     <h1 class="kk center maroon text-center">
-      Welcome to Knightkrawler!
+      Welcome to KnightKrawler!
     </h1>
   </div>
   <div class="row">
 
     <p>
       We are Irondale High School's Robotics Team, <a href="/glossary/#frc">FRC</a> Team 2052. KnightKrawler is a place where
-      everyone is welcome and students become professionals. We work hard to compete at the
+      everyone is welcome, and students become professionals. We work hard to compete at the
       highest levels of competition while doing our best to assist all teams and help everyone succeed.
     </p>
     <p>
       <a href="/glossary/#graciousprofessionalism">Gracious Professionalism</a> is one of our core values. We work to ensure everyone has success
-      in robotics.  How can we help?  <a href="/contact">Contact us<a> and let's work together to build
+      in robotics.  How can we help?  <a href="/contact">Contact us</a> and let's work together to build
       awesome robots and the next generation of engineers and business professionals.
     </p>
   </div>
@@ -77,7 +77,7 @@ layout: default
       <div class="row">
         <div class="col-sm-12 col-md-12 center text-center">
         <h2 class="maroon text-center">Week Zero!</h2>
-        <p> Every year KnightKrawler hosts a practice tournament prior to the first week of competition. This gives teams a chance to practice in a near-real competition experience. <a href="/2025-week-zero" target="_blank"> Learn more and register!</a></p>
+        <p> Every year, KnightKrawler hosts a practice tournament prior to the first week of competition. This gives teams a chance to practice in a near-real competition experience. <a href="/2025-week-zero" target="_blank"> Learn more and register!</a></p>
       <!--  <a class="a:link" href="https://www.youtube.com/watch?v=HzqGKjLf8m4" target="_blank">
         <button type="button" class="linkbutton center"><font class="kk" size="4">Live Stream Link </font></button></a> -->
         </div>
@@ -96,18 +96,33 @@ layout: default
       <div class="row">
         <div class="col-sm-12 col-md-12 center text-center">
         <h2 class="maroon text-center">New Resource!</h2>
-        <p>Check out our new <a href="/roundtable/">Roundtable</a> page! There you will find all about our weekly sunday night call with teams in FRC!</p>
+        <p>Check out our new <a href="/roundtable/">Roundtable</a> page! There you will find all about our weekly Sunday night call with teams in FRC!</p>
         </div>
       </div>
 
     </div>
 
     <!-- div with videos. Usually game animation and robot reveal -->
-    <div class="col-sm-12 col-md-5 center">
-      <!-- Game Animation -->
-      <iframe class="youtube center results-padding" width="853" height="480" src="https://www.youtube.com/embed/9keeDyFxzY4?si=oJeyVNSpU_uZEu9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <!-- Robot Reveal -->
-      <iframe class="youtube center results-padding" width="854" height="480" src="https://www.youtube.com/embed/7VQs6FM1P04?si=t54sWbShf6EMORvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="col-sm-12 col-md-5 center">
+  <!-- Game Animation -->
+  <h2 class="maroon text-center">2025 Game Animation</h2>
+  <a href="https://www.youtube.com/watch?v=YWbxcjlY9JY" target="_blank">
+    <img src="assets/images/2025GA.jpeg" width="853" height="480" class="img-fluid" 
+    style="border: 6px solid #732626; border-radius: 5px; transition: transform 0.3s, box-shadow 0.3s;" 
+    alt="2025 Game Animation" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';" 
+    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"/>
+  </a>
+   <!-- <iframe class="youtube center results-padding" width="853" height="480" src="https://www.youtube.com/embed/YWbxcjlY9JY?si=lUwRhluB63CqGiUS" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <!-- Robot Reveal (un-comment and replace with 2025 video when done and delete text) -->
+  <br>
+  <br>
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-12">
+      <h2 class="maroon" style="margin-top: 20px;">2025 Robot Reveal Coming February 24th!</h2>
+    </div>
+  </div>
+</div>
+      <!-- <iframe class="youtube center results-padding" width="854" height="480" src="https://www.youtube.com/embed/7VQs6FM1P04?si=t54sWbShf6EMORvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
     </div>
   </div>
