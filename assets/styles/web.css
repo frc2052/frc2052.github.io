@@ -92,6 +92,14 @@ p a {
   --green-color: #0ca655; /*for girl scout page*/
 }
 
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* BEGIN Special browser stuff */
 ::-moz-selection {
   color: white;
