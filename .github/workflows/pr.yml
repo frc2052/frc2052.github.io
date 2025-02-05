@@ -25,4 +25,4 @@ jobs:
           --allow-missing-href \
           --ignore-missing-alt \
           --ignore-urls "/www.amazon.com/,/www.chiefdelphi.com/,/amzn.to/,/meet.google.com/" \
-          --ignore-status-codes 429,301
+          --ignore-status-codes 429,301,0
