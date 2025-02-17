@@ -1,0 +1,1796 @@
+[
+    {
+        "Team Number": 6,
+        "Team Nickname": "The CogSquad",
+        "School Name": null,
+        "Last Participated": 2003
+    },
+    {
+        "Team Number": 10,
+        "Team Nickname": "Red Knights",
+        "School Name": null,
+        "Last Participated": 2002
+    },
+    {
+        "Team Number": 1623,
+        "Team Nickname": "Banner Bots",
+        "School Name": null,
+        "Last Participated": 2008
+    },
+    {
+        "Team Number": 1816,
+        "Team Nickname": "\"The Green Machine\"",
+        "School Name": "Edina High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2052,
+        "Team Nickname": "KnightKrawler",
+        "School Name": "Irondale Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2129,
+        "Team Nickname": "Ultraviolet",
+        "School Name": "Southwest High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2169,
+        "Team Nickname": "KING TeC",
+        "School Name": "Prior Lake High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2175,
+        "Team Nickname": "The Fighting Calculators",
+        "School Name": "Math & Science Academy",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2177,
+        "Team Nickname": "The Robettes",
+        "School Name": "Visitation School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2181,
+        "Team Nickname": "GEARS",
+        "School Name": "Blaine High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2207,
+        "Team Nickname": "Bright Bears",
+        "School Name": "White Bear North Campus Senior",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2220,
+        "Team Nickname": "Blue Twilight",
+        "School Name": "Eagan High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2225,
+        "Team Nickname": "Rebel Robotics",
+        "School Name": "Champlin Park High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2227,
+        "Team Nickname": "Tigers",
+        "School Name": "Fridley High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2232,
+        "Team Nickname": "Deus ex Machina",
+        "School Name": "Anoka Senior High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 2239,
+        "Team Nickname": "Technocrats",
+        "School Name": "Hopkins High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2241,
+        "Team Nickname": "SWAT team",
+        "School Name": null,
+        "Last Participated": 2009
+    },
+    {
+        "Team Number": 2264,
+        "Team Nickname": "Trojan Robotics",
+        "School Name": "Wayzata High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2450,
+        "Team Nickname": "Wind Chill",
+        "School Name": "Cretin Derham Hall",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2470,
+        "Team Nickname": "Team BJORG",
+        "School Name": "Kennedy High School & Jefferson High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2472,
+        "Team Nickname": "Centurions",
+        "School Name": "Centennial High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2479,
+        "Team Nickname": "Phoenix",
+        "School Name": null,
+        "Last Participated": 2016
+    },
+    {
+        "Team Number": 2480,
+        "Team Nickname": "Iron Paws",
+        "School Name": "Roosevelt High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2488,
+        "Team Nickname": "Plasma Pumas",
+        "School Name": null,
+        "Last Participated": 2009
+    },
+    {
+        "Team Number": 2491,
+        "Team Nickname": "NoMythic",
+        "School Name": "Great River Montessori School & Avalon Charter School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2498,
+        "Team Nickname": "BearBotics",
+        "School Name": "Blake School-Northrop Campus",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2499,
+        "Team Nickname": "Industrial Revolution 2499",
+        "School Name": "Hibbing High School",
+        "Last Participated": 2022
+    },
+    {
+        "Team Number": 2500,
+        "Team Nickname": "Herobotics",
+        "School Name": "Henry High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2501,
+        "Team Nickname": "Bionic Polars",
+        "School Name": "North High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2502,
+        "Team Nickname": "Talon Robotics",
+        "School Name": "Eden Prairie High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2503,
+        "Team Nickname": "Warrior Robotics",
+        "School Name": "Brainerd High School N Campus",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2508,
+        "Team Nickname": "Armada",
+        "School Name": "Stillwater Area High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2509,
+        "Team Nickname": "Tigerbots",
+        "School Name": "Hutchinson High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2510,
+        "Team Nickname": "anishinaabe",
+        "School Name": null,
+        "Last Participated": 2009
+    },
+    {
+        "Team Number": 2511,
+        "Team Nickname": "Cougars",
+        "School Name": "Lakeville South High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2512,
+        "Team Nickname": "Duluth East Daredevils",
+        "School Name": "Duluth East High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2513,
+        "Team Nickname": "T.E.R.T.O.L.A.",
+        "School Name": "Edison High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2514,
+        "Team Nickname": "3M MHS",
+        "School Name": null,
+        "Last Participated": 2008
+    },
+    {
+        "Team Number": 2515,
+        "Team Nickname": "MR.E",
+        "School Name": "Marshall High School",
+        "Last Participated": 2023
+    },
+    {
+        "Team Number": 2518,
+        "Team Nickname": "Spartan Robotics",
+        "School Name": "Simley High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2525,
+        "Team Nickname": "The pHalcons",
+        "School Name": "Robbinsdale Armstrong High Sch",
+        "Last Participated": 2021
+    },
+    {
+        "Team Number": 2526,
+        "Team Nickname": "Crimson Robotics",
+        "School Name": "Family/Community & Maple Grove Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2529,
+        "Team Nickname": "Open Circuits",
+        "School Name": "Open World Lrng Community & Humboldt Secondary School",
+        "Last Participated": 2019
+    },
+    {
+        "Team Number": 2530,
+        "Team Nickname": "Inconceivable",
+        "School Name": "Mayo High School & Century High School & John Marshall High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2531,
+        "Team Nickname": "RoboHawks",
+        "School Name": "Chaska High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2532,
+        "Team Nickname": "FLASH Power",
+        "School Name": "Forest Lake Senior High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 2535,
+        "Team Nickname": "TIGEARS",
+        "School Name": null,
+        "Last Participated": 2013
+    },
+    {
+        "Team Number": 2538,
+        "Team Nickname": "The Plaid Pillagers",
+        "School Name": "Morris Area High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2545,
+        "Team Nickname": "Quantum Mechanics",
+        "School Name": "Columbia Heights High School",
+        "Last Participated": 2018
+    },
+    {
+        "Team Number": 2549,
+        "Team Nickname": "Millerbots",
+        "School Name": "Washburn High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2561,
+        "Team Nickname": "St Paul East Side RobEASTs",
+        "School Name": null,
+        "Last Participated": 2010
+    },
+    {
+        "Team Number": 2572,
+        "Team Nickname": "governors",
+        "School Name": null,
+        "Last Participated": 2008
+    },
+    {
+        "Team Number": 2574,
+        "Team Nickname": "RoboHuskie",
+        "School Name": "St Anthony Village High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2606,
+        "Team Nickname": "Irish Robotics",
+        "School Name": "Rosemount High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2654,
+        "Team Nickname": "Polar Rams",
+        "School Name": "Roseau Jr Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2667,
+        "Team Nickname": "Knights of the Valley",
+        "School Name": "Apple Valley High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2705,
+        "Team Nickname": "WE ROBOT",
+        "School Name": null,
+        "Last Participated": 2016
+    },
+    {
+        "Team Number": 2823,
+        "Team Nickname": "The Automatons",
+        "School Name": "Highland Park Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2825,
+        "Team Nickname": "Roc Robotics",
+        "School Name": "Afsa High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 2845,
+        "Team Nickname": "O'Botics",
+        "School Name": null,
+        "Last Participated": 2013
+    },
+    {
+        "Team Number": 2846,
+        "Team Nickname": "FireBears",
+        "School Name": "Roseville Area High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2847,
+        "Team Nickname": "The MegaHertz",
+        "School Name": "Fairmont High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2855,
+        "Team Nickname": "BEASTBOT",
+        "School Name": "Como Park Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2861,
+        "Team Nickname": "Infinity's End",
+        "School Name": "Lincoln Jr Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2879,
+        "Team Nickname": "Oriole Robotics",
+        "School Name": "St Louis Park Sr High School",
+        "Last Participated": 2024
+    },
+    {
+        "Team Number": 2883,
+        "Team Nickname": "F.R.E.D (FIRST Robotics Engineering and Design)",
+        "School Name": "Warroad High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2957,
+        "Team Nickname": "Knights1",
+        "School Name": "Alden-Conger School",
+        "Last Participated": 2023
+    },
+    {
+        "Team Number": 2977,
+        "Team Nickname": "Sir Lancer Bots",
+        "School Name": "Seven Rivers Robotics Coalition & La Crescent High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2987,
+        "Team Nickname": "Rogue Robotics",
+        "School Name": "Farmington High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 2989,
+        "Team Nickname": "Star Tech",
+        "School Name": "Academy of Holy Angels",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 3007,
+        "Team Nickname": "Robotitans",
+        "School Name": "Tartan High School",
+        "Last Participated": 2024
+    },
+    {
+        "Team Number": 3018,
+        "Team Nickname": "Nordic Storm",
+        "School Name": "Family/Community",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3023,
+        "Team Nickname": "STARK Industries",
+        "School Name": "Elk River Area Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3026,
+        "Team Nickname": "Orange Crush Robotics",
+        "School Name": "Family/Community",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3036,
+        "Team Nickname": "DROBA Warriors",
+        "School Name": "Deer River High School",
+        "Last Participated": 2019
+    },
+    {
+        "Team Number": 3038,
+        "Team Nickname": "ICE",
+        "School Name": "Chisago Lakes High School & North Branch Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3042,
+        "Team Nickname": "Cobalt Catalysts",
+        "School Name": "Eastview High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3054,
+        "Team Nickname": "IceStorm",
+        "School Name": "Cook County Jr Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3055,
+        "Team Nickname": "Furious George",
+        "School Name": "Austin High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3056,
+        "Team Nickname": "Pirates",
+        "School Name": null,
+        "Last Participated": 2016
+    },
+    {
+        "Team Number": 3058,
+        "Team Nickname": "ANNDROIDS",
+        "School Name": "Annandale Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3081,
+        "Team Nickname": "RoboEagles",
+        "School Name": "Kennedy High School",
+        "Last Participated": 2019
+    },
+    {
+        "Team Number": 3082,
+        "Team Nickname": "Chicken Bot Pie",
+        "School Name": "Minnetonka High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3090,
+        "Team Nickname": "Chaotic Robotics",
+        "School Name": "Winona Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3100,
+        "Team Nickname": "Lightning Turtles",
+        "School Name": "Henry Sibley High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3102,
+        "Team Nickname": "Tech-No-Tigers",
+        "School Name": "Nevis School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3122,
+        "Team Nickname": "The Alluminators",
+        "School Name": "Cathedral High School-Nuacs & New Ulm High School",
+        "Last Participated": 2024
+    },
+    {
+        "Team Number": 3130,
+        "Team Nickname": "The ERRORs",
+        "School Name": "East Ridge High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3134,
+        "Team Nickname": "The Accelerators",
+        "School Name": "Cass Lake-Bena High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3184,
+        "Team Nickname": "Blaze Robotics",
+        "School Name": "Burnsville Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3202,
+        "Team Nickname": "KnightBots",
+        "School Name": "Harding Senior High School",
+        "Last Participated": 2024
+    },
+    {
+        "Team Number": 3206,
+        "Team Nickname": "Royal T-Wrecks",
+        "School Name": "Woodbury High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3212,
+        "Team Nickname": "YME Stingbots",
+        "School Name": "Yellow Medicine East Mid HS",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3244,
+        "Team Nickname": "Granite City Gear Heads",
+        "School Name": "Family/Community",
+        "Last Participated": 2021
+    },
+    {
+        "Team Number": 3261,
+        "Team Nickname": "Bears Robotics",
+        "School Name": null,
+        "Last Participated": 2014
+    },
+    {
+        "Team Number": 3263,
+        "Team Nickname": "The Elites G3",
+        "School Name": null,
+        "Last Participated": 2011
+    },
+    {
+        "Team Number": 3267,
+        "Team Nickname": "Mariner Robotics",
+        "School Name": "William Kelley High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3275,
+        "Team Nickname": "The Regulators",
+        "School Name": "Cass Lake-Bena High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3276,
+        "Team Nickname": "TOOLCATS",
+        "School Name": "New London-Spicer High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3277,
+        "Team Nickname": "ProDigi",
+        "School Name": "Lincoln High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3278,
+        "Team Nickname": "The Electric Lakers",
+        "School Name": "Detroit Lakes High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3290,
+        "Team Nickname": "Robo Bears LOWbotics",
+        "School Name": null,
+        "Last Participated": 2016
+    },
+    {
+        "Team Number": 3291,
+        "Team Nickname": "Au Pirates",
+        "School Name": "Independent School District 279 & Park Center Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3292,
+        "Team Nickname": "The Aluminum Falcon",
+        "School Name": "Benson Secondary School",
+        "Last Participated": 2019
+    },
+    {
+        "Team Number": 3293,
+        "Team Nickname": "OtterBots",
+        "School Name": "Kennedy Secondary School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3294,
+        "Team Nickname": "Backwoods Engineers",
+        "School Name": "Pine River-Backus High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3297,
+        "Team Nickname": "Full Metal Jackets",
+        "School Name": "Perham High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3298,
+        "Team Nickname": "ArrowBots",
+        "School Name": "Pipestone Area Middle High Sch",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3299,
+        "Team Nickname": "The Warehouse Crew",
+        "School Name": "Southwest Christian High Sch",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 3300,
+        "Team Nickname": "Midwest WARRIORS",
+        "School Name": "Ortonville High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3312,
+        "Team Nickname": "EagleBots",
+        "School Name": null,
+        "Last Participated": 2013
+    },
+    {
+        "Team Number": 3313,
+        "Team Nickname": "Mechatronics",
+        "School Name": "Alexandria Area High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3367,
+        "Team Nickname": "Ogichidaa Robotics",
+        "School Name": "Circle of Life Academy",
+        "Last Participated": 2018
+    },
+    {
+        "Team Number": 3407,
+        "Team Nickname": "Wild Cards",
+        "School Name": "Mounds View Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3454,
+        "Team Nickname": "Z Bots",
+        "School Name": "Mahtomedi High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3524,
+        "Team Nickname": "The Blizzard",
+        "School Name": null,
+        "Last Participated": 2013
+    },
+    {
+        "Team Number": 3610,
+        "Team Nickname": "Islanders",
+        "School Name": "DeLaSalle High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3630,
+        "Team Nickname": "Stampede",
+        "School Name": "Breck School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3633,
+        "Team Nickname": "Catalyst",
+        "School Name": "Albert Lea High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 3642,
+        "Team Nickname": "Huskies",
+        "School Name": null,
+        "Last Participated": 2012
+    },
+    {
+        "Team Number": 3690,
+        "Team Nickname": "GORT",
+        "School Name": null,
+        "Last Participated": 2015
+    },
+    {
+        "Team Number": 3691,
+        "Team Nickname": "RoboRaiders",
+        "School Name": "Northfield High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3699,
+        "Team Nickname": "Panthinators",
+        "School Name": null,
+        "Last Participated": 2015
+    },
+    {
+        "Team Number": 3722,
+        "Team Nickname": "Green Wave Robotics",
+        "School Name": null,
+        "Last Participated": 2014
+    },
+    {
+        "Team Number": 3723,
+        "Team Nickname": "TEKnights",
+        "School Name": "Kingsland Jr Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3740,
+        "Team Nickname": "Storm Robotics",
+        "School Name": "Sauk Rapids Rice Sr High Sch",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3745,
+        "Team Nickname": "Governors",
+        "School Name": "Johnson Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3747,
+        "Team Nickname": "Chaotech",
+        "School Name": null,
+        "Last Participated": 2013
+    },
+    {
+        "Team Number": 3750,
+        "Team Nickname": "Gator Robotics",
+        "School Name": "Badger School",
+        "Last Participated": 2021
+    },
+    {
+        "Team Number": 3751,
+        "Team Nickname": "Tower View Robotics",
+        "School Name": "Tower View Alt High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3754,
+        "Team Nickname": "TrekNorth First City Robotics",
+        "School Name": "Treknorth High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 3755,
+        "Team Nickname": "Dragon Robotics",
+        "School Name": "Litchfield Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3765,
+        "Team Nickname": "The TerraBots",
+        "School Name": null,
+        "Last Participated": 2016
+    },
+    {
+        "Team Number": 3788,
+        "Team Nickname": "MekaMustangs",
+        "School Name": null,
+        "Last Participated": 2015
+    },
+    {
+        "Team Number": 3828,
+        "Team Nickname": "12 Pretty Duckies",
+        "School Name": null,
+        "Last Participated": 2015
+    },
+    {
+        "Team Number": 3839,
+        "Team Nickname": "SWOLVERINES",
+        "School Name": "Wadena-Deer Creek High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 3840,
+        "Team Nickname": "Teens 'Nto Technology",
+        "School Name": "Isanti County 4-H",
+        "Last Participated": 2018
+    },
+    {
+        "Team Number": 3846,
+        "Team Nickname": "The First Robotic Cardinals",
+        "School Name": null,
+        "Last Participated": 2015
+    },
+    {
+        "Team Number": 3848,
+        "Team Nickname": "Bots in Shining Armour",
+        "School Name": "Kenyon-Wanamingo High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3871,
+        "Team Nickname": "Trojan Robotics",
+        "School Name": "Worthington High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3883,
+        "Team Nickname": "Data Bits",
+        "School Name": "Park High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3891,
+        "Team Nickname": "Rodeo Robotics",
+        "School Name": "Breck School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 3926,
+        "Team Nickname": "MPArors",
+        "School Name": "Mounds Park Academy",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4009,
+        "Team Nickname": "Duluth DNA Robotics",
+        "School Name": "Denfeld Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4166,
+        "Team Nickname": "Robostang",
+        "School Name": "Mora Junior Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4174,
+        "Team Nickname": "Mustang Robotics",
+        "School Name": "Buffalo Lke-Hector Stewrt Jshs",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4181,
+        "Team Nickname": "Quack Attack",
+        "School Name": "Blackduck Public School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4182,
+        "Team Nickname": "Viking Robotics",
+        "School Name": "Minneota School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4198,
+        "Team Nickname": "RoboCats",
+        "School Name": "Waconia High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4207,
+        "Team Nickname": "PyroBotics",
+        "School Name": "Holy Family High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4215,
+        "Team Nickname": "TRIBOTS",
+        "School Name": "Trinity School at River Ridge",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4217,
+        "Team Nickname": "Scitobors",
+        "School Name": "Nashwauk-Keewatin High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 4225,
+        "Team Nickname": "RoboCats",
+        "School Name": "City Academy High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4226,
+        "Team Nickname": "Huskies",
+        "School Name": "Albany Middle High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4227,
+        "Team Nickname": "quarks",
+        "School Name": null,
+        "Last Participated": 2012
+    },
+    {
+        "Team Number": 4228,
+        "Team Nickname": "iRobotics",
+        "School Name": null,
+        "Last Participated": 2013
+    },
+    {
+        "Team Number": 4229,
+        "Team Nickname": "Magnetech",
+        "School Name": "Washington Technology Mag Sch",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4230,
+        "Team Nickname": "TopperBots",
+        "School Name": "Duluth Marshall School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4238,
+        "Team Nickname": "Resistance Robotics",
+        "School Name": "Belgrade-Brooten-Elrosa Jshs",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4239,
+        "Team Nickname": "WARPSPEED",
+        "School Name": "Willmar Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4244,
+        "Team Nickname": "The Steel Battalion",
+        "School Name": null,
+        "Last Participated": 2016
+    },
+    {
+        "Team Number": 4260,
+        "Team Nickname": "BEAR (Blue Earth Area Robotics)",
+        "School Name": "Blue Earth Area High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4277,
+        "Team Nickname": "Thingamajiggers",
+        "School Name": "Cooper Robotics Booster Club & Robbinsdale Cooper High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4360,
+        "Team Nickname": "Spudnik",
+        "School Name": "Moorhead High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4397,
+        "Team Nickname": "TEAM Clutch Robotics",
+        "School Name": "Bagley Jr Sr High School",
+        "Last Participated": 2018
+    },
+    {
+        "Team Number": 4480,
+        "Team Nickname": "UC-Botics",
+        "School Name": "Upsala Area School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4506,
+        "Team Nickname": "PioNerds",
+        "School Name": "Hill-Murray School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 4511,
+        "Team Nickname": "Power Amplified",
+        "School Name": "Providence Academy",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4536,
+        "Team Nickname": "MinuteBots",
+        "School Name": "Central Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4539,
+        "Team Nickname": "KAOTIC Robotics",
+        "School Name": "Frazee High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4549,
+        "Team Nickname": "Iron Bulls",
+        "School Name": "South St Paul Secondary School",
+        "Last Participated": 2023
+    },
+    {
+        "Team Number": 4607,
+        "Team Nickname": "C.I.S.",
+        "School Name": "Becker High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4623,
+        "Team Nickname": "Flyer Robotics",
+        "School Name": "Little Falls Cmty High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4624,
+        "Team Nickname": "Rebel Alliance",
+        "School Name": "Owatonna High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4626,
+        "Team Nickname": "Iron Centaurs",
+        "School Name": "",
+        "Last Participated": 2018
+    },
+    {
+        "Team Number": 4632,
+        "Team Nickname": "Monti-Pythons",
+        "School Name": "Monticello High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4648,
+        "Team Nickname": "Techno-Tech",
+        "School Name": "Jordan High School",
+        "Last Participated": 2022
+    },
+    {
+        "Team Number": 4651,
+        "Team Nickname": "FrostBots",
+        "School Name": null,
+        "Last Participated": 2014
+    },
+    {
+        "Team Number": 4656,
+        "Team Nickname": "Rock Solid Robotics",
+        "School Name": "Two Harbors High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4663,
+        "Team Nickname": "Cyber Tigers",
+        "School Name": "Belle Plaine High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4664,
+        "Team Nickname": "Butler Bots",
+        "School Name": "Andover High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4665,
+        "Team Nickname": "Predators",
+        "School Name": "Glencoe-Silver Lake High Sch",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 4671,
+        "Team Nickname": "Mechaneers",
+        "School Name": null,
+        "Last Participated": 2016
+    },
+    {
+        "Team Number": 4674,
+        "Team Nickname": "RoboJacks",
+        "School Name": "Bemidji High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4686,
+        "Team Nickname": "Nay Ah Shing",
+        "School Name": null,
+        "Last Participated": null
+    },
+    {
+        "Team Number": 4687,
+        "Team Nickname": "Spartobots",
+        "School Name": "Orono Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4693,
+        "Team Nickname": "Talk Nerdy to Me",
+        "School Name": "Rockford High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4703,
+        "Team Nickname": "Menahga Gigabot$",
+        "School Name": "Menahga School",
+        "Last Participated": 2024
+    },
+    {
+        "Team Number": 4728,
+        "Team Nickname": "ROCORI Ratcheteers",
+        "School Name": "Rocori Middle School & Rocori High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4741,
+        "Team Nickname": "WingNuts",
+        "School Name": "Redwood Valley High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4762,
+        "Team Nickname": "Robo-Saints",
+        "School Name": "St Charles High School",
+        "Last Participated": 2018
+    },
+    {
+        "Team Number": 4778,
+        "Team Nickname": "Stormbots",
+        "School Name": "Chanhassen High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4822,
+        "Team Nickname": "Bemidji LumberBots",
+        "School Name": null,
+        "Last Participated": null
+    },
+    {
+        "Team Number": 4845,
+        "Team Nickname": "Lion's Pride",
+        "School Name": "Lakeview Christian Academy",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 4850,
+        "Team Nickname": "Mr. Parks' Robotics",
+        "School Name": null,
+        "Last Participated": 2013
+    },
+    {
+        "Team Number": 4859,
+        "Team Nickname": "The CyBears",
+        "School Name": "Byron High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 4986,
+        "Team Nickname": "Iron Eagles",
+        "School Name": null,
+        "Last Participated": 2016
+    },
+    {
+        "Team Number": 4993,
+        "Team Nickname": "Molten Steel",
+        "School Name": null,
+        "Last Participated": 2015
+    },
+    {
+        "Team Number": 5143,
+        "Team Nickname": "GRG Raw Steel",
+        "School Name": "Greenway High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5172,
+        "Team Nickname": "Gators",
+        "School Name": "Family/Community",
+        "Last Participated": 2024
+    },
+    {
+        "Team Number": 5232,
+        "Team Nickname": "Talons",
+        "School Name": "Hermantown High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5253,
+        "Team Nickname": "Bigfork Backwoods Bots 5253",
+        "School Name": "Bigfork School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5271,
+        "Team Nickname": "Open Circuits",
+        "School Name": "Open World Lrng Community",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5275,
+        "Team Nickname": "T.I.M.E.-Bots",
+        "School Name": "New Prague High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5278,
+        "Team Nickname": "Los Clasicos",
+        "School Name": "Cristo Rey Jesuit Hs-Twin City",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5290,
+        "Team Nickname": "Mechanical Howl",
+        "School Name": "North Lakes Academy",
+        "Last Participated": 2021
+    },
+    {
+        "Team Number": 5299,
+        "Team Nickname": "Winger Tech",
+        "School Name": "Red Wing High School",
+        "Last Participated": 2022
+    },
+    {
+        "Team Number": 5339,
+        "Team Nickname": "Hurricanes",
+        "School Name": "Houston High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5340,
+        "Team Nickname": "FAIRmingos",
+        "School Name": "The Fair School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 5341,
+        "Team Nickname": "The Cardinals",
+        "School Name": null,
+        "Last Participated": null
+    },
+    {
+        "Team Number": 5348,
+        "Team Nickname": "Charger Robotics",
+        "School Name": "Dassel-Cokato High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5434,
+        "Team Nickname": "Falcon Robotics",
+        "School Name": "Faribault Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5464,
+        "Team Nickname": "Bluejacket Robotics",
+        "School Name": "Cambridge-Isanti High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5541,
+        "Team Nickname": "Sabers",
+        "School Name": "Shakopee Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5542,
+        "Team Nickname": "RoboHerd",
+        "School Name": "Buffalo High School",
+        "Last Participated": 2021
+    },
+    {
+        "Team Number": 5626,
+        "Team Nickname": "Nu-matic Ninjas",
+        "School Name": "Central High School",
+        "Last Participated": 2022
+    },
+    {
+        "Team Number": 5637,
+        "Team Nickname": "North Community High School Polars",
+        "School Name": "North Cmty High School",
+        "Last Participated": 2021
+    },
+    {
+        "Team Number": 5638,
+        "Team Nickname": "JukeBots",
+        "School Name": "Lac Qui Parle Valley Mid HS",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5653,
+        "Team Nickname": "Iron Mosquitos",
+        "School Name": "Ely Memorial School & Northeast Range School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5658,
+        "Team Nickname": "STORMBOTICS",
+        "School Name": "Stephen-Argyle Central High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5690,
+        "Team Nickname": "SubZero Robotics",
+        "School Name": "Esko High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5720,
+        "Team Nickname": "Jagobotics",
+        "School Name": "Hinckley-Finlayson High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5882,
+        "Team Nickname": "Titan Robotics",
+        "School Name": "Norman Co East High School",
+        "Last Participated": 2017
+    },
+    {
+        "Team Number": 5913,
+        "Team Nickname": "Patriotics",
+        "School Name": "Pequot Lakes School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5914,
+        "Team Nickname": "Robotic Warriors",
+        "School Name": "Caledonia Middle High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5929,
+        "Team Nickname": "Raider Robotics",
+        "School Name": "Lake Park-Audubon High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 5991,
+        "Team Nickname": "Chargers 5991",
+        "School Name": "Westbrook-Walnut Grove HS",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 5998,
+        "Team Nickname": "The Chillbots",
+        "School Name": "Falls High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 5999,
+        "Team Nickname": "Byte Force",
+        "School Name": "Milaca High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 6022,
+        "Team Nickname": "Wrench Warmers",
+        "School Name": "Blooming Prairie Jr Sr HS",
+        "Last Participated": 2021
+    },
+    {
+        "Team Number": 6044,
+        "Team Nickname": "Circuit Breakers",
+        "School Name": "Moose Lake School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6045,
+        "Team Nickname": "Sabre Robotics",
+        "School Name": "Sartell High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6047,
+        "Team Nickname": "Proctor Frostbyte",
+        "School Name": "Proctor High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6056,
+        "Team Nickname": "Brotherhood of Steel",
+        "School Name": "Rothsay Public School",
+        "Last Participated": 2018
+    },
+    {
+        "Team Number": 6132,
+        "Team Nickname": "Iron Rangers",
+        "School Name": "Crosby-Ironton Jr Sr High Sch",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6146,
+        "Team Nickname": "Blackjacks",
+        "School Name": "Dawson-Boyd Jr Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6147,
+        "Team Nickname": "Tonkabots",
+        "School Name": "Mound Westonka High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6160,
+        "Team Nickname": "Bombatrons",
+        "School Name": "Barnum High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6175,
+        "Team Nickname": "EVW Mystery Machine",
+        "School Name": "Eden Valley-Watkins Jr Sr HS",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6176,
+        "Team Nickname": "MTS",
+        "School Name": "",
+        "Last Participated": 2017
+    },
+    {
+        "Team Number": 6182,
+        "Team Nickname": "Royals",
+        "School Name": null,
+        "Last Participated": null
+    },
+    {
+        "Team Number": 6217,
+        "Team Nickname": "Bomb-Botz",
+        "School Name": "Cannon Falls Jr Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6244,
+        "Team Nickname": "Light SaBres",
+        "School Name": "Sartell Senior High",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6453,
+        "Team Nickname": "Bog Bots!",
+        "School Name": "Kelliher School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6480,
+        "Team Nickname": "SAGE Robotics",
+        "School Name": "Sage Academy Charter High Sch",
+        "Last Participated": 2017
+    },
+    {
+        "Team Number": 6628,
+        "Team Nickname": "KMS BOTKICKERS",
+        "School Name": "Kerkhoven-Murdock-Sunbrg Jshs",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6663,
+        "Team Nickname": "Kamikaze Krew",
+        "School Name": "",
+        "Last Participated": 2017
+    },
+    {
+        "Team Number": 6707,
+        "Team Nickname": "RCW Jaguar Robosapiens",
+        "School Name": "Renville Co West School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 6709,
+        "Team Nickname": "S.P.U.D. Inc Robotics",
+        "School Name": "Big Lake High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6720,
+        "Team Nickname": "Walker-Hackensack-Akeley",
+        "School Name": "Walker-Hackensack-Akeley HS",
+        "Last Participated": 2018
+    },
+    {
+        "Team Number": 6749,
+        "Team Nickname": "tERAbytes",
+        "School Name": "Eagle Ridge Academy",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6758,
+        "Team Nickname": "Otternauts",
+        "School Name": "Kasson-Mantorville High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 6912,
+        "Team Nickname": "InterGalactic Transformers",
+        "School Name": "Gentry Academy",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 7019,
+        "Team Nickname": "Rubber Ducks",
+        "School Name": "Chesterton Academy",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7028,
+        "Team Nickname": "Binary Battalion",
+        "School Name": "St Michael-Albertville HS",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7038,
+        "Team Nickname": "Totino-Grace Pizza Pi's",
+        "School Name": "Totino-Grace High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7041,
+        "Team Nickname": "Doomsday Dogs",
+        "School Name": "Carlton High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7068,
+        "Team Nickname": "Mechanical Masterminds",
+        "School Name": "St Francis High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7180,
+        "Team Nickname": "Wellstone Lions",
+        "School Name": "Wellstone Int'L High School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 7235,
+        "Team Nickname": "Red Lake Ogichidaag",
+        "School Name": "Red Lake Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7257,
+        "Team Nickname": "Semiconductors",
+        "School Name": "Sauk Centre Middle Sec School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7258,
+        "Team Nickname": "Robolobos - Hiawatha Collegiate",
+        "School Name": "Hiawatha Collegiate High Sch",
+        "Last Participated": 2023
+    },
+    {
+        "Team Number": 7273,
+        "Team Nickname": "ZooM 7273",
+        "School Name": "Zumbrota-Mazeppa High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7311,
+        "Team Nickname": "Boring Robots",
+        "School Name": "Virgina High School",
+        "Last Participated": 2023
+    },
+    {
+        "Team Number": 7432,
+        "Team Nickname": "NOS",
+        "School Name": "Family/Community",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 7530,
+        "Team Nickname": "Raiders of the Lost Spark",
+        "School Name": "Watertown-Mayer High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7541,
+        "Team Nickname": "Maple River Robotics",
+        "School Name": "Maple River High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7596,
+        "Team Nickname": "Trojan Horses",
+        "School Name": "Rushford-Peterson High School",
+        "Last Participated": 2019
+    },
+    {
+        "Team Number": 7677,
+        "Team Nickname": "Bodacious Bulldogs",
+        "School Name": "Swanville School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7797,
+        "Team Nickname": "RipSaw Robotics",
+        "School Name": "Cloquet High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7849,
+        "Team Nickname": "Da Vinci's Creation",
+        "School Name": "Hmong College Prep Academy",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7850,
+        "Team Nickname": "C.A.R.D.S.",
+        "School Name": "Coon Rapids Cardinal Robotics Club & Coon Rapids High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7858,
+        "Team Nickname": "Warriors",
+        "School Name": "Bold Junior Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7864,
+        "Team Nickname": "North Woods Robotics",
+        "School Name": "North Woods School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 7875,
+        "Team Nickname": "MNIC Robotics",
+        "School Name": "Minnesota Internship Center - Rondo",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 7892,
+        "Team Nickname": "Medford RoboTigers",
+        "School Name": "Mayo High School & Medford School",
+        "Last Participated": 2019
+    },
+    {
+        "Team Number": 7893,
+        "Team Nickname": "Maple Lake High School",
+        "School Name": "Maple Lake Secondary",
+        "Last Participated": 2023
+    },
+    {
+        "Team Number": 8234,
+        "Team Nickname": "Panthinators",
+        "School Name": "Spring Lake Park High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 8298,
+        "Team Nickname": "Mighty Morphing Banana Slugs",
+        "School Name": "Luverne Middle High School",
+        "Last Participated": 2024
+    },
+    {
+        "Team Number": 8347,
+        "Team Nickname": "Broken Eagles",
+        "School Name": "New York Mills Jr Sr High Sch",
+        "Last Participated": 2021
+    },
+    {
+        "Team Number": 8355,
+        "Team Nickname": "Melanin Minds",
+        "School Name": "Higher Ground Academy",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 8372,
+        "Team Nickname": "HCN Storm",
+        "School Name": "Northland Jr Sr High School & Hill City School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 8409,
+        "Team Nickname": "Kato Coyote's",
+        "School Name": "Kato Public Charter School",
+        "Last Participated": 2021
+    },
+    {
+        "Team Number": 8412,
+        "Team Nickname": "Battle Lake Schools",
+        "School Name": "Battle Lake School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 8416,
+        "Team Nickname": "Wolfbotics 8416",
+        "School Name": "Ely Memorial School",
+        "Last Participated": 2020
+    },
+    {
+        "Team Number": 8422,
+        "Team Nickname": "Husky Howlers",
+        "School Name": "Pillager School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 8516,
+        "Team Nickname": "Wired Up",
+        "School Name": "Legacy Christian Academy",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 8787,
+        "Team Nickname": "Mavericks",
+        "School Name": "Mcw Jr Sr High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 8836,
+        "Team Nickname": "Wayne Enterprises Inc.",
+        "School Name": "Hibbing High School & Chisholm Senior High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 8878,
+        "Team Nickname": "ArrowBot",
+        "School Name": "Ashby School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 8887,
+        "Team Nickname": "West Central Area",
+        "School Name": "West Cntrl Area Secondary Sch",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 9157,
+        "Team Nickname": "Iconic Panthers",
+        "School Name": "Family/Community",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 9257,
+        "Team Nickname": "Bots of Another Color",
+        "School Name": "Bots of Another Color: ASD Robotics Program",
+        "Last Participated": null
+    },
+    {
+        "Team Number": 9532,
+        "Team Nickname": "Messy Bees",
+        "School Name": "Mesabi School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 9576,
+        "Team Nickname": "Loretto Lightning",
+        "School Name": "Family/Community",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 9745,
+        "Team Nickname": "Lazer Sharkz",
+        "School Name": "Minnewaska Interm High Sch",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 10474,
+        "Team Nickname": "Aitkin High School",
+        "School Name": "Aitkin Secondary School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 10490,
+        "Team Nickname": "Ely Robotics",
+        "School Name": "Memorial High School",
+        "Last Participated": 2025
+    },
+    {
+        "Team Number": 10602,
+        "Team Nickname": "Steel Hawks",
+        "School Name": "Humboldt High School",
+        "Last Participated": 2025
+    }
+]

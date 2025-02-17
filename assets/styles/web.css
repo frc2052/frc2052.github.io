@@ -1073,3 +1073,123 @@ height: 315px;
   background-color: var(--shaded-color, lightgray);
   padding: 30px;
 }
+
+/* MN Teams Quiz Styles */
+
+.quiz-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #7D1128;
+  padding: 10px 25px 25px 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.quiz-title {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: maroon;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+.quiz-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.quiz-select {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: white;
+  color: black;
+  max-width: 300px;
+}
+
+.quiz-button {
+  background-color: gold;
+  color: maroon;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.quiz-button:hover {
+  background-color: #E4C13D; /* Slightly darker gold */
+}
+
+.quiz-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  color: black;
+}
+
+.quiz-question {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.quiz-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.quiz-option {
+  background-color: maroon;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quiz-option:hover {
+  background-color: #A12542; /* Slightly lighter maroon */
+}
+
+.input-container {
+  margin-top: 10px;
+}
+
+.quiz-input {
+  font-size: 16px;
+  padding: 8px;
+  width: 80%;
+  max-width: 250px;
+  border: 2px solid maroon;
+  border-radius: 6px;
+}
+
+.quiz-feedback {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}

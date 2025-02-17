@@ -1,0 +1,47 @@
+---
+layout: default
+permalink: /mnteamsquiz/
+---
+
+<h1 class="quiz-title">Minnesota FRC Team Quiz</h1>
+
+<div class="quiz-wrapper">
+ <div class="form-group">
+   <label for="quiz-difficulty" class="quiz-label">Select Answer Mode:</label>
+   <select id="quiz-difficulty" class="quiz-select" style="width: 175px;">
+     <option value="easy">Multiple Choice</option>
+     <option value="medium">Fill in the Blank</option>
+   </select>
+ </div>
+
+ <div class="form-group">
+   <label for="question-type" class="quiz-label">Select Question Type:</label>
+   <select id="question-type" class="quiz-select" style="width: 250px;">
+     <option value="name-to-number">Team Number (Given Name)</option>
+     <option value="number-to-name">Team Name (Given Number)</option>
+   </select>
+ </div>
+
+ <div class="form-group">
+   <label for="year-filter" class="quiz-label">Include teams that haven't participated since:</label>
+   <select id="year-filter" class="quiz-select" style="width: 125px;"></select>
+ </div>
+
+ <div class="form-group">
+   <button onclick="startQuiz()" class="quiz-button">Start Quiz</button>
+ </div>
+
+ <div id="quiz-container" class="quiz-container" style="display:none;">
+   <p id="question" class="quiz-question"></p>
+   <div id="options" class="quiz-options"></div>
+  
+   <div id="input-container" class="input-container" style="display:none;">
+     <input type="text" id="answer-input" class="quiz-input" placeholder="Enter answer">
+     <button onclick="submitAnswer()" class="quiz-button">Submit</button>
+   </div>
+
+   <p id="feedback" class="quiz-feedback"></p>
+ </div>
+</div>
+
+<script type="text/javascript" src="/assets/scripts/mnteamsquiz.js"></script>
