@@ -13,9 +13,16 @@ document.addEventListener("DOMContentLoaded", function() {
        .catch(error => console.error("Failed to load teams.json:", error));
 });
 
+document.getElementById("answer-input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        submitAnswer();
+    }
+});
+
 $(document).ready(function() {
    $("#year-filter").on("change", function() {
-       filterTeams(); // re-filter when year cutoff changes
+       filterTeams();
    });
 });
 
@@ -63,7 +70,6 @@ function generateQuestion() {
        $("#options").show();
        $("#input-container").hide();
 
-       // Find three wrong answers
        let wrongAnswers = filteredTeams
            .filter(team => {
                return questionType === "name-to-number"
@@ -91,18 +97,33 @@ function generateQuestion() {
 }
 
 function checkAnswer(selected) {
-   $(".quiz-option").prop("disabled", true);
+    $(".quiz-option").prop("disabled", true);
+    $("#answer-input").prop("disabled", true);
 
-   let feedbackText = selected == correctAnswer ? "Correct!" : `Wrong! The correct answer was: ${correctAnswer}`;
-   $("#feedback").text(feedbackText).removeClass("correct incorrect").addClass(selected == correctAnswer ? "correct" : "incorrect");
+    let isCorrect = selected == correctAnswer;
+    let feedbackText = isCorrect ? "Correct!" : `Wrong! The correct answer was: ${correctAnswer}`;
+    let countdown = 3;
 
-   setTimeout(function() {
-       generateQuestion();
-       $(".quiz-option").prop("disabled", false);
-   }, 2000); // Disable buttons and show feedback after 2 seconds
+    $("#feedback").html(`${feedbackText} <br> Next question in <strong>${countdown}</strong>...`)
+        .removeClass("correct incorrect")
+        .addClass(isCorrect ? "correct" : "incorrect");
+
+    let countdownInterval = setInterval(function() {
+        countdown--;
+        if (countdown > 0) {
+            $("#feedback").html(`${feedbackText} <br> Next question in <strong>${countdown}</strong>...`);
+        } else {
+            clearInterval(countdownInterval);
+            generateQuestion();
+            $(".quiz-option").prop("disabled", false);
+            $("#answer-input").prop("disabled", false);
+        }
+    }, 1000); // Update countdown every second
 }
 
 function submitAnswer() {
+    if ($("#answer-input").prop("disabled")) return;
+
    let userAnswer = $("#answer-input").val().trim();
    checkAnswer(userAnswer);
 }

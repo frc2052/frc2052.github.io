@@ -1193,3 +1193,20 @@ height: 315px;
 .incorrect {
   color: red;
 }
+
+.countdown {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
