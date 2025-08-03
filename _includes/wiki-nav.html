@@ -1,48 +1,58 @@
-<div class="wiki-index">
-    <ul class="wiki-chapters-list">
+<div class="wiki-sidebar-nav">
+    <nav class="nav flex-column">
+        <h3>2052 Wiki</h3>
         {% for chapter in site.data.wiki.chapters %}
         {% assign chapter_num = forloop.index %}
-        <li>
-            {{ chapter_num }}.&nbsp;&nbsp;
-            {% if chapter.url %}
-            <a href="{{ chapter.url }}" class="wiki-tocchapter">{{ chapter.title }}</a>
-            {% else %}
-            <span class="wiki-tocchapter">{{ chapter.title }}</span>
-            {% endif %}
+        {% assign chapter_id = "chapter-" | append: chapter_num %}
+        <div class="nav-item">
             {% if chapter.sections %}
-            <ul class="wiki-navsection">
-                {% for section in chapter.sections %}
-                {% assign section_num = forloop.index %}
-                <li>
-                    {{ chapter_num }}.{{ section_num }}&nbsp;&nbsp;
-                    {% if section.url %}
-                    <a href="{{ section.url }}">{{ section.title }}</a>
-                    {% else %}
-                    <span>{{ section.title }}</span>
-                    {% endif %}
-                    {% if section.subsections %}
-                    <ul class="wiki-navsubsection">
-                        {% for subsection in section.subsections %}
-                        {% assign subsection_letter = 'abcdefghijklmnopqrstuvwxyz' | slice: forloop.index0, 1 %}
-                        <li>
-                            <!--
-                            {{ chapter_num }}.{{ section_num }}.{{ subsection_letter }}&nbsp;&nbsp;
-                            -->
+            <a class="nav-link d-flex align-items-center" data-toggle="collapse" href="#{{ chapter_id }}" role="button" aria-expanded="false" aria-controls="{{ chapter_id }}">
+                <svg class="wiki-caret mr-2" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
+                </svg>
 
-                            {% if subsection.url %}
-                            <a href="{{ subsection.url }}">{{ subsection.title }}</a>
-                            {% else %}
-                            <span>{{ subsection.title }}</span>
-                            {% endif %}
-                        </li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </li>
-                {% endfor %}
-            </ul>
+                {{ chapter_num }}.&nbsp;
+                <span>{{ chapter.title }}</span>
+            </a>
+            <div class="collapse" id="{{ chapter_id }}">
+                <nav class="nav flex-column ml-3">
+                    {% for section in chapter.sections %}
+                    {% assign section_num = forloop.index %}
+                    {% assign section_id = chapter_id | append: "-section-" | append: section_num %}
+                    <div class="nav-item">
+                        {% if section.subsections %}
+                        <a class="nav-link d-flex align-items-center" data-toggle="collapse" href="#{{ section_id }}" role="button" aria-expanded="false" aria-controls="{{ section_id }}">
+                            <svg class="wiki-caret mr-2" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
+                            </svg>
+                            {{ chapter_num }}.{{ section_num }}.&nbsp;
+                            <span>{{ section.title }}</span>
+                        </a>
+                        <div class="collapse" id="{{ section_id }}">
+                            <nav class="nav flex-column ml-3">
+                                {% for subsection in section.subsections %}
+                                {% assign subsection_letter = 'abcdefghijklmnopqrstuvwxyz' | slice: forloop.index0, 1 %}
+                                <a class="nav-link" href="{{ subsection.url | default: '#' }}">
+                                    &nbsp;&nbsp; {{ subsection.title }}
+                                </a>
+                                {% endfor %}
+                            </nav>
+                        </div>
+                        {% else %}
+                        <a class="nav-link" href="{{ section.url | default: '#' }}">
+                            {{ chapter_num }}.{{ section_num }}.&nbsp;{{ section.title }}
+                        </a>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </nav>
+            </div>
+            {% else %}
+            <a class="nav-link" href="{{ chapter.url | default: '#' }}">
+                {{ chapter_num }}.&nbsp;{{ chapter.title }}
+            </a>
             {% endif %}
-        </li>
+        </div>
         {% endfor %}
-    </ul>
+    </nav>
 </div>

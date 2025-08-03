@@ -1096,6 +1096,8 @@ height: 315px;
     text-decoration: underline;
 }
 
+/* --------- START Wiki Sidebar Layout --------------  */
+
 .wiki-flex-container {
     display: flex;
     min-height: 100vh;
@@ -1136,6 +1138,61 @@ height: 315px;
     max-width: 700px; /* Optional: controls width */
     text-align: center;
 }
+
+/* --------- END Wiki Sidebar Layout --------------  */
+
+
+/* --------- START Expand Collapse of Sidebar Nav --------------  */
+
+.wiki-sidebar-nav {
+    width: 260px;
+    min-height: 100vh;
+    background: #f8f9fa;
+    border-right: 1px solid #eee;
+    padding: 30px 20px 30px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.wiki-sidebar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 6px 0;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.wiki-sidebar-nav .nav-link.active,
+.wiki-sidebar-nav .nav-link:focus {
+    background: #e9ecef;
+    color: #732626;
+}
+
+.wiki-sidebar-nav .nav-link:hover {
+    background: #f2f2f2;
+    color: #732626;
+}
+
+.wiki-sidebar-nav .nav .nav {
+    margin-left: 1rem;
+}
+
+.wiki-sidebar-nav .nav-item {
+    margin-bottom: 2px;
+}
+
+.wiki-sidebar-nav .collapse {
+    transition: height 0.2s;
+}
+
+.wiki-caret {
+    transition: transform 0.2s;
+}
+
+.nav-link[aria-expanded="true"] .wiki-caret {
+    transform: rotate(90deg);
+}
+/* ---------- END Expand Collapse of Sidebar Nav ---------------  */
 
 .wiki-chapters-list {
     text-align: left;
