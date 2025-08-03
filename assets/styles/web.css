@@ -1109,7 +1109,7 @@ height: 315px;
     min-height: 100vh;
     background: #f8f9fa;
     border-right: 1px solid #eee;
-    padding: 30px 20px 30px 20px;
+    padding: 0px 20px 30px 20px;
     box-sizing: border-box;
     position: relative;
 }
@@ -1149,7 +1149,7 @@ height: 315px;
     min-height: 100vh;
     background: #f8f9fa;
     border-right: 1px solid #eee;
-    padding: 30px 20px 30px 20px;
+    padding: 0px, 20px 30px 20px;
     box-sizing: border-box;
     position: relative;
 }
