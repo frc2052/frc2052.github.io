@@ -1,0 +1,34 @@
+chapters:
+  - title: "Getting Started"
+    url: "/wiki/getting-started/"
+    sections:
+      - title: "Introduction"
+        subsections:
+          - title: "Overview"
+            url: "/wiki/getting-started/introduction/overview/"
+          - title: "Requirements"
+            url: "/wiki/getting-started/introduction/requirements/"
+      - title: "Installation"
+        url: "/wiki/getting-started/installation/"
+        subsections:
+          - title: "Windows"
+            url: "/wiki/getting-started/installation/windows/"
+          - title: "macOS"
+            url: "/wiki/getting-started/installation/macos/"
+  - title: "User Guide"
+    url: "/wiki/user-guide/"
+    sections:
+      - title: "Features"
+        url: "/wiki/user-guide/features/"
+        subsections:
+          - title: "Navigation"
+            url: "/wiki/user-guide/features/navigation/"
+          - title: "Customization"
+            url: "/wiki/user-guide/features/customization/"
+      - title: "FAQ"
+        url: "/wiki/user-guide/faq/"
+        subsections:
+          - title: "General"
+            url: "/wiki/user-guide/faq/general/"
+          - title: "Troubleshooting"
+            url: "/wiki/user-guide/faq/troubleshooting/"

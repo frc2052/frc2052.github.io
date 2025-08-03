@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ? lang="en">
+  {% include head.html %}
+<body>
+    {% include header.html %}
+
+    <div class="wiki-flex-container" style="display: flex; min-height: 80vh;">
+        <!-- Sidebar: full height, left column -->
+        <nav class="wiki-sidebar">
+            <div class="sidebar-sticky pt-3">
+                {% include wiki-nav.html %}
+            </div>
+        </nav>
+
+        <!-- Main Content: right column -->
+        <div class="wiki-main-content">
+            <main>
+                {{ content }}
+            </main>
+            {% include footer.html %}
+        </div>
+    </div>
+</body>
+</html>

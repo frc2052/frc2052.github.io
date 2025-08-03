@@ -1,0 +1,54 @@
+---
+layout: wiki
+title: Wiki Table of Contents
+permalink: /wiki/
+---
+
+<div class="container mt-3 wiki-index">
+    <h1 class="wiki-pagetitle">Wiki Table of Contents</h1>
+    <div class="text-center wiki-toc-list-container">
+        <ul class="text-left wiki-chapters-list">
+            {% for chapter in site.data.wiki.chapters %}
+            {% assign chapter_num = forloop.index %}
+            <li>
+                {{ chapter_num }}.&nbsp;&nbsp;
+                {% if chapter.url %}
+                <a href="{{ chapter.url }}" class="wiki-tocchapter">{{ chapter.title }}</a>
+                {% else %}
+                <span class="wiki-tocchapter">{{ chapter.title }}</span>
+                {% endif %}
+                {% if chapter.sections %}
+                <ul class="wiki-tocsection">
+                    {% for section in chapter.sections %}
+                    {% assign section_num = forloop.index %}
+                    <li>
+                        {{ chapter_num }}.{{ section_num }}&nbsp;&nbsp;
+                        {% if section.url %}
+                        <a href="{{ section.url }}">{{ section.title }}</a>
+                        {% else %}
+                        <span>{{ section.title }}</span>
+                        {% endif %}
+                        {% if section.subsections %}
+                        <ul class="wiki-tocsubsection">
+                            {% for subsection in section.subsections %}
+                            {% assign subsection_letter = 'abcdefghijklmnopqrstuvwxyz' | slice: forloop.index0, 1 %}
+                            <li>
+                                {{ chapter_num }}.{{ section_num }}.{{ subsection_letter }}&nbsp;&nbsp;
+                                {% if subsection.url %}
+                                <a href="{{ subsection.url }}">{{ subsection.title }}</a>
+                                {% else %}
+                                <span>{{ subsection.title }}</span>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

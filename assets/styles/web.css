@@ -1073,3 +1073,97 @@ height: 315px;
   background-color: var(--shaded-color, lightgray);
   padding: 30px;
 }
+
+
+/* ----------------------- WIKI -------------------------- */
+
+.wiki-index {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.wiki-index ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.wiki-index li {
+    padding-left: 0;    
+}
+
+.wiki-index a {
+    text-decoration: underline;
+}
+
+.wiki-flex-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.wiki-sidebar {
+    font-size:16px;
+    width: 260px;
+    min-height: 100vh;
+    background: #f8f9fa;
+    border-right: 1px solid #eee;
+    padding: 30px 20px 30px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.wiki-main-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.wiki-main-content main {
+    flex: 1 0 auto;
+}
+
+.wiki-main-content footer {
+    flex-shrink: 0;
+}
+
+.wiki-toc-list-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px; /* Optional: controls width */
+    text-align: center;
+}
+
+.wiki-chapters-list {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.wiki-pagetitle {
+    text-align: center;
+    color: var(--maroon-color, black);    
+}
+
+.wiki-tocchapter {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.wiki-tocsection {
+    margin-left:40px;
+}
+
+.wiki-tocsubsection {
+    margin-left: 80px;
+}
+
+.wiki-navsection {
+    margin-left: 10px;
+}
+
+.wiki-navsubsection {
+    margin-left: 20px;
+}
