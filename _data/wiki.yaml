@@ -1,6 +1,6 @@
 chapters:
   - title: "About the Wiki"
-    url: "/wiki/getting-started/"
+    url: "/wiki/about/"
   - title: "Overview"
     url: "/wiki/overview/"
     sections:
@@ -13,9 +13,9 @@ chapters:
         url: "/wiki/overview/history/"
         subsections:
           - title: "Successes"
-            url: "/wiki/overview/sucesses/"
+            url: "/wiki/history/successes/"
           - title: "Evolution of the Logo"
-            url: "/wiki/overview/Logo/"
+            url: "/wiki/history/logo/"
   - title: "Leadership"
     sections:
       - title: "Captains"

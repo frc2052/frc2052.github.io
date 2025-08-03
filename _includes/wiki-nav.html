@@ -10,7 +10,7 @@
         {% for chapter in site.data.wiki.chapters %}
         {% assign chapter_num = forloop.index %}
         {% assign chapter_id = "chapter-" | append: chapter_num %}
-        <div class="nav-item d-flex align-items-center">
+        <div class="nav-item d-flex align-items-center wiki-navchapter">
             {% if chapter.sections %}
             <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button" width="30"
                     data-toggle="collapse"
@@ -32,7 +32,7 @@
             <span>
                 {{ chapter_num }}.&nbsp;
                 {% if chapter.url %}
-                <a href="{{ chapter.url }}" class="wiki-tocchapter">{{ chapter.title }}</a>
+                <a href="{{ chapter.url }}">{{ chapter.title }}</a>
                 {% else %}
                 <span class="wiki-tocchapter">{{ chapter.title }}</span>
                 {% endif %}
@@ -63,14 +63,16 @@
                         </svg>
                     </button>
                     {% endif %}
-                    <span>
-                        {{ chapter_num }}.{{ section_num }}.&nbsp;
-                        {% if section.url %}
-                        <a href="{{ section.url }}">{{ section.title }}</a>
-                        {% else %}
-                        <span>{{ section.title }}</span>
-                        {% endif %}
-                    </span>
+                    <div class="d-flex flex-row">
+                        <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_num }}.{{ section_num }}&nbsp;</div>
+                        <div class="wiki-section-title" style="flex:1;">
+                            {% if section.url %}
+                            <a href="{{ section.url }}">{{ section.title }}</a>
+                            {% else %}
+                            <span>{{ section.title }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
                 {% if section.subsections %}
                 <div class="collapse" id="{{ section_id }}">

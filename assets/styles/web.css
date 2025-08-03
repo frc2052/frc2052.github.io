@@ -1191,6 +1191,10 @@ height: 315px;
     color: var(--maroon-color, black);
 }
 
+.wiki-caret-btn {
+    align-self: flex-start;
+}
+
 .wiki-caret-btn:focus {
     outline: none;
     box-shadow: none;
@@ -1224,11 +1228,28 @@ height: 315px;
     margin-left: 80px;
 }
 
+.wiki-navchapter {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--maroon-color, black);
+}
+
+.wiki-navchapter a {
+    color: var(--maroon-color, black);
+}
+
 .wiki-navsection {
-    margin-bottom:10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: black;
+}
+
+.wiki-navsection a {
+    color: black;
 }
 
 .wiki-navsubsection {
     margin-left: 40px !important;
     margin-bottom: 10px;
+    font-size:14px;
 }
