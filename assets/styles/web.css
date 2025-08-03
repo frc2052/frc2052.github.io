@@ -1187,9 +1187,16 @@ height: 315px;
 
 .wiki-caret {
     transition: transform 0.2s;
+    vertical-align: middle;
+    color: var(--maroon-color, black);
 }
 
-.nav-link[aria-expanded="true"] .wiki-caret {
+.wiki-caret-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.wiki-caret-btn[aria-expanded="true"] .wiki-caret {
     transform: rotate(90deg);
 }
 /* ---------- END Expand Collapse of Sidebar Nav ---------------  */
@@ -1218,9 +1225,10 @@ height: 315px;
 }
 
 .wiki-navsection {
-    margin-left: 10px;
+    margin-bottom:10px;
 }
 
 .wiki-navsubsection {
-    margin-left: 20px;
+    margin-left: 40px !important;
+    margin-bottom: 10px;
 }
