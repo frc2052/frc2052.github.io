@@ -1,7 +1,7 @@
 ---
 title: Drive Team
 layout: wiki
-permalink: /wiki/history/successes/
+permalink: /wiki/overview/history/successes/
 ---
 
 # Success Through the Years

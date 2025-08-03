@@ -12,19 +12,36 @@
         {% assign chapter_id = "chapter-" | append: chapter_num %}
 
 
+        {% assign chapter_url = chapter.url %}
         {% assign chapter_should_expand = false %}
+        {% if chapter.url == page.url %}
+        {% assign chapter_should_expand = true %}
+        {% else %}
+        {% if chapter.sections %}
         {% for section in chapter.sections %}
+        {% if chapter_url %}
+        <!--nothing to do-->
+        {% elsif section.url%}
+        {% assign chapter_url = section.url %}
+        {% endif %}
         {% if page.url == section.url %}
         {% assign chapter_should_expand = true %}
         {% endif %}
         {% if section.subsections %}
         {% for subsection in section.subsections %}
+        {% if chapter_url %}
+        <!--do nothing-->
+        {% elsif subsection.url %}
+        {% assign chapter_url = subsection.url %}
+        {% endif %}
         {% if page.url == subsection.url %}
         {% assign chapter_should_expand = true %}
         {% endif %}
         {% endfor %}
         {% endif %}
         {% endfor %}
+        {% endif %}
+        {% endif %}
 
         <div class="nav-item d-flex align-items-center wiki-navchapter {% if page.url == chapter.url %} wiki-activelink{% endif %}">
             {% if chapter.sections %}
@@ -48,8 +65,8 @@
             <div class="d-flex flex-row" style="width:100%;">
                 <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_num }}.&nbsp;&nbsp;</div>
                 <div class="wiki-chapter-title" style="flex:1;">
-                    {% if chapter.url %}
-                    <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+                    {% if chapter_url %}
+                    <a href="{{ chapter_url }}">{{ chapter.title }}</a>
                     {% else %}
                     <span class="wiki-tocchapter">{{ chapter.title }}</span>
                     {% endif %}
@@ -63,13 +80,21 @@
                 {% assign section_num = forloop.index %}
                 {% assign section_id = chapter_id | append: "-section-" | append: section_num %}
 
+                {% assign section_url = section.url %}
                 {% assign section_should_expand = false %}
+                {% if section.url == page.url %}
+                {% assign section_should_expand = true %}
+                {% else %}
                 {% if section.subsections %}
                 {% for subsection in section.subsections %}
+                {% if section_url == "" and subsection.url != "" %}
+                {% assign section_url = subsection.url %}
+                {% endif %}
                 {% if page.url == subsection.url %}
-                {% assign chapter_should_expand = true %}
+                {% assign section_should_expand = true %}
                 {% endif %}
                 {% endfor %}
+                {% endif %}
                 {% endif %}
 
                 <div class="nav-item d-flex align-items-center wiki-navsection  {% if page.url == section.url %} wiki-activelink{% endif %}">
@@ -93,8 +118,8 @@
                     <div class="d-flex flex-row">
                         <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_num }}.{{ section_num }}&nbsp;&nbsp;</div>
                         <div class="wiki-section-title" style="flex:1;">
-                            {% if section.url %}
-                            <a href="{{ section.url }}">{{ section.title }}</a>
+                            {% if section_url %}
+                            <a href="{{ section_url }}">{{ section.title }}</a>
                             {% else %}
                             <span>{{ section.title }}</span>
                             {% endif %}
@@ -102,7 +127,7 @@
                     </div>
                 </div>
                 {% if section.subsections %}
-                <div class="collapse{% assign subsection_should_expand = false %}{% for subsection in section.subsections %}{% if page.url contains subsection.url %}{% assign subsection_should_expand = true %}{% endif %}{% endfor %}{% if subsection_should_expand %} show{% endif %}" id="{{ section_id }}">
+                <div class="collapse{% if section_should_expand %} show{% endif %}" id="{{ section_id }}">
                     <nav class="nav flex-column ml-3 wiki-navsubsection">
                         {% for subsection in section.subsections %}
                         <div class="{% if page.url == subsection.url %} wiki-activelink{% endif %}">

@@ -8,14 +8,14 @@ chapters:
         url: "/wiki/overview/mission/"
         subsections:
           - title: "Core Values Exercise"
-            url: "/wiki/overview/cvexercise/"
+            url: "/wiki/overview/mission/cvexercise/"
       - title: "History"
         url: "/wiki/overview/history/"
         subsections:
           - title: "Successes"
-            url: "/wiki/history/successes/"
+            url: "/wiki/overview/history/successes/"
           - title: "Evolution of the Logo"
-            url: "/wiki/history/logo/"
+            url: "/wiki/overview/history/logo/"
   - title: "Leadership"
     sections:
       - title: "Captains"
