@@ -1260,3 +1260,9 @@ height: 315px;
     border-radius: 6px;
     box-sizing: border-box;
 }
+
+@media (max-width: 767px) {
+    .wiki-sidebar {
+        display: none !important;
+    }
+}

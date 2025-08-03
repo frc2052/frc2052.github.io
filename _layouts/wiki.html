@@ -14,6 +14,11 @@
 
         <!-- Main Content: right column -->
         <div class="wiki-main-content">
+            {% if page.url != "/wiki/" %}
+            <a href="/wiki/" class="wiki-toc-back d-block d-md-none mb-3">
+                &larr; Back to Table of Contents
+            </a>
+            {% endif %}
             <main>
                 {{ content }}
             </main>
