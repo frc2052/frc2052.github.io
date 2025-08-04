@@ -12,10 +12,10 @@ blockquote {
 }
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
-  color: #333333;
-  -webkit-tap-highlight-color: #0085A1;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #333333;
+    -webkit-tap-highlight-color: #0085A1;
 }
 
 #countdown {
@@ -58,8 +58,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 
 i.fa-arrow-circle-right {
@@ -134,21 +134,21 @@ height: 150px;
 
 /* START Banner*/
 .banner {
-  font-family: "Roboto",sans-serif;
-  font-size: 14px;
-  background:#0f4bcb;
-  color:white;
-  height:170px;
-  width:140px;
-  line-height:1.2;
-  margin:0 0 40px;
-  padding: 5px;
-  margin-top: 30px;
-  margin-left: 30px;
-  position:relative;
-  text-align:center;
-  vertical-align:top;
-  white-space:normal;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: #0f4bcb;
+    color: white;
+    height: 170px;
+    width: 140px;
+    line-height: 1.2;
+    margin: 0 0 40px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    white-space: normal;
 }
 
 .banner .award-name,.banner .award-name-long{
@@ -270,13 +270,13 @@ height: 150px;
 
 /* BEGIN Buttons */
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  border-radius: 0;
-  padding: 15px 25px;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 0;
+    padding: 15px 25px;
 }
 
 .btn-lg {
@@ -315,14 +315,14 @@ height: 150px;
   margin: 0 30px;
 }
 
-.card-kk-green .card-heading-green {
-  width: 100%;
-  font-size: 24px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: white;
-  background-color:  var(--green-color, black);
-}
+    .card-kk-green .card-heading-green {
+        width: 100%;
+        font-size: 24px;
+        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: white;
+        background-color: var(--green-color, black);
+    }
 
 .card-heading-green {
  width: 100%;
@@ -1077,11 +1077,6 @@ height: 315px;
 
 /* ----------------------- WIKI -------------------------- */
 
-.wiki-index {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: black;
-}
-
 .wiki-index ul {
     list-style-type: none;
     padding-left: 0;
@@ -1135,7 +1130,7 @@ height: 315px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 700px; /* Optional: controls width */
+    max-width: 500px; /* Optional: controls width */
     text-align: center;
 }
 
@@ -1221,11 +1216,11 @@ height: 315px;
 }
 
 .wiki-tocsection {
-    margin-left:40px;
+    margin-left:20px;
 }
 
 .wiki-tocsubsection {
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 .wiki-navchapter {
@@ -1260,6 +1255,45 @@ height: 315px;
     border-radius: 6px;
     box-sizing: border-box;
 }
+
+.wiki-main-content main {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.wiki-main-content main p {
+    margin-left:30px;
+}
+
+    .wiki-main-content main ol {
+        margin-left: 50px;
+    }
+    .wiki-main-content main ul {
+        margin-left: 50px;
+    }
+
+.wiki-main-content main h1 {
+    color: var(--maroon-color);
+    font-size:60px
+}
+
+    .wiki-main-content main h2 {
+        font-size: 45px;
+        padding-top: 20px;
+    }
+
+    .wiki-main-content main h3 {
+        font-size: 30px;
+        margin-left:30px;
+    }
+
+    .wiki-main-content main h4 {
+        font-weight: 500;
+        text-transform:uppercase;
+        font-size: 20px;
+        margin-left:30px;
+    }
+
 
 @media (max-width: 767px) {
     .wiki-sidebar {
