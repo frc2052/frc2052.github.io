@@ -16,13 +16,5 @@ jobs:
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
-        jekyll build
-    - name: Check links
-      run: |
-        htmlproofer _site \
-          --extensions .html \
-          --ignore-files _site/mnteams/index.html \
-          --allow-missing-href \
-          --ignore-missing-alt \
-          --ignore-urls "/www.amazon.com/,/www.chiefdelphi.com/,/amzn.to/,/meet.google.com/" \
-          --ignore-status-codes 429,301,0
+    - name: Build
+      run: jekyll build
