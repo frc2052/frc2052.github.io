@@ -25,3 +25,18 @@ chapters:
       - title: "Points"
         url: "/wiki/leadership/points/"
 
+        url: "/wiki/leadership/driveteam/"
+  - title: "Strategy"
+    sections:
+      - title: "Kickoff":
+        url: "/wiki/strategy/kickoff/"
+      - title: "Competitions":
+        url: "/wiki/strategy/competitions/"
+      - title: "Strategy Meeting":
+        url: "/wiki/strategy/strategymeeting/"
+      - title: "Applications":
+        sections:
+          - title: "FRC Krawler":
+            url: "/wiki/strategy/applications/frckrawler/"
+          - title: "Data Kralwer":
+            url: "/wiki/strategy/applications/datakrawler/"

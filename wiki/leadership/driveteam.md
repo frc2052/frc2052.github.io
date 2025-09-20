@@ -6,6 +6,7 @@ permalink: /wiki/leadership/driveteam/
 
 
 # Drive Team Selection
+---
 
 ## Overview
 
@@ -21,7 +22,7 @@ To be selected for the drive team, including human player and technician. All ca
 
 ## Rules Test
 
-All candidates must complete the rules test. Mentors will review the rule test results and identify a cutoff point (score) for which candidates can continue in the process. The minimum score to advance changes year to year and is typically defined  by an obvious gap in scoring that divides those that studied the rules from those that did not. Additional considerations for minimum score may include limiting the candidate pool to a reasonable list of candidates who can effectively evaluated in further steps. For example, 20 candidates may be too many to efficiently assess in a skills assessment in the time available. The rules test can cover any part of the game manually, but will emphasise scoring, penalties, field layout (not dimensions), terminology of the game and field, and other aspects of game play that may be involved during match play.
+All candidates must complete the rules test. Mentors will review the rule test results and identify a cutoff point (score) for which candidates can continue in the process. The minimum score to advance changes year to year and is typically defined  by an obvious gap in scoring that divides those that studied the rules from those that did not. Additional considerations for minimum score may include limiting the candidate pool to a reasonable list of candidates who can effectively evaluated in further steps. For example, 20 candidates may be too many to efficiently assess in a skills assessment in the time available. The rules test can cover any part of the game manually, but will emphasize scoring, penalties, field layout (not dimensions), terminology of the game and field, and other aspects of game play that may be involved during match play.
 
 ## Skills Assessment
 
@@ -43,7 +44,7 @@ A secondary driver will be selected with the assistance of the primary driver. I
 
 ## Drive Coach
 
-Team 2052 KnightKrawler has historically used an adult drive coach. Drive Coach Pete is widely regarded as a model drive coach, who makes all teams on an alliance feel welcomed and heard, finds ways for all members of the alliance to accomplish their individual goals during qualification matches, and works to diffuse tense situations before, during and after matches. In 2025, Pete was recognized by FIRST HQ as a model drive coach and asked to participate on a committee to assist in finding ways to improve competition experience for and with drive coaches. Pete helps to avoid situations where other drive coaches may attempt to overpower conversations or coerce teams into doing something they are uncomfortable doing. Past student drivers have shared that having a veteran adult drive coach such as Pete is a strategic competitive advantage and a major contributor to KnightKrawler's on-field success. Pete's repuration as a drive coach has been a deciding factor many times when an aliance captain has selected KnightKrawler to join their playoff aliances. 
+Team 2052 KnightKrawler has historically used an adult drive coach. Drive Coach Pete is widely regarded as a model drive coach, who makes all teams on an alliance feel welcomed and heard, finds ways for all members of the alliance to accomplish their individual goals during qualification matches, and works to diffuse tense situations before, during and after matches. In 2025, Pete was recognized by FIRST HQ as a model drive coach and asked to participate on a committee to assist in finding ways to improve competition experience for and with drive coaches. Pete helps to avoid situations where other drive coaches may attempt to overpower conversations or coerce teams into doing something they are uncomfortable doing. Past student drivers have shared that having a veteran adult drive coach such as Pete is a strategic competitive advantage and a major contributor to KnightKrawler's on-field success. Pete's reputation as a drive coach has been a deciding factor many times when an alliance captain has selected KnightKrawler to join their playoff alliances. 
 
 KnightKrawler does not have a rule that an adult must be a drive coach, therefore a student drive coach is a possibility. Selecting a student drive coach would need to have the support of the others on the drive team, and the team leadership (students and mentors) as a whole. A student may be identified as a back up drive coach, should Pete not be available.
 
