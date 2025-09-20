@@ -21,4 +21,7 @@ chapters:
       - title: "Captains"
         url: "/wiki/leadership/captains/"
       - title: "Drive Team"
-        url: "/wiki/leadership/driveteam/"
+        url: "/wiki/leadership/driveteam/"        
+      - title: "Points"
+        url: "/wiki/leadership/points/"
+
