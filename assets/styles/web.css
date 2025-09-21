@@ -12,10 +12,10 @@ blockquote {
 }
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
-  color: #333333;
-  -webkit-tap-highlight-color: #0085A1;
+    font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #333333;
+    -webkit-tap-highlight-color: #0085A1;
 }
 
 #countdown {
@@ -58,8 +58,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+    font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 
 i.fa-arrow-circle-right {
@@ -134,21 +134,21 @@ height: 150px;
 
 /* START Banner*/
 .banner {
-  font-family: "Roboto",sans-serif;
-  font-size: 14px;
-  background:#0f4bcb;
-  color:white;
-  height:170px;
-  width:140px;
-  line-height:1.2;
-  margin:0 0 40px;
-  padding: 5px;
-  margin-top: 30px;
-  margin-left: 30px;
-  position:relative;
-  text-align:center;
-  vertical-align:top;
-  white-space:normal;
+    font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: #0f4bcb;
+    color: white;
+    height: 170px;
+    width: 140px;
+    line-height: 1.2;
+    margin: 0 0 40px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    white-space: normal;
 }
 
 .banner .award-name,.banner .award-name-long{
@@ -270,13 +270,13 @@ height: 150px;
 
 /* BEGIN Buttons */
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  border-radius: 0;
-  padding: 15px 25px;
+    font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 0;
+    padding: 15px 25px;
 }
 
 .btn-lg {
@@ -315,14 +315,14 @@ height: 150px;
   margin: 0 30px;
 }
 
-.card-kk-green .card-heading-green {
-  width: 100%;
-  font-size: 24px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: white;
-  background-color:  var(--green-color, black);
-}
+    .card-kk-green .card-heading-green {
+        width: 100%;
+        font-size: 24px;
+        font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: white;
+        background-color: var(--green-color, black);
+    }
 
 .card-heading-green {
  width: 100%;
@@ -873,6 +873,8 @@ height: 150px;
 /*------------ BEGIN: HERO, NAVIGATION STYLES --------------*/
 /* Navigation Menu: change the link color */
 .nav-link-custom {
+    font-family: 'Arial Narrow', 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
+    font-weight:bold;
     color: rgba(255,255,255, 1) !important;
 }
 /* Navigation Menu: change the color of active or hovered links */
@@ -1073,3 +1075,30 @@ height: 315px;
   background-color: var(--shaded-color, lightgray);
   padding: 30px;
 }
+
+.roundtable-banner {
+    width: 100%;
+    background: #009CD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+    .roundtable-banner img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .roundtable-banner a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 25%;
+        height: 100%;
+        z-index: 2;
+        cursor: pointer;
+        text-decoration: none;
+    }
