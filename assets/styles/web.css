@@ -12,7 +12,7 @@ blockquote {
 }
 
 body {
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #333333;
     -webkit-tap-highlight-color: #0085A1;
@@ -58,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
     font-weight: 800;
 }
 
@@ -134,7 +134,7 @@ height: 150px;
 
 /* START Banner*/
 .banner {
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
     font-size: 14px;
     background: #0f4bcb;
     color: white;
@@ -270,7 +270,7 @@ height: 150px;
 
 /* BEGIN Buttons */
 .btn {
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 800;
@@ -318,7 +318,7 @@ height: 150px;
     .card-kk-green .card-heading-green {
         width: 100%;
         font-size: 24px;
-        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+        font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
         text-align: center;
         color: white;
         background-color: var(--green-color, black);
@@ -873,6 +873,8 @@ height: 150px;
 /*------------ BEGIN: HERO, NAVIGATION STYLES --------------*/
 /* Navigation Menu: change the link color */
 .nav-link-custom {
+    font-family: 'Arial Narrow', 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
+    font-weight:bold;
     color: rgba(255,255,255, 1) !important;
 }
 /* Navigation Menu: change the color of active or hovered links */
@@ -1300,3 +1302,29 @@ height: 315px;
         display: none !important;
     }
 }
+.roundtable-banner {
+    width: 100%;
+    background: #009CD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+    .roundtable-banner img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .roundtable-banner a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 25%;
+        height: 100%;
+        z-index: 2;
+        cursor: pointer;
+        text-decoration: none;
+    }
