@@ -4,6 +4,7 @@ layout: default
 permalink: /wiki/
 ---
 
+
 {% assign wiki_pages = site.pages | where_exp: "p", "p.path contains 'wiki/'" %}
 {% assign sorted_pages = wiki_pages | sort: "path" %}
 
@@ -19,11 +20,18 @@ permalink: /wiki/
 
     <div class="text-center wiki-toc-list-container">
         <ul class="text-left wiki-chapters-list">
+             
             {% for page in sorted_pages %}
                 {% assign path_without_name = page.path | remove: page.name %}
                 {% assign folders = path_without_name | split: '/' %}
                 {% assign this_chapter = folders[1] %}
                 {% assign this_section = folders[2] %}
+                
+                {% if this_section contains "@" %}
+                  {% assign parts = this_section | split: "@" %}
+                  {% assign this_section = parts[1] %}
+                {% endif %}
+
                 {% assign file_name = page.name %}
 
                 {% if last_section != this_section and subsection_index > 0 %}
@@ -82,7 +90,7 @@ permalink: /wiki/
                     {% assign subsection_index = 0 %}
                     {% if file_name == "_index.md" %}
                         <li>
-                            {{ chapter_index }} <a href="{{ page.url }}">{{ this_chapter | replace: "_", " " }}</a>
+                            {{ chapter_index }} <a href="{{ page.url }}" class="wiki-tocchapter">{{ this_chapter | replace: "_", " " }}</a>
                     {% else %}
                         {% assign section_index = section_index | plus: 1 %}
                         <li>
@@ -93,7 +101,7 @@ permalink: /wiki/
 
                 {% else %}
                     {% assign chapter_index = chapter_index | plus: 1 %}
-                    <li>{{ chapter_index }} <a href="{{ page.url }}">{{ page.title }}</a></li>
+                    <li>{{ chapter_index }} <a href="{{ page.url }}" class="wiki-tocchapter">{{ page.title }}</a></li>
                 {% endif %}
 
                 {% assign last_chapter = this_chapter %}
