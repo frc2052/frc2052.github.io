@@ -1,109 +1,133 @@
+{% assign wiki_pages = site.pages | where_exp: "p", "p.path contains 'wiki/'" %}
+{% assign sorted_pages = wiki_pages | sort: "path" %}
+
+{% assign next_chapter = "" %}
+{% assign next_section = "" %}
+{% assign last_chapter = "" %}
+{% assign last_section = "" %}
+{% assign last_file_name = "" %}
+{% assign chapter_index = 0 %}
+{% assign section_index = 0 %}
+{% assign subsection_index = 0 %}
+{% assign loop_index_plus_one = 0 %}
+
+
 <div class="wiki-sidebar-nav">
     <nav class="nav flex-column">
         <h3 class="mt-2 center">2052 Wiki</h3>
 
         <div class="nav-item d-flex align-items-center">
             <span>
-                <a href="/wiki/" class="wiki-tocchapter{% if page.url == '/wiki/' %} active{% endif %}">Table of Contents</a>
+                <a href="/wiki/" class="wiki-tocchapter{% if site_page.url == '/wiki/' %} active{% endif %}">Table of Contents</a>
             </span>
         </div>
-        {% for chapter in site.data.wiki.chapters %}
-        {% assign chapter_num = forloop.index %}
-        {% assign chapter_id = "chapter-" | append: chapter_num %}
+        {% for site_page in sorted_pages %}
+            {% assign path_without_name = site_page.path | remove: site_page.name %}
+            {% assign folders = path_without_name | split: '/' %}
+            {% assign this_chapter = folders[1] %}
+            {% assign this_section = folders[2] %}
+            {% assign file_name = site_page.name %}
 
+            {% assign loop_index_plus_one = loop_index_plus_one | plus: 1 %}
+            {% assign next_page = sorted_pages[loop_index_plus_one] %}
+            {% assign path_without_name = next_page.path | remove: next_page.name %}
+            {% assign folders = path_without_name | split: '/' %}
+            {% assign next_chapter = folders[1] %}
+            {% assign next_section = folders[2] %}
 
-        {% assign chapter_url = chapter.url %}
-        {% assign chapter_should_expand = false %}
-        {% if chapter.url == page.url %}
-        {% assign chapter_should_expand = true %}
-        {% else %}
-        {% if chapter.sections %}
-        {% for section in chapter.sections %}
-        {% if chapter_url %}
-        <!--nothing to do-->
-        {% elsif section.url%}
-        {% assign chapter_url = section.url %}
-        {% endif %}
-        {% if page.url == section.url %}
-        {% assign chapter_should_expand = true %}
-        {% endif %}
-        {% if section.subsections %}
-        {% for subsection in section.subsections %}
-        {% if chapter_url %}
-        <!--do nothing-->
-        {% elsif subsection.url %}
-        {% assign chapter_url = subsection.url %}
-        {% endif %}
-        {% if page.url == subsection.url %}
-        {% assign chapter_should_expand = true %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-        {% endif %}
+            {% assign is_active_chapter = false %}
+            {% assign is_active_section = false %}
 
-        <div class="nav-item d-flex align-items-center wiki-navchapter {% if page.url == chapter.url %} wiki-activelink{% endif %}">
-            {% if chapter.sections %}
-            <button class="wiki-caret-btn btn btn-link p-0 mr-2 "
-                    type="button" width="30"
-                    data-toggle="collapse"
-                    data-target="#{{ chapter_id }}"
-                    aria-expanded="{% if chapter_should_expand %}true{% else %}false{% endif %}"
-                    aria-controls="{{ chapter_id }}">
-                <svg class="wiki-caret" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
-                </svg>
-            </button>
-            {% else %}
-            <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button" width="30">
-                <svg class="wiki-caret" width="20" height="20" fill="transparent" viewBox="0 0 16 16" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
-                </svg>
-            </button>
+            {% assign current_folders = page.path | split: '/' %}
+            {% if this_chapter == current_folders[1] %}
+                {% assign is_active_chapter = true %}
+                {% if this_section == current_folders[2] %}
+                    {% assign is_active_section = true %}
+                {% endif %}
             {% endif %}
-            <div class="d-flex flex-row" style="width:100%;">
-                <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_num }}.&nbsp;&nbsp;</div>
-                <div class="wiki-chapter-title" style="flex:1;">
-                    {% if chapter_url %}
-                    <a href="{{ chapter_url }}">{{ chapter.title }}</a>
-                    {% else %}
-                    <span class="wiki-tocchapter">{{ chapter.title }}</span>
-                    {% endif %}
+
+
+            {% if this_chapter == nil %}
+                {% assign chapter_index = chapter_index | plus: 1 %}            
+                <div class="nav-item d-flex align-items-center wiki-navchapter {% if site_page.url == page.url %}wiki-activelink{% endif %}"> 
+                    <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button" width="30">
+                        <svg class="wiki-caret" width="20" height="20" fill="transparent" viewBox="0 0 16 16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
+                        </svg>
+                    </button>
+                    <div class="d-flex flex-row" style="width:100%;">
+                        <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_index }}.&nbsp;&nbsp;</div>
+                        <div class="wiki-chapter-title" style="flex:1;">
+                            <a href="{{ site_page.url }}">{{ site_page.title }}</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        {% if chapter.sections %}
-        <div class="collapse{% if chapter_should_expand %} show{% endif %}" id="{{ chapter_id }}">
-            <nav class="nav flex-column ml-3">
-                {% for section in chapter.sections %}
-                {% assign section_num = forloop.index %}
-                {% assign section_id = chapter_id | append: "-section-" | append: section_num %}
+            {% elsif this_chapter != last_chapter %}
+                {% assign chapter_index = chapter_index | plus: 1 %}
+                {% assign section_index = 0 %}
+                {% assign subsection_index = 0 %}
+                <div class="nav-item d-flex align-items-center wiki-navchapter">                
+                    {% if this_chapter == next_chapter %}
+                    <button class="wiki-caret-btn btn btn-link p-0 mr-2 "
+                            type="button" width="30"
+                            data-toggle="collapse"
+                            data-target="#chapter-{{chapter_index}}"
+                            aria-expanded="{% if is_active_chapter %}true{% else %}false{% endif %}"
+                            aria-controls="chapter-{{chapter_index}}">
+                        <svg class="wiki-caret" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
+                        </svg>
+                    </button>
+                    {% else %}
+                    <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button" width="30">
+                        <svg class="wiki-caret" width="20" height="20" fill="transparent" viewBox="0 0 16 16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
+                        </svg>
+                    </button>
+                    {% endif %}
+                    <div class="d-flex flex-row" style="width:100%;">
+                        <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_index }}.&nbsp;&nbsp;</div>
+                        <div class="wiki-chapter-title" style="flex:1;">
+                            {% if file_name == "_index.md" %}
+                            <a href="{{ site_page.url }}">{{ site_page.title }}</a>
+                            {% else %}
+                            <a href="{{ site_page.url }}">{{ this_chapter | replace: "_", " " }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% if this_chapter == next_chapter %} <!-- there are sections -->
+                    <div class="collapse{% if is_active_chapter %} show{% endif %}" id="chapter-{{chapter_index}}">
+                        <nav class="nav flex-column ml-3">
+                {% endif %}
+            {% endif %}
 
-                {% assign section_url = section.url %}
-                {% assign section_should_expand = false %}
-                {% if section.url == page.url %}
-                {% assign section_should_expand = true %}
-                {% else %}
-                {% if section.subsections %}
-                {% for subsection in section.subsections %}
-                {% if section_url == "" and subsection.url != "" %}
-                {% assign section_url = subsection.url %}
-                {% endif %}
-                {% if page.url == subsection.url %}
-                {% assign section_should_expand = true %}
-                {% endif %}
-                {% endfor %}
-                {% endif %}
-                {% endif %}
+            {% if this_chapter and this_section == null %} <!-- Section page not folder -->
+                {% assign section_index = section_index | plus: 1 %}
+                <div class="nav-item d-flex align-items-center wiki-navsection  {% if site_page.url == page.url %} wiki-activelink{% endif %}">
+                    <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button" width="30">
+                        <svg class="wiki-caret" width="20" height="20" fill="transparent" viewBox="0 0 16 16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
+                        </svg>
+                    </button>
 
-                <div class="nav-item d-flex align-items-center wiki-navsection  {% if page.url == section.url %} wiki-activelink{% endif %}">
-                    {% if section.subsections %}
+                    <div class="d-flex flex-row">
+                        <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_index }}.{{ section_index }}&nbsp;&nbsp;</div>
+                        <div class="wiki-section-title" style="flex:1;">
+                            <a href="{{ site_page.url }}">{{ site_page.title }}</a>
+                        </div>
+                    </div>
+                </div>                
+            {% elsif this_section and this_section != last_section %}
+                {% assign section_index = section_index | plus: 1 %}
+                {% assign subsection_index = 0 %}
+                <div class="nav-item d-flex align-items-center wiki-navsection">
+                    {% if this_section == next_section %} <!-- there are multiple subsections -->
                     <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button"
                             data-toggle="collapse"
-                            data-target="#{{ section_id }}"
-                            aria-expanded="{% if section_should_expand %}true{% else %}false{% endif %}"
-                            aria-controls="{{ section_id }}">
+                            data-target="#section-{{chapter_index}}-{{section_index}}"
+                            aria-expanded="{% if is_active_section %}true{% else %}false{% endif %}"
+                            aria-controls="section-{{chapter_index}}-{{section_index}}">
                         <svg class="wiki-caret" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                             <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
                         </svg>
@@ -116,35 +140,42 @@
                     </button>
                     {% endif %}
                     <div class="d-flex flex-row">
-                        <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_num }}.{{ section_num }}&nbsp;&nbsp;</div>
+                        <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_index }}.{{ section_index }}&nbsp;&nbsp;</div>
                         <div class="wiki-section-title" style="flex:1;">
-                            {% if section_url %}
-                            <a href="{{ section_url }}">{{ section.title }}</a>
+                            {% if file_name == "_index.md" %}
+                            <a href="{{ site_page.url }}">{{ site_page.title }}</a>
                             {% else %}
-                            <span>{{ section.title }}</span>
+                            <a href="{{ site_page.url }}">{{ this_section | replace: "_", " " }}</a>
                             {% endif %}
                         </div>
                     </div>
                 </div>
-                {% if section.subsections %}
-                <div class="collapse{% if section_should_expand %} show{% endif %}" id="{{ section_id }}">
-                    <nav class="nav flex-column ml-3 wiki-navsubsection">
-                        {% for subsection in section.subsections %}
-                        <div class="{% if page.url == subsection.url %} wiki-activelink{% endif %}">
-                            {% if subsection.url %}
-                            <a href="{{ subsection.url }}">{{ subsection.title }}</a>
-                            {% else %}
-                            <span>{{ subsection.title }}</span>
-                            {% endif %}
-                        </div>
-                        {% endfor %}
+                {% if this_section == next_section %}  <!-- there are subsections-->
+                    <div class="collapse{% if is_active_section %} show{% endif %}" id="section-{{chapter_index}}-{{section_index}}">
+                        <nav class="nav flex-column ml-3 wiki-navsubsection">
+                {% endif %}
+            {% endif %}
+
+            {% if this_section %}
+                <div class="{% if page.url == site_page.url %} wiki-activelink{% endif %}">
+                    <a href="{{ site_page.url }}">{{ site_page.title }}</a>
+                </div>
+            {% endif %}
+
+            {% if this_section and this_section != next_section %}
                     </nav>
                 </div>
-                {% endif %}
-                {% endfor %}
-            </nav>
-        </div>
-        {% endif %}
+            {% endif %}
+
+            {% if this_chapter and this_chapter != next_chapter %}
+                    </nav>
+                </div>
+            {% endif %}
+
+            {% assign last_chapter = this_chapter %}
+            {% assign last_section = this_section %}
+            {% assign last_file_name = file_name %}
         {% endfor %}
+
     </nav>
 </div>
