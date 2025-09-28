@@ -15,18 +15,18 @@
 <div class="wiki-sidebar-nav">
     <nav class="nav flex-column">
         <h3 class="mt-2 center">2052 Wiki</h3>
-
-        <div class="nav-item d-flex align-items-center">
-            <span>
-                <a href="/wiki/" class="wiki-tocchapter{% if site_page.url == '/wiki/' %} active{% endif %}">Table of Contents</a>
-            </span>
+        <div class="nav-item d-flex center mb-3">
+            <a href="/wiki/" class="wiki-tocchapter {% if site_page.url == '/wiki/' %} active{% endif %}">Table of Contents</a>
         </div>
+
         {% for site_page in sorted_pages %}
             {% assign path_without_name = site_page.path | remove: site_page.name %}
             {% assign folders = path_without_name | split: '/' %}
             {% assign this_chapter = folders[1] %}
             {% assign this_section = folders[2] %}
             {% assign file_name = site_page.name %}
+            {% assign this_chapter_formatted = this_chapter | replace: "_", " " %}
+            {% assign this_section_formatted = this_section | replace: "_", " " %}
 
             {% assign loop_index_plus_one = loop_index_plus_one | plus: 1 %}
             {% assign next_page = sorted_pages[loop_index_plus_one] %}
@@ -44,6 +44,15 @@
                 {% if this_section == current_folders[2] %}
                     {% assign is_active_section = true %}
                 {% endif %}
+            {% endif %}
+
+            {% if this_chapter_formatted contains "@" %}
+                {% assign parts = this_chapter_formatted | split: "@" %}
+                {% assign this_chapter_formatted = parts[1] %}
+            {% endif %}
+            {% if this_section_formatted contains "@" %}
+                {% assign parts = this_section_formatted | split: "@" %}
+                {% assign this_section_formatted = parts[1] %}
             {% endif %}
 
 
@@ -91,7 +100,7 @@
                             {% if file_name == "_index.md" %}
                             <a href="{{ site_page.url }}">{{ site_page.title }}</a>
                             {% else %}
-                            <a href="{{ site_page.url }}">{{ this_chapter | replace: "_", " " }}</a>
+                            <a href="{{ site_page.url }}">{{ this_chapter_formatted }}</a>
                             {% endif %}
                         </div>
                     </div>
@@ -145,7 +154,7 @@
                             {% if file_name == "_index.md" %}
                             <a href="{{ site_page.url }}">{{ site_page.title }}</a>
                             {% else %}
-                            <a href="{{ site_page.url }}">{{ this_section | replace: "_", " " }}</a>
+                            <a href="{{ site_page.url }}">{{ this_section_formatted }}</a>
                             {% endif %}
                         </div>
                     </div>
@@ -158,7 +167,7 @@
 
             {% if this_section %}
                 <div class="{% if page.url == site_page.url %} wiki-activelink{% endif %}">
-                    <a href="{{ site_page.url }}">{{ site_page.title }}</a>
+                    <a href="{{ site_page.url }}"> &nbsp;&nbsp;{{ site_page.title }}</a>
                 </div>
             {% endif %}
 
