@@ -30,7 +30,8 @@ github_username:  frc2052
 
 # Build settings
 #theme: minima
-#plugins:
+plugins:
+  - jekyll-optional-front-matter  #this is needed for wiki pages to automatically apply url, layout and title
 #  - jekyll-feed
 
 # Exclude from processing.
@@ -44,3 +45,24 @@ github_username:  frc2052
 exclude:
   - sample/
   - .vs/
+
+# collections:
+#   wiki:
+#     output: true
+#     permalink: /wiki/:path/ # This uses the folder structure as the default URL
+
+# defaults:
+#   - scope:
+#       path: "" # empty string means all files
+#       type: wikis # applies to documents in the 'wiki' collection
+#     values:
+#       layout: "wiki"
+
+
+defaults:
+  - scope:
+      path: "wiki"
+      type: "pages"
+    values:
+      layout: "wiki"
+      permalink: /:path/:basename/

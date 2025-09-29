@@ -1102,7 +1102,7 @@ height: 315px;
 
 .wiki-sidebar {
     font-size:16px;
-    width: 260px;
+    width: 300px;
     min-height: 100vh;
     background: #f8f9fa;
     border-right: 1px solid #eee;
@@ -1142,7 +1142,7 @@ height: 315px;
 /* --------- START Expand Collapse of Sidebar Nav --------------  */
 
 .wiki-sidebar-nav {
-    width: 260px;
+    width: 280px;
     min-height: 100vh;
     background: #f8f9fa;
     border-right: 1px solid #eee;
@@ -1207,9 +1207,9 @@ height: 315px;
     margin: 0 auto;
 }
 
-.wiki-pagetitle {
+.wiki-indextitle {
     text-align: center;
-    color: var(--maroon-color, black);    
+    color: var(--maroon-color, black);
 }
 
 .wiki-tocchapter {
@@ -1274,18 +1274,22 @@ height: 315px;
         margin-left: 50px;
     }
 
-.wiki-main-content main h1 {
-    color: var(--maroon-color);
-    font-size:60px
-}
+    .wiki-main-content main h1 {
+        color: var(--maroon-color);
+        font-size:35px;
+    }
+
+    .wiki-main-content h1:not(:first-child) {
+        padding-top: 60px;
+    }
 
     .wiki-main-content main h2 {
-        font-size: 45px;
+        font-size: 30px;
         padding-top: 20px;
     }
 
     .wiki-main-content main h3 {
-        font-size: 30px;
+        font-size: 25px;
         margin-left:30px;
     }
 
