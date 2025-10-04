@@ -55,6 +55,14 @@
                 {% assign this_section_formatted = parts[1] %}
             {% endif %}
 
+            {% assign raw_title = site_page.name | split: '.' | first %}
+            {% assign formatted_page_title = raw_title | replace: "_", " " %}
+            {% if site_page.title %}
+                {% assign formatted_page_title = site_page.title %}
+            {% elsif formatted_page_title contains "@" %}
+                {% assign parts = formatted_page_title | split: "@" %}
+                {% assign formatted_page_title = parts[1] %}              
+            {% endif %}
 
             {% if this_chapter == nil %}
                 {% assign chapter_index = chapter_index | plus: 1 %}            
@@ -67,7 +75,7 @@
                     <div class="d-flex flex-row" style="width:100%;">
                         <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_index }}.&nbsp;&nbsp;</div>
                         <div class="wiki-chapter-title" style="flex:1;">
-                            <a href="{{ site_page.url }}">{{ site_page.title }}</a>
+                            <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +106,7 @@
                         <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_index }}.&nbsp;&nbsp;</div>
                         <div class="wiki-chapter-title" style="flex:1;">
                             {% if file_name == "_index.md" %}
-                            <a href="{{ site_page.url }}">{{ site_page.title }}</a>
+                            <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
                             {% else %}
                             <a href="{{ site_page.url }}">{{ this_chapter_formatted }}</a>
                             {% endif %}
@@ -123,7 +131,7 @@
                     <div class="d-flex flex-row">
                         <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_index }}.{{ section_index }}&nbsp;&nbsp;</div>
                         <div class="wiki-section-title" style="flex:1;">
-                            <a href="{{ site_page.url }}">{{ site_page.title }}</a>
+                            <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
                         </div>
                     </div>
                 </div>                
@@ -152,7 +160,7 @@
                         <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_index }}.{{ section_index }}&nbsp;&nbsp;</div>
                         <div class="wiki-section-title" style="flex:1;">
                             {% if file_name == "_index.md" %}
-                            <a href="{{ site_page.url }}">{{ site_page.title }}</a>
+                            <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
                             {% else %}
                             <a href="{{ site_page.url }}">{{ this_section_formatted }}</a>
                             {% endif %}
@@ -167,7 +175,7 @@
 
             {% if this_section %}
                 <div class="{% if page.url == site_page.url %} wiki-activelink{% endif %}">
-                    <a href="{{ site_page.url }}"> &nbsp;&nbsp;{{ site_page.title }}</a>
+                    <a href="{{ site_page.url }}"> &nbsp;&nbsp;{{ formatted_page_title }}</a>
                 </div>
             {% endif %}
 

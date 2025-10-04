@@ -15,8 +15,8 @@ permalink: /wiki/
 {% assign subsection_index = 0 %}
 
 <div class="container mt-3 wiki-index">
-    <h1 class="wiki-pagetitle">2052 Wiki</h1>
-    <h2 class="wiki-pagetitle">Table of Contents</h2>
+    <h1 class="wiki-indextitle">2052 Wiki</h1>
+    <h2 class="wiki-indextitle">Table of Contents</h2>
 
     <div class="text-center wiki-toc-list-container">
         <ul class="text-left wiki-chapters-list">
@@ -34,6 +34,15 @@ permalink: /wiki/
             {% if this_section contains "@" %}
             {% assign parts = this_section | split: "@" %}
             {% assign this_section = parts[1] %}
+            {% endif %}
+
+            {% assign raw_title = page.name | split: '.' | first %}
+            {% assign formatted_page_title = raw_title | replace: "_", " " %}
+            {% if page.title %}
+                {% assign formatted_page_title = page.title %}
+            {% elsif formatted_page_title contains "@" %}
+                {% assign parts = formatted_page_title | split: "@" %}
+                {% assign formatted_page_title = parts[1] %}              
             {% endif %}
 
             {% if last_section != this_section and subsection_index > 0 %}
@@ -55,7 +64,7 @@ permalink: /wiki/
         {% if last_file_name == "_index.md" %}
         <ul class="wiki-tocsubsection">
             {% endif %}
-            <li>{{ chapter_index }}.{{ section_index }}{{ " abcdefghijklmnopqrstuvwxyz" | slice: subsection_index | slice: 0, 1 }} <a href="{{ page.url }}">{{ page.title }}</a></li>
+            <li>{{ chapter_index }}.{{ section_index }}{{ " abcdefghijklmnopqrstuvwxyz" | slice: subsection_index | slice: 0, 1 }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
             {% elsif this_section != last_section and this_section %}
             {% if this_chapter != last_chapter %}
             {% assign chapter_index = chapter_index | plus: 1 %}
@@ -79,13 +88,13 @@ permalink: /wiki/
                     <li>
                         {{ chapter_index }}.{{ section_index }} <span>{{ this_section | replace: "_", " " }}</span>
                         <ul class="wiki-tocsubsection">
-                            <li>{{ chapter_index }}.{{ section_index }}{{ " abcdefghijklmnopqrstuvwxyz" | slice: subsection_index | slice: 0, 1 }} <a href="{{ page.url }}">{{ page.title }}</a></li>
+                            <li>{{ chapter_index }}.{{ section_index }}{{ " abcdefghijklmnopqrstuvwxyz" | slice: subsection_index | slice: 0, 1 }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
                             {% endif %}
 
                             {% elsif this_chapter == last_chapter and this_chapter and page.url != "_index" %}
                             {% assign section_index = section_index | plus: 1 %}
                             {% assign subsection_index = 0 %}
-                            <li>{{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ page.title }}</a></li>
+                            <li>{{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
                             {% elsif this_chapter %}
                             {% assign chapter_index = chapter_index | plus: 1 %}
                             {% assign section_index = 0 %}
@@ -98,12 +107,12 @@ permalink: /wiki/
                             <li>
                                 {{ chapter_index }} <span class="wiki-tocchapter">{{ this_chapter | replace: "_", " " }}</span>
                                 <ul class="wiki-tocsection">
-                                    <li>{{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ page.title }}</a></li>
+                                    <li>{{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
                                     {% endif %}
 
                                     {% else %}
                                     {% assign chapter_index = chapter_index | plus: 1 %}
-                                    <li>{{ chapter_index }} <a href="{{ page.url }}" class="wiki-tocchapter">{{ page.title }}</a></li>
+                                    <li>{{ chapter_index }} <a href="{{ page.url }}" class="wiki-tocchapter">{{ formatted_page_title }}</a></li>
                                     {% endif %}
 
                                     {% assign last_chapter = this_chapter %}

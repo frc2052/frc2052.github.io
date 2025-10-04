@@ -1,8 +1,3 @@
----
-title: Points
-layout: wiki
-permalink: /wiki/leadership/points/
----
 
 # Points
 

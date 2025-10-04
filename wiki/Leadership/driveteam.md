@@ -1,10 +1,3 @@
----
-title: Drive Team
-layout: wiki
-permalink: /wiki/leadership/driveteam/
----
-
-
 # Drive Team Selection
 ---
 
