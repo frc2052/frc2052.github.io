@@ -59,8 +59,13 @@
             {% endif %}
 
             {% assign raw_title = site_page.name | split: '.' | first %}
-            {% assign fallback_title = raw_title | replace: "_", " " %}
-            {% assign formatted_page_title = site_page.title | default: fallback_title %}
+            {% assign formatted_page_title = raw_title | replace: "_", " " %}
+            {% if site_page.title %}
+                {% assign formatted_page_title = site_page.title %}
+            {% elsif formatted_page_title contains "@" %}
+                {% assign parts = formatted_page_title | split: "@" %}
+                {% assign formatted_page_title = parts[1] %}              
+            {% endif %}
 
             {% if this_chapter == nil %}
                 {% assign chapter_index = chapter_index | plus: 1 %}            

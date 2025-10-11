@@ -46,19 +46,6 @@ exclude:
   - sample/
   - .vs/
 
-# collections:
-#   wiki:
-#     output: true
-#     permalink: /wiki/:path/ # This uses the folder structure as the default URL
-
-# defaults:
-#   - scope:
-#       path: "" # empty string means all files
-#       type: wikis # applies to documents in the 'wiki' collection
-#     values:
-#       layout: "wiki"
-
-
 defaults:
   - scope:
       path: "wiki"

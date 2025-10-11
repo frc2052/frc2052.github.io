@@ -21,111 +21,118 @@ permalink: /wiki/
     <div class="text-center wiki-toc-list-container">
         <ul class="text-left wiki-chapters-list">
             {% for page in sorted_pages %}
-                {% assign path_without_name = page.path | remove: page.name %}
-                {% assign folders = path_without_name | split: '/' %}
-                {% assign this_chapter = folders[1] %}
-                {% assign this_section = folders[2] %}
-                {% assign file_name = page.name %}
+            {% assign path_without_name = page.path | remove: page.name %}
+            {% assign folders = path_without_name | split: '/' %}
+            {% assign this_chapter = folders[1] %}
+            {% assign this_section = folders[2] %}
+            {% assign file_name = page.name %}
 
-                {% if this_chapter contains "@" %}
-                    {% assign parts = this_chapter | split: "@" %}
-                    {% assign this_chapter = parts[1] %}
-                {% endif %}
-                {% if this_section contains "@" %}
-                    {% assign parts = this_section | split: "@" %}
-                    {% assign this_section = parts[1] %}
-                {% endif %}
-
-                {% assign raw_title = page.name | split: '.' | first %}
-                {% assign fallback_title = raw_title | replace: "_", " " %}
-                {% assign formatted_page_title = page.title | default: fallback_title %}
-
-                {% if last_section != this_section and subsection_index > 0 %}
-                    {% if last_file_name != "_index.md" %}
-                        </ul>
-                    {% endif %}
-                    </li>
-                {% endif %}
-
-                {% if last_chapter != this_chapter and section_index > 0 %}
-                    {% if last_file_name != "_index.md" %}
-                        </ul>
-                    {% endif %}
-                    </li>
-                {% endif %}
-
-                {% if this_chapter == last_chapter and this_section == last_section and this_section %}
-                    {% assign subsection_index = subsection_index | plus: 1 %}
-                    {% if last_file_name == "_index.md" %}
-                        <ul class="wiki-tocsubsection">
-                    {% endif %}
-                    <li>{{ chapter_index }}.{{ section_index }}{{ " abcdefghijklmnopqrstuvwxyz" | slice: subsection_index | slice: 0, 1 }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
-                {% elsif this_section != last_section and this_section %}
-                    {% if this_chapter != last_chapter %}
-                        {% assign chapter_index = chapter_index | plus: 1 %}
-                        {% assign section_index = 0 %}
-                        <li>
-                        {{ chapter_index }} <span class="wiki-tocchapter">{{ this_chapter | replace: "_", " " }}</span>
-                    {% endif %}
-
-                    {% assign section_index = section_index | plus: 1 %}
-                    {% assign subsection_index = 0 %}
-
-                    {% if section_index == 1 %}
-                        <ul class="wiki-tocsection">
-                    {% endif %}
-
-                    {% if file_name == "_index.md" %}
-                        <li>
-                            {{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ this_section | replace: "_", " " }}</a>
-                    {% else %}
-                        {% assign subsection_index = subsection_index | plus: 1 %}
-                        <li>
-                            {{ chapter_index }}.{{ section_index }} <span>{{ this_section | replace: "_", " " }}</span>
-                            <ul class="wiki-tocsubsection">
-                                <li>{{ chapter_index }}.{{ section_index }}{{ " abcdefghijklmnopqrstuvwxyz" | slice: subsection_index | slice: 0, 1 }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
-                    {% endif %}
-                {% elsif this_chapter == last_chapter and this_chapter and page.url != "_index" %}
-                    {% assign section_index = section_index | plus: 1 %}
-                    {% assign subsection_index = 0 %}
-                    <li>{{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
-                {% elsif this_chapter %}
-                    {% assign chapter_index = chapter_index | plus: 1 %}
-                    {% assign section_index = 0 %}
-                    {% assign subsection_index = 0 %}
-                    {% if file_name == "_index.md" %}
-                        <li>
-                            {{ chapter_index }} <a href="{{ page.url }}">{{ this_chapter | replace: "_", " " }}</a>
-                    {% else %}
-                        {% assign section_index = section_index | plus: 1 %}
-                        <li>
-                            {{ chapter_index }} <span class="wiki-tocchapter">{{ this_chapter | replace: "_", " " }}</span>
-                            <ul class="wiki-tocsection">
-                                <li>{{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
-                    {% endif %}
-                {% else %}
-                    {% assign chapter_index = chapter_index | plus: 1 %}
-                    <li>{{ chapter_index }} <a href="{{ page.url }}" class="wiki-tocchapter">{{ formatted_page_title }}</a></li>
-                {% endif %}
-
-                {% assign last_chapter = this_chapter %}
-                {% assign last_section = this_section %}
-                {% assign last_file_name = file_name %}
-            {% endfor %}
-
-            {% if subsection_index > 0 %}
-                {% if last_file_name != "_index.md" %}
-                    </ul>
-                {% endif %}
-                </li>
+            {% if this_chapter contains "@" %}
+            {% assign parts = this_chapter | split: "@" %}
+            {% assign this_chapter = parts[1] %}
+            {% endif %}
+            {% if this_section contains "@" %}
+            {% assign parts = this_section | split: "@" %}
+            {% assign this_section = parts[1] %}
             {% endif %}
 
-            {% if section_index > 0 %}
-                {% if last_file_name != "_index.md" %}
-                    </ul>
-                {% endif %}
-                </li>
+            {% assign raw_title = page.name | split: '.' | first %}
+            {% assign formatted_page_title = raw_title | replace: "_", " " %}
+            {% if page.title %}
+                {% assign formatted_page_title = page.title %}
+            {% elsif formatted_page_title contains "@" %}
+                {% assign parts = formatted_page_title | split: "@" %}
+                {% assign formatted_page_title = parts[1] %}              
             {% endif %}
+
+            {% if last_section != this_section and subsection_index > 0 %}
+            {% if last_file_name != "_index.md" %}
         </ul>
+        {% endif %}
+        </li>
+        {% endif %}
+
+        {% if last_chapter != this_chapter and section_index > 0 %}
+        {% if last_file_name != "_index.md" %}
+        </ul>
+        {% endif %}
+        </li>
+        {% endif %}
+
+        {% if this_chapter == last_chapter and this_section == last_section and this_section %}
+        {% assign subsection_index = subsection_index | plus: 1 %}
+        {% if last_file_name == "_index.md" %}
+        <ul class="wiki-tocsubsection">
+            {% endif %}
+            <li>{{ chapter_index }}.{{ section_index }}{{ " abcdefghijklmnopqrstuvwxyz" | slice: subsection_index | slice: 0, 1 }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
+            {% elsif this_section != last_section and this_section %}
+            {% if this_chapter != last_chapter %}
+            {% assign chapter_index = chapter_index | plus: 1 %}
+            {% assign section_index = 0 %}
+            <li>
+                {{ chapter_index }} <span class="wiki-tocchapter">{{ this_chapter | replace: "_", " " }}</span>
+                {% endif %}
+
+                {% assign section_index = section_index | plus: 1 %}
+                {% assign subsection_index = 0 %}
+
+                {% if section_index == 1 %}
+                <ul class="wiki-tocsection">
+                    {% endif %}
+
+                    {% if file_name == "_index.md" %}
+                    <li>
+                        {{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ this_section | replace: "_", " " }}</a>
+                        {% else %}
+                        {% assign subsection_index = subsection_index | plus: 1 %}
+                    <li>
+                        {{ chapter_index }}.{{ section_index }} <span>{{ this_section | replace: "_", " " }}</span>
+                        <ul class="wiki-tocsubsection">
+                            <li>{{ chapter_index }}.{{ section_index }}{{ " abcdefghijklmnopqrstuvwxyz" | slice: subsection_index | slice: 0, 1 }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
+                            {% endif %}
+
+                            {% elsif this_chapter == last_chapter and this_chapter and page.url != "_index" %}
+                            {% assign section_index = section_index | plus: 1 %}
+                            {% assign subsection_index = 0 %}
+                            <li>{{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
+                            {% elsif this_chapter %}
+                            {% assign chapter_index = chapter_index | plus: 1 %}
+                            {% assign section_index = 0 %}
+                            {% assign subsection_index = 0 %}
+                            {% if file_name == "_index.md" %}
+                            <li>
+                                {{ chapter_index }} <a href="{{ page.url }}">{{ this_chapter | replace: "_", " " }}</a>
+                                {% else %}
+                                {% assign section_index = section_index | plus: 1 %}
+                            <li>
+                                {{ chapter_index }} <span class="wiki-tocchapter">{{ this_chapter | replace: "_", " " }}</span>
+                                <ul class="wiki-tocsection">
+                                    <li>{{ chapter_index }}.{{ section_index }} <a href="{{ page.url }}">{{ formatted_page_title }}</a></li>
+                                    {% endif %}
+
+                                    {% else %}
+                                    {% assign chapter_index = chapter_index | plus: 1 %}
+                                    <li>{{ chapter_index }} <a href="{{ page.url }}" class="wiki-tocchapter">{{ formatted_page_title }}</a></li>
+                                    {% endif %}
+
+                                    {% assign last_chapter = this_chapter %}
+                                    {% assign last_section = this_section %}
+                                    {% assign last_file_name = file_name %}
+                                    {% endfor %}
+
+                                    {% if subsection_index > 0 %}
+                                    {% if last_file_name != "_index.md" %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                            {% endif %}
+
+                            {% if section_index > 0 %}
+                            {% if last_file_name != "_index.md" %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endif %}
+                </ul>
     </div>
 </div>

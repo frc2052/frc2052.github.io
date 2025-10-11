@@ -1275,8 +1275,8 @@ height: 315px;
     }
 
     .wiki-main-content main h1 {
-        color: var(--maroon-color);
-        font-size:35px;
+      color: var(--maroon-color);
+      font-size:35px;
     }
 
     .wiki-main-content h1:not(:first-child) {
@@ -1292,7 +1292,7 @@ height: 315px;
         font-size: 25px;
         margin-left:30px;
     }
-
+    
     .wiki-main-content main h4 {
         font-weight: 500;
         text-transform:uppercase;

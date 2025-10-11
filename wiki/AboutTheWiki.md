@@ -1,8 +1,4 @@
----
-title: About the Wiki
-layout: wiki
-permalink: /wiki/about/
----
+
 
 # About This Wiki
 
