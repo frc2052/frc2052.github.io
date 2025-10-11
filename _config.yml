@@ -45,3 +45,11 @@ plugins:
 exclude:
   - sample/
   - .vs/
+
+defaults:
+  - scope:
+      path: "wiki"
+      type: "pages"
+    values:
+      layout: "wiki"
+      permalink: /:path/:basename/
