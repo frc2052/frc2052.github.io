@@ -14,7 +14,6 @@
 {% assign subsection_index = 0 %}
 {% assign loop_index_plus_one = 0 %}
 
-
 <div class="wiki-sidebar-nav">
     <nav class="nav flex-column">
         <h3 class="mt-2 center">2052 Wiki</h3>
@@ -67,9 +66,9 @@
                 {% assign formatted_page_title = parts[1] %}              
             {% endif %}
 
-            {% if this_chapter == nil %}
+            {% if this_chapter == nil %} <!-- TOP LEVEL PAGE - No Chapter Folder -->
                 {% assign chapter_index = chapter_index | plus: 1 %}            
-                <div class="nav-item d-flex align-items-center wiki-navchapter {% if site_page.url == page.url %}wiki-activelink{% endif %}"> 
+                <div class="nav-item d-flex align-items-center wiki-navchapter {% if site_page.url == page.url %}wiki-activelink{% endif %}">  <!-- Start Chapter - Top Level Page -->
                     <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button" width="30">
                         <svg class="wiki-caret" width="20" height="20" fill="transparent" viewBox="0 0 16 16" aria-hidden="true">
                             <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
@@ -86,8 +85,7 @@
                 {% assign chapter_index = chapter_index | plus: 1 %}
                 {% assign section_index = 0 %}
                 {% assign subsection_index = 0 %}
-                <div class="nav-item d-flex align-items-center wiki-navchapter">                
-                    {% if this_chapter == next_chapter %}
+                <div class="nav-item d-flex align-items-center wiki-navchapter">  <!-- Start Chapter that is a folder -->            
                     <button class="wiki-caret-btn btn btn-link p-0 mr-2 "
                             type="button" width="30"
                             data-toggle="collapse"
@@ -98,33 +96,25 @@
                             <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
                         </svg>
                     </button>
-                    {% else %}
-                    <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button" width="30">
-                        <svg class="wiki-caret" width="20" height="20" fill="transparent" viewBox="0 0 16 16" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
-                        </svg>
-                    </button>
-                    {% endif %}
+
                     <div class="d-flex flex-row" style="width:100%;">
                         <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_index }}.&nbsp;&nbsp;</div>
                         <div class="wiki-chapter-title" style="flex:1;">
                             {% if file_name == "_index.md" %}
-                            <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
+                                <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
                             {% else %}
-                            <a href="{{ site_page.url }}">{{ this_chapter_formatted }}</a>
+                                <a href="{{ site_page.url }}">{{ this_chapter_formatted }}</a>
                             {% endif %}
                         </div>
                     </div>
                 </div>
-                {% if this_chapter == next_chapter %} <!-- there are sections -->
-                    <div class="collapse{% if is_active_chapter %} show{% endif %}" id="chapter-{{chapter_index}}">
-                        <nav class="nav flex-column ml-3">
-                {% endif %}
+                <div class="collapse{% if is_active_chapter %} show{% endif %}" id="chapter-{{chapter_index}}">  <!-- Start Section Wrapper -->
+                    <nav class="nav flex-column ml-3"> <!-- Start Section List -->
             {% endif %}
 
             {% if this_chapter and this_section == null %} <!-- Section page not folder -->
                 {% assign section_index = section_index | plus: 1 %}
-                <div class="nav-item d-flex align-items-center wiki-navsection  {% if site_page.url == page.url %} wiki-activelink{% endif %}">
+                <div class="nav-item d-flex align-items-center wiki-navsection  {% if site_page.url == page.url %} wiki-activelink{% endif %}"> <!-- Start Section that is a page -->
                     <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button" width="30">
                         <svg class="wiki-caret" width="20" height="20" fill="transparent" viewBox="0 0 16 16" aria-hidden="true">
                             <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
@@ -137,11 +127,11 @@
                             <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             {% elsif this_section and this_section != last_section %}
                 {% assign section_index = section_index | plus: 1 %}
                 {% assign subsection_index = 0 %}
-                <div class="nav-item d-flex align-items-center wiki-navsection">
+                <div class="nav-item d-flex align-items-center wiki-navsection">  <!-- start section that is a folder -->
                     {% if this_section == next_section %} <!-- there are multiple subsections -->
                     <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button"
                             data-toggle="collapse"
@@ -170,26 +160,25 @@
                         </div>
                     </div>
                 </div>
-                {% if this_section == next_section %}  <!-- there are subsections-->
-                    <div class="collapse{% if is_active_section %} show{% endif %}" id="section-{{chapter_index}}-{{section_index}}">
-                        <nav class="nav flex-column ml-3 wiki-navsubsection">
-                {% endif %}
+                <div class="collapse{% if is_active_section %} show{% endif %}" id="section-{{chapter_index}}-{{section_index}}"> <!-- start sub scection wrapper -->
+                    <nav class="nav flex-column ml-3 wiki-navsubsection"> <!-- start sub section list -->
             {% endif %}
 
             {% if this_section %}
+                <!--sub section page -->
                 <div class="{% if page.url == site_page.url %} wiki-activelink{% endif %}">
                     <a href="{{ site_page.url }}"> &nbsp;&nbsp;{{ formatted_page_title }}</a>
                 </div>
             {% endif %}
 
             {% if this_section and this_section != next_section %}
-                    </nav>
-                </div>
+                    </nav> <!-- End Sub Section List -->
+                </div> <!-- End Sub Section Wrapper -->
             {% endif %}
 
             {% if this_chapter and this_chapter != next_chapter %}
-                    </nav>
-                </div>
+                    </nav> <!-- End Section List -->
+                </div> <!-- End Section Wrapper -->                
             {% endif %}
 
             {% assign last_chapter = this_chapter %}
