@@ -1,7 +1,0 @@
-
-
-# Competitions
-
-## Qualifications
-
-## Playoffs

@@ -12,7 +12,7 @@ KnightKralwer requires that all mentors have been out of high school for a minim
 
 There are a number of FIRST policies, such as the Youth Protection Policy (YPP), as well as Minnesota State High School League (MSHSL) and Irondale High School policies that must be followed as a coach/mentor. Additionally, a criminal background check will be conducted by the school district. A complete guide to policies and regulations will be provided to all potential mentors while onboarding. A low pressure meet-and-greet may be arranged for new mentors to meet with existing mentors as a way to test the waters for personality fit prior to meeting students. This will be an opportunity to establish expectations and level setting.
 
-
+# 
 
 # Getting Started as a Mentor
 

@@ -121,7 +121,6 @@
                 {% assign section_index = section_index | plus: 1 %}
                 {% assign subsection_index = 0 %}
                 <div class="nav-item d-flex align-items-center wiki-navsection">  <!-- start section that is a folder -->
-                    {% if this_section == next_section %} <!-- there are multiple subsections -->
                     <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button"
                             data-toggle="collapse"
                             data-target="#section-{{chapter_index}}-{{section_index}}"
@@ -131,13 +130,6 @@
                             <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
                         </svg>
                     </button>
-                    {% else %}
-                    <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button" width="30">
-                        <svg class="wiki-caret" width="20" height="20" fill="transparent" viewBox="0 0 16 16" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
-                        </svg>
-                    </button>
-                    {% endif %}
                     <div class="d-flex flex-row">
                         <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_index }}.{{ section_index }}&nbsp;&nbsp;</div>
                         <div class="wiki-section-title" style="flex:1;">
