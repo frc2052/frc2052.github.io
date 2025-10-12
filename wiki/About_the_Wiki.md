@@ -51,7 +51,7 @@ When creating documents, use the standard formatting styles from the toolbar. Us
 
 * Every page should have a “Heading 1” Title  
 * Use “Heading 2” to organize sections of your document.   
-* “Heading 3” and “Heading 4” can be used to title lists or other areas of your document that are not major topics of your document.  
+* “Heading 3” can be used to title lists or other areas of your document that are not major topics of your document.  
 * Avoid using font sizes directly to format your page. The webpage is styled to recognize the Heading tags.
 
 ## Technical Tips

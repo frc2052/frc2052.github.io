@@ -6,7 +6,9 @@
 * Is the machine Z-Axis zeroed with the current tool?  
 * **DO NOT PLUNGE WITHOUT VERIFICATION BY EXPERIENCED CAM STUDENT OR MENTOR**
 
-## If you are going above these values you need verification and supervision by an experienced CAM student or CAM mentor
+---
+
+*WARNING: If you are going above these values (below) you need verification and supervision by an experienced CAM student or CAM mentor*
 
 ## ⅛” Cutting Endmills
 
