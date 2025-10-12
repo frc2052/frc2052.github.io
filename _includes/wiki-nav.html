@@ -1,0 +1,171 @@
+
+{% assign raw_title = page.name | split: '.' | first | replace: "_", "" %}
+
+{% assign wiki_pages = site.pages | where_exp: "p", "p.path contains 'wiki/'" %}
+{% assign sorted_pages = wiki_pages | sort: "path" %}
+
+{% assign next_chapter = "" %}
+{% assign next_section = "" %}
+{% assign last_chapter = "" %}
+{% assign last_section = "" %}
+{% assign last_file_name = "" %}
+{% assign chapter_index = 0 %}
+{% assign section_index = 0 %}
+{% assign subsection_index = 0 %}
+{% assign loop_index_plus_one = 0 %}
+
+<div class="wiki-sidebar-nav">
+    <nav class="nav flex-column">
+        <h3 class="mt-2 center">2052 Wiki</h3>
+        <div class="nav-item d-flex center mb-3">
+            <a href="/wiki/" class="wiki-tocchapter {% if site_page.url == '/wiki/' %} active{% endif %}">Table of Contents</a>
+        </div>
+
+        {% for site_page in sorted_pages %}
+            {% assign path_without_name = site_page.path | remove: site_page.name %}
+            {% assign folders = path_without_name | split: '/' %}
+            {% assign this_chapter = folders[1] %}
+            {% assign this_section = folders[2] %}
+            {% assign file_name = site_page.name %}
+            {% assign this_chapter_formatted = this_chapter | replace: "_", " " %}
+            {% assign this_section_formatted = this_section | replace: "_", " " %}
+
+            {% assign loop_index_plus_one = loop_index_plus_one | plus: 1 %}
+            {% assign next_page = sorted_pages[loop_index_plus_one] %}
+            {% assign path_without_name = next_page.path | remove: next_page.name %}
+            {% assign folders = path_without_name | split: '/' %}
+            {% assign next_chapter = folders[1] %}
+            {% assign next_section = folders[2] %}
+
+            {% assign is_active_chapter = false %}
+            {% assign is_active_section = false %}
+
+            {% assign current_folders = page.path | split: '/' %}
+            {% if this_chapter == current_folders[1] %}
+                {% assign is_active_chapter = true %}
+                {% if this_section == current_folders[2] %}
+                    {% assign is_active_section = true %}
+                {% endif %}
+            {% endif %}
+
+            {% if this_chapter_formatted contains "@" %}
+                {% assign parts = this_chapter_formatted | split: "@" %}
+                {% assign this_chapter_formatted = parts[1] %}
+            {% endif %}
+            {% if this_section_formatted contains "@" %}
+                {% assign parts = this_section_formatted | split: "@" %}
+                {% assign this_section_formatted = parts[1] %}
+            {% endif %}
+
+            {% assign raw_title = site_page.name | split: '.' | first %}
+            {% assign formatted_page_title = raw_title | replace: "_", " " %}
+            {% if site_page.title %}
+                {% assign formatted_page_title = site_page.title %}
+            {% elsif formatted_page_title contains "@" %}
+                {% assign parts = formatted_page_title | split: "@" %}
+                {% assign formatted_page_title = parts[1] %}              
+            {% endif %}
+
+            {% if this_chapter == nil %} <!-- TOP LEVEL PAGE - No Chapter Folder -->
+                {% assign chapter_index = chapter_index | plus: 1 %}            
+                <div class="nav-item d-flex align-items-center wiki-navchapter {% if site_page.url == page.url %}wiki-activelink{% endif %}">  <!-- Start Chapter - Top Level Page -->
+                    <div class="d-flex flex-row" style="width:100%;padding-left:30px;">
+                        <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_index }}.&nbsp;&nbsp;</div>
+                        <div class="wiki-chapter-title" style="flex:1;">
+                            <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
+                        </div>
+                    </div>
+                </div>
+            {% elsif this_chapter != last_chapter %}
+                {% assign chapter_index = chapter_index | plus: 1 %}
+                {% assign section_index = 0 %}
+                {% assign subsection_index = 0 %}
+                <div class="nav-item d-flex align-items-center wiki-navchapter">  <!-- Start Chapter that is a folder -->            
+                    <button class="wiki-caret-btn btn btn-link p-0 mr-2 "
+                            type="button" width="30"
+                            data-toggle="collapse"
+                            data-target="#chapter-{{chapter_index}}"
+                            aria-expanded="{% if is_active_chapter %}true{% else %}false{% endif %}"
+                            aria-controls="chapter-{{chapter_index}}">
+                        <svg class="wiki-caret" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
+                        </svg>
+                    </button>
+
+                    <div class="d-flex flex-row" style="width:100%;">
+                        <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_index }}.&nbsp;&nbsp;</div>
+                        <div class="wiki-chapter-title" style="flex:1;">
+                            {% if file_name == "_index.md" %}
+                                <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
+                            {% else %}
+                                <a href="{{ site_page.url }}">{{ this_chapter_formatted }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse{% if is_active_chapter %} show{% endif %}" id="chapter-{{chapter_index}}">  <!-- Start Section Wrapper -->
+                    <nav class="nav flex-column ml-3"> <!-- Start Section List -->
+            {% endif %}
+
+            {% if this_chapter and this_section == null %} <!-- Section page not folder -->
+                {% assign section_index = section_index | plus: 1 %}
+                <div class="nav-item d-flex align-items-center wiki-navsection  {% if site_page.url == page.url %} wiki-activelink{% endif %}"> <!-- Start Section that is a page -->                    
+                    <div class="d-flex flex-row" style="padding-left:30px">
+                        <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_index }}.{{ section_index }}&nbsp;&nbsp;</div>
+                        <div class="wiki-section-title" style="flex:1;">
+                            <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
+                        </div>
+                    </div>
+                </div>
+            {% elsif this_section and this_section != last_section %}
+                {% assign section_index = section_index | plus: 1 %}
+                {% assign subsection_index = 0 %}
+                <div class="nav-item d-flex align-items-center wiki-navsection">  <!-- start section that is a folder -->
+                    <button class="wiki-caret-btn btn btn-link p-0 mr-2" type="button"
+                            data-toggle="collapse"
+                            data-target="#section-{{chapter_index}}-{{section_index}}"
+                            aria-expanded="{% if is_active_section %}true{% else %}false{% endif %}"
+                            aria-controls="section-{{chapter_index}}-{{section_index}}">
+                        <svg class="wiki-caret" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M6.646 12.854a.5.5 0 0 1 0-.708L10.293 8 6.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708 0z" />
+                        </svg>
+                    </button>
+                    <div class="d-flex flex-row">
+                        <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_index }}.{{ section_index }}&nbsp;&nbsp;</div>
+                        <div class="wiki-section-title" style="flex:1;">
+                            {% if file_name == "_index.md" %}
+                            <a href="{{ site_page.url }}">{{ formatted_page_title }}</a>
+                            {% else %}
+                            <a href="{{ site_page.url }}">{{ this_section_formatted }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse{% if is_active_section %} show{% endif %}" id="section-{{chapter_index}}-{{section_index}}"> <!-- start sub scection wrapper -->
+                    <nav class="nav flex-column ml-3 wiki-navsubsection"> <!-- start sub section list -->
+            {% endif %}
+
+            {% if this_section %}
+                <!--sub section page -->
+                <div class="{% if page.url == site_page.url %} wiki-activelink{% endif %}">
+                    <a href="{{ site_page.url }}"> &nbsp;&nbsp;<strong>{{ formatted_page_title }}</strong></a>
+                </div>
+            {% endif %}
+
+            {% if this_section and this_section != next_section %}
+                    </nav> <!-- End Sub Section List -->
+                </div> <!-- End Sub Section Wrapper -->
+            {% endif %}
+
+            {% if this_chapter and this_chapter != next_chapter %}
+                    </nav> <!-- End Section List -->
+                </div> <!-- End Section Wrapper -->                
+            {% endif %}
+
+            {% assign last_chapter = this_chapter %}
+            {% assign last_section = this_section %}
+            {% assign last_file_name = file_name %}
+        {% endfor %}
+
+    </nav>
+</div>

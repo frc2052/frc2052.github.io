@@ -30,7 +30,8 @@ github_username:  frc2052
 
 # Build settings
 #theme: minima
-#plugins:
+plugins:
+  - jekyll-optional-front-matter  #this is needed for wiki pages to automatically apply url, layout and title
 #  - jekyll-feed
 
 # Exclude from processing.
@@ -44,3 +45,11 @@ github_username:  frc2052
 exclude:
   - sample/
   - .vs/
+
+defaults:
+  - scope:
+      path: "wiki"
+      type: "pages"
+    values:
+      layout: "wiki"
+      permalink: /:path/:basename/

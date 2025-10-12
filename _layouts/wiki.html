@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ? lang="en">
+  {% include head.html %}
+<body>
+    {% include header.html %}
+
+    <div class="wiki-flex-container" style="display: flex; min-height: 80vh;">
+        <!-- Sidebar: full height, left column -->
+        <nav class="wiki-sidebar">
+            <div class="sidebar-sticky">
+                {% include wiki-nav.html %}
+            </div>
+        </nav>
+
+        <!-- Main Content: right column -->
+        <div class="wiki-main-content">
+            {% if page.url != "/wiki/" %}
+            <a href="/wiki/" class="wiki-toc-back d-block d-md-none mb-3">
+                &larr; Back to Table of Contents
+            </a>
+            {% endif %}
+            <main>
+                {{ content }}
+            </main>
+            {% include footer.html %}
+        </div>
+    </div>
+</body>
+</html>
