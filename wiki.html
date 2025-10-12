@@ -38,9 +38,8 @@ permalink: /wiki/
 
             {% assign raw_title = page.name | split: '.' | first %}
             {% assign formatted_page_title = raw_title | replace: "_", " " %}
-            {% if page.title %}
-                {% assign formatted_page_title = page.title %}
-            {% elsif formatted_page_title contains "@" %}
+            <!-- GitHub pages will infer page title from the first H1 it finds. That doesn't work for nav bar. Don't try to use page.title -->
+            {% if formatted_page_title contains "@" %}
                 {% assign parts = formatted_page_title | split: "@" %}
                 {% assign formatted_page_title = parts[1] %}              
             {% endif %}
