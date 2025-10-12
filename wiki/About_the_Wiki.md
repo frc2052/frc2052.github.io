@@ -28,7 +28,7 @@ After your document is complete, someone on our website team will download your 
 
 ## Formatting Tips
 
-When creating documents, use the standard formatting styles from the toolbar. Using these styles will ensure the website will format your document correctly. 
+When creating documents, use the standard formatting styles from the toolbar. Using these styles will ensure the website will format your document correctly.
 
 # Heading 1
 
@@ -46,6 +46,13 @@ When creating documents, use the standard formatting styles from the toolbar. Us
 4. Stuff
 
 **Bold** *Italics* and Underline are also fine for formatting. [Hyperlinks](https://team2052.com) also work. Unfortunately, images and photos are not automatically converted (yet).
+
+## Page Tips
+
+* Every page should have a “Heading 1” Title  
+* Use “Heading 2” to organize sections of your document.   
+* “Heading 3” can be used to title lists or other areas of your document that are not major topics of your document.  
+* Avoid using font sizes directly to format your page. The webpage is styled to recognize the Heading tags.
 
 ## Technical Tips
 
