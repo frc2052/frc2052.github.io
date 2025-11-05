@@ -21,8 +21,8 @@
 title: KnightKrawler Robotics
 email: info@team2052.com
 description: FRC 2052 - Irondale Robotics Team - KnightKrawler
-logo: /assets/images/logo/logo.png
-favicon: /assets/images/logo/favicon.png
+logo: /assets/images/logo/logo-sm.png
+favicon: /assets/images/logo/favicon1.png
 baseurl: "/" # the subpath of your site, e.g. /blog/ or / for root
 url: "https://www.team2052.com" # the base hostname & protocol for your site
 twitter_username: team2052

@@ -20,11 +20,6 @@
     <!-- custom styles -->
     <link href="/assets/styles/web.css" rel="stylesheet">
     
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="/assets/scripts/hovergif.js" defer></script>
-
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
@@ -62,27 +57,7 @@
     <script type="application/ld+json">
         {% include /metadata.json %}
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43655638-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-43655638-1');
-
-        var ua = window.navigator.userAgent;
-        var msi = ua.indexOf("MSIE ");
-        if (msi > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
-            alert("Sorry, Internet Explorer is not supported for this website. Please use Chrome, Firefox, or Edge.");
-        }
-    </script>
-
-    <!--
-      https://stackoverflow.com/questions/19999388/check-if-user-is-using-ie
-    -->
+    
+    <!-- jQuery (full version) needs to be available before any jquery on the page might run -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
