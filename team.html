@@ -83,14 +83,16 @@ permalink: /team/
     </div>
 
     <!--Animates the stats bars when opening the page -->
-    <script type="text/javascript">
-      $('.progress-bar').css("width", "0%");
+    <script type="text/javascript">      
+        $(document).ready(function () {
+            $('.progress-bar').css("width", "0%");
 
-      setTimeout (function() {
-        $('.progress-bar').css("width",function() {
-          return $(this).attr("aria-valuenow") + "%";
-        });
-      }, 1);
+            setTimeout(function () {
+              $('.progress-bar').css("width", function () {
+                return $(this).attr("aria-valuenow") + "%";
+              });
+            }, 1);
+          });
     </script>
 
     <div class="row"> <!--team image and pop-up code for it-->
