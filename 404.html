@@ -3,14 +3,42 @@ layout: default
 permalink: /404.html
 ---
 <div class="container text-center">
-  <h1 class="text-center mt-5">404</h1>
+ <h1 class="text-center mt-5">404</h1>
 
-  <p class="text-center ml-5 mr-5">
-    "Houston We Have a Problem"
-  </p>
-  <p class="text-center ml-5 mr-5">
-    The page you are looking for doesn't exist.
-  </p>
-  <br/>
-  <img class="text-center" src="/assets/images/logo/MaroonSpaceSpider.png"</img>
+
+ <p id="quote" class="text-center ml-5 mr-5">
+   "Houston We Have a Problem"
+ </p>
+ <p class="text-center ml-5 mr-5">
+   The page you are looking for doesn't exist.
+ </p>
+ <br/>
+ <img class="text-center" src="/assets/images/logo/MaroonSpaceSpider.png"  width="500"
+    height="300" img>
 </div>
+
+
+
+<script>
+(function(){
+ // List of different quotes. Edit or extend this array to change available quotes.
+ var quotes = [
+   "Houston We Have a Problem",
+   "This page wandered off. Try the menu.",
+   "Looks like you took a wrong turn.",
+   "We can't find that page, but we're glad you're here.",
+   "404: The page you're looking for isn't available.",
+   "how did you get here?",
+   "... how did you get here?"
+ ];
+
+
+ var el = document.getElementById('quote');
+ if (!el) return;
+
+
+ // Choose one random quote from the list and display it on page load
+ var q = quotes[Math.floor(Math.random() * quotes.length)];
+ el.textContent = q;
+})();
+</script>
