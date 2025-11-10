@@ -1251,7 +1251,7 @@ height: 315px;
     font-size:14px;
 }
 
-.wiki-activelink {
+.wiki-navactivelink {
     background-color:cornsilk;
     border: 1.5px solid var(--gold-color, black);
     border-radius: 6px;
@@ -1265,6 +1265,10 @@ height: 315px;
 
 .wiki-main-content main p {
     margin-left:30px;
+}
+
+.wiki-main-content a{
+ text-decoration: underline; 
 }
 
     .wiki-main-content main ol {

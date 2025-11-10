@@ -67,7 +67,7 @@
 
             {% if this_chapter == nil %} <!-- TOP LEVEL PAGE - No Chapter Folder -->
                 {% assign chapter_index = chapter_index | plus: 1 %}            
-                <div class="nav-item d-flex align-items-center wiki-navchapter {% if site_page.url == page.url %}wiki-activelink{% endif %}">  <!-- Start Chapter - Top Level Page -->
+                <div class="nav-item d-flex align-items-center wiki-navchapter {% if site_page.url == page.url %}wiki-navactivelink{% endif %}">  <!-- Start Chapter - Top Level Page -->
                     <div class="d-flex flex-row" style="width:100%;padding-left:30px;">
                         <div class="wiki-chapter-number" style="min-width: 15px;">{{ chapter_index }}.&nbsp;&nbsp;</div>
                         <div class="wiki-chapter-title" style="flex:1;">
@@ -108,7 +108,7 @@
 
             {% if this_chapter and this_section == null %} <!-- Section page not folder -->
                 {% assign section_index = section_index | plus: 1 %}
-                <div class="nav-item d-flex align-items-center wiki-navsection  {% if site_page.url == page.url %} wiki-activelink{% endif %}"> <!-- Start Section that is a page -->                    
+                <div class="nav-item d-flex align-items-center wiki-navsection  {% if site_page.url == page.url %} wiki-navactivelink{% endif %}"> <!-- Start Section that is a page -->                    
                     <div class="d-flex flex-row" style="padding-left:30px">
                         <div class="wiki-section-number" style="min-width: 25px;">{{ chapter_index }}.{{ section_index }}&nbsp;&nbsp;</div>
                         <div class="wiki-section-title" style="flex:1;">
@@ -146,7 +146,7 @@
 
             {% if this_section %}
                 <!--sub section page -->
-                <div class="{% if page.url == site_page.url %} wiki-activelink{% endif %}">
+                <div class="{% if page.url == site_page.url %} wiki-navactivelink{% endif %}">
                     <a href="{{ site_page.url }}"> &nbsp;&nbsp;<strong>{{ formatted_page_title }}</strong></a>
                 </div>
             {% endif %}
