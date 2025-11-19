@@ -1,0 +1,179 @@
+---
+layout: default
+permalink: /donate/
+---
+
+<style>
+
+.gold-highlight {
+  border: 2px solid #d4af37; /* gold */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.gold-label {
+  color: #d4af37;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.photo-collage {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  height: 700px;
+}
+
+.student-collage {
+  position: absolute;
+  height: 180px;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Updated positions and rotations */
+.student-collage:nth-child(1) { top: 20px; left: 60px; transform: rotate(-5deg); }
+.student-collage:nth-child(2) { top: 60px; left: 220px; transform: rotate(8deg); }
+.student-collage:nth-child(3) { top: 180px; left: 90px; transform: rotate(-13deg); }
+.student-collage:nth-child(4) { top: 220px; left: 260px; transform: rotate(6deg); }
+.student-collage:nth-child(5) { top: 340px; left: 80px; transform: rotate(7deg); }
+.student-collage:nth-child(6) { top: 400px; left: 220px; transform: rotate(-12deg); }
+.student-collage:nth-child(7) { top: 40px; left: 480px; transform: rotate(-4deg); }
+.student-collage:nth-child(8) { top: 240px; left: 490px; transform: rotate(-9deg); }
+.student-collage:nth-child(9) { top: 400px; left: 450px; transform: rotate(4deg); }
+
+.student-collage:hover {
+  transform: scale(1.07) rotate(0deg);
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .photo-collage {
+    position: relative;
+    max-width: 100%;
+    height: 350px; /* half of desktop height */
+    margin: 2rem auto;
+  }
+
+  .student-collage {
+    position: absolute;
+    height: 90px; /* half of desktop height */
+    width: auto;
+    transform: none;
+  }
+
+  /* Reposition each image by roughly half */
+  .student-collage:nth-child(1) { top: 10px; left: 30px; transform: rotate(-5deg); }
+  .student-collage:nth-child(2) { top: 30px; left: 110px; transform: rotate(8deg); }
+  .student-collage:nth-child(3) { top: 90px; left: 45px; transform: rotate(-13deg); }
+  .student-collage:nth-child(4) { top: 110px; left: 130px; transform: rotate(6deg); }
+  .student-collage:nth-child(5) { top: 170px; left: 40px; transform: rotate(7deg); }
+  .student-collage:nth-child(6) { top: 200px; left: 110px; transform: rotate(-12deg); }
+  .student-collage:nth-child(7) { top: 20px; left: 240px; transform: rotate(-4deg); }
+  .student-collage:nth-child(8) { top: 120px; left: 245px; transform: rotate(-9deg); }
+  .student-collage:nth-child(9) { top: 200px; left: 225px; transform: rotate(4deg); }
+}
+
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Left: Hero Text -->
+        <div class="col-md-5">
+            <h1 class="kk maroon">Donate to KnightKrawler</h1>
+            <p class="mt-4">
+                Your donation fuels student innovation, leadership, and STEM exploration. Every dollar helps us build competitive robots, travel to regional and national events, and mentor younger students through outreach programs.
+            </p>
+            <p>
+                We spend our funds on robot parts, tools, computers, uniforms, travel expenses, registration fees, and community engagement. Our budget is student-guided and mentor-managed, ensuring every contribution is used with purpose and transparency. KnightKrawler Robotics is a registered 501(c)(3) nonprofit organization
+            </p>           
+        </div>
+
+        <!-- Right: Team Photo -->
+        <div class="col-md-7 text-center mt-5">
+            <img src="/assets/images/donate/statechamps.jpg" class="responsive-img image-highlight mt-3"
+                alt="KnightKrawler Team 2024"
+                onclick="showModal('myModal', '/assets/images/donate/statechamps.jpg', 'KnightKrawler Team - 2024')">
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal('myModal')">&times;</span>
+                <img class="modal-content" id="myModalImage" data-proofer-ignore>
+                <div class="modal-caption" id="myModalCaption"></div>
+            </div>
+            <script type="text/javascript" src="/assets/scripts/photomodal.js?refresh=2"></script>
+        </div>
+    </div>
+     <!-- Donation Platforms -->
+     <div class="row mt-5 justify-content-center text-center">
+        <div class="col-12">
+            <h2 class="maroon">Choose Your Donation Platform</h2>                    
+        </div>
+
+        <div class="col-6 col-md-2 mb-3 gold-highlight">
+            <p class="gold-label">*Recommended</p>
+            <a href="https://service.thrivent.com/apps/ThriventChoiceMemberWeb/public/orgDetails/101043589365" target="_blank">
+              <img src="/assets/images/donate/thrivent.png" style="height:50px" class="responsive-img" alt="Thrivent">
+            </a>
+          </div>
+                  <div class="col-6 col-md-2 mb-3 mt-2">
+            <a href="https://www.givemn.org/organization/Irondale-High-School-Robotics-Team" target="_blank">
+                <img src="/assets/images/donate/GiveMN.png" style="height:100px" class="responsive-img" alt="GiveMN">
+            </a>
+        </div>
+        <div class="col-6 col-md-2 mb-3 mt-2">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=XMNGJPP5MRKHJ" target="_blank">
+                <img src="/assets/images/donate/PayPalSquare.jpg" style="height:100px" class="responsive-img" alt="PayPal">
+            </a>
+        </div>
+        <div class="col-6 col-md-2 mb-3 mt-2">
+            <a href="https://venmo.com/u/team2052" target="_blank">
+                <img src="/assets/images/donate/Venmo.png" style="height:100px" class="responsive-img" alt="Venmo">
+            </a>
+        </div>
+
+        <div class="col-12">
+            <p class="caption">
+                *Thrivent covers all transaction fees so 100% of your donation benefits the team. Thrivent membership not required.
+            </p>
+        </div>
+    </div>
+
+    <!-- Progress Bar (Optional) -->
+    <div class="row mt-5">
+        <div class="col">
+            <div class="card card-kk">
+                <div class="card-heading">2025-2026 Budget Forecast</div>
+                <div class="gold-progress">
+                    <div class="progress-bar" style="width: 90%;">$81,000 / $90,000</div>
+                </div>
+            </div>
+            <p class="caption">
+                At the October budget meeting, coaches, mentors, and student captains identified a projected $9,000 shortfall unless additional fundraising and donations are secured.            
+            </p>
+
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center maroon">Every Donation Makes an Impact!</h2>
+        <div class="photo-collage">
+          {% for i in (1..9) %}
+            <img src="/assets/images/donate/students{{ i }}.jpg"
+                 alt="Student {{ i }}"
+                 class="student-collage image-highlight"
+                 onclick="showModal('studentModal', '/assets/images/donate/students{{ i }}.jpg', 'Student {{ i }}')">
+          {% endfor %}
+        </div>
+      
+        <!-- Modal -->
+        <div id="studentModal" class="modal">
+          <span class="close" onclick="closeModal('studentModal')">&times;</span>
+          <img class="modal-content" id="studentModalImage" data-proofer-ignore>
+          <div class="modal-caption" id="studentModalCaption"></div>
+        </div>
+      </div>
+
+</div>
