@@ -85,8 +85,8 @@ img.max-200 {
 
 @media only screen and (max-width: 767px) {
   .social-icon {
-    width: 36px;
-    height: 36px;
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -173,6 +173,8 @@ p a {
   --green-color: #0ca655; /*for girl scout page*/
 }
 
+/* The following code might not be in use but I don't
+want to mess with it. */
 .responsive-img {
   max-width: 100%;
   height: auto;
@@ -180,6 +182,7 @@ p a {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 /* BEGIN Special browser stuff */
 ::-moz-selection {
