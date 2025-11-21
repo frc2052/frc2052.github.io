@@ -71,6 +71,87 @@ img.max-200 {
   max-height: 200px;
 }
 
+/* Social icons used on contact page */
+.social-icon {
+  width: 180px;
+  height: auto;
+  display: inline-block;
+  object-fit: contain;
+  padding: 0; /* keep images flush inside the link wrapper */
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .social-icon {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Anchor wrapper for social icons */
+.social-link {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+}
+.social-link:hover,
+.social-link:focus {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+@media only screen and (max-width: 767px) {
+  .social-link {
+    border-width: 4px;
+  }
+}
+.social-link::after {
+  content: attr(data-url);
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px);
+  transform: translateY(-50%) translateX(6px);
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease, transform 120ms ease;
+  z-index: 20;
+}
+.social-link:hover::after,
+.social-link:focus::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Small caret to the left of the tooltip */
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 2px);
+  transform: translateY(-50%);
+  border-width: 6px 6px 6px 0;
+  border-style: solid;
+  border-color: transparent rgba(0,0,0,0.85) transparent transparent;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+.social-link:hover::before,
+.social-link:focus::before {
+  opacity: 1;
+}
+
 @keyframes zoom {
   from {transform:scale(0)}
   to {transform:scale(1)}
@@ -92,6 +173,8 @@ p a {
   --green-color: #0ca655; /*for girl scout page*/
 }
 
+/* The following code might not be in use but I don't
+want to mess with it. */
 .responsive-img {
   max-width: 100%;
   height: auto;
@@ -99,6 +182,7 @@ p a {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 /* BEGIN Special browser stuff */
 ::-moz-selection {
