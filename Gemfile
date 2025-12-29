@@ -15,6 +15,7 @@ gem "jekyll", "~> 4.4.1"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "jekyll-sitemap"
 	gem 'jekyll-optional-front-matter'
 #  gem "jekyll-feed", "~> 0.12"
 end

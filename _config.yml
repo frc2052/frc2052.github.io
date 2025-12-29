@@ -31,6 +31,7 @@ github_username:  frc2052
 # Build settings
 #theme: minima
 plugins:
+  - jekyll-sitemap
   - jekyll-optional-front-matter  #this is needed for wiki pages to automatically apply url, layout and title
 #  - jekyll-feed
 
