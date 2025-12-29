@@ -1,3 +1,5 @@
+<!--googleoff: index-->
+
 <nav class="navbar navbar-expand-lg navbar-dark maroon-bg">
   <a class="navbar-brand" href="/"><img src="/assets/images/logo/logo-xs.png" ></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,6 +10,9 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item center">
             <a class="nav-link-custom nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item center">
+            <a class="nav-link-custom nav-link" href="/calendar/">Calendar</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link-custom nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,10 +47,15 @@
             </div>
           </li>
         </ul>
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">          
           <li class="nav-item center">
-            <a class="nav-link-custom nav-link" href="/calendar/">Calendar</a>
+            <form action="/search/" method="get">
+              <input type="text" name="q" placeholder="Search…" 
+              style="font-size: 14px; min-width: 300px;"  />
+            </form>        
           </li>
         </ul>
       </div>
 </nav>
+
+<!--googleon: index-->
