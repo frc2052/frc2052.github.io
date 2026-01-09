@@ -31,7 +31,7 @@
 * Safety glasses bag  
 * Battery straps  
 * Swerve box  
-* Extra Roborio  
+* Extra RoboRIO  
 * Extra radio  
 * Hand sanitizer  
 * Robot cart tool kit

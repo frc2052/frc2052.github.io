@@ -40,7 +40,7 @@ Choosing a fiscal year, creating a budget, tax planning and student equity consi
 
 ### Lesson 3
 
-Tracking student paments with privacy considerations, tracking your banks deposits and withdrawls, breaking transactions into multiple budget categories, and reconciling accounts  
+Tracking student payments with privacy considerations, tracking your banks deposits and withdrawals, breaking transactions into multiple budget categories, and reconciling accounts  
 [https://youtu.be/1HLb64EutB8](https://youtu.be/1HLb64EutB8)
 
 ### Lesson 4
@@ -50,7 +50,7 @@ Comparing your actual income and expenses to your budget, and adjusting your bud
 
 ### Lesson 5
 
-Creating reports, reviewing your activity, and budgetting tips for travel fees.  
+Creating reports, reviewing your activity, and budgeting tips for travel fees.  
 [https://youtu.be/4XEVRaSWMB8](https://youtu.be/4XEVRaSWMB8)
 
 ### Lesson 6

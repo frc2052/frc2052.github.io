@@ -4,7 +4,7 @@
 
 KnightKrawler missed the first year, but has participated every year since with 2 robots. The students love the MinneTrials and are adamant in their desire to continue to participate every year. MinneTrials has easily become the most valuable fall training we have ever undertaken. MinneTrials perfectly simulates a regular build season, but with lower stakes and easier challenges that are perfect for students new to FRC.
 
-MinneTrials impacts Build, Programming and Media subteams, but has the most impact on Build.  In previous years, KnightKrawler’s build training has had all students create something out of standard robot construction materials, often aluminum and polycarb. We have made bumper brackets, lamps, and different aluminum structures following technical designs. Minnetrials lets students make a functioning robot, experience a mechanisms design and prototyping process, and creates the pressure of a deadline for a looming competition.
+MinneTrials impacts Build, Programming and Media subteams, but has the most impact on Build.  In previous years, KnightKrawler’s build training has had all students create something out of standard robot construction materials, often aluminum and polycarb. We have made bumper brackets, lamps, and different aluminum structures following technical designs. MinneTrials lets students make a functioning robot, experience a mechanisms design and prototyping process, and creates the pressure of a deadline for a looming competition.
 
 ## Organizing your Team
 
@@ -16,7 +16,7 @@ While there is no requirement for how your team operates for MinneTrials. Most t
 
 ## Building fall training around MinneTrials.
 
-Fall training has always been a struggle for KnightKrawler. Finding projects and tasks that provide a meaningful experience, while building necessary skills has been a challenge. Minnetrials has accomplished these objectives in ways previous training had not. 
+Fall training has always been a struggle for KnightKrawler. Finding projects and tasks that provide a meaningful experience, while building necessary skills has been a challenge. MinneTrials has accomplished these objectives in ways previous training had not. 
 
 KnightKrawler meets for 2-3 weeks prior to the start of MinneTrials. KnightKrawler has delayed the start of our MinneTrials season for several days (after manual release) to ensure we have adequate time for introduction to concepts and tool training. Pre-kickoff training includes tool training, introduction to the design process, and hands-on prototyping experiences.
 
