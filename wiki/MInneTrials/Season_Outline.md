@@ -4,7 +4,7 @@
 
 * 6-9pm regular meeting  
 * Students are broken into 2 groups by mentors and captains  
-* KnightKrawler builds 2 robots for Minnetirals, Red Team \- Blue Team  
+* KnightKrawler builds 2 robots for MinneTrials, Red Team \- Blue Team  
 * 1 hour student game manual review  
 * Design Session \- 20 minutes  
   * Students- what makes a good robot (different archetypes ideas)  

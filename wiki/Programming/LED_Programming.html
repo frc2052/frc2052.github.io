@@ -33,7 +33,7 @@ title: LED Programming
                         This type of LEDs also opened up the opportunity to created additional LED projects, such as
                         an LED display panel for the robot cart, or wearable LEDs for hats and vests.
                         Using 12V automotive LEDs often found on FRC robots would have made these other projects
-                        more complicated or impossible. We alos decided to purchase LEDs enclosed with a waterproof
+                        more complicated or impossible. We also decided to purchase LEDs enclosed with a waterproof
                         rubber sleeve. While the waterproof part isn't necessary, the rubble sleeve protects against
                         accidental shorts and offers some protection to the strip.
                     </p>
@@ -42,7 +42,7 @@ title: LED Programming
                         <strong>ESP32 Co-processor</strong><br />
                         While many teams are using an Arduino for LED control. The very limited processing power
                         and memory, coupled with price of Arduino processors was a bad combination.
-                        The ESP32 chips run the same Ardunio code.
+                        The ESP32 chips run the same Arduino code.
                         and there are many ESP32 platforms for under $10 which offer significantly more power and
                         memory in a much smaller package.
                     </p>
@@ -55,7 +55,7 @@ title: LED Programming
                         possibility that a cheap ESP32 manufacturer or a mistake in wiring could send reverse
                         voltage back
                         into laptop. Your $10 LED processor could severely damage your very expensive computer. To
-                        reduct this risk, we decided to ensure the ESP32 co-processor is always powered off USB.
+                        reduce this risk, we decided to ensure the ESP32 co-processor is always powered off USB.
                         This creates
                         the need for a powered USB plug. However, but adding this plug is makes a training setup
                         very simple for students to understand. They can plug the ESP32 into the computer to program
@@ -82,7 +82,7 @@ title: LED Programming
                         debug statements or even a voltage meter. Each pin on the co-processor can represent a
                         binary number.
                         If pins 0,2,and 3 are being signaled, this would represent the binary number 1011 or the
-                        number 13 (1 + 4 + 8) in decimal. Very few teams are using all 10 DIO pins on their Robio.
+                        number 13 (1 + 4 + 8) in decimal. Very few teams are using all 10 DIO pins on their RoboRIO.
                         Having just 5 of the 10 pins
                         available means you have 2^5 (32) different light patterns you can code. Adding a screen to
                         your processor makes debugging even easier.
@@ -291,7 +291,7 @@ title: LED Programming
                 <div class="card-body">                    
                     <p>
                         For reasons stated in the "Goals" section of this page, KnightKrawler uses a very simple approach to changing the light pattern. We
-                        use binary signals and DIO. Eash pin represents a bit in a byte (1+2+4+8+16+32+64+128). While this gives you the option of 256 light patterns, 
+                        use binary signals and DIO. Each pin represents a bit in a byte (1+2+4+8+16+32+64+128). While this gives you the option of 256 light patterns, 
                         in practice you are unlikely to need more than 4 or 5 pins (16-32 patterns).
                         This approach makes it easy for a student to use jumper wires to connect the pins on the ESP32 to a ground connection, closing the circuit to 
                         represent a number the ESP32 code can read. If you passed over the "Pull-Up" section of the wiring description, go back and read that now.
@@ -485,7 +485,7 @@ title: LED Programming
                 </div>
                 <div class="card-body">                    
                     <p>
-                        The Ardiuno Code will be explained in greater detail in a future update to this page. Until then we recommend viewing Platform.IO and LED tutorials by <a href="https://www.youtube.com/watch?v=1hYmpztMQe0&list=PLF2KJ6Gy3cZ7ynsp8s4tnqEFmY15CKhmH" target="_blank"> Dave's Garage on YouTube </a>
+                        The Arduino Code will be explained in greater detail in a future update to this page. Until then we recommend viewing Platform.IO and LED tutorials by <a href="https://www.youtube.com/watch?v=1hYmpztMQe0&list=PLF2KJ6Gy3cZ7ynsp8s4tnqEFmY15CKhmH" target="_blank"> Dave's Garage on YouTube </a>
                     </p>
                     <p>                        
                         You can also find our Arduino LED code on GitHub: <a href="https://github.com/frc2052/2024RobotLEDs" target="_blank">https://github.com/frc2052/2024RobotLEDs</a>

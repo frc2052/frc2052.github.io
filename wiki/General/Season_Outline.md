@@ -139,7 +139,7 @@ The following is a rough list of things that happen each month of a robotics sea
 
 * Champs  
 * State Tournament  
-* End of Year Banquent  
+* End of Year Banquet  
 * Reserve space for next season meetings  
 * Reserve space for next  Kickoff  
 * Reserve concessions and gym for next  Week Zero  
