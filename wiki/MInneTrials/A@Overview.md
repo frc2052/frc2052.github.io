@@ -14,7 +14,7 @@ A FRC style game manual is released that is very similar to an official FRC game
 
 The robots are often of a simple design, many with only a single mechanism with a single motor. Often mechanisms are made from plywood, 2x4s, and cardboard.
 
-Some teams have used Minnetrials to learn fabrication and only make parts from aluminum and polycarbonate.
+Some teams have used MinneTrials to learn fabrication and only make parts from aluminum and polycarbonate.
 
 The official release of the MinneTrials game manual is typically the first week in October. Some teams have waited before starting MinneTrials to purposely compress the schedule to give the “6 weeks” experience.
 

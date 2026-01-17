@@ -6,7 +6,7 @@ Captains and Student Leaders for KnightKrawler are selected through a process th
 
 ## Always Act Like A Leader
 
-You may hear the expression “Captain Interviews Started Last Week”. This is a reminder that your behavior and attitudes throughout the whole season are taken into consideration when captain selection happens in the Spring. It is important to understand that acting like a leader does not mean taking charge. These are just some of the actions and traits  KnightKrawer expects to see from all student captains and leaders.
+You may hear the expression “Captain Interviews Started Last Week”. This is a reminder that your behavior and attitudes throughout the whole season are taken into consideration when captain selection happens in the Spring. It is important to understand that acting like a leader does not mean taking charge. These are just some of the actions and traits  KnightKrawler expects to see from all student captains and leaders.
 
 * Be Kind  
 * Be Patient  

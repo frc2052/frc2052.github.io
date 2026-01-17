@@ -40,7 +40,7 @@
 * Battery spill kit  
 * Safety glasses bag  
 * Battery straps  
-* Extra Roborio  
+* Extra RoboRIO  
 * Extra radio  
 * Hand sanitizer
 
