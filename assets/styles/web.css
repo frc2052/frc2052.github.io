@@ -681,6 +681,27 @@ height: 150px;
   text-indent: -35px;
 }
 
+
+.video-thumb { 
+  position: relative; 
+  display: inline-block; } 
+
+.video-thumb img.cover { 
+  display: block; 
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; /* optional */ 
+} 
+
+.video-thumb img.overlay { 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  height: 100%; 
+  transform: translate(-50%, -50%); 
+  pointer-events: none; /* keeps clicks going to the container */ 
+}
+
 @media (max-width: 767px) {
   .hidden-sm {
     display: none !important;
