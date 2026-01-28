@@ -24,6 +24,8 @@ Non-points include tasks like “put a wrench away,” “downloaded programming
 
 Additionally, KnightKrawler places emphasis on points as a representation of completion or significant progress on some task or activity. Points are not meant to represent an accumulation of smaller, unrelated or day-to-day tasks across a 3-4 hour period that are combined into one singular point. Attendance and productivity at a meeting is not necessarily a point, but a student working on a focused project across multiple meetings for a total of 3-4 hours and reaching some significant milestone in their progress is.
 
+Points are also not necessarily obtained simply by attending an event. For example, students may only obtain points from attending Jumpstart Medtronic, a full-day event where students can attend numerous informational sessions led by local Robotics captains, after submitting note sheets from the sessions they attended onto their points sheet. Attendance at pre-season competitions like MRI or MMR does not constitute a point, unless the student held a specific role / position relevant to our performance at the competition (such as a position on Drive team) OR attended conference / speaker sessions and submitted notes. 
+
 Students may also put down *outreach* points, which are related to attendance and active support at events such as concessions at an FTC event or an elementary school demonstration. Students are required to acquire at least 1 outreach point in a season to letter.
 
 ## How are points tracked?
