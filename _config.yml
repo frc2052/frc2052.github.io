@@ -46,6 +46,7 @@ plugins:
 exclude:
   - sample/
   - .vs/
+    private/
 
 defaults:
   - scope:

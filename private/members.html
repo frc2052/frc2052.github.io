@@ -1,0 +1,82 @@
+---
+layout: default
+title: KnightKrawler Students and Mentors
+permalink: /members/
+---
+
+<div class="container mt-5">
+    <h1 class="kk">Team Members</h1>
+    {% for index in (1..6) %}
+        {% capture grade %}{{ 13 | minus: index }}{% endcapture %}
+        {% if grade == "8" %}
+            {% assign grade = "0" %}
+        {% endif %}
+
+        {% case grade %}
+            {% when "12" %}
+                <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Seniors</h2>
+            {% when "11" %}
+                <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Juniors</h2>
+            {% when "10" %}
+                <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Sophomores</h2>
+            {% when "9" %}
+                <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Freshmen</h2>
+                {% when "8" %}
+                <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Mentors &amp; Volunteers</h2>
+                {% when "0" %}
+                <h2 class="kk maroon-bg gold text-center pt-2 pb-2 mt-4">Mentors &amp; Volunteers</h2>
+        {% endcase %}
+        <div class="row justify-content-center">
+            {% for mem in site.data.members %}
+            {% if mem.Grade == grade %}
+                <div class="col">
+                    {% capture displayName %}{{ mem.FirstName}} {{mem.LastName | slice : 0}}{% endcapture %}
+                    {% capture filename %}{{ mem.ImageName | strip }}{% endcapture %}
+                    {% capture imgUrl %}/assets/images/teamMembers/{{ filename }}{% endcapture %}
+                    {% if filename == "" or filename == null %}
+                        {% assign imgUrl = "/assets/images/teamMembers/2020Backdrop.jpg" %}
+                    {% endif %}
+                    <div class="row justify-content-center"> 
+                        <!--the onclick attribute knows when the image is clicked and then calls on the showModal javascript class. This gives it the id, image link, and text to show in the pop-up-->
+                        <img src="{{ imgUrl }}" class="memberPhotos" onclick="showModal('myModal', '{{ imgUrl }}', '{{displayName}}')">
+                    </div>
+                    <div class="row justify-content-center captionMembers mName"> {{displayName}} </div>
+                    <div class="row justify-content-center captionMembers mRole"> {{mem.Role}} </div>
+                    {% if mem.Tagline1 != null %}
+                        <div class="row justify-content-center captionMembers mRole"> {{mem.Tagline1}} </div>
+                    {% endif %}
+                    {% if mem.Tagline2 != null %}
+                        <div class="row justify-content-center captionMembers mRole"> {{mem.Tagline2}} </div>
+                    {% endif %}
+                    {% if mem.Tagline3 != null %}
+                        <div class="row justify-content-center captionMembers mRole"> {{mem.Tagline3}} </div>
+                    {% endif %}
+                    {% if mem.Tagline4 != null %}
+                        <div class="row justify-content-center captionMembers mRole"> {{mem.Tagline4}} </div>
+                    {% endif %}
+                    {% if mem.Badges != null %}
+                        {% assign badges = mem.Badges | split: "," %}
+                        <div class="row justify-content-center">
+                            {% for badge in badges %}
+                                {% capture badgeUrl %}/assets/images/badges/{{ badge | downcase }}.png{% endcapture %}
+                                {% capture description %}{{ badge | replace: "_", " " | capitalize }}{% endcapture %}
+                                <img src="{{ badgeUrl }}" height="20" width="20" title="{{ description }}" />
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+
+    <div id="myModal" class="modal">
+        <!--Sets the specifics for the modal and calls on the javascript to create the modal-->
+        <span class="close" onclick="closeModal('myModal')">&times;</span>
+        <img class="modal-content-members" id="myModalImage" data-proofer-ignore>
+        <div class="modal-caption" id="myModalCaption"></div>
+    </div>
+    <script type="text/javascript" src="/assets/scripts/photomodal.js?refresh=2"></script>
+    <!--implements the javascript file for the pop-ups -->
+</div>
