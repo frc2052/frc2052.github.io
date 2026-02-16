@@ -4,7 +4,7 @@ This page is a collection of resources related to the Build Subteam.
 
 ## KnightKrawler Created Resources
 
-* The KnightKrawler guide to building [reversible bumpers](http://127.0.0.1:4000/assets/downloads/ReversableBumpers.pdf)  
+* The KnightKrawler guide to building [reversible bumpers](/assets/downloads/ReversableBumpers.pdf)  
 * KnightKrawler’s [Thingiverse](https://www.thingiverse.com/Team2052/designs) models  
 * KnightKrawler’s [Printables](https://www.printables.com/@FRCTeam2052_1520218) models
 
