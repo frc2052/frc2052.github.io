@@ -45,7 +45,9 @@ When creating documents, use the standard formatting styles from the toolbar. Us
 3. Of  
 4. Stuff
 
-**Bold** *Italics* and Underline are also fine for formatting. [Hyperlinks](https://team2052.com) also work. Unfortunately, images and photos are not automatically converted (yet).
+**Bold** *Italics* and Underline are also fine for formatting. [Hyperlinks](https://team2052.com) also work. Horizontal Lines work.
+
+Images: Images are converted and stored inside the .md document as text. This is awesome. To ensure files do not get too big, size down the images you use to something small (under 800px or smaller). Only increase image size when quality is noticeably bad. 
 
 ## Page Tips
 

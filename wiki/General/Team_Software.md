@@ -24,7 +24,7 @@ To install applications you can browse available applications from the community
 
 [https://community.chocolatey.org/packages](https://community.chocolatey.org/packages) 
 
-KnightKrawler either currently uses or has used these commands to install helpful programs on our Windows laptops over the years. Once Chocolatey is installed, simply run any of these commands from inside any Powersell window (with Admin privileges) to install the desired apps.
+KnightKrawler either currently uses or has used these commands to install helpful programs on our Windows laptops over the years. Once Chocolatey is installed, simply run any of these commands from inside any Powershell window (with Admin privileges) to install the desired apps.
 
 choco install googlechrome  
 choco install firefox  

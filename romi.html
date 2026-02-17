@@ -15,7 +15,7 @@ permalink: /romi/
                     programmed using the same <a href="https://docs.wpilib.org/en/stable/docs/romi-robot/index.html" target="_blank">Java based WPI Lib codebase</a> FRC students use for programming the large
                     competition robots. The Romi Kit is a ready-to-go driving
                     platform that gives students the ability to quickly start a brand-new project and get up and running
-                    with robot code. However, the platform is very limitted in its
+                    with robot code. However, the platform is very limited in its
                     out-of-the-box features.
                 </p>
                 <p>
@@ -239,7 +239,7 @@ permalink: /romi/
                                     3mm (also referred to as M3) is a very common size for small fasteners used in 3D
                                     printing projects, so KnightKrawler has opted to use this size for our primary
                                     fastener.
-                                    Feel free to substitute fasters of a comparable size that works for you. All of the
+                                    Feel free to substitute fasteners of a comparable size that works for you. All of the
                                     parts are made to work with any pan head or cap head bolt.
                                     None of the parts in the current designs are designed to work with countersunk or
                                     V-set bolts.
@@ -574,7 +574,7 @@ permalink: /romi/
                 <p>
                     Romi Subsystems are similar, but control mechanisms unlike those usually found on a real FRC robot. Currently, the Romi attempts to control PWM motor controllers that use a single locked-antiphase PWM signal. 
                     These motor controllers are often large and/or expensive. 
-                    Low cost PWM motor controllers (also called an "H-Bridge") typically used on RC cars cannot use this signal. Instead they need an anolog (voltage) signal for forward, and a second signal for reverse. Unfortunately, the Romi does not allow for 
+                    Low cost PWM motor controllers (also called an "H-Bridge") typically used on RC cars cannot use this signal. Instead they need an analog (voltage) signal for forward, and a second signal for reverse. Unfortunately, the Romi does not allow for 
                     analog out. So the only option is a Digital Out signal. This is effectively either 0% or 100% voltage. 
                 </p>
                 <p>
@@ -659,7 +659,7 @@ permalink: /romi/
     
         private HBridgeIntakeSubsystem() {}
     
-        private DigitalOutput pinFoward = new DigitalOutput(8);
+        private DigitalOutput pinForward = new DigitalOutput(8);
     
         private boolean pinFOut = false;
         
@@ -676,7 +676,7 @@ permalink: /romi/
         @Override
         public void periodic() {
         // This method will be called once per scheduler run
-        pinFoward.set(pinFOut);
+        pinForward.set(pinFOut);
         }                                    
     }                                    
 </pre>
@@ -703,7 +703,7 @@ permalink: /romi/
     
         private HBridgeShooterSubsystem() {}
     
-        private DigitalOutput pinFoward = new DigitalOutput(9);
+        private DigitalOutput pinForward = new DigitalOutput(9);
     
         private boolean pinFOut = false;
         
@@ -720,7 +720,7 @@ permalink: /romi/
         @Override
         public void periodic() {
         // This method will be called once per scheduler run
-        pinFoward.set(pinFOut);
+        pinForward.set(pinFOut);
         }
     }                                    
 </pre>

@@ -6,7 +6,7 @@ Adults interested in becoming a mentor need not have any specialized domain know
 
 ## Age Requirements
 
-KnightKralwer requires that all mentors have been out of high school for a minimum of 3 years. This ensures any KnightKrawler Alumni wishing to return as mentors, only do so after all students who were teammates of the alumni have also graduated from the team. Even for those who were not members of Team 2052, this policy naturally sets the appropriate dynamic between student and mentor and tends to avoid situations where students and mentors would be social friends and hangout, thus creating an issue that violates FIRST and school policies for social contact between coaches and athletes. For graduates attending college close to home, mentor eligibility begins during your Senior (4th) year of college.
+KnightKrawler requires that all mentors have been out of high school for a minimum of 3 years. This ensures any KnightKrawler Alumni wishing to return as mentors, only do so after all students who were teammates of the alumni have also graduated from the team. Even for those who were not members of Team 2052, this policy naturally sets the appropriate dynamic between student and mentor and tends to avoid situations where students and mentors would be social friends and hangout, thus creating an issue that violates FIRST and school policies for social contact between coaches and athletes. For graduates attending college close to home, mentor eligibility begins during your Senior (4th) year of college.
 
 ## Coaching Requirements
 
