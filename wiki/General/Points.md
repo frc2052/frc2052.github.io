@@ -19,7 +19,6 @@ In this way, points are the primary metric for progress tracking across our team
 Activities corresponding to a point logged on a student point sheet must be team-related, but there are a wide variety of point types students can track across subteams and leadership / team management roles.
 
 Examples of Subteam (Programming, More Than Robots (Media), Build) points include tasks like completing a scale drawing or model of an intake, putting together clips for a reveal video, or programming and testing a new drivebase system. Students may also gain points for attending certain events, such as Jumpstart or information sessions at MRI (Firebears Minnesota Robotics Invitational) if they include a photograph of notes they took at such events.   
-
 Non-points include tasks like “put a wrench away,” “downloaded programming resources,” or other work that would not require 3-4 hours of engaged work. Attendance at meetings is also not eligible to earn a point.
 
 Additionally, KnightKrawler places emphasis on points as a representation of completion or significant progress on some task or activity. Points are not meant to represent an accumulation of smaller, unrelated or day-to-day tasks across a 3-4 hour period that are combined into one singular point. Attendance and productivity at a meeting is not necessarily a point, but a student working on a focused project across multiple meetings for a total of 3-4 hours and reaching some significant milestone in their progress is.

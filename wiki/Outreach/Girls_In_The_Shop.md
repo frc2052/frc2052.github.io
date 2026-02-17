@@ -40,8 +40,7 @@ Afterwards, students began to split into the 4 main stations. At one station, st
 
 At each major tool station (drill press and saw), we had a supervising adult. Other adults mingled through the rest of the stations, providing support where needed and allowing student leaders and new students to drive where needed. 
 
-![][image1]
-![][image2]  
+![][image1]![][image2]
 
 ## Reflection on the 2025 Girls in the Shop Event
 
