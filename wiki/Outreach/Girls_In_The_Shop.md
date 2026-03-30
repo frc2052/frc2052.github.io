@@ -4,25 +4,26 @@
 
 Girls in the Shop is an outreach event KnightKrawlers hosts yearly in our shop around early September. The event is open to any female or nonbinary identifying students from 8th grade and up, and provides a safe space for students to learn how to use shop tools and build custom, fully functional bird houses. 
 
-The event happens in early September (this year, September 8\) in the late evening, around our regular meeting time. The event happens soon after the start of the school year in the hopes of bringing in more interested high school students of this underrepresented identity in to join the team through a welcoming and tolerant environment for growth.
+The event happens in early September (this year, September 8\) in the late evening, around our regular meeting time. The event happens soon after the start of the school year in the hopes of bringing in more interested high school students of this underrepresented identity to join the team through a welcoming and tolerant environment for growth.
 
 ## How do we prepare?
 
-In the past, our mentor Scott has taken the lead on organizing and preparing materials needed for Girls in the Shop. This usually takes about a full day of cutting parts. This past year, we worked well with about 30 kits. The main parts of the birdhouses include the opposing pointed sides, the slanted roof, and the rectangular spacers to create air and water release holes at the bottom of the bird house. 
+In the past, one of our mentors has taken the lead on organizing and preparing materials needed for Girls in the Shop. This usually takes about a full day of cutting parts. This past year, we worked well with about 20 kits. The main parts of the birdhouses include the opposing pointed sides, the slanted roof, and the rectangular spacers to create air and water release holes at the bottom of the bird house. You can find the full bird house plans and instructions on the [Bird House page](https://team2052.com/wiki/Outreach/Bird_House) of our wiki. 
 
 Main parts
 
 * 20 total kits (components above)  
-* 2 hammers  
-* Cups of nails  
+* 4 hammers  
+* Box of 4d nails  
 * 3 Drills  
+* 2 Impact Drivers  
 * Drill Bits  
-* Star Bits & Star Screws  
-* P2 bits  
+* T25 Star Bits & Star Screws (1 5/8”)  
+* P2 phillips bits  
 * Forstner Bits  
-* Phillips Screws 
+* Phillips Screws (2”)
 
-After all the parts are cut and laid out in Scott’s shop, a few people take responsibility for using primer to paint each part completely white in order to provide a flesh slate for students to decorate the bird houses as they please with markers or paint after initial construction.
+After all the parts are cut and laid out in the shop, a few people take responsibility for using primer to paint each part completely white in order to provide a flesh slate for students to decorate the bird houses as they please with markers or paint after initial construction.
 
 ## How do we advertise?
 
@@ -34,9 +35,9 @@ Our digital advertisement methods included announcements through our preferred t
 
 ## At the event
 
-At the event, students were first given safety glasses and a short tour through our shop space. Then, our mentor Scott walked attendees through the stations setup as prepared prior to the event, explaining which parts he had been able to pre-cut and which tools would be required at each station in order to put the entire bird house together, using a prebuilt birdhouse as a visual aide.
+At the event, students were first given safety glasses and a short tour through our shop space. Then, our mentor walked attendees through the stations setup as prepared prior to the event, explaining which parts he had been able to pre-cut and which tools would be required at each station in order to put the entire bird house together, using a prebuilt birdhouse as a visual aid.
 
-Afterwards, students began to split into the 4 main stations. At one station, students worked to attach the spacers to the bottom of their birdhouses with nails and a hammer. Then, students moved to a different station where they used hand drills and star bits to attach the sides and top of the birdhouse. At a different station students used a saw to cut their roof to the correct size. Finally, students went to the drill press station to create a hole in the front of their birdhouse before attaching it to the front of their structure along with the back.
+Afterwards, students began to split into the 4 main stations. At one station, students worked to attach the spacers to the bottom of their birdhouses with nails and a hammer. Then, students moved to a different station where they used hand drills and star bits to attach the sides and top of the birdhouse. At a different station students used a compound miter saw to cut their roof to the correct size. Finally, students went to the drill press station to create a hole in the front of their birdhouse before attaching it to the front of their structure along with the back.
 
 At each major tool station (drill press and saw), we had a supervising adult. Other adults mingled through the rest of the stations, providing support where needed and allowing student leaders and new students to drive where needed. 
 
