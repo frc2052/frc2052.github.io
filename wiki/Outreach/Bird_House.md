@@ -24,7 +24,7 @@ The resulting house satisfies the common requirements for most small song birds,
 
 ## Cut List
 
-Download the zip file containing all the dimensions of each part to be cut. Not all 2x4” lumber is the same width. These plans are designed for 2x4 lumber that is exactly 3½” wide. However, the pattern was designed so that lumber that is slightly smaller will still work. The font and back of the house will slightly overlap the sides if your dimensionally lumber is slightly smaller. This is also true if your ½” plywood is slightly smaller than ½”.
+[Download the zip file](https://team2052.com/assets/downloads/SimpleWrenHouse.zip) containing all the dimensions of each part to be cut. Not all 2x4” lumber is the same width. These plans are designed for 2x4 lumber that is exactly 3½” wide. However, the pattern was designed so that lumber that is slightly smaller will still work. The font and back of the house will slightly overlap the sides if your dimensionally lumber is slightly smaller. This is also true if your ½” plywood is slightly smaller than ½”.
 
 ## Assembly Steps
 
