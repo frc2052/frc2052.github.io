@@ -9,3 +9,5 @@ vendor/cache/
 assets/.DS_Store
 vendor/*
 .vs/
+.claude/
+CLAUDE.md
