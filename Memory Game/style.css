@@ -26,6 +26,14 @@ h1 {
 .homepage-link {
     width: 0px;
     height: 0px;
+    width: 100%;
+}
+
+.homepage-link p{
+    color: #ffff7e;
+    font-weight: bold;
+    font-size: 1.2em;
+    transform: translateY(10px);
 }
 
 .homepage-link img {
@@ -312,4 +320,18 @@ h1 {
 
     }
 
+}
+
+.versions {
+    margin-top: 20px;
+    color: #959595  ;
+    font-weight: bold;
+    width: 50%;
+    transform: translateX(-15px);
+    transform:translateY(15px);
+}
+
+.Bugs{
+    text-align: center;
+    color: #959595;
 }
