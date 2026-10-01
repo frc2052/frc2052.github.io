@@ -43,7 +43,7 @@
 * OTC medicines (Advil, Allergy, Lactaid)  
 * Check with team advisor on updated advice for managing prescriptions at an event
 
-## Do No Bring
+## Do Not Bring
 
 * Games to the venue  
 * Stuff to the venue you do not plan to carry all day  

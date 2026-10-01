@@ -47,7 +47,7 @@ These are the tools we have defined in Fusion 360 to cut aluminum and polycarb o
   Great bit for blasting through aluminum, but less forgiving to use  
     
 * (Tool 5\) 6mm O-Flute Downcut: [Grewin Cheif Delphi special buy](https://www.chiefdelphi.com/t/grewin-endmill-group-buy-hosted-by-redux/461150)  
-  Excellent bit for cutting polycarbinate and aluminum\! Buy as many as you can afford\!  
+  Excellent bit for cutting polycarbonate and aluminum\! Buy as many as you can afford\!  
     
 * (Tool 9\) 45 Degree Chamfer: [1/4" 4FL 90° CHAMFER MILL](https://onlinecarbide.com/1-4-4fl-90-chamfer-mill/)  
   Tricky bit to get right, but leaves a nice finish
