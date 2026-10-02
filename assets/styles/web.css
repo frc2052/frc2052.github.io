@@ -1049,6 +1049,12 @@ height: 150px;
   margin: 0 20px 40px 20px
 }
 
+.sponsor-row img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
 .sidenav {
   z-index: 1;
   left:0px;
