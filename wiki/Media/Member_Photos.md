@@ -23,7 +23,7 @@ Upload all photos to a “Raw” folder in Google Drive after each session.
 
 ## Cropping and Editing Photos
 
-Paint.Net is used for simple photo cropping and resizing. It is a free tool with limited features, but well suited for this task. Paint.Net is installed using [Chocolately](https://chocolatey.org/).
+Paint.Net is used for simple photo cropping and resizing. It is a free tool with limited features, but well suited for this task. Paint.Net is installed using [Chocolatey](https://chocolatey.org/).
 
 ### Select your photo:
 

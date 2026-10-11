@@ -6,6 +6,8 @@
 * Stools  
 * Shop Vac  
 * Battery Cart and Battery Beak MAKE SURE BATTERIES ARE CHARGED  
+* Viking Battery Tester  
+* Battery Load Tester  
 * Hardware Cart  
 * Drive Station(s)  
 * Laptop(s) MAKE SURE LAPTOPS ARE CHARGED  
@@ -14,7 +16,8 @@
 * Game Pieces  
 * Field Pieces  
 * Flag  
-* Trashcan
+* Trashcan  
+* Extension Cord
 
 ## Special packing
 
