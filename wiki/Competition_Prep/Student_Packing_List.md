@@ -33,8 +33,8 @@
 ## Money
 
 * Breakfast is typically provided by the hotel or team  
-* Lunch $10-15  per day  
-* Dinner $15-20 per day  
+* Lunch \$10-15  per day  
+* Dinner \$15-20 per day  
 * Souvenir shirts are available   
 * Debit card, Credit card, or reloadable cash card (Some venues are becoming cashless)
 
@@ -43,7 +43,7 @@
 * OTC medicines (Advil, Allergy, Lactaid)  
 * Check with team advisor on updated advice for managing prescriptions at an event
 
-## Do No Bring
+## Do Not Bring
 
 * Games to the venue  
 * Stuff to the venue you do not plan to carry all day  

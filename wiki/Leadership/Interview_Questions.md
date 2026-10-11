@@ -28,9 +28,11 @@ Not all questions may be asked of all candidates
 
 * Would you consider sharing the role with a co-captain? If so, how would you be successful?
 
-* If you are not selected to be a captain, would you be interested in formally being recognized as the leader of a task force, and if so, which one (existing or new)?
+* If you are not selected to be a captain, would you be interested in formally being recognized as the leader of a smaller group or committee, and if so, which one (existing or new)?
 
-## 
+* Our new captains and leaders often have goals or projects they want to accomplish over the summer. Do you have ideas of what you would like to accomplish over the summer?
+
+* What part of this captain or leadership position is most exciting for you?
 
 ## Programming Captain Candidates:
 
@@ -74,8 +76,30 @@ Not all questions may be asked of all candidates
 
 ## Strategy Lead Candidates:
 
-* Strategy captain is a role that often requires you to work alone, but then at other times with the whole team. Often there is nothing to do, at other times such as alliance selection, your job may be very critical. How do you feel about being in this unique role?
+* Strategy lead is a role that often requires you to work alone, but then at other times with the whole team. Often there is nothing to do, at other times such as alliance selection, your job may be very critical. How do you feel about being in this unique role?
 
-* What do you think is key to being a great strategy captain?
+* What do you think is key to being a great strategy lead?
 
-* If the team captain does not want to be on the field for alliance selection, is this a job you are comfortable doing?
+## Impact Captain Candidates:
+
+* When should work on the Impact Submission begin?  
+* How big is an impact team and what is the mix of full time and part time students?  
+* Should the impact team be responsible for organizing most/all outreach events, or should the impact team be responsible for cataloging our outreach efforts?  
+* What should our team do to improve our chances of winning the Impact Award?
+
+## CAD/CAM Lead Candidates:
+
+* What do you feel is the best process for getting designs to manufacturing?  
+* When is the best time to start CAD training?  
+* Do you think it is better to do a balance of hands-on work and CAD training, or do you think CAD students should be dedicated to working in OnShape?
+
+## Autonomous Lead Candidates:
+
+* How do you feel the autonomous lead role works best with programming captain?  
+* How many students do you think should work on autos? What is best way to incorporate those students into the final auto testing and verification?
+
+## Outreach Lead Candidates
+
+* What responsibilities should the outreach leader have?  
+* How would you change or improve the outreach activities the team does today?  
+* Do you feel like our outreach efforts are adequate to be a team that can win the Impact Award?

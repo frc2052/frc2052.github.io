@@ -10,6 +10,8 @@
   * Shop Vac  
   * Match Schedule Board  
 * Battery Cart, Chargers, Battery Beak, and Pit Monitor \- BATTERIES CHARGED  
+* Viking Battery Tester  
+* Battery Load Tester  
 * **Drive Station(s)**  
 * **Laptop(s) MAKE SURE LAPTOPS ARE CHARGED**  
 * Robot, bumpers, handles  

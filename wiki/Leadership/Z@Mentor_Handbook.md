@@ -166,7 +166,7 @@ In the 2025-2026, 2052 KnightKrawler will compete in the following events:
 
 *Competition Season*
 
-* Feburary 28, 2026: Week Zero Mock Competition (Irondale High School)  
+* February 28, 2026: Week Zero Mock Competition (Irondale High School)  
 * TBD: Regional 1 (location TBD)  
 * TBD: Regional 2 (location TBD)  
 * April 29 \- May 2, 2026: *FIRST* Championship (Houston, TX; pending qualification)  
