@@ -648,6 +648,7 @@ height: 150px;
   vertical-align: top;
   padding-top: .5em;
   padding-bottom: .5em;
+  border-bottom: 1px solid #ccc;
 }
 
 .gold {

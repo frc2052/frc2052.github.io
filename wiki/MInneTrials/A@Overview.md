@@ -1,8 +1,8 @@
 # MinneTrials Overview
 
-MinneTrials is a simplified FRC Game. The game was originally started by Team 3100 Lightning Turtles. In subsequent years, Team 2239 Technocrats took the lead role on organizing the event, in partnership with 2491 NoMythic and 2450 Wind Chill. Team 2491 NoMythic has taken the lead organizer role in 2025\.
+MinneTrials is a simplified FRC Game. The game was originally started by Team 3100 Lightning Turtles. In subsequent years, Team 2239 Technocrats, 2491 NoMythic and 2450 Wind Chill were lead organizers in 2025\.
 
-Official website [https://MinneTrials.org](https://MinneTrials.org) 
+Official website [https\://MinneTrials.org](https://MinneTrials.org) 
 
 The event started as “Turtle Trials”, was renamed “The Test” and is now called “MinneTrials”
 
