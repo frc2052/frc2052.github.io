@@ -1,5 +1,7 @@
 # Kickoff Schedule 
 
+Updated 10/11/2026
+
 | Time | Task |
 | :---- | :---- |
 | 10:00 | Leadership arrives Setup rooms for KickOff Setup food for lunch |
@@ -36,7 +38,7 @@ Human simulation can identify the following
 * Ranking point strategy  
 * Endgame strategy 
 
-Prior to moving to the gym, while still in their groups, students will have discussed the game strategy for their human simulation. They will have defined which combination of robots to use in each simulation, planning for 3-4 matches. Before each human simulation, Red/Blue teams will verify which 3 robot archetypes will be in the next match, making any desired last minute changes. Students should try a different strategy for each simulation. After the simulated match, a general discussion will happen for no more than 5 minutes of what observations were made, before moving on to the next match. Simulations must use one of the pre-defined auto routines created by the mentors and captains for each robot. There will be a pause in the simulation to count scoring between auto and teleoperated phases of the simulation.
+Prior to moving to the gym, while still in their groups, students will have discussed the game strategy for their human simulation. They will have defined which combination of robots to use in each simulation, planning for 3-4 matches. Before each human simulation, Red/Blue teams will verify which 3 robot archetypes will be in the next match, making any desired last minute changes. Students should try a different strategy for each simulation. After the simulated match, a general discussion will happen for no more than 5 minutes of what observations were made, before moving on to the next match. Simulations must use one of the pre-defined auto routines created by the mentors and captains for each robot. There will be a pause in the simulation to count scoring between autonomous and teleoperated phases of the simulation.
 
 ## Robot Archetypes
 

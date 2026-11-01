@@ -1,25 +1,29 @@
-# ***General Information***
+# Mentor Handbook
 
-## *What is* FIRST*?*
+Updated 10/11/2026
+
+## General Information
+
+### What is FIRST?
 
 *FIRST* (For Inspiration and Recognition of Science and Technology) is a nonprofit organization that operates team-based robotics programs for ages 4-18. Within *FIRST*, 2052 KnightKrawler competes as part of *FIRST* Robotics Competition (FRC), where teams of high school students design, program, and build industrial-sized robots to play a novel game each year as part of a three-team alliance. FRC teams aim to build robots that meet these objectives, as well as create a team identity, raise funds to meet their goals, and advance appreciation for STEM in their community. 
 
-## *What is 2052 KnightKrawler?*
+### What is 2052 KnightKrawler?
 
 FRC Team 2052, KnightKrawler Robotics, or 2052 KnightKrawler all refer to the robotics team participating in the *FIRST* Robotics Competition from Irondale High School in New Brighton, Minnesota. Founded in 2007, the team’s mission is to foster future generations of business and STEM leaders via FIRST. In the 2024-2025 season, we had 3 subteams (build, media, and programming), with 49 students in grades 9-12. Learn more about us on our [website](https://www.team2052.com/team/), or ask any of our wonderful student leaders\! 
 
-## *What is a mentor?* 
+### What is a mentor? 
 
 In robotics, a mentor is an adult community member who works side by side with high school students to build their leadership and problem-solving skills, as well as create a space for belonging and inspiring self-confidence. This may include teaching fundamentals and skills necessary to perform necessary tasks on the team, empowering students to incorporate their knowledge into team and post-secondary activities, and supporting problem-solving at multiple levels (whether it is robot design or interpersonal conflict), all while upholding the dignity of each individual involved. Coaches and mentors also serve as role models, foster Gracious Professionalism, and model core values to our students.  
 *On 2052 KnightKrawler, we request that mentors be four years out from high school graduation to create more professional boundaries between students and mentors on the team.*
 
-## *What is gracious professionalism?* 
+### What is gracious professionalism? 
 
 Gracious Professionalism is a concept championed by *FIRST*, described as a way of doing things that emphasizes both high-quality work and respect for others. While the team strives for excellence in competitions, we uphold this value by helping, collaborating with, and celebrating our opponents. Unsportsmanlike behaviors (e.g. excessive celebration, arguing with officials, physical misconduct, put-downs or other verbal abuse, cheating, etc.) are not tolerated, regardless of whether it is towards our own team members, other team members, or event volunteers. Gracious professionalism encapsulates an ideal state in which mutual gain is able to be achieved amidst fierce competition. 
 
-# ***Steps to Becoming a Mentor on 2052 KnightKrawler***
+## Steps to Becoming a Mentor on 2052 KnightKrawler
 
-## *I am unsure if I want to mentor. What roles are there?* 
+**I am unsure if I want to mentor. What roles are there?** 
 
 * **Mentor In Training (MIT) \-**   
   * Definition: New (to the team) mentors who are able to attend meetings once or more per week  
@@ -61,7 +65,7 @@ NOTE: There are many ways to contribute to the team and our local robotics commu
 
 *Do you have other skills you would like to contribute? Please contact Lead Mentors 1 & 2, or the team advisor\!* 
 
-## *What skills do I need to mentor?*
+### What skills do I need to mentor?
 
 You ***do*** need to…
 
@@ -75,7 +79,7 @@ You do ***not*** need to…
 * Have expert-level knowledge in robotics \- returning mentors are expected to support the activities of at least first-year students  
 * Determine the short-term team priorities (student leaders will own this process)
 
-## *I’ve decided I want to mentor\! What do I do now?* 
+### I’ve decided I want to mentor\! What do I do now? 
 
 1. Arrange a mentor meeting \- email [info@team2052.com](mailto:info@team2052.com) to schedule a meeting with the mentor team. Mentors may ask screening questions, such as…  
    * How did you learn about our team?   
@@ -93,16 +97,16 @@ You do ***not*** need to…
 
 Once these steps are done, either the lead mentors or advisor will reach out to inform you of your mentor status with the team\!
 
-## *Ok\! I’m a mentor\! What do I need now?* 
+### Ok\! I’m a mentor\! What do I need now? 
 
 * Most of our communication outside of team meetings is done on **Slack**. Please ensure that you have mobile access to this application and are receiving notifications.   
 * Lead mentors or the team advisor will provide you with a **team Google Suite login**, which will allow you to access our team drive.   
 * If you are on a subteam that needs GitHub, OnShape, Adobe Creative Cloud, etc., please also alert other mentors on your subteam or the team advisor.  
 * Team Uniforms (gold t-shirt for that competition year and maroon work shirt) are issued in February each year (with order forms distributed in January). Additional merchandise is available to purchase in October (with limited quantities available in the robotics space \- ask lead mentors or the team advisor if you are interested\!). 
 
-# **Mentor Expectations** 
+## Mentor Expectations 
 
-## *2052 KnightKrawler Core Values*
+### 2052 KnightKrawler Core Values
 
 2052 KnightKrawler utilizes core values as guiding principles to dictate behaviors and decision-making, both individually and as a team. Mentors are expected to model core values in interactions with each other, with students, and with others in our robotics and wider community. Mentors are also expected to encourage behaviors supporting these core values in robotics-related spaces, as well as kindly redirect students when they are showing behaviors that are not aligned with the team’s core values. These core values include
 
@@ -126,7 +130,7 @@ Once these steps are done, either the lead mentors or advisor will reach out to 
 ***Have there been scenarios where mentors have been removed from the team?***   
 Yes, for reasons ranging from violations of sportsmanship to reasons as severe as harassment. Mentors may be removed from their role on the team at any time for a serious violation of the standards of conduct or habitual failure to fulfill the requirements of being a mentor, and this process will be conducted by Lead Mentors 1 & 2, as well as the team advisor, in conjunction with the school’s activities department. Documentation of removal will be provided by the team or the school activities department to the mentor being removed for a conduct violation. A mentor may resign from their position and be removed from the team at any time. 
 
-## *What does our meeting schedule look like?* 
+### What does our meeting schedule look like? 
 
 As a general rule, our team meetings are canceled or made optional if there is no school that day. Please be aware of our [district calendar](https://www.mvpschools.org/about/calendars) and any school closures as they appear.
 
@@ -153,7 +157,7 @@ As a general rule, our team meetings are canceled or made optional if there is n
 * **Leadership Meetings (student leaders and mentors) Wednesdays (8-9pm)**  
 * May 11, 2026: Team Banquet (7pm, Irondale Multipurpose Room)
 
-## *What does our competition schedule look like?* 
+### *What does our competition schedule look like?* 
 
 In the 2025-2026, 2052 KnightKrawler will compete in the following events: 
 

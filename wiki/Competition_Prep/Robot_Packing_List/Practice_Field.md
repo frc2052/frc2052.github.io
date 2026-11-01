@@ -1,5 +1,7 @@
 # Practice Field Packing List
 
+Updated 10/11/2026
+
 Things to pack for PAR driver practice:
 
 \*\*\*Remind students to bring safety glasses\*\*\*

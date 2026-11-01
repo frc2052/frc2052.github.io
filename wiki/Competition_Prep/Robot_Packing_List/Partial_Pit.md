@@ -1,5 +1,7 @@
 # Packing the Partial Pit
 
+Updated 11/05/2025
+
 * Packout Bench  
   * 2 dolleys  
   * 4 drawer boxes (fully packed)   
@@ -24,10 +26,12 @@
 * Game Pieces  
 * Field Pieces  
 * Flag  
-* Trashcan
+* Trashcan  
+* Extension Cord
 
 ## Special packing
 
+* First Aid Kit  
 * Isopropyl alcohol and cloths  
 * Swerve box (if needed)  
 * Milwaukee charger  
@@ -40,7 +44,7 @@
 * Battery spill kit  
 * Safety glasses bag  
 * Battery straps  
-* Extra RoboRIO  
+* Extra Roborio  
 * Extra radio  
 * Hand sanitizer
 

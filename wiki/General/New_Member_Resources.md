@@ -1,5 +1,7 @@
 # Resources for New Mentors, Students and Parents
 
+Updated 12/28/2025
+
 Are you new to FIRST and FRC? Below is a collection of resources KnightKrawler references often.
 
 * [FIRST](https://www.firstinspires.org/)  

@@ -1,5 +1,7 @@
 # Season Outline and Leadership Reminders
 
+Updated 1/18/2026
+
 The following is a rough list of things that happen each month of a robotics season to help leaders plan ahead. Included is a list of specific tasks that should be completed in those months.
 
 ## June

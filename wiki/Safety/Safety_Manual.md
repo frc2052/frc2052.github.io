@@ -1,5 +1,7 @@
 # 2052 Safety Manual
 
+Updated 2/16/2026
+
 ## General
 
 ### Culture of Safety
@@ -283,17 +285,17 @@ This safety manual is an easy-to-use guide for important safety information and 
 
 ## Appendix A: Additional Resources
 
-[https://www.firstinspires.org/sites/default/files/uploads/resource\_library/frc/team-resources/safety/ftc-frc-safety-manual.pdf](https://www.firstinspires.org/sites/default/files/uploads/resource_library/frc/team-resources/safety/ftc-frc-safety-manual.pdf)
+[https\://www\.firstinspires.org/sites/default/files/uploads/resource\_library/frc/team-resources/safety/ftc-frc-safety-manual.pdf](https://www.firstinspires.org/sites/default/files/uploads/resource_library/frc/team-resources/safety/ftc-frc-safety-manual.pdf)
 
-[https://www.epa.gov/recycle/used-household-batteries\#:\~:text=Handling%20precautions%3A%20Place%20each%20battery,or%20the%20terminal%20ends%20touch](https://www.epa.gov/recycle/used-household-batteries#:~:text=Handling%20precautions%3A%20Place%20each%20battery,or%20the%20terminal%20ends%20touch).
+[https\://www\.epa.gov/recycle/used-household-batteries\#:\~:text=Handling%20precautions%3A%20Place%20each%20battery,or%20the%20terminal%20ends%20touch](https://www.epa.gov/recycle/used-household-batteries#:~:text=Handling%20precautions%3A%20Place%20each%20battery,or%20the%20terminal%20ends%20touch).
 
-[https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables](https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables)
+[https\://www\.epa.gov/recycle/how-do-i-recycle-common-recyclables](https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables)
 
-[https://safety.fsu.edu/safety\_manual/OSHA%20Glove%20Selection%20Chart.pdf](https://safety.fsu.edu/safety_manual/OSHA%20Glove%20Selection%20Chart.pdf)
+[https\://safety.fsu.edu/safety\_manual/OSHA%20Glove%20Selection%20Chart.pdf](https://safety.fsu.edu/safety_manual/OSHA%20Glove%20Selection%20Chart.pdf)
 
-[https://www.firstinspires.org/resource-library/youth-protection-policy](https://www.firstinspires.org/resource-library/youth-protection-policy)
+[https\://www\.firstinspires.org/resource-library/youth-protection-policy](https://www.firstinspires.org/resource-library/youth-protection-policy)
 
-[https://www.118robonauts.org/\_files/ugd/209e0c\_b25750a5c8274c9ab078851d27e0587a.pdf\#page=27\&zoom=100,48,92](https://www.118robonauts.org/_files/ugd/209e0c_b25750a5c8274c9ab078851d27e0587a.pdf#page=27&zoom=100,48,92)
+[https\://www\.118robonauts.org/\_files/ugd/209e0c\_b25750a5c8274c9ab078851d27e0587a.pdf\#page=27\&zoom=100,48,92](https://www.118robonauts.org/_files/ugd/209e0c_b25750a5c8274c9ab078851d27e0587a.pdf#page=27&zoom=100,48,92)
 
-[https://www.redcross.org/get-help/how-to-prepare-for-emergencies/anatomy-of-a-first-aid-kit.html](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/anatomy-of-a-first-aid-kit.html)
+[https\://www\.redcross.org/get-help/how-to-prepare-for-emergencies/anatomy-of-a-first-aid-kit.html](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/anatomy-of-a-first-aid-kit.html)
 

@@ -1,6 +1,8 @@
 # Cub Foods Bagging Fundraiser
 
-This pre-season (2025) KnightKrawler has been working on expanding our sponsorship initiatives. One of the ways we decided to do this is through a Cub Foods bagging fundraiser, where we were able to raise a total of **$727.68**. In this Wiki document, we’ll walk through how we organized this event and our thoughts after the first trial run.
+Updated 1/28/2026
+
+This pre-season (2025) KnightKrawler has been working on expanding our sponsorship initiatives. One of the ways we decided to do this is through a Cub Foods bagging fundraiser, where we were able to raise a total of **\$727.68**. In this Wiki document, we’ll walk through how we organized this event and our thoughts after the first trial run.
 
 ## Preparation
 
