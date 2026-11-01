@@ -1,5 +1,7 @@
 # Reveal Video Production
 
+Updated 12/3/2025
+
 KnightKrawler has performed a review of past reveal videos, including a “plusses and deltas” review of each video. The purpose of this guide is to show the different approaches that have been taken over many years, highlight the things that worked well and things that can be improved in the future. See each video analysis below the recommendations.  
  
 
@@ -51,7 +53,7 @@ KnightKrawler has performed a review of past reveal videos, including a “pluss
 
 ## 2016 Termite
 
-[https://www.youtube.com/watch?v=EExZtMKMvs0](https://www.youtube.com/watch?v=EExZtMKMvs0)
+[https\://www\.youtube.com/watch?v=EExZtMKMvs0](https://www.youtube.com/watch?v=EExZtMKMvs0)
 
 ### Script
 
@@ -76,7 +78,7 @@ KnightKrawler has performed a review of past reveal videos, including a “pluss
 
 ## 2017 Hornet
 
-[https://www.youtube.com/watch?v=QcbxyVBFjZc](https://www.youtube.com/watch?v=QcbxyVBFjZc)
+[https\://www\.youtube.com/watch?v=QcbxyVBFjZc](https://www.youtube.com/watch?v=QcbxyVBFjZc)
 
 ### Script
 
@@ -109,7 +111,7 @@ KnightKrawler has performed a review of past reveal videos, including a “pluss
 
 ## 2018 Mantis
 
-[https://www.youtube.com/watch?v=PHKfmIl97jE](https://www.youtube.com/watch?v=PHKfmIl97jE)
+[https\://www\.youtube.com/watch?v=PHKfmIl97jE](https://www.youtube.com/watch?v=PHKfmIl97jE)
 
 ### Script
 
@@ -136,7 +138,7 @@ KnightKrawler has performed a review of past reveal videos, including a “pluss
 
 ## 2019 Cricket
 
-[https://www.youtube.com/watch?v=8O\_qmGGDcLA](https://www.youtube.com/watch?v=8O_qmGGDcLA)
+[https\://www\.youtube.com/watch?v=8O\_qmGGDcLA](https://www.youtube.com/watch?v=8O_qmGGDcLA)
 
 ### Script
 
@@ -166,7 +168,7 @@ KnightKrawler has performed a review of past reveal videos, including a “pluss
 
 ## 2020 Scorpion
 
-[https://www.youtube.com/watch?v=8a6Zm2X0jME](https://www.youtube.com/watch?v=8a6Zm2X0jME)
+[https\://www\.youtube.com/watch?v=8a6Zm2X0jME](https://www.youtube.com/watch?v=8a6Zm2X0jME)
 
 ### Script
 
@@ -200,7 +202,7 @@ KnightKrawler has performed a review of past reveal videos, including a “pluss
 
 ## 2021 Firefly
 
-[https://www.youtube.com/watch?v=rFXXwLagg4Q](https://www.youtube.com/watch?v=rFXXwLagg4Q)
+[https\://www\.youtube.com/watch?v=rFXXwLagg4Q](https://www.youtube.com/watch?v=rFXXwLagg4Q)
 
 ### Script
 
@@ -237,7 +239,7 @@ KnightKrawler has performed a review of past reveal videos, including a “pluss
 
 ## 2023 Cicada
 
-[https://www.youtube.com/watch?v=tlIfc1U3Z3Q](https://www.youtube.com/watch?v=tlIfc1U3Z3Q)
+[https\://www\.youtube.com/watch?v=tlIfc1U3Z3Q](https://www.youtube.com/watch?v=tlIfc1U3Z3Q)
 
 ### Script
 
@@ -281,7 +283,7 @@ KnightKrawler has performed a review of past reveal videos, including a “pluss
 
 ## 2024 Scarab
 
-[https://youtu.be/7VQs6FM1P04?si=eBXKuc1qvrXVauO6](https://youtu.be/7VQs6FM1P04?si=eBXKuc1qvrXVauO6)
+[https\://youtu.be/7VQs6FM1P04?si=eBXKuc1qvrXVauO6](https://youtu.be/7VQs6FM1P04?si=eBXKuc1qvrXVauO6)
 
 ### Script
 
@@ -323,7 +325,7 @@ KnightKrawler has performed a review of past reveal videos, including a “pluss
 
 ## 2025 Mayfly
 
-[https://youtu.be/O6UI0Y-qcZM?si=xmJ3-tBTxhLH3VAC](https://youtu.be/O6UI0Y-qcZM?si=xmJ3-tBTxhLH3VAC)
+[https\://youtu.be/O6UI0Y-qcZM?si=xmJ3-tBTxhLH3VAC](https://youtu.be/O6UI0Y-qcZM?si=xmJ3-tBTxhLH3VAC)
 
 ### Script
 

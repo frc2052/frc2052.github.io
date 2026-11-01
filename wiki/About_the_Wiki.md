@@ -1,5 +1,7 @@
 # Welcome to the Team 2052 KnightKrawler Wiki
 
+Updated 12/3/2025
+
 ## Goals
 
 There are two primary goals and many great side effects of creating the wiki. KnightKrawler is often asked how we operate some aspect of our team, while we have always been open in sharing our knowledge and offering advice, it depends on someone to respond, often off-the-cuff, and that leads to omissions.

@@ -1,5 +1,7 @@
 # Caster Chassis \- “Cassie”
 
+Updated 05/02/2026
+
 With a goal of improving mechanism prototyping, KnightKrawler has created a prototype chassis that mimics the dimensions of a swerve chassis with MK5 Modules in the corners, but instead uses casters. We affectionately refer to this caster chassis as “Cassie”.
 
 With this chassis, students can design, build and prototype mechanisms and test them on a frame that exactly represents the final robot chassis.

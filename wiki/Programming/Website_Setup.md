@@ -1,5 +1,7 @@
 # Website Setup
 
+Updated 3/29/2026
+
 ## Hosting
 
 KnightKrawler uses [GitHub Pages](https://docs.github.com/en/pages) for our web hosting. GitHub pages are free and allow us to connect our domain [Team2052.com](http://Team2052.com) to the site. 
@@ -36,7 +38,7 @@ Check to see if ruby is installed on your computer using the command line “rub
 This command will show you what version of ruby is installed, if it is installed. Copy and paste or type this “ruby \-v” command into your command line window. If ruby is installed, it will show you the current version.
 
 If not installed, you can find the installation guides for each platform on this page.   
-[https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/)
+[https\://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/)
 
 If you are installing on a Mac, click the Mac link at the bottom of the page and follow those instructions. Detailed mac instructions are not included on this wiki.
 
@@ -76,11 +78,11 @@ Once you have used the command line to navigate to the directory containing your
 
 The very first time you attempt to run the website locally, you must run “bundle update” This will install all the required bundles for Jekyll to run. If you ever get an error while attempting to start Jekyll, it is possible a new package was added by someone. You should first try to resolve the error by running “bundle update”.
 
-To start the website on Windows (while in the root of your website folder: [frc2052.github.io](http://frc2052.github.io)) run this command “bundle exec jekyll serve”. It may take 5-10 seconds. The command prompt should tell you Jekyll has started and given you a URL of “[https://127.0.0.1:4000](https://127.0.0.1:4000)” This will be the URL you can use to see the website running on your computer. On Mac, you need only type “jekyll serve” to run the same process.
+To start the website on Windows (while in the root of your website folder: [frc2052.github.io](http://frc2052.github.io)) run this command “bundle exec jekyll serve”. It may take 5-10 seconds. The command prompt should tell you Jekyll has started and given you a URL of “[https\://127.0.0.1:4000](https://127.0.0.1:4000)” This will be the URL you can use to see the website running on your computer. On Mac, you need only type “jekyll serve” to run the same process.
 
 ### Editing the Web Pages
 
-With the site running. Open a browser to the local address ([https://127.0.0.1:4000](https://127.0.0.1:4000)). There are multiple editors you can use to edit your webpages, including the WPI Lib version of VS Code. Since WPI Lib VS Code should be installed on KnightKrawler laptops, you can open that program. Under the File menu, select “Open Folder” and open the website folder (Example: Documents/GitHub/[frc2052.github.io](http://frc2052.github.io)). If you are on a Mac or Windows machine that does not have WPI Lib installed, you can download and install the standard version of VS Code from Microsoft.
+With the site running. Open a browser to the local address ([https\://127.0.0.1:4000](https://127.0.0.1:4000)). There are multiple editors you can use to edit your webpages, including the WPI Lib version of VS Code. Since WPI Lib VS Code should be installed on KnightKrawler laptops, you can open that program. Under the File menu, select “Open Folder” and open the website folder (Example: Documents/GitHub/[frc2052.github.io](http://frc2052.github.io)). If you are on a Mac or Windows machine that does not have WPI Lib installed, you can download and install the standard version of VS Code from Microsoft.
 
 As you edit pages in VS Code, Jekyll will immediately recompile the website when you save your files. You can refresh your browser for any pages on the local address and see the page updates within seconds of saving the file.
 

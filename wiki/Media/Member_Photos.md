@@ -1,5 +1,7 @@
 # Member Photos For The Website
 
+Updated 12/3/2025
+
 ## Purpose
 
 To help facilitate learning everyone’s name, it is a goal of the team to have most of the team member photos on the website 4-6 weeks after the start of the season. 

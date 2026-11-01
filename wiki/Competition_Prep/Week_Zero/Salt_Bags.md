@@ -1,5 +1,7 @@
 # Week Zero Salt Bags
 
+Updated 05/28/2026
+
 KnightKrawler uses 40lb water softener salt bags to hold down our field perimeter during Week Zero competition. In 2026, KnightKrawer used 1 full pallet (63 bags) of salt. It was loaded directly in the back of a 1 ton pickup truck by forklift. 
 
 ## Volunteer Role: Salt Coordinator
@@ -8,7 +10,7 @@ KnightKrawler uses 40lb water softener salt bags to hold down our field perimete
 
 * Make a large sign with a photo of a salt bag to place at the merch table.  
 * Include map of where to pick up salt (sidewalk on west side of Varsity Gym)  
-* “Softner Salt sold at the end of the tournament. We paid $7, your price $4.”  
+* “Softner Salt sold at the end of the tournament. We paid \$7, your price \$4.”  
 * Adjust prices each year to suit costs.  
 * Find/Create a stand for the sign.  
 * Create paper tracking sheet with 63 lines (1 for each salt bag)  

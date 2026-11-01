@@ -1,5 +1,7 @@
 # Sanity Checks
 
+Updated 10/12/2025
+
 * Will the tool unintentionally collide with stock?  
 * If the toolpath will cause part to be disconnected from stock, is part held down by screws/stock hold downs?  
 * Will the tool collide with any screws/stock hold-downs?  

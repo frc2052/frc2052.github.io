@@ -1,5 +1,7 @@
 # KnightKrawler MinneTrials Season
 
+Updated 1/18/2026
+
 ## MinneTrials Kickoff \- First Meeting
 
 * 6-9pm regular meeting  
