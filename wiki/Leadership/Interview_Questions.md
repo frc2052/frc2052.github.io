@@ -1,5 +1,7 @@
 # Captain and Leader Interview Questions
 
+Updated 1/18/2026
+
 Not all questions may be asked of all candidates
 
 ## All Candidates

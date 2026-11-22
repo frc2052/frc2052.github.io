@@ -1,5 +1,7 @@
 # Student Packing List for Overnight Competitions
 
+Updated 10/11/2026
+
 * Gold KnightKrawler t-shirt(s)  
 * Maroon workshirt  
 * Rally towel  

@@ -1,5 +1,7 @@
 # Leadership Roles \- Past and Present
 
+Updated 10/26/2025
+
 * *Full Team Captain* \- responsible for the overall vision and operations within the team, coordinating between subteams and mentors; duties include  
   * Overseeing all subteam tasks and projects   
   * Coordinating and leading full team meetings (shared with Team Impact Captain)  

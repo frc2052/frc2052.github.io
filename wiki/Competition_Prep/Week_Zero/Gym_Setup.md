@@ -1,5 +1,7 @@
 # Gym Setup \- Tarps, Carpet, and Pit
 
+Updated 04/20/2026
+
 ## Bleachers
 
 The north (right side looking from hallway/lobby) bleachers should be fully extended and the south (left) bleachers should be fully retracted.

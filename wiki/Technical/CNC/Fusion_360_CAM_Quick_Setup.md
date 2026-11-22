@@ -1,5 +1,7 @@
 # Fusion 360 \- CAM Quick Setup
 
+Updated 10/12/2025
+
 ## Onshape Prep
 
 * Choose your stock  

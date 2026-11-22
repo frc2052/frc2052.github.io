@@ -1,5 +1,7 @@
 # Git and Github Training
 
+Updated 12/2/2025
+
 Programming your robot can be a challenge. Having poor source control can make it much harder.
 
 ## What is Source Control?

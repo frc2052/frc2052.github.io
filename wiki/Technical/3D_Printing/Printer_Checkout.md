@@ -13,7 +13,7 @@ If damage to equipment is determined to be caused by negligence or abuse, the fa
 
 All efforts should be made to maintain equipment in its same condition (ordinary wear and tear accepted) it was checked out for the YEAR RANGE season. If you have any issues with using the programs on your computer, please contact your subteam captains and mentors.
 
-I agree with the above terms.
+I agree with the above terms. 
 
 Name of Student (Printed): 	\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -21,4 +21,4 @@ Name of Student (Signed): 	\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
 
 Name of Supervising Adult & Contact Info:	\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-Date: 	\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Date: 	\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_    Printer Name/Number: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

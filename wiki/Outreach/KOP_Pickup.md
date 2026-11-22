@@ -1,5 +1,7 @@
 # KOP Pickup
 
+Updated 9/10/2026
+
 KnightKrawler is a Kit Of Parts (KOP) pickup location for teams to receive their game specific box as well as KOP Chassis and Black Tote (if applicable) on the day of FRC Kick Off.
 
 ### Staffing:  

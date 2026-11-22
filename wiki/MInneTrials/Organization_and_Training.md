@@ -1,5 +1,7 @@
 # Organizing your Team \- Planning Training
 
+Updated 1/18/2026
+
 ## Why Participate?
 
 KnightKrawler missed the first year, but has participated every year since with 2 robots. The students love the MinneTrials and are adamant in their desire to continue to participate every year. MinneTrials has easily become the most valuable fall training we have ever undertaken. MinneTrials perfectly simulates a regular build season, but with lower stakes and easier challenges that are perfect for students new to FRC.

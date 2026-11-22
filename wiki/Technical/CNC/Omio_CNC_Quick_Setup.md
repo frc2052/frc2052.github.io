@@ -1,5 +1,7 @@
 # Omio X8 CNC Quick Setup
 
+Updated 10/12/2025
+
 ## Inspect the Area
 
 * Make sure the bed is clear  

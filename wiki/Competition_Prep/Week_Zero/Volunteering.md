@@ -1,8 +1,10 @@
 # Week Zero \- Volunteering
 
+Updated 02/16/2026
+
 KnightKrawler creates a wooden facsimile of the FIRST competition field and offers a full day mock competition for teams across Minnesota. This event happens around the last Saturday in February. These matches provide an excellent opportunity for teams to test their robot and see how it interacts with field elements and other robots before the competition season. 
 
-[2005 Week Zero Video](https://www.youtube.com/live/g02CoofZOQA?si=3wzNwNm9UTKV17Kz&t=18583)
+[2025 Week Zero Video](https://www.youtube.com/live/g02CoofZOQA?si=3wzNwNm9UTKV17Kz&t=18583)
 
 ## Volunteer Roles for Week Zero Event:
 
@@ -14,7 +16,9 @@ KnightKrawler creates a wooden facsimile of the FIRST competition field and offe
 * Unload Assistant (2 hour shift)  
 * Friday Night Field Assembly (approx 5 hours)  
 * Field Maintenance During Event (8am-3pm)  
-* Field Teardown After Event (4-7pm)
+* Field Teardown After Event (4-7pm)  
+* Safety Team. First responder or EMT preferred. (9am-3pm)  
+* Robot Inspector. Current or previous certification from FIRST required. (9am \- 3pm)
 
 ## Volunteer Roles for Building Week Zero Field
 
@@ -34,8 +38,6 @@ Three or four weeks after kickoff, enough of the field will be ready for paintin
 The Friday before the Week Zero event, volunteers are needed to set up the field in the main gym of Irondale. The field setup can take 4 or five hours because it involves putting down tarps, masonite boards, and carpet; laying out the field; and erecting the field elements. We try to get an early start but often there are basketball games going until 8 or 9pm.
 
 In the afternoon after the event, volunteers help tear down the field and put it back into storage.
-
-—-
 
 For volunteers wanting to help build the field elements, if you have your own tools, we suggest bringing the following:
 

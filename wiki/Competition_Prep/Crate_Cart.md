@@ -1,5 +1,7 @@
 # Crate Cart
 
+Updated 05/02/2026
+
 Minnesota has been fortunate for several years to have Amazon shipping teams to champs in Amazon semi trailers. Shipping your robot and pit supplies to champs as part of joint transportation with other teams solves many logistical issues, but can require some special considerations when packing your supplies.
 
 ## General Advice

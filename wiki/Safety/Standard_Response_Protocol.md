@@ -1,5 +1,7 @@
 # KnightKrawler Standard Response Protocol
 
+Updated 2/16/2026
+
 Last Updated: January 2026
 
 ***These are procedures to be used for full-team safety measures in alignment with Mounds View Public Schools’ Standard Response Protocol. These are distinct from participant responsibilities/equipment safety/etc. as described in the [2052 Safety Manual](https://team2052.com/wiki/Safety/Safety_Manual/), though review of these procedures is required by all team members (with frequent review highly recommended).***

@@ -1,5 +1,7 @@
 # End of Season Banquet Planning
 
+Updated 10/11/2026
+
 # 9-12 Months Before the Banquet: 
 
 * The team advisor completes a facilities request for the Multipurpose Room through the Irondale Activities Office (Bill Mauricio was the contact in 2025-2026)  

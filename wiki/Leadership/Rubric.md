@@ -1,5 +1,6 @@
 # Student Leadership Candidate Evaluation Rubric
 
+Updated 1/18/2026  
 This rubric is to be used by all students to provide feedback on all student leadership candidates
 
 ## Gracious Professionalism

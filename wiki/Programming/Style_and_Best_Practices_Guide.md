@@ -1,6 +1,6 @@
 # 2052 Programming: Best Practices & Style Guide
 
-#### Last updated Oct 15, 2026
+Updated 10/15/2026
 
 Please note that while many of these conventions are widely held outside of the KnightKrawler programming subteam, there will be conventions that differ from other FRC team’s guides as well as industry setting guidelines. While we do aim to be consistent with the ladder for ease of transitioning out of FRC, many of the limitations and unique qualities of the WPILib suite makes this impossible.
 
@@ -24,26 +24,24 @@ We recommend using an auto-formatter that reformats every file to the specified 
 
 Here is an example of these put together:
 
-```
-public class IntakeSubsystem extends Subsystem {
-    private static IntakeSubsystem INSTANCE;
+`public class IntakeSubsystem extends Subsystem {`  
+    `private static IntakeSubsystem INSTANCE;`
 
-    @Getter @Setter private Angle goalAngle;
+    `@Getter @Setter private Angle goalAngle;`
 
-    public static getInstance() {
-        if (INSTANCE == null) {
-            INSTANCE = new IntakeSubsystem();
-        }
-        return INSTANCE;
-    }
+    `public static getInstance() {`  
+        `if (INSTANCE == null) {`  
+            `INSTANCE = new IntakeSubsystem();`  
+        `}`  
+        `return INSTANCE;`  
+    `}`
 
-    private IntakeSubsystem() {
-        goalAngle = Degrees.of(0);
-    }
-}
-```
+    `private IntakeSubsystem() {`  
+        `goalAngle = Degrees.of(0);`  
+    `}`  
+`}`
 
-Additionally, as seen above, any singleton should have its getInstance() placed above its constructor and below the variable declarations. Within the variable declarations, the INSTANCE variable should be placed above the rest within a separate block. Similar things should be grouped together within a class such as method overloads, getters and setters (to be avoided, see Lombok section), similar method types (overrides, computations, etc.), default methods, and so on. 
+Additionally, as seen above, any singleton should have its getInstance() placed above its constructor and below the variable declarations. Within the variable declarations, the INSTANCE variable should be placed above the rest within a separate block. Similar things should be grouped together within a class such as method overloads, getters and setters (to be avoided, see Lombok section), similar method types (overrides, computations, etc.), default methods, and so on.
 
 For auto formatting, we use [spotless](https://plugins.gradle.org/plugin/com.diffplug.gradle.spotless). This is our current configuration:
 
@@ -51,22 +49,21 @@ Plugin:
 `id "com.diffplug.spotless" version "6.21.0"`
 
 In gradle.build:  
-```
-project.compileJava.dependsOn(spotlessApply)
-spotless {
-    java {
-        target fileTree(".") {
-            include "**/*.java"
-            exclude "**/build/**", "**/build-*/**"
-        }
-        toggleOffOn()
-        googleJavaFormat()
-        trimTrailingWhitespace()
-        endWithNewline()
-        formatAnnotations()
-    }  
-}
-```
+`project.compileJava.dependsOn(spotlessApply)`  
+`spotless {`  
+    `java {`  
+       `target fileTree(".") {`  
+            `include "**/*.java"`  
+            `exclude "**/build/**", "**/build-*/**"`  
+       `}`  
+       `toggleOffOn()`  
+       `googleJavaFormat()`  
+       `trimTrailingWhitespace()`  
+       `endWithNewline()`  
+       `formatAnnotations()`
+
+    `}`  
+`}`
 
 (Look up updated versions, the ones posed here might not be up to date depending on when this is being read)
 
@@ -107,7 +104,7 @@ A javadoc CheatSheet can be found [here](https://gist.github.com/ashishrana16079
 
 ## Lombok
 
-Lombok is a library that automatically generates boilerplate Java code. We only really use ‘@Getter’ and ‘@Setter’. This is for class-level variables to avoid large swaths of boilerplate getter and setter methods.  
+Lombok is a library that automatically generates boilerplate Java code. We only really use ‘@Getter’ and ‘@Setter’. This is for class-level variables to avoid large swaths of boilerplate getter and setter methods.
 
 While the use of lombok is not strictly required, it increases readability. In order to set up Lombok, add this to the dependencies in build.gradle:  
 `compileOnly 'org.projectlombok:lombok:1.18.48'`  
@@ -125,20 +122,20 @@ Recursive methods are avoided entirely. While it is possible to add a set endpoi
 
 ## Mechanism/Subsystem Structure
 
-For the majority of our mechanisms/subsystems, we require that they be created as a singleton. This makes sure that it is impossible to create more than one instance of them which could cause errors to be thrown (especially if the class creates motor objects). It is not always necessary for these to be singletons, but in those cases, such classes could likely be abstract or interfaces.  
+For the majority of our mechanisms/subsystems, we require that they be created as a singleton. This makes sure that it is impossible to create more than one instance of them which could cause errors to be thrown (especially if the class creates motor objects). It is not always necessary for these to be singletons, but in those cases, such classes could likely be abstract or interfaces.
 
-The best example of non-singleton mechanisms/subsystems is Roller and Servo mechanisms/subsystems. These are custom abstract classes that we have used that generalize the majority of mechanisms/subsystems created. The Roller is designed to be an abstraction of any mechanisms/subsystems that spins motor(s) at a target velocity. Similarly, Servos are an abstraction of any mechanisms/subsystems that spins motors to a target angle. It is generally good practice to break down mechanisms/subsystems into these components (like a pivoting shooter would break into a pivot and a shooter) in order to take advantage of the already written and tested code.  
+The best example of non-singleton mechanisms/subsystems is Roller and Servo mechanisms/subsystems. These are custom abstract classes that we have used that generalize the majority of mechanisms/subsystems created. The Roller is designed to be an abstraction of any mechanisms/subsystems that spins motor(s) at a target velocity. Similarly, Servos are an abstraction of any mechanisms/subsystems that spins motors to a target angle. It is generally good practice to break down mechanisms/subsystems into these components (like a pivoting shooter would break into a pivot and a shooter) in order to take advantage of the already written and tested code.
 
 Additionally, mechanisms/subsystems classes should refer to the section on class structure for more specific guides on how to structure classes for better readability and consistency.
 
 ## Constants
 
-In the past, having a single unified Constants.java file caused significant issues in both frequent merge conflicts as well as significantly more time spent locating specific constants within the file. Instead, we split up the constants into individual Subsystem/Mechanism constants files (e.g. IntakeConstants.java, ShooterConstants.java), as well as keeping the Constants.java file for all robot wide constants.  
+In the past, having a single unified Constants.java file caused significant issues in both frequent merge conflicts as well as significantly more time spent locating specific constants within the file. Instead, we split up the constants into individual Subsystem/Mechanism constants files (e.g. IntakeConstants.java, ShooterConstants.java), as well as keeping the Constants.java file for all robot wide constants.
 
 Additionally, having a file dedicated to the location of field elements (FieldConstants.java) is useful, especially when they are frequently referenced across multiple files compared to declaring them locally or keeping them in the same location as robot based constants.
 
 ## Team Library
 
-The team library is a collection of classes that are often used year to year that is designed to allow for more time being spent writing more complex code without worrying about testing the underlying components. When adding something to the team library, it is best practice to make sure that it is tested and functions as intended. Additionally, writing documentation in the library makes it far easier for future programming team members to understand and build onto the pre-written code. 
+The team library is a collection of classes that are often used year to year that is designed to allow for more time being spent writing more complex code without worrying about testing the underlying components. When adding something to the team library, it is best practice to make sure that it is tested and functions as intended. Additionally, writing documentation in the library makes it far easier for future programming team members to understand and build onto the pre-written code.
 
 If you are adding classes that originated from another team’s library, it should NOT be added under our own section of the library. Instead, a new section should be added under their team name in order to correctly credit who wrote it. Doing this also allows maintainers to go back to the original source code when it comes time to update the software to newer versions of WPILib (and other dependencies).  

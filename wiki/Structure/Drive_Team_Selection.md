@@ -1,5 +1,7 @@
 # Drive Team Selection
 
+Updated 12/26/2026
+
 ## Overview
 
 Drive team members are selected for the competition season through a process that is consistent, data driven, and objective. Drive team selection typically begins in the early weeks of build season. The process is repeated every year and returning drive team members are not guaranteed a spot on the next year’s drive team. All roles will typically have a backup, should the primary student for that role be unable to participate in a competition. 

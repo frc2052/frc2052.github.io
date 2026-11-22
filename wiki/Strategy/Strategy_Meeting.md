@@ -1,5 +1,7 @@
 # Strategy Meeting at Competition
 
+Updated 2/16/2026
+
 ## Overview
 
 Alliance Selection is one of the most important parts of a competition; it defines if you win or lose. So how do we prepare for this time-sensitive part of the competition? We have a Strategy Meeting. This is about an hour long meeting where a group composed primarily of students look through teams at the competition to find good fits for our strategy.

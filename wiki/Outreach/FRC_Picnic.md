@@ -1,5 +1,7 @@
 # FRC Summer Picnic
 
+Updated 4/8/2026
+
 ## ToDo Items
 
 ### April

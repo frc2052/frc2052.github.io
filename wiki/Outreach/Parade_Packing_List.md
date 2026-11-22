@@ -1,5 +1,7 @@
 # Parade Packing List
 
+Updated 10/11/2026
+
 Firefly \+ bumpers  
 2 Balls  
 2 joy sticks  

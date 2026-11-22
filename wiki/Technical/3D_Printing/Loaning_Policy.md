@@ -1,8 +1,10 @@
 # 3D Printer Loaning Policy
 
+Updated 11/9/2025
+
 KnightKrawler has found that one of the number one indicators of how involved a student becomes in CAD has a direct correlation to whether they have access to a 3D printer at home. The ability to quickly manufacture designs that they create encourages them to explore CAD on their own time and push the limits of their skill. So in the interest of making a more diverse and experienced CAD group, we decided to purchase four new printers that could be loaned to students using some funds that we had set aside for educational purchases. 
 
-We decided to purchase four new Bambu Lab A1 Mini printers, because they have very good print quality and only cost $200 each. The A1 mini is cheap enough that if something happens to a printer it won’t be a financial burden to replace the printer, yet the student can create high quality prints that are useful. 
+We decided to purchase four new Bambu Lab A1 Mini printers, because they have very good print quality and only cost \$200 each. The A1 mini is cheap enough that if something happens to a printer it won’t be a financial burden to replace the printer, yet the student can create high quality prints that are useful. 
 
 Students can check out one of the printer once they have done the following:
 

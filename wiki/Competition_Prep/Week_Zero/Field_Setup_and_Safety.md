@@ -1,5 +1,7 @@
 # Week Zero \- Field Set Up and Event Safety
 
+Updated 03/03/2026
+
 ## Week Zero Field Configuration and Set Up
 
 Just like in a regular season competition, the Week Zero field is divided into 3 sections: 
@@ -10,7 +12,7 @@ Just like in a regular season competition, the Week Zero field is divided into 3
 
 An example event layout is shown in the configuration: [Week Zero Field Layout Example](https://team2052.com/assets/downloads/WeekZeroFieldLayout.pdf)
 
-The Friday before the Week Zero event, volunteers are needed to set up the field in the main gym of Irondale. The field setup can take 4 or five hours because it involves putting down tarps, masonite boards, and carpet; laying out the field; and erecting the field elements. We try to get an early start but often there are basketball games going until 8 or 9pm.
+The Friday before the Week Zero event, volunteers are needed to set up the field in the main gym of Irondale. The field setup can take 5 \- 7 hours because it involves putting down tarps, masonite boards, and carpet; laying out the field; and erecting the field elements. We try to get an early start but often there are basketball games going until 8 or 9pm.
 
 In the afternoon after the event, volunteers help tear down the field and put it back into storage.
 
